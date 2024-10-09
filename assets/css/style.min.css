@@ -499,15 +499,15 @@ button {
 }
 
 .form__input:nth-child(1) input {
-  background-image: url("/assets/images/header/form_icons/pick_up.svg");
+  background-image: url("../images/header/form_icons/pick_up.svg");
 }
 
 .form__input:nth-child(2) input {
-  background-image: url("/assets/images/header/form_icons/return.svg");
+  background-image: url("../images/header/form_icons/return.svg");
 }
 
 .form__input:nth-child(3) input {
-  background-image: url("/assets/images/header/form_icons/rental_days.svg");
+  background-image: url("../images/header/form_icons/rental_days.svg");
 }
 
 .form__label {
