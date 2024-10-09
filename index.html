@@ -27,7 +27,7 @@
 
     <div class="wrapper">
         <header id="header" class="header">
-            <div class="header__top">
+            <div class="header__top" id="headerTop">
                 <div class="container">
                     <div class="header__left">
                         <a href="#" class="header__logo">
@@ -119,45 +119,59 @@
         </header>
         <main>
             
-            <section class="hero">
+            <section class="hero" class="#hero">
                 <div class="container">
                     <div class="hero__wrapper">
                         <div class="hero__top">
                             <h1>Travel Georgia Easily</h1>
                             <p>Drive into Adventure: Rent Cars, Plan Trips, Explore Destinations!</p>
                         </div>
-                        <div class="hero__banner banner">
-                            <div class="banner__picture"></div>
-                            <div class="banner__info">
-                                <div class="banner__info-top">
-                                    <p>Discount</p>
-                                    <h2>Get a <span>30%</span> Discount on Your First Advance Payment!</h2>
+                        <div class="hero__banner-wrapper">
+                            <div class="hero__banner banner">
+                                <div class="banner__picture"></div>
+                                <div class="banner__info">
+                                    <div class="banner__info-top">
+                                        <p>Discount</p>
+                                        <h2>Get a <span>30%</span> Discount on Your First Advance Payment!</h2>
+                                    </div>
+                                    <a href="#" class="banner__info-btn">Register now</a>
                                 </div>
-                                <button class="banner__info-btn">Register now</button>
                             </div>
+            
+                            <div class="hero__banner banner">
+                                <div class="banner__picture"></div>
+                                <div class="banner__info">
+                                    <div class="banner__info-top">
+                                        <h2>Find Ride Faster with AI!</h2>
+                                        <p>Let our smart AI-powered system help you discover the ideal car for your trip in just a few clicks.</p>
+                                    </div>
+                                    <a href="#" class="banner__info-btn">Open chat</a>
+                                </div>
+                            </div>
+            
                         </div>
                     </div>
                 </div>
             </section>
             
-            <section class="cars">
+            <section class="cars" id="cars">
                 <div class="container">
                     <div class="cars__wrapper">
                         <div class="cars__filter filter">
                             <div class="filter__cities-hosts">
                                 <div class="filter__cities">
-                                    <div class="filter__cities-item active">
+                                    <a href="#" class="filter__cities-item active">
                                         All cities
-                                    </div>
-                                    <div class="filter__cities-item">
+                                    </a>
+                                    <a href="#tbilisi" class="filter__cities-item">
                                         Tbilisi
-                                    </div>
-                                    <div class="filter__cities-item">
+                                    </a>
+                                    <a href="#batumi" class="filter__cities-item">
                                         Batumi
-                                    </div>
-                                    <div class="filter__cities-item">
+                                    </a>
+                                    <a href="#kutaisi" class="filter__cities-item">
                                         Kutaisi
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="filter__hosts">
                                     <p>See Top hosts</p>
@@ -172,30 +186,30 @@
             
                             <div class="filter__sort-popular_tags">
                                 <div class="filter__sort_filters">
-                                    <button class="filter__sort_filters_tag active">
+                                    <a href="#" class="filter__sort_filters_tag active">
                                         All <span>89</span>
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#with-driver" class="filter__sort_filters_tag">
                                         With driver <span>34</span>
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#no-deposit" class="filter__sort_filters_tag">
                                         No deposit <span>34</span>
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#free-delivery" class="filter__sort_filters_tag">
                                         Free delivery <span>34</span>
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#sedan" class="filter__sort_filters_tag">
                                         Sedan <span>36</span>
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#hatchback" class="filter__sort_filters_tag">
                                         Hatchback <span>66</span>
-                                    </button>
+                                    </a>
                                 </div>
                                 <div class="filter__sort_popular_tags">
                                     <p>Sort by:</p>
-                                    <button>
+                                    <a href="#price-low-to-high">
                                         Price: Low to High
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +219,16 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Mercedes-Benz C-Class <span>🗲</span></div>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -224,7 +247,16 @@
                                         <div class="results__item-features">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -255,7 +287,17 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Kia Sportage</div>
+                                        <div class="results__item-info_title">Kia Sportage
+            
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -274,7 +316,16 @@
                                         <div class="results__item-features no_deposit">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                             <p>No deposit</p>
                                         </div>
                                     </div>
@@ -304,7 +355,16 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Toyota Camry <span>🗲</span></div>
+                                        <div class="results__item-info_title">Toyota Camry <span>🗲</span>
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -323,7 +383,16 @@
                                         <div class="results__item-features no_deposit">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                             <p>No deposit</p>
                                         </div>
                                     </div>
@@ -354,7 +423,17 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Dodge Challenger</div>
+                                        <div class="results__item-info_title">Dodge Challenger
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+            
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -373,7 +452,16 @@
                                         <div class="results__item-features no_deposit">
                                             <a href="#">
                                                 Super CDW
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                             <p>No deposit</p>
                                         </div>
                                     </div>
@@ -403,7 +491,16 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Mercedes-Benz C-Class <span>🗲</span></div>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -422,7 +519,16 @@
                                         <div class="results__item-features">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -452,7 +558,17 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Mercedes-Benz C-Class <span>🗲</span></div>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
+            
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -471,7 +587,16 @@
                                         <div class="results__item-features">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -501,7 +626,16 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Mercedes-Benz C-Class <span>🗲</span></div>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -520,7 +654,16 @@
                                         <div class="results__item-features">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -550,7 +693,16 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div>Mercedes-Benz C-Class <span>🗲</span></div>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                            <div class="iinstant_book_popup">
+                                                <div class="iinstant_book_popup_title">
+                                                    <span>🗲</span> Instant book
+                                                </div>
+                                                <p class="iinstant_book_popup_text">
+                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p>
                                             <span>Or similar</span> |
                                             <span>Tbilisi</span> |
@@ -569,7 +721,16 @@
                                         <div class="results__item-features">
                                             <a href="#">
                                                 Full coverage
+                                                <div class="iinstant_book_popup">
+                                                    <div class="iinstant_book_popup_title">Full Coverage
+            
+                                                    </div>
+                                                    <p class="iinstant_book_popup_text">
+                                                        Provides full protection with zero deductible, covering most damage and theft.
+                                                    </p>
+                                                </div>
                                             </a>
+            
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -620,7 +781,7 @@
                 </div>
             </section>
             
-            <section class="advantages">
+            <section class="advantages" id="advantages">
                 <div class="container">
                     <div class="advantages__wrapper">
                         <div class="advantages__top">
@@ -651,17 +812,6 @@
                                 </div>
                             </div>
             
-                            <div class="advantages__item">
-                                <div class="advantages__item-top">
-                                    <img src="assets/images/icons/check.svg" alt="">
-                                    <h3>Customer satisfaction</h3>
-                                </div>
-                                <div class="advantages__item-text">
-                                    <p>
-                                        We offer individual planning for each trip, tailored to your interests and desires.
-                                    </p>
-                                </div>
-                            </div>
                             <div class="advantages__item">
                                 <div class="advantages__item-top">
                                     <img src="assets/images/icons/check.svg" alt="">
@@ -721,7 +871,21 @@
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
-            
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
                                     </div>
                                     <p class="hosts__item_motto">
                                         My goal is to offer high-quality cars and excellent service tailored to your needs. I ensure every car is kept in top condition, and I’m always available to assist you.
@@ -754,7 +918,21 @@
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
-            
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
                                     </div>
                                     <p class="hosts__item_motto">
                                         My goal is to offer high-quality cars and excellent service tailored to your needs. I ensure every car is kept in top condition, and I’m always available to assist you.
@@ -787,7 +965,21 @@
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
-            
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
                                     </div>
                                     <p class="hosts__item_motto">
                                         My goal is to offer high-quality cars and excellent service tailored to your needs. I ensure every car is kept in top condition, and I’m always available to assist you.
@@ -797,6 +989,149 @@
                                     View profile
                                 </a>
                             </div>
+            
+                            <div class="hosts__item">
+                                <div class="hosts__item_rate-motto">
+                                    <div class="hosts__item_host">
+                                        <div class="hosts__item_info">
+                                            <img src="assets/images/hosts/giorgi.png" alt="">
+                                            <div class="hosts__item_name-info">
+                                                <div class="host_name">
+                                                    Giorgi
+                                                </div>
+                                                <p class="host_text">
+                                                    Tbilisi, Georgia
+                                                </p>
+                                                <p class="host_text">
+                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="hosts__item_status">
+                                            <img src="assets/images/icons/status.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="hosts__item_stars">
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <p class="hosts__item_motto">
+                                        My goal is to offer high-quality cars and excellent service tailored to your needs. I ensure every car is kept in top condition, and I’m always available to assist you.
+                                    </p>
+                                </div>
+                                <a href="#" class="hosts__item-btn">
+                                    View profile
+                                </a>
+                            </div>
+            
+                            <div class="hosts__item">
+                                <div class="hosts__item_rate-motto">
+                                    <div class="hosts__item_host">
+                                        <div class="hosts__item_info">
+                                            <img src="assets/images/hosts/giorgi.png" alt="">
+                                            <div class="hosts__item_name-info">
+                                                <div class="host_name">
+                                                    Giorgi
+                                                </div>
+                                                <p class="host_text">
+                                                    Tbilisi, Georgia
+                                                </p>
+                                                <p class="host_text">
+                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="hosts__item_status">
+                                            <img src="assets/images/icons/status.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="hosts__item_stars">
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <p class="hosts__item_motto">
+                                        My goal is to offer high-quality cars and excellent service tailored to your needs. I ensure every car is kept in top condition, and I’m always available to assist you.
+                                    </p>
+                                </div>
+                                <a href="#" class="hosts__item-btn">
+                                    View profile
+                                </a>
+                            </div>
+            
+                            <div class="hosts__item">
+                                <div class="hosts__item_rate-motto">
+                                    <div class="hosts__item_host">
+                                        <div class="hosts__item_info">
+                                            <img src="assets/images/hosts/giorgi.png" alt="">
+                                            <div class="hosts__item_name-info">
+                                                <div class="host_name">
+                                                    Giorgi
+                                                </div>
+                                                <p class="host_text">
+                                                    Tbilisi, Georgia
+                                                </p>
+                                                <p class="host_text">
+                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="hosts__item_status">
+                                            <img src="assets/images/icons/status.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="hosts__item_stars">
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <p class="hosts__item_motto">
+                                        My goal is to offer high-quality cars and excellent service tailored to your needs. I ensure every car is kept in top condition, and I’m always available to assist you.
+                                    </p>
+                                </div>
+                                <a href="#" class="hosts__item-btn">
+                                    View profile
+                                </a>
+                            </div>
+            
+            
                         </div>
                     </div>
                 </div>
@@ -841,7 +1176,21 @@
                                 </div>
                                 <div class="reviews__rate-wrapper">
                                     <div class="reviews__rate-stars">
-            
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
+                                        <span>
+                                            <img src="assets/images/icons/stars.svg" alt="">
+                                        </span>
                                     </div>
                                     <p class="reviews__rate-from">
                                         from Google
@@ -851,6 +1200,51 @@
                             </div>
                         </div>
                         <div class="reviews__carousel">
+                            <div class="reviews__carousel-item">
+                                <div class="reviews__carousel-text">
+                                    <img src="assets/images/icons/quote.svg" alt="">
+                                    <p>
+                                        We arrived in Batumi and unexpectedly decided to visit the surrounding area on our own. We found the company on the Internet. We chose the car quickly. The choice is large, the prices are reasonable. We didn't even have to go to Batumi to return the car. Very convenient and good service. I recommend it.
+                                    </p>
+                                </div>
+                                <div class="reviews__carousel-author">
+                                    <p class="reviews__carousel-name">
+                                        Aliona Pukhalskaya
+                                    </p>
+                                    <p class="reviews__carousel-date">a week ago</p>
+                                </div>
+                            </div>
+            
+                            <div class="reviews__carousel-item">
+                                <div class="reviews__carousel-text">
+                                    <img src="assets/images/icons/quote.svg" alt="">
+                                    <p>
+                                        We arrived in Batumi and unexpectedly decided to visit the surrounding area on our own. We found the company on the Internet. We chose the car quickly. The choice is large, the prices are reasonable. We didn't even have to go to Batumi to return the car. Very convenient and good service. I recommend it.
+                                    </p>
+                                </div>
+                                <div class="reviews__carousel-author">
+                                    <p class="reviews__carousel-name">
+                                        Aliona Pukhalskaya
+                                    </p>
+                                    <p class="reviews__carousel-date">a week ago</p>
+                                </div>
+                            </div>
+            
+                            <div class="reviews__carousel-item">
+                                <div class="reviews__carousel-text">
+                                    <img src="assets/images/icons/quote.svg" alt="">
+                                    <p>
+                                        We arrived in Batumi and unexpectedly decided to visit the surrounding area on our own. We found the company on the Internet. We chose the car quickly. The choice is large, the prices are reasonable. We didn't even have to go to Batumi to return the car. Very convenient and good service. I recommend it.
+                                    </p>
+                                </div>
+                                <div class="reviews__carousel-author">
+                                    <p class="reviews__carousel-name">
+                                        Aliona Pukhalskaya
+                                    </p>
+                                    <p class="reviews__carousel-date">a week ago</p>
+                                </div>
+                            </div>
+            
                             <div class="reviews__carousel-item">
                                 <div class="reviews__carousel-text">
                                     <img src="assets/images/icons/quote.svg" alt="">
@@ -877,100 +1271,102 @@
                         <div class="faq__right">
                             <div class="faq__sort filter__sort-popular_tags">
                                 <div class="filter__sort_filters">
-                                    <button class="filter__sort_filters_tag active">
+                                    <a href="#" class="filter__sort_filters_tag active">
                                         All
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#booking" class="filter__sort_filters_tag">
                                         Booking
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#insurance" class="filter__sort_filters_tag">
                                         Insurance
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#Vehicle" class="filter__sort_filters_tag">
                                         Vehicle
-                                    </button>
-                                    <button class="filter__sort_filters_tag">
+                                    </a>
+                                    <a href="#prices" class="filter__sort_filters_tag">
                                         Prices
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="faq__qa active">
-                                <div class="faq__qa-top">
-                                    <div class="faq__qa-top_title">
-                                        What documents do I need to rent a car?
+                            <div class="fqa__qa-wrapper one">
+                                <div class="faq__qa">
+                                    <div class="faq__qa-top">
+                                        <div class="faq__qa-top_title">
+                                            What documents do I need to rent a car?
+                                        </div>
+                                        <div class="faq__qa-top_button">
+                                            <img src="assets/images/faq/plus.svg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="faq__qa-top_button">
-                                        <img src="assets/images/faq/plus.svg" alt="">
+                                    <div class="faq__qa-text">
+                                        A valid driver’s license (an international driver’s license may be required for non-residents).
+                                        A government-issued ID or passport.
+                                        A credit or debit card in the name of the primary driver, for security and payment purposes.
                                     </div>
                                 </div>
-                                <div class="faq__qa-text">
-                                    A valid driver’s license (an international driver’s license may be required for non-residents).
-                                    A government-issued ID or passport.
-                                    A credit or debit card in the name of the primary driver, for security and payment purposes.
-                                </div>
-                            </div>
             
-                            <div class="faq__qa">
-                                <div class="faq__qa-top">
-                                    <div class="faq__qa-top_title">
-                                        Is there an age requirement for renting a car?
+                                <div class="faq__qa">
+                                    <div class="faq__qa-top">
+                                        <div class="faq__qa-top_title">
+                                            Is there an age requirement for renting a car?
+                                        </div>
+                                        <div class="faq__qa-top_button">
+                                            <img src="assets/images/faq/plus.svg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="faq__qa-top_button">
-                                        <img src="assets/images/faq/plus.svg" alt="">
+                                    <div class="faq__qa-text">
+                                        A valid driver’s license (an international driver’s license may be required for non-residents).
+                                        A government-issued ID or passport.
+                                        A credit or debit card in the name of the primary driver, for security and payment purposes.
                                     </div>
                                 </div>
-                                <div class="faq__qa-text">
-                                    A valid driver’s license (an international driver’s license may be required for non-residents).
-                                    A government-issued ID or passport.
-                                    A credit or debit card in the name of the primary driver, for security and payment purposes.
-                                </div>
-                            </div>
             
-                            <div class="faq__qa">
-                                <div class="faq__qa-top">
-                                    <div class="faq__qa-top_title">
-                                        What is included in the rental price?
+                                <div class="faq__qa">
+                                    <div class="faq__qa-top">
+                                        <div class="faq__qa-top_title">
+                                            What is included in the rental price?
+                                        </div>
+                                        <div class="faq__qa-top_button">
+                                            <img src="assets/images/faq/plus.svg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="faq__qa-top_button">
-                                        <img src="assets/images/faq/plus.svg" alt="">
+                                    <div class="faq__qa-text">
+                                        A valid driver’s license (an international driver’s license may be required for non-residents).
+                                        A government-issued ID or passport.
+                                        A credit or debit card in the name of the primary driver, for security and payment purposes.
                                     </div>
                                 </div>
-                                <div class="faq__qa-text">
-                                    A valid driver’s license (an international driver’s license may be required for non-residents).
-                                    A government-issued ID or passport.
-                                    A credit or debit card in the name of the primary driver, for security and payment purposes.
-                                </div>
-                            </div>
             
-                            <div class="faq__qa">
-                                <div class="faq__qa-top">
-                                    <div class="faq__qa-top_title">
-                                        What happens if I return the car late?
+                                <div class="faq__qa">
+                                    <div class="faq__qa-top">
+                                        <div class="faq__qa-top_title">
+                                            What happens if I return the car late?
+                                        </div>
+                                        <div class="faq__qa-top_button">
+                                            <img src="assets/images/faq/plus.svg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="faq__qa-top_button">
-                                        <img src="assets/images/faq/plus.svg" alt="">
+                                    <div class="faq__qa-text">
+                                        A valid driver’s license (an international driver’s license may be required for non-residents).
+                                        A government-issued ID or passport.
+                                        A credit or debit card in the name of the primary driver, for security and payment purposes.
                                     </div>
                                 </div>
-                                <div class="faq__qa-text">
-                                    A valid driver’s license (an international driver’s license may be required for non-residents).
-                                    A government-issued ID or passport.
-                                    A credit or debit card in the name of the primary driver, for security and payment purposes.
-                                </div>
-                            </div>
             
-                            <div class="faq__qa">
-                                <div class="faq__qa-top">
-                                    <div class="faq__qa-top_title">
-                                        Are there any mileage restrictions?
+                                <div class="faq__qa">
+                                    <div class="faq__qa-top">
+                                        <div class="faq__qa-top_title">
+                                            Are there any mileage restrictions?
+                                        </div>
+                                        <div class="faq__qa-top_button">
+                                            <img src="assets/images/faq/plus.svg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="faq__qa-top_button">
-                                        <img src="assets/images/faq/plus.svg" alt="">
+                                    <div class="faq__qa-text">
+                                        A valid driver’s license (an international driver’s license may be required for non-residents).
+                                        A government-issued ID or passport.
+                                        A credit or debit card in the name of the primary driver, for security and payment purposes.
                                     </div>
-                                </div>
-                                <div class="faq__qa-text">
-                                    A valid driver’s license (an international driver’s license may be required for non-residents).
-                                    A government-issued ID or passport.
-                                    A credit or debit card in the name of the primary driver, for security and payment purposes.
                                 </div>
                             </div>
                         </div>
@@ -993,7 +1389,14 @@
                                     <button class="destinations__item-plus">
                                         <img src="assets/images/icons/plus.svg" alt="">
                                     </button>
+                                    <img src="assets/images/destination/1.png" alt="" class="destinations__item-pic_bg">
+                                    <div class="destinations__item-desc">
+                                        <p>
+                                            Tbilisi, the vibrant capital of Georgia, captivates visitors with its unique blend of ancient history and modern charm. Nestled between rolling hills and the Kura River, the city boasts stunning views, winding cobblestone streets, and a mix of architecture that ranges from centuries-old churches to contemporary structures.
+                                        </p>
+                                    </div>
                                 </div>
+            
                                 <p class="destinations__item-label">
                                     Tbilisi
                                 </p>
@@ -1004,6 +1407,12 @@
                                     <button class="destinations__item-plus">
                                         <img src="assets/images/icons/plus.svg" alt="">
                                     </button>
+                                    <img src="assets/images/destination/2.png" alt="" class="destinations__item-pic_bg">
+                                    <div class="destinations__item-desc">
+                                        <p>
+                                            Tbilisi, the vibrant capital of Georgia, captivates visitors with its unique blend of ancient history and modern charm. Nestled between rolling hills and the Kura River, the city boasts stunning views, winding cobblestone streets, and a mix of architecture that ranges from centuries-old churches to contemporary structures.
+                                        </p>
+                                    </div>
                                 </div>
                                 <p class="destinations__item-label">
                                     Sighnaghi
@@ -1015,6 +1424,12 @@
                                     <button class="destinations__item-plus">
                                         <img src="assets/images/icons/plus.svg" alt="">
                                     </button>
+                                    <img src="assets/images/destination/3.png" alt="" class="destinations__item-pic_bg">
+                                    <div class="destinations__item-desc">
+                                        <p>
+                                            Tbilisi, the vibrant capital of Georgia, captivates visitors with its unique blend of ancient history and modern charm. Nestled between rolling hills and the Kura River, the city boasts stunning views, winding cobblestone streets, and a mix of architecture that ranges from centuries-old churches to contemporary structures.
+                                        </p>
+                                    </div>
                                 </div>
                                 <p class="destinations__item-label">
                                     Batumi
@@ -1026,6 +1441,12 @@
                                     <button class="destinations__item-plus">
                                         <img src="assets/images/icons/plus.svg" alt="">
                                     </button>
+                                    <img src="assets/images/destination/4.png" alt="" class="destinations__item-pic_bg">
+                                    <div class="destinations__item-desc">
+                                        <p>
+                                            Tbilisi, the vibrant capital of Georgia, captivates visitors with its unique blend of ancient history and modern charm. Nestled between rolling hills and the Kura River, the city boasts stunning views, winding cobblestone streets, and a mix of architecture that ranges from centuries-old churches to contemporary structures.
+                                        </p>
+                                    </div>
                                 </div>
                                 <p class="destinations__item-label">
                                     Svaneti
