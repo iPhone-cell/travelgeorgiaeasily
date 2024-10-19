@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -20,6 +21,14 @@
         <symbol id="mark" viewBox="0 0 32 32">
 
                 <path d="M21.3333 4H10.6667C9.95942 4 9.28115 4.28095 8.78105 4.78105C8.28095 5.28115 8 5.95942 8 6.66667V28L16 24L24 28V6.66667C24 5.95942 23.719 5.28115 23.219 4.78105C22.7189 4.28095 22.0406 4 21.3333 4Z" stroke="#101214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+        </symbol>
+    </svg>
+
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="starBlack" viewBox="0 0 18 18">
+
+            <path d="M4.36875 15.75L5.5875 10.4812L1.5 6.9375L6.9 6.46875L9 1.5L11.1 6.46875L16.5 6.9375L12.4125 10.4812L13.6312 15.75L9 12.9562L4.36875 15.75Z" />
 
         </symbol>
     </svg>
@@ -47,7 +56,7 @@
         
                     </div>
                     <div class="header__right">
-                        <a class="header__login" href="#">log In</a>
+                        <a class="header__login" href="#">Log In</a>
                         <a class="header__login" href="#">Register</a>
                         <a class="header__login" href="#">En | Usd</a>
                         <a href="#" class="header__wishlist">
@@ -84,7 +93,7 @@
                                     Rental days
                                 </div>
                                 <div>
-                                    0 days
+                                    <span>14</span> days
                                 </div>
                             </div>
                             <div class="form__input-wrapper">
@@ -128,24 +137,38 @@
                         </div>
                         <div class="hero__banner-wrapper">
                             <div class="hero__banner banner">
-                                <div class="banner__picture"></div>
+                                <div class="banner__picture">
+                                    <img src="assets/images/hero/banner/banner.png" alt="">
+                                </div>
                                 <div class="banner__info">
                                     <div class="banner__info-top">
                                         <p>Discount</p>
                                         <h2>Get a <span>30%</span> Discount on Your First Advance Payment!</h2>
                                     </div>
-                                    <a href="#" class="banner__info-btn">Register now</a>
+                                    <div class="banner__info_buttom_wrapper">
+                                        <a href="#" class="banner__info-btn">Register now</a>
+                                        <div class="banner__info-number">
+                                            <span>1</span>/<span>2</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
             
                             <div class="hero__banner banner">
-                                <div class="banner__picture"></div>
+                                <div class="banner__picture">
+                                    <img src="assets/images/hero/banner/banner.png" alt="">
+                                </div>
                                 <div class="banner__info">
                                     <div class="banner__info-top">
                                         <h2>Find Ride Faster with AI!</h2>
                                         <p>Let our smart AI-powered system help you discover the ideal car for your trip in just a few clicks.</p>
                                     </div>
-                                    <a href="#" class="banner__info-btn">Open chat</a>
+                                    <div class="banner__info_buttom_wrapper">
+                                        <a href="#" class="banner__info-btn">Open chat</a>
+                                        <div class="banner__info-number">
+                                            <span>2</span>/<span>2</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
             
@@ -219,10 +242,10 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <img src="assets/images/icons/lightning.svg" alt="">
                                             <div class="iinstant_book_popup">
                                                 <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
+                                                    <img src="/assets/images/icons/lightning.svg"> Instant book
                                                 </div>
                                                 <p class="iinstant_book_popup_text">
                                                     A vehicle can be reserved immediately without needing approval from the rental company or car owner.
@@ -263,18 +286,42 @@
                                         <div class="results__item-host top_host">
                                             <img src="assets/images/cars/hosts/irakli.png" alt="">
                                             <p>Irakli</p>
-                                            <img src="assets/images/cars/crown.svg" alt="">
+                                            <img src="assets/images/icons/top_host.svg" alt="">
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★★
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -288,15 +335,6 @@
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
                                         <div class="results__item-info_title">Kia Sportage
-            
-                                            <div class="iinstant_book_popup">
-                                                <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
-                                                </div>
-                                                <p class="iinstant_book_popup_text">
-                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
-                                                </p>
-                                            </div>
                                         </div>
                                         <p>
                                             <span>Or similar</span> |
@@ -326,7 +364,7 @@
                                                 </div>
                                             </a>
             
-                                            <p>No deposit</p>
+                                            <p class="results__item-features_no_deposit">No deposit</p>
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -335,15 +373,39 @@
                                             <p>Irakli</p>
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★☆
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -355,10 +417,10 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div class="results__item-info_title">Toyota Camry <span>🗲</span>
+                                        <div class="results__item-info_title">Toyota Camry <img src="/assets/images/icons/lightning.svg" alt="">
                                             <div class="iinstant_book_popup">
                                                 <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
+                                                    <img src="/assets/images/icons/lightning.svg"> Instant book
                                                 </div>
                                                 <p class="iinstant_book_popup_text">
                                                     A vehicle can be reserved immediately without needing approval from the rental company or car owner.
@@ -393,25 +455,49 @@
                                                 </div>
                                             </a>
             
-                                            <p>No deposit</p>
+                                            <p class="results__item-features_no_deposit">No deposit</p>
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
                                         <div class="results__item-host top_host">
                                             <img src="assets/images/cars/hosts/Giorgi.png" alt="">
                                             <p>Irakli</p>
-                                            <img src="assets/images/cars/crown.svg" alt="">
+                                            <img src="assets/images/icons/top_host.svg" alt="">
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★☆
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -424,14 +510,6 @@
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
                                         <div class="results__item-info_title">Dodge Challenger
-                                            <div class="iinstant_book_popup">
-                                                <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
-                                                </div>
-                                                <p class="iinstant_book_popup_text">
-                                                    A vehicle can be reserved immediately without needing approval from the rental company or car owner.
-                                                </p>
-                                            </div>
             
                                         </div>
                                         <p>
@@ -453,7 +531,7 @@
                                             <a href="#">
                                                 Super CDW
                                                 <div class="iinstant_book_popup">
-                                                    <div class="iinstant_book_popup_title">Full Coverage
+                                                    <div class="iinstant_book_popup_title">Super CDW
             
                                                     </div>
                                                     <p class="iinstant_book_popup_text">
@@ -462,7 +540,7 @@
                                                 </div>
                                             </a>
             
-                                            <p>No deposit</p>
+                                            <p class="results__item-features_no_deposit">No deposit</p>
                                         </div>
                                     </div>
                                     <div class="results__item-host_wrapper">
@@ -471,15 +549,39 @@
                                             <p>Amiko</p>
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★★
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>100</span>$</b> / day
+                                                <b><span>100</span>$</b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -491,10 +593,10 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <img src="/assets/images/icons/lightning.svg" alt="">
                                             <div class="iinstant_book_popup">
                                                 <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
+                                                    <img src="/assets/images/icons/lightning.svg"> Instant book
                                                 </div>
                                                 <p class="iinstant_book_popup_text">
                                                     A vehicle can be reserved immediately without needing approval from the rental company or car owner.
@@ -535,18 +637,41 @@
                                         <div class="results__item-host top_host">
                                             <img src="assets/images/cars/hosts/irakli.png" alt="">
                                             <p>Irakli</p>
-                                            <img src="assets/images/cars/crown.svg" alt="">
+                                            <img src="assets/images/icons/top_host.svg" alt="">
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★★
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn arrow">
                                             <img src="assets/images/icons/cars_item_arrow_btn.svg" alt="">
@@ -558,10 +683,10 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <img src="/assets/images/icons/lightning.svg" alt="">
                                             <div class="iinstant_book_popup">
                                                 <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
+                                                    <img src="/assets/images/icons/lightning.svg"> Instant book
                                                 </div>
                                                 <p class="iinstant_book_popup_text">
                                                     A vehicle can be reserved immediately without needing approval from the rental company or car owner.
@@ -603,18 +728,42 @@
                                         <div class="results__item-host top_host">
                                             <img src="assets/images/cars/hosts/irakli.png" alt="">
                                             <p>Irakli</p>
-                                            <img src="assets/images/cars/crown.svg" alt="">
+                                            <img src="assets/images/icons/top_host.svg" alt="">
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★★
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -626,10 +775,10 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <img src="/assets/images/icons/lightning.svg" alt="">
                                             <div class="iinstant_book_popup">
                                                 <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
+                                                    <img src="/assets/images/icons/lightning.svg"> Instant book
                                                 </div>
                                                 <p class="iinstant_book_popup_text">
                                                     A vehicle can be reserved immediately without needing approval from the rental company or car owner.
@@ -670,18 +819,42 @@
                                         <div class="results__item-host top_host">
                                             <img src="assets/images/cars/hosts/irakli.png" alt="">
                                             <p>Irakli</p>
-                                            <img src="assets/images/cars/crown.svg" alt="">
+                                            <img src="assets/images/icons/top_host.svg" alt="">
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★★
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -693,10 +866,10 @@
                             <div class="results__item">
                                 <div class="results__item-name-info">
                                     <div class="results__item-info">
-                                        <div class="results__item-info_title">Mercedes-Benz C-Class <span>🗲</span>
+                                        <div class="results__item-info_title">Mercedes-Benz C-Class <img src="/assets/images/icons/lightning.svg" alt="">
                                             <div class="iinstant_book_popup">
                                                 <div class="iinstant_book_popup_title">
-                                                    <span>🗲</span> Instant book
+                                                    <img src="/assets/images/icons/lightning.svg"> Instant book
                                                 </div>
                                                 <p class="iinstant_book_popup_text">
                                                     A vehicle can be reserved immediately without needing approval from the rental company or car owner.
@@ -737,18 +910,42 @@
                                         <div class="results__item-host top_host">
                                             <img src="assets/images/cars/hosts/irakli.png" alt="">
                                             <p>Irakli</p>
-                                            <img src="assets/images/cars/crown.svg" alt="">
+                                            <img src="assets/images/icons/top_host.svg" alt="">
                                         </div>
                                         <div class="results__item-raiting">
-                                            ★★★★★
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="results__item-raiting_svg">
+                                                <svg>
+                                                    <use xlink:href="#starBlack"></use>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="results__item-price">
                                         <div class="results__item-price_text">
                                             <p>
-                                                <b><span>80</span><sup>$</sup></b> / day
+                                                <b><span>80</span><sup>$</sup></b> /day
                                             </p>
-                                            <p>free delivery</p>
+                                            <p class="green">free delivery</p>
                                         </div>
                                         <a href="#" class="results__item-action-btn">
                                             560 <sup>$</sup> for 7 days
@@ -855,19 +1052,19 @@
                                         <div class="hosts__item_info">
                                             <img src="assets/images/hosts/giorgi.png" alt="">
                                             <div class="hosts__item_name-info">
+                                                <p class="host_text">
+                                                    Top Host
+                                                </p>
                                                 <div class="host_name">
-                                                    Giorgi
+                                                    Lasha labidze
                                                 </div>
-                                                <p class="host_text">
-                                                    Tbilisi, Georgia
-                                                </p>
-                                                <p class="host_text">
-                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
-                                                </p>
+            
                                             </div>
                                         </div>
                                         <div class="hosts__item_status">
-                                            <img src="assets/images/icons/status.svg" alt="">
+                                            <a href="#">
+                                                <img src="/assets/images/modal/icons/host_arrow.svg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
@@ -902,19 +1099,20 @@
                                         <div class="hosts__item_info">
                                             <img src="assets/images/hosts/giorgi.png" alt="">
                                             <div class="hosts__item_name-info">
+                                                <p class="host_text">
+                                                    Top Host
+                                                </p>
                                                 <div class="host_name">
-                                                    Giorgi
+                                                    Lasha labidze
                                                 </div>
-                                                <p class="host_text">
-                                                    Tbilisi, Georgia
-                                                </p>
-                                                <p class="host_text">
-                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
-                                                </p>
+            
+            
                                             </div>
                                         </div>
                                         <div class="hosts__item_status">
-                                            <img src="assets/images/icons/status.svg" alt="">
+                                            <a href="#">
+                                                <img src="/assets/images/modal/icons/host_arrow.svg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
@@ -939,7 +1137,7 @@
                                     </p>
                                 </div>
                                 <a href="#" class="hosts__item-btn">
-                                    View profile
+                                    Read more
                                 </a>
                             </div>
             
@@ -949,19 +1147,18 @@
                                         <div class="hosts__item_info">
                                             <img src="assets/images/hosts/giorgi.png" alt="">
                                             <div class="hosts__item_name-info">
+                                                <p class="host_text">
+                                                    Top Host
+                                                </p>
                                                 <div class="host_name">
-                                                    Giorgi
+                                                    Lasha labidze
                                                 </div>
-                                                <p class="host_text">
-                                                    Tbilisi, Georgia
-                                                </p>
-                                                <p class="host_text">
-                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
-                                                </p>
                                             </div>
                                         </div>
                                         <div class="hosts__item_status">
-                                            <img src="assets/images/icons/status.svg" alt="">
+                                            <a href="#">
+                                                <img src="/assets/images/modal/icons/host_arrow.svg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
@@ -986,7 +1183,7 @@
                                     </p>
                                 </div>
                                 <a href="#" class="hosts__item-btn">
-                                    View profile
+                                    Read more
                                 </a>
                             </div>
             
@@ -996,19 +1193,19 @@
                                         <div class="hosts__item_info">
                                             <img src="assets/images/hosts/giorgi.png" alt="">
                                             <div class="hosts__item_name-info">
+                                                <p class="host_text">
+                                                    Top Host
+                                                </p>
                                                 <div class="host_name">
-                                                    Giorgi
+                                                    Lasha labidze
                                                 </div>
-                                                <p class="host_text">
-                                                    Tbilisi, Georgia
-                                                </p>
-                                                <p class="host_text">
-                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
-                                                </p>
+            
                                             </div>
                                         </div>
                                         <div class="hosts__item_status">
-                                            <img src="assets/images/icons/status.svg" alt="">
+                                            <a href="#">
+                                                <img src="/assets/images/modal/icons/host_arrow.svg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
@@ -1033,7 +1230,7 @@
                                     </p>
                                 </div>
                                 <a href="#" class="hosts__item-btn">
-                                    View profile
+                                    Read more
                                 </a>
                             </div>
             
@@ -1043,19 +1240,18 @@
                                         <div class="hosts__item_info">
                                             <img src="assets/images/hosts/giorgi.png" alt="">
                                             <div class="hosts__item_name-info">
+                                                <p class="host_text">
+                                                    Top Host
+                                                </p>
                                                 <div class="host_name">
-                                                    Giorgi
+                                                    Lasha labidze
                                                 </div>
-                                                <p class="host_text">
-                                                    Tbilisi, Georgia
-                                                </p>
-                                                <p class="host_text">
-                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
-                                                </p>
                                             </div>
                                         </div>
                                         <div class="hosts__item_status">
-                                            <img src="assets/images/icons/status.svg" alt="">
+                                            <a href="#">
+                                                <img src="/assets/images/modal/icons/host_arrow.svg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
@@ -1080,7 +1276,7 @@
                                     </p>
                                 </div>
                                 <a href="#" class="hosts__item-btn">
-                                    View profile
+                                    Read more
                                 </a>
                             </div>
             
@@ -1090,19 +1286,19 @@
                                         <div class="hosts__item_info">
                                             <img src="assets/images/hosts/giorgi.png" alt="">
                                             <div class="hosts__item_name-info">
+                                                <p class="host_text">
+                                                    Top Host
+                                                </p>
                                                 <div class="host_name">
-                                                    Giorgi
+                                                    Lasha labidze
                                                 </div>
-                                                <p class="host_text">
-                                                    Tbilisi, Georgia
-                                                </p>
-                                                <p class="host_text">
-                                                    <span>1265 trips</span> | Joined <span>May, 2024</span>
-                                                </p>
+            
                                             </div>
                                         </div>
                                         <div class="hosts__item_status">
-                                            <img src="assets/images/icons/status.svg" alt="">
+                                            <a href="#">
+                                                <img src="/assets/images/modal/icons/host_arrow.svg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="hosts__item_stars">
@@ -1127,7 +1323,7 @@
                                     </p>
                                 </div>
                                 <a href="#" class="hosts__item-btn">
-                                    View profile
+                                    Read more
                                 </a>
                             </div>
             
@@ -1463,8 +1659,22 @@
                 <div class="footer__top">
                     <div class="container">
                         <div class="footer__left">
-                            <img src="assets/images/footer/logo.svg" alt="TRIPBOX">
-                            <p>The best in Georgia.</p>
+                            <img class="logo" src="assets/images/footer/logo.svg" alt="TRIPBOX">
+                            <div class="footer__call">
+                                <form action="#">
+                                    <div class="form__input">
+                                        <div class="form__label">
+                                            Request a call
+                                        </div>
+                                        <div class="form__input-wrapper">
+                                            <input type="text" placeholder="Enter your phone number">
+                                            <button type="submit">
+                                                <img src="assets/images/footer/arrow_submit.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <nav class="footer__nav">
                             <div class="footer__nav-item">
@@ -1564,15 +1774,1212 @@
                     </div>
         
                 </button>
-        </footer>    </div>
+        
+                <!-- Modal -->
+                 <div class="modal__wrapper" style="display: none;" id="modalWrapper">
+                    <div class="modal modal1">
+                        <div class="modal_container">
+                            <div class="modal__top">
+                                <div class="modal__steps-close">
+                                    <div class="modal__steps">
+                                        <a class="active" class="modal__tab1">
+                                            Car info
+                                        </a>
+                                        <img src="assets/images/modal/icons/step_arrow.svg" alt="">
+                                        <a class="modal__tab modal__tab2">
+                                            Booking
+                                        </a>
+                                        <img src="assets/images/modal/icons/step_arrow.svg" alt="">
+                                        <a class="modal__tab disabled">
+                                            Payment
+                                        </a>
+                                    </div>
+                                    <div class="modal__close">
+                                        <a>
+                                            <img src="assets/images/modal/icons/close.svg" alt="Close">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="modal__gallery">
+                                <div class="modal_container modal__gallery_wrapper">
+                                    <a href="assets/images/modal/gallery/photo_1.jpg" data-lightbox="car_photo"  class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_1.jpg" alt="">
+                                    </a>
+                                    <a href="assets/images/modal/gallery/photo_2.jpg" data-lightbox="car_photo" class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_2.jpg" alt="">
+                                    </a>
+                                    <a href="assets/images/modal/gallery/photo_3.jpg" data-lightbox="car_photo"  class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_3.jpg" alt="">
+                                    </a>
+                                    <a href="assets/images/modal/gallery/photo_4.jpg" data-lightbox="car_photo" class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_4.jpg" alt="">
+                                    </a>
+        
+                                    <a href="assets/images/modal/gallery/photo_1.jpg" data-lightbox="car_photo"  class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_1.jpg" alt="">
+                                    </a>
+                                    <a href="assets/images/modal/gallery/photo_2.jpg" data-lightbox="car_photo" class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_2.jpg" alt="">
+                                    </a>
+                                    <a href="assets/images/modal/gallery/photo_3.jpg" data-lightbox="car_photo"  class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_3.jpg" alt="">
+                                    </a>
+                                    <a href="assets/images/modal/gallery/photo_4.jpg" data-lightbox="car_photo" class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_4.jpg" alt="">
+                                    </a>
+                                </div>
+        
+                            </div>
+                        <div class="modal__content">
+                            <div class="modal_container">
+                                <div class="modal__content_wrapper">
+                                    <div class="modal__payment_left">
+                                        <div class="modal__payment_car-actions-wrapper">
+                                            <div class="modal__payment_car-actions">
+                                                <div class="modal__payment_car">
+                                                    <div class="modal__payment_car_title">
+                                                        BMW M5
+                                                        <div class="modal__payment_car_title_img">
+                                                            <img src="assets/images/icons/lightning.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal__payment_btns">
+                                                    <button>
+                                                        <img src="assets/images/icons/mark.svg" alt="">
+                                                    </button>
+                                                    <button>
+                                                        <img src="assets/images/icons/quill_share.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="modal__payment_tags">
+                                                <div class="modal__payment_tag">
+                                                    <a href="#no_deposit">
+                                                        No deposit
+                                                    </a>
+                                                </div>
+                                                <div class="modal__payment_tag">
+                                                    <a href="#like_to_like">
+                                                        Like to like <img src="/assets/images/icons/question.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="modal__payment_spec">
+                                            <div class="modal__payments_spec_title">
+                                                Specifications
+                                            </div>
+                                            <div class="modal__payments_spec_table_wrapper content">
+                                                <table class="modal__payments_spec_table iksweb">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Vehicle type</th>
+                                                            <td>Sedan</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Gear box</th>
+                                                            <td>Automatic</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Consumption</th>
+                                                            <td>9.4L/100 km</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Seats</th>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Year</th>
+                                                            <td>2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Drive</th>
+                                                            <td>FWD</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Power</th>
+                                                            <td>480 hp</td>
+                                                        </tr>
+        
+                                                        <tr>
+                                                            <th>Vehicle type</th>
+                                                            <td>Sedan</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Gear box</th>
+                                                            <td>Automatic</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Consumption</th>
+                                                            <td>9.4L/100 km</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Seats</th>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Year</th>
+                                                            <td>2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Drive</th>
+                                                            <td>FWD</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Power</th>
+                                                            <td>480 hp</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="modal__payments_spec_overlap"></div>
+                                            </div>
+                                            <button  class="modal__payments_spec_btn moreless-button">
+                                                Expand all
+                                            </button>
+                                        </div>
+                                        <div class="modal__payment_spec">
+                                            <div class="modal__payments_spec_title">
+                                                Description
+                                            </div>
+                                            <div class="modal__payments_spec_desc_wrapper">
+                                                <div class="modal__payments_spec_desc">
+                                                    <p>
+                                                        The BMW M5 is a high-performance luxury sedan that stands out for its blend of speed, comfort, and technology, making it an excellent choice for those looking for an exciting yet refined driving experience.
+                                                    </p>
+                                                    <p>
+                                                        The BMW M5 is powered by a twin-turbo V8 engine that delivers exhilarating acceleration and power, producing up to 617 horsepower in some versions. It’s capable of going from 0 to 60 mph in just 3.2 seconds, offering a thrilling drive that rivals many sports cars. The M xDrive all-wheel-drive system ensures exceptional handling and stability, making it perfect for both city roads and open highways.
+                                                    </p>
+                                                    <p>
+                                                        Inside, the BMW M5 offers a luxurious cabin with high-quality materials, advanced technology, and a spacious layout. The M Sport seats provide excellent support and comfort, ideal for long drives or spirited driving sessions. Features like a Harman Kardon or Bowers & Wilkins sound system, ambient lighting, and adaptive cruise control enhance the driving experience.
+                                                    </p>
+        
+                                                    <p>
+                                                        The BMW M5 is a high-performance luxury sedan that stands out for its blend of speed, comfort, and technology, making it an excellent choice for those looking for an exciting yet refined driving experience.
+                                                    </p>
+                                                    <p>
+                                                        The BMW M5 is powered by a twin-turbo V8 engine that delivers exhilarating acceleration and power, producing up to 617 horsepower in some versions. It’s capable of going from 0 to 60 mph in just 3.2 seconds, offering a thrilling drive that rivals many sports cars. The M xDrive all-wheel-drive system ensures exceptional handling and stability, making it perfect for both city roads and open highways.
+                                                    </p>
+                                                    <p>
+                                                        Inside, the BMW M5 offers a luxurious cabin with high-quality materials, advanced technology, and a spacious layout. The M Sport seats provide excellent support and comfort, ideal for long drives or spirited driving sessions. Features like a Harman Kardon or Bowers & Wilkins sound system, ambient lighting, and adaptive cruise control enhance the driving experience.
+                                                    </p>
+                                                    <div class="modal__payments_spec_overlap"></div>
+                                                </div>
+        
+                                            </div>
+                                            <button class="modal__payments_spec_btn read-more-btn">
+                                                Read more
+                                            </button>
+                                        </div>
+        
+                                        <div class="modal__insurance">
+                                            <div class="modal__insurance_title">
+                                                Insurance
+                                            </div>
+                                            <div class="modal__insurance_form">
+        
+                                                <div class="radio__label" id="radioLabel">
+                                                    <div class="modal__insurance_form_item">
+                                                        <div class="modal__insurance_form_item_top">
+                                                            <div class="modal__insurance_form_item_top_left">
+                                                                Full coverage   <span class="divider">|</span>   <span class="price">140$</span>
+                                                            </div>
+                                                            <div class="modal__insurance_form_item_top_right">
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="modal__insurance_form_item_text">
+                                                            Covers all the damages to a car.
+                                                        </div>
+        
+        
+                                                      </div>
+                                                </div>
+        
+                                                <div class="radio__label" id="radioLabel">
+                                                    <div class="modal__insurance_form_item">
+                                                        <div class="modal__insurance_form_item_top">
+                                                            <div class="modal__insurance_form_item_top_left">
+                                                                Super CDW      <span class="divider">|</span>   <span class="price">70$</span>
+                                                            </div>
+                                                            <div class="modal__insurance_form_item_top_right">
+                                                            </div>
+        
+                                                        </div>
+                                                        <div class="modal__insurance_form_item_recomended">
+                                                            We recommended
+                                                        </div>
+        
+                                                        <div class="modal__insurance_form_item_text">
+                                                            Covers all the damages above deductibles.
+                                                        </div>
+        
+        
+                                                      </div>
+                                                </div>
+        
+                                                <div class="radio__label" id="radioLabel">
+                                                    <div class="modal__insurance_form_item">
+                                                        <div class="modal__insurance_form_item_top">
+                                                            <div class="modal__insurance_form_item_top_left">
+                                                                CDW <span class="divider">|</span>   <span class="price">50$</span>
+                                                            </div>
+                                                            <div class="modal__insurance_form_item_top_right">
+                                                            </div>
+        
+                                                        </div>
+        
+                                                        <div class="modal__insurance_form_item_text">
+                                                            Does not cover damages to glass and wheels. Covers all other damages above deductibles.
+                                                        </div>
+        
+        
+                                                      </div>
+                                                </div>
+        
+                                                <div class="radio__label active" id="radioLabel">
+                                                    <div class="modal__insurance_form_item">
+                                                        <div class="modal__insurance_form_item_top">
+                                                            <div class="modal__insurance_form_item_top_left">
+                                                                TPL <span class="divider">|</span>   <span class="price">Free of charge</span>
+                                                            </div>
+                                                            <div class="modal__insurance_form_item_top_right">
+                                                            </div>
+        
+                                                        </div>
+        
+                                                        <div class="modal__insurance_form_item_text">
+                                                            This insurance does not cover damage to the rental car, but it does cover damage to other cars.
+                                                        </div>
+        
+        
+                                                      </div>
+                                                </div>
+        
+        
+                                            </div>
+                                        </div>
+        
+                                        <div class="modal__equipment">
+                                            <div class="modal_container">
+                                                <div class="modal__equipment_title">
+                                                    Additional services
+                                                </div>
+                                                <form action="#" class="modal__equipment_form">
+                                                    <div class="modal__equipment_form_item_wrapper">
+                                                        <div class="modal__equipment_form_item">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="carWashing">
+                                                                <label for="carWashing">
+                                                                    Car Washing
+                                                                </label>
+                                                            </div>
+                                                            <div class="modal__equipment_form_item_price">
+                                                                8$
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="modal__equipment_form_item_wrapper">
+                                                        <div class="modal__equipment_form_item">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="childseats">
+                                                                <label for="childseats">
+                                                                    Child seats
+                                                                </label>
+                                                            </div>
+                                                            <div class="modal__equipment_form_item_price">
+                                                                20$
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="modal__equipment_form_item_additional" id="childseatsAdd">
+                                                            <div class="modal__equipment_form_item_additional_item">
+                                                                <p class="modal__equipment_form_item_additional_title">
+                                                                    Up to 9kg
+                                                                </p>
+                                                                <div class="number">
+                                                                    <div class="minus minus_1">−</div>
+                                                                    <div>
+                                                                        <input type="text" value="1"/ class="input_1" disabled>
+                                                                    </div>
+                                                                    <div class="plus">+</div>
+                                                                </div>
+                                                                <p class="modal__equipment_form_item_additional_price">
+                                                                    20$
+                                                                </p>
+                                                            </div>
+        
+                                                            <div class="modal__equipment_form_item_additional_item">
+                                                                <p class="modal__equipment_form_item_additional_title">
+                                                                    18 to 36kg
+                                                                </p>
+                                                                <div class="number">
+                                                                    <div class="minus minus_2 disabled">−</div>
+                                                                    <div>
+                                                                        <input type="text" value="0"/ class="input_2" disabled>
+                                                                    </div>
+                                                                    <div class="plus">+</div>
+                                                                </div>
+                                                                <p class="modal__equipment_form_item_additional_price">
+                                                                    15$
+                                                                </p>
+                                                            </div>
+        
+                                                            <div class="modal__equipment_form_item_additional_item">
+                                                                <p class="modal__equipment_form_item_additional_title">
+                                                                    Booster seat
+                                                                </p>
+                                                                <div class="number">
+                                                                    <div class="minus minus_3 disabled">−</div>
+                                                                    <div>
+                                                                        <input type="text" value="0" class="input_3" disabled>
+                                                                    </div>
+                                                                    <div class="plus">+</div>
+                                                                </div>
+                                                                <p class="modal__equipment_form_item_additional_price">
+                                                                    2$ /day
+                                                                </p>
+                                                            </div>
+                                                        </div>
+        
+                                                    </div>
+        
+                                                    <div class="modal__equipment_form_item_wrapper">
+                                                        <div class="modal__equipment_form_item">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="tyrechains">
+                                                                <label for="tyrechains">
+                                                                    Tyre chains
+                                                                </label>
+                                                            </div>
+                                                            <div class="modal__equipment_form_item_price">
+                                                                25$
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="modal__equipment_form_item_wrapper">
+                                                        <div class="modal__equipment_form_item">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox"id="tent">
+                                                                <label for="tent">
+                                                                    Tent
+                                                                </label>
+                                                            </div>
+                                                            <div class="modal__equipment_form_item_price">
+                                                                4$ /day
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="modal__equipment_form_item_wrapper">
+                                                        <div class="modal__equipment_form_item">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox"id="gps">
+                                                                <label for="gps">
+                                                                    GPS tracker
+                                                                </label>
+                                                            </div>
+                                                            <div class="modal__equipment_form_item_price">
+                                                                2$ /day
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal___payment_right">
+                                        <div class="modal___payment_host_wrapper">
+                                            <div class="modal___payment_host">
+                                                <img src="assets/images/hosts/giorgi.png" alt="" class="modal___payment_host_photo">
+                                                <div class="modal___payment_host_info">
+                                                    <p class="modal___payment_host_info_label">
+                                                        Hosted by
+                                                    </p>
+                                                    <div class="modal___payment_host_info_name-rate">
+                                                        <div class="modal___payment_host_info_name">
+                                                            Lasha labidze <img src="assets/images/icons/top_host.svg" alt="">
+                                                        </div>
+                                                        <div class="modal___payment_host_info_rate">
+                                                            <div class="modal___payment_host_info_stars">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                            </div>
+                                                            <div class="modal___payment_host_info_reviews">
+                                                                (<span>23</span> reviews)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal___payment_arrow">
+                                                <a href="#" class="modal___payment_arrow_link">
+                                                    <img src="assets/images/modal/icons/host_arrow.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="modal___payment_imputs">
+                                            <div class="modal___payment_imputs_title">
+                                                Cost
+                                            </div>
+                                            <div class="modal___payment_imputs_days">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Rent for 14 days
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        350$
+                                                    </div>
+                                                </div>
+                                                <div class="modal___payment_imputs_bottom">
+                                                    Tbilisi, October 9 — 23
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_insurance">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Insurance
+                                                    </div>
+                                                </div>
+                                                <div class="modal___payment_imputs_bottom">
+                                                    <div>
+                                                        TPL
+                                                    </div>
+                                                    <div>
+                                                        Free of charge
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_delivery">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Delivery
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        0$
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_other">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Other
+                                                    </div>
+                                                </div>
+                                                <div class="modal___payment_imputs_bottom">
+                                                    <div>
+                                                        Deposit
+                                                    </div>
+                                                    <div>
+                                                        0$
+                                                    </div>
+                                                    <div>
+                                                        Free cancellation
+                                                    </div>
+                                                    <div>
+                                                        0$
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_total">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Total
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        <b>350$</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_total_info">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        <b>To pay now on the website</b> <br>
+                                                        <p>Visa, MasterCard</p>
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        70$
+                                                    </div>
+                                                </div>
+        
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        To pay when picking up the car <br>
+                                                        <p>Cash, Visa, MasterCard</p>
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        280$
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="modal___payment_imputs_btn" id="book">
+                                                Book
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+        
+                     <div class="modal modal2" style="display: none;">
+                        <div class="modal_container">
+                            <div class="modal__top">
+                                <div class="modal__steps-close">
+                                    <div class="modal__steps ">
+                                        <a class="modal__tab1">
+                                            Car info
+                                        </a>
+                                        <img src="assets/images/modal/icons/step_arrow.svg" alt="">
+                                        <a class="modal__tab active modal__tab2">
+                                            Booking
+                                        </a>
+                                        <img src="assets/images/modal/icons/step_arrow.svg" alt="">
+                                        <a class="modal__tab disabled">
+                                            Payment
+                                        </a>
+                                    </div>
+                                    <div class="modal__close">
+                                        <a>
+                                            <img src="assets/images/modal/icons/close.svg" alt="Close">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="modal__gallery">
+                                <div class="modal_container modal__gallery_wrapper">
+                                    <div class="modal__gallery_photo"">
+                                        <img src="assets/images/modal/gallery/photo_1.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo"">
+                                        <img src="assets/images/modal/gallery/photo_2.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_3.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_4.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo"">
+                                        <img src="assets/images/modal/gallery/photo_1.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo"">
+                                        <img src="assets/images/modal/gallery/photo_2.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_3.jpg" alt="">
+                                    </div>
+                                    <div class="modal__gallery_photo">
+                                        <img src="assets/images/modal/gallery/photo_4.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                            </div>
+                        <div class="modal__content">
+                            <div class="modal_container">
+                                <div class="modal__content_wrapper">
+                                    <div class="modal__payment_left">
+                                        <div class="modal__payment_car-actions-wrapper">
+                                            <div class="modal__payment_car-actions">
+                                                <div class="modal__payment_car">
+                                                    <div class="modal__payment_car_title">
+                                                        BMW M5
+                                                        <div class="modal__payment_car_title_img">
+                                                            <img src="assets/images/icons/lightning.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal__payment_btns">
+                                                    <button>
+                                                        <img src="assets/images/icons/mark.svg" alt="">
+                                                    </button>
+                                                    <button>
+                                                        <img src="assets/images/icons/quill_share.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="modal__payment_tags">
+                                                <div class="modal__payment_tag">
+                                                    <a href="#no_deposit">
+                                                        No deposit
+                                                    </a>
+                                                </div>
+                                                <div class="modal__payment_tag">
+                                                    <a href="#like_to_like">
+                                                        Like to like <img src="/assets/images/icons/question.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal__payment_pickup">
+                                            <div class="modal__payment_pickup_top">
+                                                <div class="modal__payment_pickup_top_title">
+                                                    Pick up
+                                                </div>
+                                                <div class="modal__payment_pickup_top_desc">
+                                                    Tbilisi, <span>October 9</span>
+                                                </div>
+                                            </div>
+                                            <div class="modal__payment_pickup_imput">
+        
+                                                <div class="select">
+                                                    <select>
+                                                        <option value="pick_upplace">Pick-up place</option>
+                                                        <option value="Tbilisi">Tbilisi</option>
+                                                        <option value="Batumi">Batumi</option>
+                                                    </select>
+                                                </div>
+                                                <div class="modal__payment_pickup_imput_input">
+                                                    <input type="text" placeholder="Pick-up time">
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="modal__payment_pickup">
+                                            <div class="modal__payment_pickup_top">
+                                                <div class="modal__payment_pickup_top_title">
+                                                    Drop-0ff
+                                                </div>
+                                                <div class="modal__payment_pickup_top_desc">
+                                                    Tbilisi, <span>October 23</span>
+                                                </div>
+                                            </div>
+                                            <div class="modal__payment_pickup_imput">
+        
+                                                <div class="select">
+                                                    <select>
+                                                        <option value="drop_off_place">Drop-off place</option>
+                                                        <option value="Tbilisi">Tbilisi</option>
+                                                        <option value="Batumi">Batumi</option>
+                                                    </select>
+                                                </div>
+                                                <div class="modal__payment_pickup_imput_input">
+                                                    <input type="text" placeholder="Drop-off time">
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="modal__payment_driver">
+                                            <div class="modal__payment_driver_title">
+                                                Main driver’s details
+                                            </div>
+                                            <div class="modal__payment_driver_info">
+                                                <div class="modal__payment_driver_info_form_input">
+                                                    <input type="text" placeholder="Full name in Latin characters without accents *" required>
+                                                </div>
+                                                <div class="modal__payment_driver_info_form_input">
+                                                    <input type="text" placeholder="Date of birth *" required id="inputDate" maxlength="10">
+                                                </div>
+                                                <div class="modal__payment_driver_info_form_input">
+                                                    <input type="email" placeholder="Email *" required>
+                                                </div>
+        
+                                                <div class="modal__payment_driver_info_form_input phone">
+                                                    <div class="select">
+                                                        <select>
+                                                            <option value="ge">GE</option>
+                                                            <option value="en">EN</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="phone__item">
+                                                        <label>
+                                                            <img src="assets/images/modal/icons/phone_mask/close.svg" alt="Close">
+                                                        </label>
+                                                        <input type="text" placeholder="Contact phone number *" required id="inputPhoneGE" class="phone__item_input">
+        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="modal__payment_driver_please">
+                                                Please specify instant messengers on this phone number. We will try to use them first to contact you.
+                                            </p>
+                                            <div class="modal__payment_driver_media">
+                                                <div class="modal__payment_driver_media_item checkbox__item">
+                                                    <input type="checkbox"  id="telegram" class="checkbox__input">
+                                                    <label for="telegram" class="checkbox__label">
+                                                        Telegram
+                                                    </label>
+                                                </div>
+                                                <div class="modal__payment_driver_media_item checkbox__item">
+                                                    <input type="checkbox" id="whatsapp" class="checkbox__input">
+                                                    <label for="whatsapp" class="checkbox__label">
+                                                        WhatsApp
+                                                    </label>
+                                                </div>
+                                                <div class="modal__payment_driver_media_item checkbox__item">
+                                                    <input type="checkbox" id="viber" class="checkbox__input">
+                                                    <label for="viber" class="checkbox__label">
+                                                        Viber
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="modal__payment_driver_imput">
+                                                <textarea name="comment" id="comment" placeholder="Comment" ></textarea>
+                                            </div>
+                                            <div class="modal__payment_driver_media_bottom">
+                                                <div class="modal__payment_driver_media_item checkbox__item">
+                                                    <input type="checkbox" name="terms" id="terms" class="checkbox__input">
+                                                    <label for="terms" class="checkbox__label">
+                                                        I accept the <a href="#">Terms of use</a>
+                                                    </label>
+                                                </div>
+                                                <div class="modal__payment_driver_media_item checkbox__input">
+                                                    <input type="checkbox" name="privacy" id="privacy" class="checkbox__input">
+                                                    <label for="privacy" class="checkbox__label">
+                                                        I accept the <a href="#">Privacy policy</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal___payment_right">
+                                        <div class="modal___payment_host_wrapper">
+                                            <div class="modal___payment_host">
+                                                <img src="assets/images/hosts/giorgi.png" alt="" class="modal___payment_host_photo">
+                                                <div class="modal___payment_host_info">
+                                                    <p class="modal___payment_host_info_label">
+                                                        Hosted by
+                                                    </p>
+                                                    <div class="modal___payment_host_info_name-rate">
+                                                        <div class="modal___payment_host_info_name">
+                                                            Lasha labidze <img src="assets/images/icons/top_host.svg" alt="">
+                                                        </div>
+                                                        <div class="modal___payment_host_info_rate">
+                                                            <div class="modal___payment_host_info_stars">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                                <img src="assets/images/icons/star_black.svg" alt="">
+                                                            </div>
+                                                            <div class="modal___payment_host_info_reviews">
+                                                                (<span>23</span> reviews)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal___payment_arrow">
+                                                <a href="#" class="modal___payment_arrow_link">
+                                                    <img src="assets/images/modal/icons/host_arrow.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="modal___payment_imputs">
+                                            <div class="modal___payment_imputs_title">
+                                                Cost
+                                            </div>
+                                            <div class="modal___payment_imputs_days">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Rent for 14 days
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        350$
+                                                    </div>
+                                                </div>
+                                                <div class="modal___payment_imputs_bottom">
+                                                    Tbilisi, October 9 — 23
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_insurance">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Insurance
+                                                    </div>
+                                                </div>
+                                                <div class="modal___payment_imputs_bottom">
+                                                    <div>
+                                                        TPL
+                                                    </div>
+                                                    <div>
+                                                        Free of charge
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_delivery">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Delivery
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        0$
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_other">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Other
+                                                    </div>
+                                                </div>
+                                                <div class="modal___payment_imputs_bottom">
+                                                    <div>
+                                                        Deposit
+                                                    </div>
+                                                    <div>
+                                                        0$
+                                                    </div>
+                                                    <div>
+                                                        Free cancellation
+                                                    </div>
+                                                    <div>
+                                                        0$
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_total">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        Total
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        <b>350$</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="modal___payment_imputs_total_info">
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        <b>To pay now on the website</b> <br>
+                                                        <p>Visa, MasterCard</p>
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        70$
+                                                    </div>
+                                                </div>
+        
+                                                <div class="modal___payment_imputs_top">
+                                                    <div class="modal___payment_imputs_top_title">
+                                                        To pay when picking up the car <br>
+                                                        <p>Cash, Visa, MasterCard</p>
+                                                    </div>
+                                                    <div class="modal___payment_imputs_top_price">
+                                                        280$
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="modal___payment_imputs_btn" id="payNow">
+                                                Pay now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+        
+                     <div class="modal modal3" style="display: none;">
+                        <div class="modal_container">
+                            <div class="modal__top">
+                                <div class="modal__steps-close">
+                                    <div class="modal__steps">
+                                        <a class="modal__tab1">
+                                            Car info
+                                        </a>
+                                        <img src="assets/images/modal/icons/step_arrow.svg" alt="">
+                                        <a class="modal__tab modal__tab2">
+                                            Booking
+                                        </a>
+                                        <img src="assets/images/modal/icons/step_arrow.svg" alt="">
+                                        <a class="modal__tab active modal__tab3">
+                                            Payment
+                                        </a>
+                                    </div>
+                                    <div class="modal__close">
+                                        <a>
+                                            <img src="assets/images/modal/icons/close.svg" alt="Close">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__content">
+                            <div class="modal_container">
+                                <div class="modal__content_wrapper">
+                                    <div class="modal__payment_left">
+                                        <div class="modal__payment">
+                                            <div class="modal__payment_title">
+                                                Payment
+                                            </div>
+                                            <div class="modal__payment_cards">
+                                                <div class="modal__payment_cards_title">
+                                                    Card types
+                                                </div>
+                                                <div class="modal__payment_cards_items">
+                                                    <img src="assets/images/modal/payment_cards/1.svg" alt="VISA">
+                                                    <img src="assets/images/modal/payment_cards/2.svg" alt="Mastercard">
+                                                    <img src="assets/images/modal/payment_cards/3.svg" alt="">
+                                                    <img src="assets/images/modal/payment_cards/4.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <form  action="#" class="modal__payment_card_info" id="formPayment">
+                                                <div class="modal__payment_card_input">
+                                                    <input type="text" placeholder="Card number" required id="inputCreditNumber" maxlength="19" required>
+                                                </div>
+                                                <div class="modal__payment_card_input  d-flex">
+                                                    <input type="text" placeholder="Expiration date (MM / YY)" id="inputCreditDate" maxlength="7" required>
+                                                    <label class="input_credit_cvv_wrapper">
+                                                        <input type="password" placeholder="CVV" maxlength="3" id="inputCreditCVV" required>
+                                                    </label>
+                                                </div>
+                                                <div class="modal__payment_card_input">
+                                                    <input type="text" placeholder="Card holder name" id="inputCreditName" required>
+                                                </div>
+                                                <div class="modal__payment_card_remember">
+                                                    <p class="modal__payment_card_remember_label">
+                                                        Remember me
+                                                    </p>
+                                                    <div class="modal__payment_card_remember_input checkbox__item">
+                                                        <input type="checkbox" name="remember" id="remember" class="checkbox__input">
+                                                        <label for="remember" class="checkbox__label">
+                                                            Save my information for a faster checkout
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="modal__payment_card_secure">
+                                                    <div class="modal__payment_card_secure_text">
+                                                        <img src="assets/images/modal/icons/secure.svg" alt="">
+                                                        <p>Secure and encrypted</p>
+                                                    </div>
+                                                    <div class="modal__payment_card_secure_img">
+                                                        <img src="assets/images/modal/stripe/stripe.svg" alt="Stripe">
+                                                    </div>
+                                                </div>
+                                                <button class="modal__payment_card_button" id="paymentButton">
+                                                    Pay
+                                                </button>
+                                            </form>
+                                            <div class="modal__payment_card_bottom">
+                                                <div class="modal__payment_card_bottom_privacy">
+                                                    <a href="#">
+                                                        Privacy policy
+                                                    </a>
+                                                    <a href="#">
+                                                        Terms & conditions
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal___payment_right summary">
+                                        <div class="modal___payment_summary">
+                                            <div class="modal___payment_summary_car">
+                                                <div class="modal__payment_summary_car_img">
+                                                    <img src="assets/images/modal/summary/summary.png" alt="">
+                                                </div>
+                                                <div class="modal__payment_summary_car_info">
+                                                    <div class="modal__payment_summary_car_title">
+                                                        BMW M5 <img src="/assets/images/icons/lightning.svg" alt="">
+                                                    </div>
+                                                    <p class="modal__payment_summary_car_text">Tbilsi / sedan, automatic, 3.0L, 425 hp, 2017 year</p>
+                                                </div>
+        
+                                            </div>
+        
+                                            <p class="modal__payment_summary_info">
+                                                Oct 9 (Tbilisi) — Oct 23, 2024 (Tbilisi Airport) <br>
+                                                <span class="price">350$</span> for <span class="days">14</span> days
+                                            </p>
+        
+                                            <div class="modal__payment_summary_item">
+                                                <p>
+                                                    Insurance
+                                                </p>
+                                                <p>
+                                                    70$
+                                                </p>
+                                            </div>
+        
+                                            <div class="modal__payment_summary_item">
+                                                <p>
+                                                    Delivery
+                                                </p>
+                                                <p>
+                                                    40$
+                                                </p>
+                                            </div>
+        
+                                            <div class="modal__payment_summary_item">
+                                                <p>
+                                                    Services
+                                                </p>
+                                                <p>
+                                                    56$
+                                                </p>
+                                            </div>
+        
+                                            <div class="modal__payment_summary_item last">
+                                                <p>
+                                                    Other
+                                                </p>
+                                                <p>
+                                                    0$
+                                                </p>
+                                            </div>
+        
+                                            <div class="modal__payment_summary_bottom">
+                                                <div class="modal__payment_summary_bottom_now">
+                                                    <div class="modal__payment_summary_bottom_now_info">
+                                                        To pay now on the website
+                                                    </div>
+                                                    <div class="modal__payment_summary_bottom_now_price">
+                                                        70$
+                                                    </div>
+                                                </div>
+                                                <div class="modal__payment_summary_bottom_pickung">
+                                                    <div class="modal__payment_summary_bottom_pickung_info">
+                                                        To pay when picking up the car <br>
+                                                        <span>Cash, Visa, MasterCard</span>
+                                                    </div>
+                                                    <div class="modal__payment_summary_bottom_pickung_price">
+                                                        426$
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+        
+                 <div class="overlay" style="display: none;" id="transactionSuccessOverlay">
+                    <div class="modal_transaction success" id="transactionSuccess" >
+                        <a class="modal_transaction_close">
+                            <img src="assets/images/modal/icons/close.svg" alt="Close">
+                        </a>
+                        <div class="modal_transaction_container">
+                            <div class="modal_transaction_icon">
+                                <img src="assets/images/modal/transaction/success.svg" alt="" class="success_error">
+                                <img src="assets/images/modal/transaction/card.svg" alt="" class="card">
+                            </div>
+                            <div class="modal_transaction_info">
+                                <div class="modal_transaction_title">
+                                    Payment Successful!
+                                </div>
+                                <p class="modal_transaction_text">
+                                        Thank you! Your payment was processed successfully.
+                                        An order confirmation has been sent to <span>your email</span>.
+                                </p>
+                            </div>
+                            <div class="modal_transaction_btns">
+                                <a href="#" class="black">
+                                    View order details
+                                </a>
+                                <a href="#" id="transactionCloseBtn">
+                                    Close
+                                </a>
+                            </div>
+                            <div class="modal__bottom_links">
+                                <div class="modal__bottom_links_wrapper">
+                                    <a href="#">
+                                        Privacy policy
+                                    </a>
+                                    <a href="#">
+                                        Terms & conditions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+        
+        
+                 <div class="overlay" style="display: none;" id="transactionErrorOverlay">
+                    <div class="modal_transaction error">
+                        <a href="#" class="modal_transaction_close">
+                            <img src="assets/images/modal/icons/close.svg" alt="Close">
+                        </a>
+                        <div class="modal_transaction_container">
+                            <div class="modal_transaction_icon">
+                                <img src="assets/images/modal/transaction/error.svg" alt="" class="success_error">
+                                <img src="assets/images/modal/transaction/card.svg" alt="" class="card">
+                            </div>
+                            <div class="modal_transaction_info">
+                                <div class="modal_transaction_title">
+                                    Transaction Failed
+                                </div>
+                                <p class="modal_transaction_text">
+                                    We’re sorry, but your payment could not be processed or the transaction was canceled.
+                                    <br><br>
+                                    <span>Please try again</span> or contact our support team if the issue persists.
+                                </p>
+                            </div>
+                            <div class="modal_transaction_rejected_main">
+                                    <label for="" class="modal_transaction_rejected">
+                                        <div class="modal_transaction_rejected_label">
+                                            Rejected payment
+                                        </div>
+                                        <div class="modal_transaction_rejected_wrapper">
+                                            <div class="modal_transaction_rejected_input">
+                                                <input type="text" placeholder="11 October 2024  /  Credit card 70$">
+                                            </div>
+                                            <div class="modal_transaction_rejected_price">
+                                                70$
+                                            </div>
+        
+                                        </div>
+                                    </label>
+                                <div class="modal_transaction_btns">
+                                    <a href="#" class="black">
+                                        Try again
+                                    </a>
+                                    <a href="#">
+                                        Support
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal__bottom_links">
+                                <div class="modal__bottom_links_wrapper">
+                                    <a href="#">
+                                        Privacy policy
+                                    </a>
+                                    <a href="#">
+                                        Terms & conditions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+        </footer>
+    </div>
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
     <!-- Slick Slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Input Mask -->
+    <script src="https://unpkg.com/imask"></script>
+
 
     <script src="assets/js/app.js"></script>
 </body>
