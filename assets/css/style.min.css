@@ -1257,7 +1257,7 @@ form label {
 }
 
 .header_modal_list_airport {
-  background-image: url("assets/images/icons/airport_fill.svg");
+  background-image: url("../images/icons/airport_fill.svg");
 }
 
 #navMenuDates .header_modal_dates_top_number span {
