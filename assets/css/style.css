@@ -975,18 +975,53 @@ form label {
 .form__input {
     max-width: 424px;
     width: 100%;
+    position: relative;
 }
 
-.form__input:nth-child(1) input {
-    background-image: url("../images/header/form_icons/pick_up.svg");
+.form__input input {
+    background-size: 20px;
+    height: 64px !important;
 }
 
-.form__input:nth-child(2) input {
-    background-image: url("../images/header/form_icons/return.svg");
+.form__input .form__input-wrapper:before {
+    content: "";
+    display: inline-block;
+    width: 47px;
+    height: 48px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+    margin-top: 2px;
+    left: 8px;
+    background: var(--colors-bright-grey);
 }
 
-.form__input:nth-child(3) input {
-    background-image: url("../images/header/form_icons/rental_days.svg");
+.form__input .form__input-wrapper:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    left: 24px;
+    bottom: 22px;
+    background: url("../images/header/form_icons/location.svg") no-repeat;
+}
+
+.form__input:nth-child(3) .form__input-wrapper:after {
+    background: url("../images/header/form_icons/calendar.svg") no-repeat;
+}
+
+.form__input:nth-child(1) input:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    left: 24px;
+    top: 0;
+    background: #000;
 }
 
 .form__label {
@@ -1009,8 +1044,7 @@ form label {
 
 .form__input-wrapper input {
     width: 100%;
-    height: 68px;
-    line-height: 68px;
+    height: 64px;
     padding-left: 76px;
     background-repeat: no-repeat;
     background-position: 8px;
@@ -1223,18 +1257,201 @@ form label {
     z-index: 9999;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    opacity: 0;
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     height: 100vh;
     overflow: auto;
+    overflow-y: scroll;
     background: var(--colors-white);
 }
 
 .header_modal.active {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
+}
+
+.header_modal_wrapper.nav_menu_pickup_wrapper {
+    position: fixed;
+    width: 100%;
+    overflow-y: auto;
+}
+
+@media (min-width: 1280px) {
+    .header_modal {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        pointer-events: none;
+        bottom: 0;
+    }
+
+    .header_modal.active {
+        opacity: 1;
+        pointer-events: inherit;
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        overflow-y: scroll;
+    }
+
+    .header_modal_search.active label {
+        top: 32px !important;
+    }
+
+    .header_modal_search input {
+        width: 100% !important;
+        max-width: auto;
+    }
+
+    .header_modal_header {
+        display: none !important;
+    }
+
+    .header_modal {
+        max-height: 728px;
+    }
+
+    .header_modal_button {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .header_modal_dates_top {
+        display: none !important;
+    }
+
+    .nav_menu_mobile_info {
+        position: absolute;
+        bottom: 0;
+        display: none;
+    }
+
+    .header_modal_wrapper.nav_menu_pickup_wrapper {
+        position: relative;
+    }
+
+    .header_modal_wrapper.nav_menu_pickup_wrapper .calendar {
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 56px;
+    }
+
+    .header_modal_wrapper.nav_menu_pickup_wrapper .calendar_month_item {
+        margin-right: 32px;
+    }
+
+    .header_modal_wrapper.nav_menu_pickup_wrapper .calendar_month_item:last-child {
+        margin-right: 0;
+    }
+
+    #navMenuDates .header_modal_button {
+        padding-top: 32px !important;
+    }
+
+    #navMenuDates .nav_menu_mobile_info {
+        display: block;
+    }
+
+    #navMenuDates {
+        max-height: 520px;
+        overflow-y: hidden;
+    }
+
+    #navMenuDates .calendar {
+        margin-top: 0;
+    }
+
+    #navMenuDates .header_modal_button {
+        padding-top: 16px !important;
+    }
+
+    #navMenuDates .header_modal_content.nav_menu_return_content {
+        padding-top: 0;
+    }
+
+    .header_modal.nav_menu_dates {
+        min-width: 740px;
+        width: 100%;
+    }
+
+    #navMenuFilters {
+        max-width: 740px;
+        right: 0;
+        margin-left: auto;
+        top: 200px;
+        right: 120px;
+        opacity: 0;
+    }
+
+    #navMenuFilters.active {
+        opacity: 1;
+    }
+
+    #navMenuFilters .header_modal_inputs {
+        display: none;
+    }
+
+    .filter_radio__label:before {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top: -3px;
+    }
+
+    .filter_radio__label:after {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top: -3px;
+    }
+
+    .checkbox__label:before {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .header_modal_engine_inputs {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .header_modal_engine_inputs .header_modal_transmission_input {
+        width: auto !important;
+        margin-right: 32px;
+        max-width: auto !important;
+    }
+
+    .header_modal_top_hosts_inputs .header_modal_transmission_input {
+        width: auto !important;
+    }
+
+    .header_modal_top_hosts_inputs .header_modal_transmission_input p {
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .header_modal_top_hosts_inputs .header_modal_transmission_input p sup {
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+
+    #navMenuFilters {
+        -webkit-transform: translateY(0) !important;
+        transform: translateY(0) !important;
+    }
+
+    #navMenuFilters .header_modal_brand {
+        margin-top: 0;
+    }
+
+    #navMenuFilters .header_modal_content.nav_menu_return_content {
+        padding-top: 0;
+    }
 }
 
 .header_modal_wrapper {
@@ -1365,7 +1582,7 @@ form label {
 }
 
 .header_modal_list_airport {
-    background-image: url("assets/images/icons/airport_fill.svg");
+    background-image: url("../images/icons/airport_fill.svg");
 }
 
 #navMenuDates .header_modal_dates_top_number span {

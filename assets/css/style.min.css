@@ -506,6 +506,7 @@ body.lb-disable-scrolling {
   --primary-color: #31a0fe;
   --secondary-color-2: #ec5c2e;
   --secondary-color-1: #23856d;
+  --colors-green: #209866;
 }
 
 /* width */
@@ -937,18 +938,49 @@ form label {
 .form__input {
   max-width: 424px;
   width: 100%;
+  position: relative;
+}
+.form__input input {
+  background-size: 20px;
+  height: 64px !important;
+}
+.form__input .form__input-wrapper:before {
+  content: "";
+  display: inline-block;
+  width: 47px;
+  height: 48px;
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-25%);
+  margin-top: 2px;
+  left: 8px;
+  background: var(--colors-bright-grey);
+}
+.form__input .form__input-wrapper:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  left: 24px;
+  bottom: 22px;
+  background: url("../images/header/form_icons/location.svg") no-repeat;
 }
 
-.form__input:nth-child(1) input {
-  background-image: url("../images/header/form_icons/pick_up.svg");
+.form__input:nth-child(3) .form__input-wrapper:after {
+  background: url("../images/header/form_icons/calendar.svg") no-repeat;
 }
 
-.form__input:nth-child(2) input {
-  background-image: url("../images/header/form_icons/return.svg");
-}
-
-.form__input:nth-child(3) input {
-  background-image: url("../images/header/form_icons/rental_days.svg");
+.form__input:nth-child(1) input:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  left: 24px;
+  top: 0;
+  background: #000;
 }
 
 .form__label {
@@ -967,8 +999,7 @@ form label {
 
 .form__input-wrapper input {
   width: 100%;
-  height: 68px;
-  line-height: 68px;
+  height: 64px;
   padding-left: 76px;
   background-repeat: no-repeat;
   background-position: 8px;
@@ -1128,18 +1159,206 @@ form label {
   transition: all 0.3s ease;
   z-index: 9999;
   transform: translateX(100%);
+  opacity: 0;
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   height: 100vh;
   overflow: auto;
+  overflow-y: scroll;
   background: var(--colors-white);
 }
 .header_modal.active {
   transform: translateX(0);
+  opacity: 1;
 }
 
+.header_modal_wrapper.nav_menu_pickup_wrapper {
+  position: fixed;
+  width: 100%;
+  overflow-y: auto;
+}
+
+@media (min-width: 1280px) {
+  .header_modal {
+    transform: translateX(0);
+    pointer-events: none;
+    bottom: 0;
+  }
+  .header_modal.active {
+    opacity: 1;
+    pointer-events: inherit;
+    transform: translateY(100px);
+    overflow-y: scroll;
+  }
+  .header_modal_search.active label {
+    top: 32px !important;
+  }
+  .header_modal_search input {
+    width: 100% !important;
+    max-width: auto;
+  }
+  .header_modal_header {
+    display: none !important;
+  }
+  .header_modal {
+    max-height: 728px;
+  }
+  .header_modal_button {
+    display: flex;
+    justify-content: center;
+  }
+  .header_modal_dates_top {
+    display: none !important;
+  }
+  .nav_menu_mobile_info {
+    position: absolute;
+    bottom: 0;
+    display: none;
+  }
+  .header_modal_wrapper.nav_menu_pickup_wrapper {
+    position: relative;
+  }
+  .header_modal_wrapper.nav_menu_pickup_wrapper .calendar {
+    display: flex;
+    padding-bottom: 56px;
+  }
+  .header_modal_wrapper.nav_menu_pickup_wrapper .calendar_month_item {
+    margin-right: 32px;
+  }
+  .header_modal_wrapper.nav_menu_pickup_wrapper .calendar_month_item:last-child {
+    margin-right: 0;
+  }
+  #navMenuDates .header_modal_button {
+    padding-top: 32px !important;
+  }
+  #navMenuDates .nav_menu_mobile_info {
+    display: block;
+  }
+  #navMenuDates {
+    max-height: 520px;
+    overflow-y: hidden;
+  }
+  #navMenuDates .calendar {
+    margin-top: 0;
+  }
+  #navMenuDates .header_modal_button {
+    padding-top: 16px !important;
+  }
+  #navMenuDates .header_modal_content.nav_menu_return_content {
+    padding-top: 0;
+  }
+  .header_modal.nav_menu_dates {
+    min-width: 740px;
+    width: 100%;
+  }
+  #navMenuFilters {
+    max-width: 740px;
+    right: 0;
+    margin-left: auto;
+    top: 200px;
+    right: 120px;
+    opacity: 0;
+  }
+  #navMenuFilters.active {
+    opacity: 1;
+  }
+  #navMenuFilters .header_modal_inputs {
+    display: none;
+  }
+  .filter_radio__label:before {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -3px;
+  }
+  .filter_radio__label:after {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -3px;
+  }
+  .checkbox__label:before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header_modal_engine_inputs {
+    display: flex;
+  }
+  .header_modal_engine_inputs .header_modal_transmission_input {
+    width: auto !important;
+    margin-right: 32px;
+    max-width: auto !important;
+  }
+  .header_modal_top_hosts_inputs .header_modal_transmission_input {
+    width: auto !important;
+  }
+  .header_modal_top_hosts_inputs .header_modal_transmission_input p {
+    align-items: flex-start;
+  }
+  .header_modal_top_hosts_inputs .header_modal_transmission_input p sup {
+    margin-left: -30px;
+    margin-top: 10px;
+  }
+  #navMenuFilters .header_modal_brand {
+    margin-top: 0;
+  }
+  #navMenuFilters .header_modal_content.nav_menu_return_content {
+    padding-top: 0;
+  }
+  #navMenuFilters .header_modal_brand_title {
+    line-height: 1;
+  }
+  #navMenuFilters .header_modal_price {
+    margin-top: 32px !important;
+  }
+  #navMenuFilters .header_modal_price_touchbar {
+    line-height: 32px;
+    margin-top: 16px;
+  }
+  #navMenuFilters .header_modal_price_main {
+    margin-top: 16px;
+  }
+  #navMenuFilters .header_modal_brand_input_reset {
+    width: 100%;
+  }
+  #navMenuFilters .header_modal_top_hosts_inputs .header_modal_transmission_input {
+    margin-bottom: 0;
+    width: 33% !important;
+  }
+  #navMenuFilters .header_modal_top_hosts_inputs {
+    max-width: 577px;
+  }
+  #navMenuFilters .header_modal_host_rate p {
+    color: var(--colors-brand-black);
+  }
+  #navMenuFilters .header_modal_host_rate p sup {
+    left: 30px;
+  }
+  #navMenuFilters .header_modal_top_hosts_inputs .header_modal_transmission_input img {
+    margin-right: 0;
+  }
+  #navMenuFilters .filter_title {
+    line-height: 1;
+  }
+  #navMenuFilters .filter_radio {
+    line-height: 1;
+  }
+  #navMenuFilters .checkbox__item {
+    line-height: 1;
+  }
+  #navMenuFilters .header_modal_price_top p {
+    line-height: 1;
+  }
+  #navMenuFilters .header_modal_price {
+    margin-top: 16px;
+  }
+  #navMenuFilters .header_modal_engine_inputs {
+    line-height: 1;
+  }
+  #navMenuFilters .header_modal_engine_inputs .header_modal_transmission_input {
+    margin-bottom: 16px;
+  }
+}
 .header_modal_wrapper {
   padding: 16px 16px 40px 16px;
 }
@@ -1830,13 +2049,13 @@ form label {
     padding-bottom: 0;
   }
   .form__input.mobile.form__input_1 input {
-    background-image: url("../images/header/form_icons/pickup_and_returns.svg") !important;
+    background: none;
   }
   .form__input.mobile.form__input_2 {
     margin-bottom: 0;
   }
   .form__input.mobile.form__input_2 input {
-    background-image: url("../images/header/form_icons/rental_days_mobile.svg");
+    background: none;
   }
   .form__filter {
     padding-left: 0;
@@ -1866,6 +2085,36 @@ form label {
   .header__form.form.mobile .form__input.form__input_2 {
     max-width: 84%;
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header .form__input {
+    height: 48px !important;
+    background: var(--colors-bright-grey);
+  }
+  .header .form__input input {
+    height: 48px !important;
+  }
+  .form__input .form__input-wrapper:before {
+    display: none !important;
+  }
+  .form__input .form__input-wrapper:after {
+    bottom: 13px;
+  }
+  .header .form__input.mobile.form__input_1 {
+    width: auto;
+    width: 100%;
+  }
+  .header__search {
+    position: static;
+  }
+  .header_modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header__form {
+    position: static;
   }
 }
 .hero {
@@ -3978,7 +4227,8 @@ p.explore__info-bottom {
 }
 
 .modal_container {
-  max-width: 1136px;
+  max-width: 1168px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -4291,6 +4541,7 @@ p.explore__info-bottom {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .modal__insurance_form_item_top_left {
@@ -4347,8 +4598,8 @@ p.explore__info-bottom {
   background: var(--colors-white);
   border-radius: 100%;
   position: absolute;
-  top: 34.5px;
-  right: 34.5px;
+  top: 35px;
+  right: 35px;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -5078,18 +5329,38 @@ p.explore__info-bottom {
   font-size: 16px;
 }
 
+.modal {
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
 .overlay,
 .modal__wrapper {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: translateY(-100%);
   z-index: 9999999;
   position: fixed;
   left: 0;
   width: 100%;
   height: 100%;
   display: none;
+  transition: all 0.3s ease;
+}
+
+.cost {
+  position: sticky;
+  top: 0;
+}
+
+.modal__wrapper.active {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal__wrapper.active .modal {
+  transform: translateY(0);
+  transition: all 0.3s ease;
 }
 
 .modal__wrapper {
@@ -5239,4 +5510,162 @@ p.explore__info-bottom {
   font-weight: 700;
   font-size: 14px;
   color: var(--colors-brand-red);
+}
+
+.modal__equipment_form_item_additional .number input {
+  background: none !important;
+  border: none !important;
+  appearance: inherit !important;
+  padding: 0;
+  height: auto;
+  top: 2px;
+}
+
+.modal___payment_host_wrapper.mobile {
+  display: none;
+}
+
+.modal___payment_imputs_btn.mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .modal__payment_left > div {
+    padding-right: 0;
+  }
+  .modal__wrapper .modal {
+    max-height: 844px;
+    overflow-y: auto;
+  }
+  .modal__wrapper .modal .modal__steps a {
+    font-size: 15px;
+  }
+  .modal__wrapper .modal .modal__close {
+    top: 16px;
+    right: 16px;
+    position: absolute;
+  }
+  .modal_container.modal__gallery_wrapper {
+    padding: 0;
+  }
+  .modal__content_wrapper {
+    flex-direction: column;
+  }
+  .modal___payment_right {
+    padding-top: 0;
+    border: 0;
+    padding-left: 0;
+  }
+  .modal___payment_right .modal___payment_host_wrapper {
+    display: none;
+  }
+  .modal___payment_imputs_btn {
+    display: none;
+  }
+  .modal___payment_imputs_btn.mobile {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    align-items: center;
+    text-align: left;
+    color: var(--colors-white);
+    text-transform: none;
+  }
+  .modal___payment_imputs_btn.mobile .modal___payment_imputs_btn_left {
+    height: 28px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal___payment_imputs_btn.mobile b {
+    font-weight: 600;
+  }
+  .modal___payment_imputs_btn.mobile .modal___payment_imputs_btn_right {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--colors-white);
+  }
+  .modal___payment_host_wrapper.mobile {
+    display: flex;
+    border-radius: 10px;
+    padding: 16px;
+    background: var(--colors-bright-grey);
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .modal__equipment_form_item_additional_item {
+    font-size: 15px;
+  }
+  .select {
+    width: 100%;
+  }
+  .select select {
+    width: 100%;
+  }
+  .modal {
+    font-size: 15px;
+  }
+  .modal .modal___payment_imputs_btn {
+    display: none;
+  }
+  .modal .modal___payment_imputs_btn.mobile {
+    display: flex;
+  }
+  .modal #paymentButton {
+    display: none;
+  }
+  .modal #PayNowMobile.modal___payment_imputs_btn.mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 16px;
+  }
+  .modal .modal__payment_driver_media_item {
+    font-size: 15px;
+  }
+  .modal .modal__payment_driver_media_item label {
+    padding-left: 36px;
+  }
+  .modal .modal__payment_driver_media_item label:before {
+    width: 20px;
+    height: 20px;
+  }
+  .modal .modal__payment_driver_imput textarea {
+    width: 100%;
+  }
+  .modal__payment_cards_items img {
+    width: 32px;
+  }
+  .modal__payment_card_remember_input {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+.modal__payment_pickup_imput_showmap {
+  display: none;
+}
+.modal__payment_pickup_imput_showmap a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: var(--colors-green);
+  margin-top: 12px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 1px solid var(--colors-green);
+  padding-bottom: 4px;
+}
+.modal__payment_pickup_imput_showmap input[value] {
+  font-size: 18px;
+}
+
+.modal__payment_pickup_imput_showmap.active {
+  display: block;
 }
