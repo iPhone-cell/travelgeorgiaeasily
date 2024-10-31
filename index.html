@@ -64,18 +64,52 @@
         
                     </div>
                     <div class="header__right">
-                        <a class="header__login login" href="#">Log In</a>
-                        <a class="header__login register" href="#">Register</a>
-                        <a class="header__login lang" href="#">En <span>| Usd</span></a>
+                        <a class="header__login login" href="#" id="headerLogin">Log In</a>
+                        <a class="header__login register" href="#" id="headerRegister">Register</a>
+                        <a class="header__login lang" href="#" id="langLink">En <span>| Usd</span>
+                            <div class="language__wrapper" id="lang">
+                                <div class="language">
+                                    <a href="#" class="language_item">
+                                        <img src="assets/images/icons/english.svg" alt="">
+                                        <span>English</span>
+                                    </a>
+                                    <a href="#" class="language_item">
+                                        <img src="assets/images/icons/russian.svg" alt="">
+                                        <span>Русский</span>
+                                    </a>
+                                    <a href="#" class="language_item">
+                                        <img src="assets/images/icons/georgian.svg" alt="">
+                                        <span>ქართული</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+        
                         <a href="#" class="header__wishlist">
                             <img src="assets/images/icons/wishlist.svg" alt="Wishlist">
                         </a>
                     </div>
                     <div class="header__right mobile">
-                        <a class="header__login lang" href="#">En
+                        <a class="header__login lang" href="#" id="langLinkMobile">En
                             <span>
                                 <img src="assets/images/icons/plus.svg" alt="">
                             </span>
+                            <div class="language__wrapper" id="langMobile">
+                                <div class="language">
+                                    <a href="#" class="language_item">
+                                        <img src="assets/images/icons/english.svg" alt="">
+                                        <span>English</span>
+                                    </a>
+                                    <a href="#" class="language_item">
+                                        <img src="assets/images/icons/russian.svg" alt="">
+                                        <span>Русский</span>
+                                    </a>
+                                    <a href="#" class="language_item">
+                                        <img src="assets/images/icons/georgian.svg" alt="">
+                                        <span>ქართული</span>
+                                    </a>
+                                </div>
+                            </div>
                         </a>
                         <a href="#" class="header__wishlist">
                             <img src="assets/images/icons/wishlist.svg" alt="Wishlist">
@@ -144,10 +178,10 @@
                         </nav>
                         <div class="nav_menu_mobile_bottom">
                             <div class="nav_menu_mobile_login-reg">
-                                <a href="#">
+                                <a href="#" id="headerLoginMobile">
                                     Login
                                 </a>
-                                <a href="#">
+                                <a href="#" id="headerRegisterMobile">
                                     Register
                                 </a>
                             </div>
@@ -173,19 +207,19 @@
                             <div class="form__input-wrapper">
                                 <input type="text" placeholder="Choose city/airport" id="headerPickupDesc">
                             </div>
-                            <div class="header_modal nav_menu_pickup" id="navMenuPickup">
+                            <div class="header_modal nav_menu_pickup" id="navMenuPickupDesc">
                                 <div class="header_modal_wrapper nav_menu_pickup_wrapper">
                                     <div class="header_modal_header nav_menu_pickup_header">
                                         <div class="nav_menu_pickup_header_title">
                                             Pick-up
                                         </div>
-                                        <button class="nav_menu_pickup_header_close" id="headerPickupClose">
+                                        <button class="nav_menu_pickup_header_close" id="headerPickupCloseDesc">
                                             <img src="assets/images/icons/close_red.svg" alt="Close">
                                         </button>
                                     </div>
         
                                     <div class="header_modal_content nav_menu_pickup_content">
-                                        <div class="header_modal_search  nav_menu_pickup_content_search">
+                                        <div class="header_modal_search  nav_menu_pickup_content_search" id="headermodalSearchPickupDesc">
                                             <input type="search" placeholder="Search" id="modalSearch">
                                             <label for="modalSearch"></label>
                                         </div>
@@ -304,12 +338,12 @@
                                         </button>
                                     </div>
                                     <div class="header_modal_content nav_menu_return_content">
-                                        <div class="header_modal_search nav_menu_pickup_content_seacrh">
+                                        <div class="header_modal_search nav_menu_pickup_content_seacrh" id="headermodalSearchReturnDesc">
                                             <input type="search" placeholder="Search" id="modalSearch">
                                             <label for="modalSearch"></label>
                                         </div>
                                         <div class="header_modal_button">
-                                            <a href="#" id="headerModalButton">
+                                            <a href="#" id="headerModalButtonDesc">
                                                 Pick the same place
                                             </a>
                                         </div>
@@ -419,7 +453,7 @@
                                 <input type="text" placeholder="Trip dates" id="headerTirpDatesDesc">
                             </div>
         
-                            <div class="header_modal nav_menu_dates" id="navMenuDates">
+                            <div class="header_modal nav_menu_dates" id="navMenuDatesDesc">
                                 <div class="header_modal_wrapper nav_menu_pickup_wrapper">
                                     <div class="header_modal_header nav_menu_pickup_header">
                                         <div class="nav_menu_pickup_header_title">
@@ -558,7 +592,7 @@
         
                                 </div>
                                 <div class="header_modal_button">
-                                    <a href="#" id="headerModalDatesButton">
+                                    <a href="#" id="headerModalDatesButtonDesc">
                                         Pick the same place
                                     </a>
                                 </div>
@@ -620,41 +654,41 @@
                                                 Car brand
                                             </div>
                                             <div class="header_modal_brand_inputs">
-                                                <div class="header_modal_brand_input" id="headerModalBrand">
+                                                <div class="header_modal_brand_input" id="headerModalBrandDesc">
                                                     Any
                                                    <div class="header_modal_brand_input_right">
                                                         (<span>1</span>)
                                                         <img src="assets/images/icons/arrow_select.svg" alt="">
                                                    </div>
                                                 </div>
-                                                <div class="header_modal_brand_input_add" id="headerModalBrandInputAdd">
-                                                    <button class="header_modal_brand_input_reset" id="headerModalBrandReset">
+                                                <div class="header_modal_brand_input_add" id="headerModalBrandInputAddDesc">
+                                                    <button type="button" class="header_modal_brand_input_reset" id="headerModalBrandResetDesc">
                                                         <img src="assets/images/icons/close_grey.svg" alt="">
                                                         <span>Reset</span>
                                                     </button>
                                                     <div class="header_modal_brand_input_items">
                                                         <div class="header_modal_brand_input_item checkbox__item">
-                                                            <input type="checkbox" id="AddBrandBMW" name="addBrand" class="checkbox__input">
+                                                            <input type="checkbox" id="AddBrandBMW" class="checkbox__input">
                                                             <label for="AddBrandBMW" class="checkbox__label">BMW</label>
                                                         </div>
                                                         <div class="header_modal_brand_input_item checkbox__item">
-                                                            <input type="checkbox" id="AddBrandChangan" name="addBrand" class="checkbox__input">
+                                                            <input type="checkbox" id="AddBrandChangan"  class="checkbox__input">
                                                             <label for="AddBrandChangan" class="checkbox__label">Changan</label>
                                                         </div>
                                                         <div class="header_modal_brand_input_item checkbox__item">
-                                                            <input type="checkbox" id="AddBrandChery" name="addBrand" class="checkbox__input">
+                                                            <input type="checkbox" id="AddBrandChery" class="checkbox__input">
                                                             <label for="AddBrandChery" class="checkbox__label">Chery</label>
                                                         </div>
                                                         <div class="header_modal_brand_input_item checkbox__item">
-                                                            <input type="checkbox" id="AddBrandChevrolet" name="addBrand" class="checkbox__input">
+                                                            <input type="checkbox" id="AddBrandChevrolet"  class="checkbox__input">
                                                             <label for="AddBrandChevrolet" class="checkbox__label">Chevrolet</label>
                                                         </div>
                                                         <div class="header_modal_brand_input_item checkbox__item">
-                                                            <input type="checkbox" id="AddBrandFord" name="addBrand" class="checkbox__input">
+                                                            <input type="checkbox" id="AddBrandFord"  class="checkbox__input">
                                                             <label for="AddBrandFord" class="checkbox__label">Ford</label>
                                                         </div>
                                                         <div class="header_modal_brand_input_item checkbox__item">
-                                                            <input type="checkbox" id="AddBrandHyundai" name="addBrand" class="checkbox__input">
+                                                            <input type="checkbox" id="AddBrandHyundai"  class="checkbox__input">
                                                             <label for="AddBrandHyundai" class="checkbox__label">Hyundai</label>
                                                         </div>
                                                     </div>
@@ -690,15 +724,15 @@
                                                 </div>
                                                 <div class="header_modal_transmission_inputs">
                                                     <div class="header_modal_transmission_input filter_radio">
-                                                        <input type="radio" id="radioAny" name="transmission" checked class="filter_radio__input">
+                                                        <input type="radio" id="radioAny"  checked class="filter_radio__input">
                                                         <label for="radioAny" class="filter_radio__label">Any</label>
                                                     </div>
                                                     <div class="header_modal_transmission_input filter_radio">
-                                                        <input type="radio" id="radioAutomatic" name="transmission" class="filter_radio__input">
+                                                        <input type="radio" id="radioAutomatic"  class="filter_radio__input">
                                                         <label for="radioAutomatic" class="filter_radio__label">Automatic</label>
                                                     </div>
                                                     <div class="header_modal_transmission_input filter_radio">
-                                                        <input type="radio" id="radioManual" name="transmission" class="filter_radio__input">
+                                                        <input type="radio" id="radioManual"  class="filter_radio__input">
                                                         <label for="radioManual" class="filter_radio__label">Manual</label>
                                                     </div>
                                                 </div>
@@ -958,7 +992,7 @@
                                 <input type="text" placeholder="21 Oct — 7 Nov, 2024" id="headerTirpDatesMobile">
                             </div>
                         </div>
-                        <div class="form__filter" id="formFilter">
+                        <div class="form__filter" id="formFilterMobile">
                             <div>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 4H2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
@@ -970,19 +1004,19 @@
                                     </svg>
                             </div>
                         </div>
-                        <div class="header_modal nav_menu_pickup" id="navMenuPickupMobile">
+                        <div class="header_modal nav_menu_pickup" id="navMenuPickupReturnMobile">
                             <div class="header_modal_wrapper nav_menu_pickup_wrapper">
                                 <div class="header_modal_header nav_menu_pickup_header">
                                     <div class="nav_menu_pickup_header_title">
                                         Pick-up
                                     </div>
-                                    <button class="nav_menu_pickup_header_close" id="headerPickupCloseMobile">
+                                    <button class="nav_menu_pickup_header_close" id="headerPickupReturnCloseMobile">
                                         <img src="assets/images/icons/close_red.svg" alt="Close">
                                     </button>
                                 </div>
         
                                 <div class="header_modal_content nav_menu_pickup_content">
-                                    <div class="header_modal_search  nav_menu_pickup_content_search">
+                                    <div class="header_modal_search  nav_menu_pickup_content_search" id="headerPickupReturnSeacrhMobile">
                                         <input type="search" placeholder="Search" id="modalSearch">
                                         <label for="modalSearch"></label>
                                     </div>
@@ -1088,17 +1122,17 @@
                                     <div class="nav_menu_pickup_header_title">
                                         Return
                                     </div>
-                                    <button class="nav_menu_pickup_header_close" id="headerReturnClose">
+                                    <button class="nav_menu_pickup_header_close" id="headerReturnCloseMobile">
                                         <img src="assets/images/icons/close_red.svg" alt="Close">
                                     </button>
                                 </div>
                                 <div class="header_modal_content nav_menu_return_content">
-                                    <div class="header_modal_search nav_menu_pickup_content_seacrh">
+                                    <div class="header_modal_search nav_menu_pickup_content_seacrh" id="headerReturnSeacrhMobile">
                                         <input type="search" placeholder="Search" id="modalSearch">
                                         <label for="modalSearch"></label>
                                     </div>
                                     <div class="header_modal_button">
-                                        <a href="#" id="headerModalButton">
+                                        <a href="#" id="headerReturnModalButtonMobile">
                                             Pick the same place
                                         </a>
                                     </div>
@@ -1194,10 +1228,692 @@
                                 </div>
                             </div>
                         </div>
+        
+                        <div class="header_modal nav_menu_dates" id="navMenuDatesMobile">
+                            <div class="header_modal_wrapper nav_menu_pickup_wrapper">
+                                <div class="header_modal_header nav_menu_pickup_header">
+                                    <div class="nav_menu_pickup_header_title">
+                                        Trip Dates
+                                    </div>
+                                    <button class="nav_menu_pickup_header_close" id="headerDatesCloseMobile">
+                                        <img src="assets/images/icons/close_red.svg" alt="Close">
+                                    </button>
+                                </div>
+                                <div class="header_modal_content nav_menu_return_content">
+                                    <div class="header_modal_dates_top">
+                                        <div class="header_modal_dates_top_period">
+                                            24 Oct — 7 Nov, 2024
+                                        </div>
+                                        <div class="header_modal_dates_top_number">
+                                            <span>14</span> days
+                                        </div>
+                                    </div>
+        
+                                    <div class="nav_menu_mobile_info">
+                                        You can specify the <a href="#">exact place</a> and time of pick-up and return of the car when placing your order.
+                                    </div>
+        
+                                    <div class="calendar">
+                                        <div class="calendar_month_item">
+                                            <div class="month">
+                                                <ul>
+                                                  <li>October <span>2024</span></li>
+                                                </ul>
+                                              </div>
+        
+                                              <ul class="weekdays">
+                                                <li>Mo</li>
+                                                <li>Tu</li>
+                                                <li>We</li>
+                                                <li>Th</li>
+                                                <li>Fr</li>
+                                                <li>Sa</li>
+                                                <li>Su</li>
+                                              </ul>
+        
+                                              <ul class="days">
+                                                <li class="none"></li>
+                                                <li class="disabled"><span >1</span></li>
+                                                <li class="disabled"><span>2</span></li>
+                                                <li class="disabled"><span>4</span></li>
+                                                <li class="disabled"><span>5</span></li>
+                                                <li class="disabled"><span>6</span></li>
+                                                <li class="disabled"><span>7</span></li>
+                                                <li class="disabled"><span>8</span></li>
+                                                <li class="disabled"><span>9</span></li>
+                                                <li class="disabled"><span>10</span></li>
+                                                <li class="disabled"><span>11</span></li>
+                                                <li class="disabled"><span>12</span></li>
+                                                <li class="disabled"><span>13</span></li>
+                                                <li class="disabled"><span>14</span></li>
+                                                <li class="disabled"><span>15</span></li>
+                                                <li class="disabled"><span>16</span></li>
+                                                <li class="disabled"><span>17</span></li>
+                                                <li class="disabled"><span>18</span></li>
+                                                <li class="disabled"><span>19</span></li>
+                                                <li class="disabled"><span>20</span></li>
+                                                <li class="disabled"><span>21</span></li>
+                                                <li class="disabled"><span>22</span></li>
+                                                <li class="disabled"><span>23</span></li>
+        
+                                                <li class="active"><span>24</span></li>
+        
+                                                <li><span>25</span></li>
+                                                <li><span>26</span></li>
+                                                <li><span>27</span></li>
+                                                <li><span>28</span></li>
+                                                <li><span>29</span></li>
+                                                <li><span>30</span></li>
+                                                <li><span>31</span></li>
+                                              </ul>
+                                        </div>
+        
+                                        <div class="calendar_month_item">
+                                            <div class="month">
+                                                <ul>
+                                                  <li>November <span>2024</span></li>
+                                                </ul>
+                                              </div>
+        
+                                              <ul class="weekdays">
+                                                <li>Mo</li>
+                                                <li>Tu</li>
+                                                <li>We</li>
+                                                <li>Th</li>
+                                                <li>Fr</li>
+                                                <li>Sa</li>
+                                                <li>Su</li>
+                                              </ul>
+        
+                                              <ul class="days">
+                                                <li class="none"></li>
+                                                <li class="none"></li>
+                                                <li class="none"></li>
+                                                <li class="none"></li>
+                                                <li><span >1</span></li>
+                                                <li><span>2</span></li>
+                                                <li><span>4</span></li>
+                                                <li><span>5</span></li>
+                                                <li><span>6</span></li>
+                                                <li><span>7</span></li>
+                                                <li><span>8</span></li>
+                                                <li><span>9</span></li>
+                                                <li><span>10</span></li>
+                                                <li><span>11</span></li>
+                                                <li><span>12</span></li>
+                                                <li><span>13</span></li>
+                                                <li><span>14</span></li>
+                                                <li><span>15</span></li>
+                                                <li><span>16</span></li>
+                                                <li><span>17</span></li>
+                                                <li><span>18</span></li>
+                                                <li><span>19</span></li>
+                                                <li><span>20</span></li>
+                                                <li><span>21</span></li>
+                                                <li><span>22</span></li>
+                                                <li><span>23</span></li>
+        
+                                                <li><span>24</span></li>
+        
+                                                <li><span>25</span></li>
+                                                <li><span>26</span></li>
+                                                <li><span>27</span></li>
+                                                <li><span>28</span></li>
+                                                <li><span>29</span></li>
+                                                <li><span>30</span></li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <div class="header_modal_button">
+                                <a href="#" id="headerModalDatesButtonMobile">
+                                    Pick the same place
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="header_modal nav_menu_filters" id="navMenuFiltersMobile">
+                            <div class="header_modal_wrapper nav_menu_pickup_wrapper">
+                                <div class="header_modal_header nav_menu_pickup_header">
+                                    <div class="nav_menu_pickup_header_title">
+                                        Filters
+                                    </div>
+                                    <button class="nav_menu_pickup_header_close" id="headerFiltersCloseMobile">
+                                        <img src="assets/images/icons/close_red.svg" alt="Close">
+                                    </button>
+                                </div>
+                                <div class="header_modal_content nav_menu_return_content">
+                                    <div class="header_modal_inputs">
+                                        <form class="header__form form mobile">
+                                            <div class="form__input mobile form__input_1">
+                                                <div class="form__input-wrapper">
+                                                    <input type="text" placeholder="Pick-up & return">
+                                                </div>
+                                            </div>
+        
+                                            <div class="form__input mobile form__input_2">
+                                                <div class="form__input-wrapper">
+                                                    <input type="text" placeholder="21 Oct — 7 Nov, 2024">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+        
+                                    <div class="header_modal_brand">
+                                        <div class="header_modal_brand_title filter_title">
+                                            Car brand
+                                        </div>
+                                        <div class="header_modal_brand_inputs">
+                                            <div class="header_modal_brand_input" id="headerModalBrandMobile">
+                                                Any
+                                               <div class="header_modal_brand_input_right">
+                                                    (<span>1</span>)
+                                                    <img src="assets/images/icons/arrow_select.svg" alt="">
+                                               </div>
+                                            </div>
+                                            <div class="header_modal_brand_input_add" id="headerModalBrandInputAddMobile">
+                                                <button type="button" class="header_modal_brand_input_reset" id="headerModalBrandResetMobile">
+                                                    <img src="assets/images/icons/close_grey.svg" alt="">
+                                                    <span>Reset</span>
+                                                </button>
+                                                <div class="header_modal_brand_input_items">
+                                                    <div class="header_modal_brand_input_item checkbox__item">
+                                                        <input type="checkbox" id="AddBrandBMWMobile" name="addBrand" class="checkbox__input">
+                                                        <label for="AddBrandBMWMobile" class="checkbox__label">BMW</label>
+                                                    </div>
+                                                    <div class="header_modal_brand_input_item checkbox__item">
+                                                        <input type="checkbox" id="AddBrandChanganMobile" name="addBrand" class="checkbox__input">
+                                                        <label for="AddBrandChanganMobile" class="checkbox__label">Changan</label>
+                                                    </div>
+                                                    <div class="header_modal_brand_input_item checkbox__item">
+                                                        <input type="checkbox" id="AddBrandCheryMobile" name="addBrand" class="checkbox__input">
+                                                        <label for="AddBrandCheryMobile" class="checkbox__label">Chery</label>
+                                                    </div>
+                                                    <div class="header_modal_brand_input_item checkbox__item">
+                                                        <input type="checkbox" id="AddBrandChevroletMobile" name="addBrand" class="checkbox__input">
+                                                        <label for="AddBrandChevroletMobile" class="checkbox__label">Chevrolet</label>
+                                                    </div>
+                                                    <div class="header_modal_brand_input_item checkbox__item">
+                                                        <input type="checkbox" id="AddBrandFordMobile" name="addBrand" class="checkbox__input">
+                                                        <label for="AddBrandFordMobile" class="checkbox__label">Ford</label>
+                                                    </div>
+                                                    <div class="header_modal_brand_input_item checkbox__item">
+                                                        <input type="checkbox" id="AddBrandHyundaiMobile" name="addBrand" class="checkbox__input">
+                                                        <label for="AddBrandHyundaiMobile" class="checkbox__label">Hyundai</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="header_modal_price">
+                                            <div class="header_modal_brand_input">
+                                                <div class="header_modal_price_title filter_title">
+                                                    Price per day
+                                                </div>
+                                                <div class="header_modal_price_main">
+                                                    <div class="header_modal_price_top">
+                                                        <p>
+                                                            500$
+                                                        </p>
+                                                        <p>
+                                                            2000$
+                                                        </p>
+                                                    </div>
+                                                    <div class="header_modal_price_touchbar range_slider">
+                                                        <input class="range" type="range" min="0" max="2000" value="500" id="money-box-range">
+                                                        <div class="slider_thumb">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header_modal_transmission">
+                                            <div class="header_modal_transmission_title filter_title">
+                                                Transmission
+                                            </div>
+                                            <div class="header_modal_transmission_inputs">
+                                                <div class="header_modal_transmission_input filter_radio">
+                                                    <input type="radio" id="radioAny"  checked class="filter_radio__input">
+                                                    <label for="radioAny" class="filter_radio__label">Any</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input filter_radio">
+                                                    <input type="radio" id="radioAutomatic"  class="filter_radio__input">
+                                                    <label for="radioAutomatic" class="filter_radio__label">Automatic</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input filter_radio">
+                                                    <input type="radio" id="radioManual"  class="filter_radio__input">
+                                                    <label for="radioManual" class="filter_radio__label">Manual</label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="header_modal_engine">
+                                            <div class="header_modal_engine_title filter_title">
+                                                Engine
+                                            </div>
+                                            <div class="header_modal_engine_inputs">
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkGasoline" name="engine" class="checkbox__input">
+                                                    <label for="checkGasoline" class="checkbox__label">Gasoline</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="radioElectroHybrid" name="engine" class="checkbox__input">
+                                                    <label for="radioElectroHybrid" class="checkbox__label">Electro/Hybrid</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkDiesel" name="engine" class="checkbox__input">
+                                                    <label for="checkDiesel" class="checkbox__label">Diesel</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="radioFrontwheel" name="engine" class="checkbox__input">
+                                                    <label for="radioFrontwheel" class="checkbox__label">Front wheel</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkRearwheel" name="engine" class="checkbox__input">
+                                                    <label for="checkRearwheel" class="checkbox__label">Rear wheel</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="radio4wheel" name="engine" class="checkbox__input">
+                                                    <label for="radio4wheel" class="checkbox__label">4 wheel</label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="header_modal_seats">
+                                            <div class="header_modal_seats_title filter_title">
+                                                Seats
+                                            </div>
+                                            <div class="header_modal_seats_inputs">
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="check6" name="seats" class="checkbox__input">
+                                                    <label for="check6" class="checkbox__label">6+</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="check7" name="seats" class="checkbox__input">
+                                                    <label for="check7" class="checkbox__label">7+</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="check8" name="seats" class="checkbox__input">
+                                                    <label for="check8" class="checkbox__label">8+</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="check9" name="seats" class="checkbox__input">
+                                                    <label for="check9" class="checkbox__label">9+</label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="header_modal_insurance">
+                                            <div class="header_modal_insurance_title filter_title">
+                                                Insurance
+                                            </div>
+                                            <div class="header_modal_insurance_inputs">
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkTPL" name="insurance" class="checkbox__input">
+                                                    <label for="checkTPL" class="checkbox__label">TPL</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkCDW" name="insurance" class="checkbox__input">
+                                                    <label for="checkCDW" class="checkbox__label">CDW</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkSuperCDW" name="insurance" class="checkbox__input">
+                                                    <label for="checkSuperCDW" class="checkbox__label">Super CDW</label>
+                                                </div>
+                                                <div class="header_modal_transmission_input checkbox__item">
+                                                    <input type="checkbox" id="checkFullCoverage" name="insurance" class="checkbox__input">
+                                                    <label for="checkFullCoverage" class="checkbox__label">Full Coverage</label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="header_modal_top_hosts">
+                                            <div class="header_modal_top_hosts_title filter_title">
+                                                Top hosts
+                                            </div>
+                                            <div class="header_modal_top_hosts_inputs">
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_1" name="top_host" class="checkbox__input">
+                                                        <label for="host_1" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/1.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_2" name="top_host" class="checkbox__input">
+                                                        <label for="host_2" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/2.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_3" name="top_host" class="checkbox__input">
+                                                        <label for="host_3" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/3.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_4" name="top_host" class="checkbox__input">
+                                                        <label for="host_4" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/4.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_5" name="top_host" class="checkbox__input">
+                                                        <label for="host_5" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/5.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_6" name="top_host" class="checkbox__input">
+                                                        <label for="host_6" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/6.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_7" name="top_host" class="checkbox__input">
+                                                        <label for="host_7" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/7.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_8" name="top_host" class="checkbox__input">
+                                                        <label for="host_8" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/8.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_9" name="top_host" class="checkbox__input">
+                                                        <label for="host_9" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/9.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_10" name="top_host" class="checkbox__input">
+                                                        <label for="host_10" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/10.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_11" name="top_host" class="checkbox__input">
+                                                        <label for="host_11" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/11.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="header_modal_transmission_input">
+                                                    <div class="checkbox__item">
+                                                        <input type="checkbox" id="host_12" name="top_host" class="checkbox__input">
+                                                        <label for="host_12" class="checkbox__label">Romeo</label>
+                                                    </div>
+                                                        <img src="assets/images/top_hosts/12.png" alt="" class="profile">
+                                                    <div class="header_modal_host_rate">
+                                                        <img src="assets/images/icons/star_red.svg" alt="">
+                                                        <p>5.0 <sup>88</sup></p>
+                                                    </div>
+                                                </div>
+        
+        
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
                     </form>
                 </div>
             </div>
         
+            <!-- Register- and Login -->
+             <div class="modal__wrapper" id="modalLogin">
+                <div class="modal modal_login">
+                    <div class="modal_container">
+                        <div class="modal_login__left">
+                            <div class="modal__welcome">
+                                Welcome!
+                            </div>
+                            <div class="modal__logo">
+                                <img src="assets/images/modal/login/logo.svg" alt="">
+                            </div>
+                            <p class="modal__login_reg_text">
+                                Not a member yet? <a href="#" id="registerNow">Register now</a>
+                            </p>
+                        </div>
+                        <div class="modal_login__right">
+                                <button class="nav_menu_pickup_header_close" id="headerLoginClose">
+                                    <img src="assets/images/icons/close_red.svg" alt="Close">
+                                </button>
+                            <div class="modal_login_reg__title">
+                                Log in
+                            </div>
+                            <form action="" class="modal_login_reg__form">
+                                <div class="modal_login_reg__form_radio">
+                                    <div class="modal_login_reg__form_radio_item active" id="travelerLog">
+                                        <div class="modal_login_reg__form_radio_item_flex" >
+                                            <div class="modal_login_reg__form_radio_img">
+                                                <img src="assets/images/modal/login/traveler.svg" alt="Traveler">
+                                            </div>
+                                            <div class="modal_login_reg__form_radio_title">
+                                                Traveler
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_login_reg__form_radio_item" id="companyLog">
+                                        <div class="modal_login_reg__form_radio_item_flex">
+                                            <div class="modal_login_reg__form_radio_img">
+                                                <img src="assets/images/modal/login/company.svg" alt="Company">
+                                            </div>
+                                            <div class="modal_login_reg__form_radio_title">
+                                                Company
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="modal_login_reg__form_inputs">
+                                    <input type="text" class="modal_login_reg__form_input" placeholder="Email or Username" required>
+                                    <input type="password" class="modal_login_reg__form_input last" placeholder="Password" required>
+        
+                                    <div class="checkbox__item">
+        
+        
+                                        <input type ="checkbox" id="keepLog" class="checkbox__input">
+                                        <label for="keepLog" class="checkbox__label">Keep me logged in</label>
+                                    </div>
+        
+                                    <div class="header_modal_brand_input_button_wrapper">
+                                        <button type="submit" class="header_modal_brand_input_button">
+                                            Log in now
+                                        </button>
+                                        <a href="#" class="header_modal_brand_input_forgot">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="modal_login_reg__media">
+                                <p class="modal_login_reg__media_text">
+                                    Or sign in with
+                                </p>
+                                <div class="modal_login_reg__media_wrapper">
+                                    <a href="#" class="modal_login_reg__media_button">
+                                        <img src="assets/images/modal/login/google.svg" alt="">
+                                        <span>Google</span>
+                                    </a>
+                                    <a href="#" class="modal_login_reg__media_button">
+                                        <img src="assets/images/modal/login/facebook.svg" alt="">
+                                        <span>Facebook</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        
+             <div class="modal__wrapper" id="modalRegister">
+                <div class="modal modal_register">
+                    <div class="modal_container">
+                        <div class="modal_login__left">
+                            <div class="modal__welcome">
+                                Welcome!
+                            </div>
+                            <div class="modal__logo">
+                                <img src="assets/images/modal/login/logo.svg" alt="">
+                            </div>
+                            <p class="modal__login_reg_text">
+                                Already have an account? <a href="#" id="loginNow">Log in now</a>
+                            </p>
+                        </div>
+                        <div class="modal_login__right">
+                                <button class="nav_menu_pickup_header_close" id="headerRegisterClose">
+                                    <img src="assets/images/icons/close_red.svg" alt="Close">
+                                </button>
+                            <div class="modal_login_reg__title">
+                                Register
+                            </div>
+                            <form action="" class="modal_login_reg__form">
+                                <div class="modal_login_reg__form_radio">
+                                    <div class="modal_login_reg__form_radio_item active" id="travelerRegister">
+                                        <div class="modal_login_reg__form_radio_item_flex">
+                                            <div class="modal_login_reg__form_radio_img">
+                                                <img src="assets/images/modal/login/traveler.svg" alt="Traveler">
+                                            </div>
+                                            <div class="modal_login_reg__form_radio_title">
+                                                Traveler
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_login_reg__form_radio_item"  id="companyRegister">
+                                        <div class="modal_login_reg__form_radio_item_flex">
+                                            <div class="modal_login_reg__form_radio_img">
+                                                <img src="assets/images/modal/login/company.svg" alt="Company">
+                                            </div>
+                                            <div class="modal_login_reg__form_radio_title">
+                                                Company
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="modal_login_reg__form_inputs">
+                                    <input type="text" class="modal_login_reg__form_input" placeholder="Username" required>
+                                    <input type="email" class="modal_login_reg__form_input" placeholder="Email" required>
+                                    <input type="tel" class="modal_login_reg__form_input" placeholder="Phone number" required>
+                                    <div class="modal_login_reg__form_inputs_password">
+                                        <input type="password" class="modal_login_reg__form_input" placeholder="Password" required>
+                                        <input type="password" class="modal_login_reg__form_input last" placeholder="Repeat password" required>
+                                    </div>
+        
+                                    <p class="modal_reg_info">
+                                        TripBox may keep me informed with personalized emails about products and services. See our Privacy Policy for more details.
+                                    </p>
+        
+                                    <div class="modal_reg_checkboxes">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="contactReg" class="checkbox__input">
+                                            <label for="contactReg" class="checkbox__label">Please contact me via e-mail</label>
+                                        </div>
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="acceptReg" class="checkbox__input">
+                                            <label for="acceptReg" class="checkbox__label">I have read and accept the Terms and Conditions</label>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header_modal_brand_input_button_wrapper">
+                                        <button type="submit" class="header_modal_brand_input_button">
+                                            Register
+                                        </button>
+                                        <a href="#" class="header_modal_brand_input_forgot">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="modal_login_reg__media">
+                                <p class="modal_login_reg__media_text">
+                                    Or sign in with
+                                </p>
+                                <div class="modal_login_reg__media_wrapper">
+                                    <a href="#" class="modal_login_reg__media_button">
+                                        <img src="assets/images/modal/login/google.svg" alt="">
+                                        <span>Google</span>
+                                    </a>
+                                    <a href="#" class="modal_login_reg__media_button">
+                                        <img src="assets/images/modal/login/facebook.svg" alt="">
+                                        <span>Facebook</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
         
         </header>
         <main>
