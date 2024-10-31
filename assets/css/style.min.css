@@ -1815,7 +1815,8 @@ form label {
   border-top: 1px solid var(--colors-grey);
   border-bottom: 1px solid var(--colors-grey);
   padding: 14px 16px;
-  width: 358px;
+  width: 100% !important;
+  width: auto;
   outline: none;
   height: 48px;
   font-size: 15px;
@@ -1901,6 +1902,269 @@ form label {
   transform: translateY(0);
   opacity: 1;
   pointer-events: inherit;
+}
+
+#modalLogin .modal {
+  padding-top: 40px;
+  position: relative;
+}
+
+.modal_login .nav_menu_pickup_header_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+}
+.modal_login .modal_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_login__left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.modal__welcome {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--colors-brand-black);
+}
+
+.modal__login_reg_text {
+  font-size: 18px;
+  color: var(--colors-dark-grey);
+}
+.modal__login_reg_text a {
+  text-decoration: underline;
+  color: var(--colors-brand-black);
+}
+
+.modal_login__right {
+  max-width: 640px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.modal_login_reg__title {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--colors-brand-black);
+  margin-bottom: 64px;
+}
+
+.modal_login_reg__form_radio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_login_reg__form_radio_item.active {
+  opacity: 1;
+}
+
+.modal_login_reg__form_radio_item {
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--colors-brand-black);
+  margin-bottom: 48px;
+}
+.modal_login_reg__form_radio_item .modal_login_reg__form_radio_item_flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--colors-brand-black);
+}
+
+.modal_login_reg__form_radio_img {
+  margin-right: 8px;
+}
+
+.modal_login_reg__form_inputs {
+  margin-bottom: 48px;
+}
+.modal_login_reg__form_inputs .header_modal_brand_input_item .checkbox__label {
+  padding-left: 40px;
+  line-height: 133%;
+  color: var(--colors-brand-black);
+}
+
+.modal_login_reg__form_input {
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.modal_login_reg__form_input.last {
+  margin-bottom: 48px;
+}
+
+.header_modal_brand_input_button_wrapper {
+  margin-top: 48px;
+}
+
+.header_modal_brand_input_button {
+  margin-bottom: 64px;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 18px 24px;
+  width: 560px;
+  height: 56px;
+  background: var(--colors-brand-red);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: var(--colors-white);
+}
+.header_modal_brand_input_button:hover {
+  background: var(--colors-brand-red);
+}
+
+.header_modal_brand_input_forgot {
+  display: block;
+  text-align: right;
+  font-family: var(--font-family);
+  font-size: 16px;
+  text-decoration: underline;
+  text-align: right;
+  color: var(--colors-brand-black);
+}
+
+.modal_login_reg__media_text {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.modal_login_reg__media_wrapper {
+  display: flex;
+}
+
+.modal_login_reg__media_button {
+  margin-right: 16px;
+  border: 1px solid var(--colors-grey);
+  border-radius: 5px;
+  padding: 14px 20px;
+  height: 52px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--colors-brand-black);
+  display: flex;
+}
+.modal_login_reg__media_button img {
+  margin-right: 8px;
+}
+.modal_login_reg__media_button:last-child {
+  margin-right: 0;
+}
+
+.modal_register .nav_menu_pickup_header_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+}
+.modal_register .modal_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_login_reg__form_inputs_password {
+  display: flex;
+  justify-content: space-between;
+}
+.modal_login_reg__form_inputs_password .modal_login_reg__form_input {
+  max-width: 272px;
+}
+
+.modal_reg_info {
+  margin-bottom: 48px;
+}
+
+.modal_reg_checkboxes .checkbox__item {
+  margin-bottom: 24px;
+}
+.modal_reg_checkboxes .checkbox__item:last-child {
+  margin-bottom: 0;
+}
+
+.modal__wrapper.active {
+  display: block;
+}
+
+.header__login.lang {
+  position: relative;
+}
+
+.language__wrapper {
+  transition: all 0.3s ease;
+  position: absolute;
+  display: none;
+  bottom: -20px;
+  opacity: 0;
+  z-index: 99999;
+  right: 10%;
+}
+.language__wrapper.active {
+  opacity: 1;
+  display: block;
+}
+
+.language {
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--colors-white);
+  position: relative;
+}
+.language::before {
+  content: "";
+  left: 50%;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent var(--colors-white);
+  transform: rotate(270deg) translateY(-50%);
+  position: absolute;
+}
+
+.language_item {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: var(--colors-brand-black);
+}
+.language_item img {
+  margin-right: 11px;
+}
+.language_item:last-child {
+  margin-bottom: 0;
+}
+
+.header_modal.nav_menu_dates {
+  max-height: 520px;
+}
+.header_modal.nav_menu_dates .header_modal_wrapper.nav_menu_pickup_wrapper .calendar {
+  padding-bottom: 0 !important;
 }
 
 @media (max-width: 1599px) {
@@ -2115,6 +2379,68 @@ form label {
   }
   .header__form {
     position: static;
+  }
+  .modal_login .modal_container,
+  .modal_register .modal_container {
+    flex-direction: column;
+  }
+  .modal__logo {
+    margin-bottom: 32px;
+  }
+  .modal__logo img {
+    width: 100%;
+  }
+  .header_modal_brand_input_button {
+    width: 100%;
+  }
+  .modal__welcome {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .modal__login_reg_text {
+    text-align: center;
+  }
+  .modal_login_reg__media_wrapper {
+    flex-direction: column;
+  }
+  .modal_login_reg__media_wrapper .modal_login_reg__media_button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .modal_login_reg__form_inputs_password .modal_login_reg__form_input {
+    width: 49%;
+    font-family: var(--font-family);
+  }
+  .modal_reg_checkboxes .checkbox__item {
+    margin-bottom: 0;
+  }
+  .nav_menu_mobile.active {
+    z-index: 99999;
+  }
+  .language__wrapper.active {
+    bottom: -40px;
+  }
+  .header_modal_wrapper.nav_menu_pickup_wrapper {
+    position: static;
+  }
+  #headerModalDatesButtonMobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav_menu_mobile_info {
+    margin-top: 16px;
+  }
+  .header__form.form.mobile .form__input.form__input_1 {
+    width: 100%;
+    max-width: 100%;
+  }
+  #navMenuFiltersMobile .form__input.form__input_2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .nav_menu_mobile {
+    height: 100vh;
+    position: fixed;
   }
 }
 .hero {
@@ -4103,6 +4429,12 @@ p.explore__info-bottom {
     width: 78px;
     height: 48px;
   }
+  .chat.mobile {
+    position: fixed;
+    bottom: 16px;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 .chat {
   border-radius: 10px 10px 0 0;
@@ -4178,7 +4510,8 @@ p.explore__info-bottom {
 }
 .modal input[type=text],
 .modal input[type=email],
-.modal input[type=password] {
+.modal input[type=password],
+.modal input[type=tel] {
   border: 1px solid var(--colors-grey);
   border-radius: 5px;
   padding: 20px;
@@ -4189,12 +4522,14 @@ p.explore__info-bottom {
 }
 .modal input[type=text]:focus,
 .modal input[type=email]:focus,
-.modal input[type=password]:focus {
+.modal input[type=password]:focus,
+.modal input[type=tel]:focus {
   border: 2px solid var(--colors-brand-black);
 }
 .modal input[type=text]::placeholder,
 .modal input[type=email]::placeholder,
-.modal input[type=password]::placeholder {
+.modal input[type=password]::placeholder,
+.modal input[type=tel]::placeholder {
   color: var(--colors-dark-grey);
 }
 .modal select {
