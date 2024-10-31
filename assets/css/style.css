@@ -2457,6 +2457,14 @@ form label {
     margin-bottom: 0;
 }
 
+.header_modal.nav_menu_dates {
+    max-height: 520px;
+}
+
+.header_modal.nav_menu_dates .header_modal_wrapper.nav_menu_pickup_wrapper .calendar {
+    padding-bottom: 0 !important;
+}
+
 @media (max-width: 1599px) {
     .form__filter {
         width: 48px;
@@ -2744,6 +2752,88 @@ form label {
 
     .header__form {
         position: static;
+    }
+
+    .modal_login .modal_container,
+  .modal_register .modal_container {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .modal__logo {
+        margin-bottom: 32px;
+    }
+
+    .modal__logo img {
+        width: 100%;
+    }
+
+    .header_modal_brand_input_button {
+        width: 100%;
+    }
+
+    .modal__welcome {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .modal__login_reg_text {
+        text-align: center;
+    }
+
+    .modal_login_reg__media_wrapper {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .modal_login_reg__media_wrapper .modal_login_reg__media_button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .modal_login_reg__form_inputs_password .modal_login_reg__form_input {
+        width: 49%;
+        font-family: var(--font-family);
+    }
+
+    .modal_reg_checkboxes .checkbox__item {
+        margin-bottom: 0;
+    }
+
+    .nav_menu_mobile.active {
+        z-index: 99999;
+    }
+
+    .language__wrapper.active {
+        bottom: -40px;
+    }
+
+    .header_modal_wrapper.nav_menu_pickup_wrapper {
+        position: static;
+    }
+
+    #headerModalDatesButtonMobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav_menu_mobile_info {
+        margin-top: 16px;
+    }
+
+    .header__form.form.mobile .form__input.form__input_1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #navMenuFiltersMobile .form__input.form__input_2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav_menu_mobile {
+        height: 100vh;
+        position: fixed;
     }
 }
 
@@ -5200,6 +5290,14 @@ p.explore__info-bottom {
     .footer__copy img {
         width: 78px;
         height: 48px;
+    }
+
+    .chat.mobile {
+        position: fixed;
+        bottom: 16px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
     }
 }
 
