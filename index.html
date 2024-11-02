@@ -999,7 +999,7 @@
                     <form class="header__form form mobile">
                         <div class="form__input mobile form__input_1">
                             <div class="form__input-wrapper">
-                                <input type="text" placeholder="Pick-up & return" id="headerPickupReturnMobile">
+                                <input type="text" placeholder="Pick-up & return" id="headerPickupReturnMobile" class="prohibitionInput">
                             </div>
                         </div>
         
@@ -1007,7 +1007,7 @@
         
                         <div class="form__input mobile form__input_2">
                             <div class="form__input-wrapper">
-                                <input type="text" placeholder="21 Oct — 7 Nov, 2024" id="headerTirpDatesMobile">
+                                <input type="text" placeholder="21 Oct — 7 Nov, 2024" id="headerTirpDatesMobile" >
                             </div>
                         </div>
                         <div class="form__filter" id="formFilterMobile">
@@ -1990,20 +1990,7 @@
             
                         </div>
                     </div>
-                    <button class="chat mobile">
-                        <div class="chat__wrapper">
-                            <div class="chat__pic">
-                                <img src="assets/images/icons/chat.svg" alt="">
-                                <p>AI car finder</p>
-                            </div>
-                            <div class="chat__icon">
-                                <a href="#">
-                                    <img src="assets/images/icons/arrow_up.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
             
-                    </button>
                 </div>
             </section>
             
@@ -3733,12 +3720,13 @@
                     </div>
                 </div>
         
-                <div class="chat">
+                <div class="chat" id="chat">
                     <button class="chat chat_btn">
                         <div class="chat__wrapper">
                             <div class="chat__pic">
                                 <img src="assets/images/icons/chat.svg" alt="">
-                                <p>Need help finding a car?</p>
+                                <p class="desc">Need help finding a car?</p>
+                                <p class="mobile">AI Car finder</p>
                             </div>
                             <div class="chat__icon">
                                 <a href="#">
@@ -3813,7 +3801,7 @@
                                 <div class="chat__message_main">
                                     <div class="chat__message_car">
                                         <div class="chat__message_car_image">
-                                            <img src="assets/images/chat/car_1.png" alt="">
+                                            <img src="assets/images/chat/car_2.png" alt="">
                                         </div>
                                         <div class="chat__message_car_info">
                                             <div class="chat__message_car_info_top">
@@ -3839,15 +3827,12 @@
                                 <div class="chat__message_main">
                                     <div class="chat__message_car">
                                         <div class="chat__message_car_image">
-                                            <img src="assets/images/chat/car_1.png" alt="">
+                                            <img src="assets/images/chat/car_3.png" alt="">
                                         </div>
                                         <div class="chat__message_car_info">
                                             <div class="chat__message_car_info_top">
                                                 <div class="chat__message_car_info_title">
                                                     Jeep Wrangler
-                                                </div>
-                                                <div class="chat__message_car_info_lightning">
-                                                    <img src="/assets/images/icons/lightning.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="chat__message_car_info_bottom">
@@ -3862,14 +3847,18 @@
                         <form class="chat__content_bottom">
                             <div class="chat__content_enter">
                                 <div class="chat__content_mic">
-                                    <button class="chat__content_mic_btn">
-                                        <img src="assets/images/icons/mic.svg" alt="">
+                                    <div class="chat__content_mic_btn">
+                                        <div class="chat__content_mic_btn_microfone_close">
+                                            <button class="close" id="chatClear"><img src="/assets/images/chat/close.svg" alt=""></button>
+                                            <button class="mic active" id="chatMic"><img src="assets/images/icons/mic.svg" alt=""></button>
+                                        </div>
                                         <input type="text" placeholder="Message...">
+                                    </div>
+                                    <button class="chat__content_enter_btn" id="chatSend">
+                                        <img src="/assets/images/icons/enter.svg" alt="">
                                     </button>
                                 </div>
-                                <button class="chat__content_enter_btn">
-                                    <img src="/assets/images/icons/arrow_chat.svg" alt="">
-                                </button>
+        
                             </div>
                         </form>
                     </div>
