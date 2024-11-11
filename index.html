@@ -15,7 +15,32 @@
     <meta name="description" content="">
     
     <title>Travel Georgia Easily</title>
-</head>
+    
+    
+    <style>
+         .form__input-wrapper:after {
+            background-image: url('assets/images/header/form_icons/location.svg');
+         }
+         .form__input:nth-child(3) .form__input-wrapper:after {
+            background-image: url('assets/images/header/form_icons/calendar.svg');
+         }
+         .hero {
+             background: url('assets/images/hero/hero.jpg') no-repeat center / cover;
+         }
+         @media (max-width: 1279px) {
+            .form__input .form__input-wrapper:after {
+            background-image: url('assets/images/header/form_icons/pickup_and_returns.svg');
+        }
+        .form__input.mobile.form__input_2 .form__input-wrapper:after {
+             background-image: url('assets/images/header/form_icons/rental_days_mobile.svg');
+        }
+         }
+         @media (max-width: 767px) {
+          .hero {
+             background: url('assets/images/hero/hero_bg_mobile.jpg') no-repeat bottom / cover;
+          }
+         }
+    </style></head>
 <body>
     <svg display="none" xmlns="http://www.w3.org/2000/svg">
         <symbol id="mark" viewBox="0 0 32 32">
@@ -224,7 +249,7 @@
                                     <div class="header_modal_content nav_menu_pickup_content">
                                         <div class="header_modal_search  nav_menu_pickup_content_search" id="headermodalSearchPickupDesc">
                                             <input type="search" placeholder="Search" id="modalSearchPickupDesc">
-                                            <label for="modalSearchPickupDesc"></label>
+                                            <label for="modalSearchPickupDesc" style="background: url('assets/images/icons/search.svg') no-repeat;"></label>
                                         </div>
                                         <div class="nav_menu_mobile_info">
                                             You can specify the <a href="#">exact place</a> and time of pick-up and return of the car when placing your order.
@@ -236,12 +261,12 @@
                                             <ul class="header_modal_list_places">
                                                 <li class="header_modal_list_item_wrapper">
                                                     <ul>
-                                                        <li class="header_modal_list_item header_modal_list_place">
+                                                        <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                             <a href="#">
                                                                 Tbilisi
                                                             </a>
                                                         </li>
-                                                        <li class="header_modal_list_item header_modal_list_airport">
+                                                        <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                             <a href="#">
                                                                 Tbilisi International Airport
                                                             </a>
@@ -251,12 +276,12 @@
         
                                                 <li class="header_modal_list_item_wrapper">
                                                     <ul>
-                                                        <li class="header_modal_list_item header_modal_list_place">
+                                                        <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                             <a href="#">
                                                                 Kutaisi
                                                             </a>
                                                         </li>
-                                                        <li class="header_modal_list_item header_modal_list_airport">
+                                                        <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                             <a href="#">
                                                                 Kutaisi International Airport
                                                             </a>
@@ -266,12 +291,12 @@
         
                                                 <li class="header_modal_list_item_wrapper">
                                                     <ul>
-                                                        <li class="header_modal_list_item header_modal_list_place">
+                                                        <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                             <a href="#">
                                                                 Batumi
                                                             </a>
                                                         </li>
-                                                        <li class="header_modal_list_item header_modal_list_airport">
+                                                        <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                             <a href="#">
                                                                 Batumi International Airport
                                                             </a>
@@ -286,31 +311,31 @@
                                                 A - Z
                                             </div>
                                             <ul class="header_modal_list_item_wrapper header_modal_list_places">
-                                                <li class="header_modal_list_item">
+                                                <li class="header_modal_list_item" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Abasha
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Akhalkalaki
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Akhaltsikhe
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Akhmeta
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Ambrolauri
                                                         </a>
@@ -343,7 +368,7 @@
                                     <div class="header_modal_content nav_menu_return_content">
                                         <div class="header_modal_search nav_menu_pickup_content_seacrh" id="headermodalSearchReturnDesc">
                                             <input type="search" placeholder="Search" id="modalSearchReturnDesc">
-                                            <label for="modalSearchReturnDesc"></label>
+                                            <label for="modalSearchReturnDesc" style="background: url('assets/images/icons/search.svg') no-repeat;"></label>
                                         </div>
                                         <div class="header_modal_button">
                                             <a href="#" id="headerModalButtonDesc">
@@ -357,12 +382,12 @@
                                             <ul class="header_modal_list_places">
                                                 <li class="header_modal_list_item_wrapper">
                                                     <ul>
-                                                        <li class="header_modal_list_item header_modal_list_place">
+                                                        <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                             <a href="#">
                                                                 Tbilisi
                                                             </a>
                                                         </li>
-                                                        <li class="header_modal_list_item header_modal_list_airport">
+                                                        <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                             <a href="#">
                                                                 Tbilisi International Airport
                                                             </a>
@@ -372,12 +397,12 @@
         
                                                 <li class="header_modal_list_item_wrapper">
                                                     <ul>
-                                                        <li class="header_modal_list_item header_modal_list_place">
+                                                        <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                             <a href="#">
                                                                 Kutaisi
                                                             </a>
                                                         </li>
-                                                        <li class="header_modal_list_item header_modal_list_airport">
+                                                        <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                             <a href="#">
                                                                 Kutaisi International Airport
                                                             </a>
@@ -387,12 +412,12 @@
         
                                                 <li class="header_modal_list_item_wrapper">
                                                     <ul>
-                                                        <li class="header_modal_list_item header_modal_list_place">
+                                                        <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                             <a href="#">
                                                                 Batumi
                                                             </a>
                                                         </li>
-                                                        <li class="header_modal_list_item header_modal_list_airport">
+                                                        <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                             <a href="#">
                                                                 Batumi International Airport
                                                             </a>
@@ -407,31 +432,31 @@
                                                 A - Z
                                             </div>
                                             <ul class="header_modal_list_item_wrapper header_modal_list_places">
-                                                <li class="header_modal_list_item">
+                                                <li class="header_modal_list_item" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Abasha
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Akhalkalaki
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Akhaltsikhe
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Akhmeta
                                                         </a>
                                                 </li>
         
-                                                <li class="header_modal_list_item header_modal_list_place">
+                                                <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg')">
                                                         <a href="#">
                                                             Ambrolauri
                                                         </a>
@@ -1036,7 +1061,7 @@
                                 <div class="header_modal_content nav_menu_pickup_content">
                                     <div class="header_modal_search  nav_menu_pickup_content_search" id="headerPickupReturnSeacrhMobile">
                                         <input type="search" placeholder="Search" id="PickupReturnSeacrhMobile">
-                                        <label for="PickupReturnSeacrhMobile"></label>
+                                        <label for="PickupReturnSeacrhMobile" style="background: url('assets/images/icons/search.svg') no-repeat;"></label>
                                     </div>
                                     <div class="nav_menu_mobile_info">
                                         You can specify the <a href="#">exact place</a> and time of pick-up and return of the car when placing your order.
@@ -1048,12 +1073,12 @@
                                         <ul class="header_modal_list_places">
                                             <li class="header_modal_list_item_wrapper">
                                                 <ul>
-                                                    <li class="header_modal_list_item header_modal_list_place">
+                                                    <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                         <a href="#">
                                                             Tbilisi
                                                         </a>
                                                     </li>
-                                                    <li class="header_modal_list_item header_modal_list_airport">
+                                                    <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                         <a href="#">
                                                             Tbilisi International Airport
                                                         </a>
@@ -1063,12 +1088,12 @@
         
                                             <li class="header_modal_list_item_wrapper">
                                                 <ul>
-                                                    <li class="header_modal_list_item header_modal_list_place">
+                                                    <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                         <a href="#">
                                                             Kutaisi
                                                         </a>
                                                     </li>
-                                                    <li class="header_modal_list_item header_modal_list_airport">
+                                                    <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                         <a href="#">
                                                             Kutaisi International Airport
                                                         </a>
@@ -1078,12 +1103,12 @@
         
                                             <li class="header_modal_list_item_wrapper">
                                                 <ul>
-                                                    <li class="header_modal_list_item header_modal_list_place">
+                                                    <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                         <a href="#">
                                                             Batumi
                                                         </a>
                                                     </li>
-                                                    <li class="header_modal_list_item header_modal_list_airport">
+                                                    <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                         <a href="#">
                                                             Batumi International Airport
                                                         </a>
@@ -1097,32 +1122,32 @@
                                         <div class="header_modal_list_title">
                                             A - Z
                                         </div>
-                                        <ul class="header_modal_list_item_wrapper header_modal_list_places">
+                                        <ul class="header_modal_list_item_wrapper header_modal_list_places" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                             <li class="header_modal_list_item">
                                                     <a href="#">
                                                         Abasha
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Akhalkalaki
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Akhaltsikhe
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Akhmeta
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Ambrolauri
                                                     </a>
@@ -1147,7 +1172,7 @@
                                 <div class="header_modal_content nav_menu_return_content">
                                     <div class="header_modal_search nav_menu_pickup_content_seacrh" id="headerReturnSeacrhMobile">
                                         <input type="search" placeholder="Search" id="modalSearch">
-                                        <label for="modalSearch"></label>
+                                        <label for="modalSearch" style="background: url('assets/images/icons/search.svg') no-repeat;"></label>
                                     </div>
                                     <div class="header_modal_button">
                                         <a href="#" id="headerReturnModalButtonMobile">
@@ -1161,12 +1186,12 @@
                                         <ul class="header_modal_list_places">
                                             <li class="header_modal_list_item_wrapper">
                                                 <ul>
-                                                    <li class="header_modal_list_item header_modal_list_place">
+                                                    <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                         <a href="#">
                                                             Tbilisi
                                                         </a>
                                                     </li>
-                                                    <li class="header_modal_list_item header_modal_list_airport">
+                                                    <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                         <a href="#">
                                                             Tbilisi International Airport
                                                         </a>
@@ -1176,12 +1201,12 @@
         
                                             <li class="header_modal_list_item_wrapper">
                                                 <ul>
-                                                    <li class="header_modal_list_item header_modal_list_place">
+                                                    <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                         <a href="#">
                                                             Kutaisi
                                                         </a>
                                                     </li>
-                                                    <li class="header_modal_list_item header_modal_list_airport">
+                                                    <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                         <a href="#">
                                                             Kutaisi International Airport
                                                         </a>
@@ -1191,12 +1216,12 @@
         
                                             <li class="header_modal_list_item_wrapper">
                                                 <ul>
-                                                    <li class="header_modal_list_item header_modal_list_place">
+                                                    <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                         <a href="#">
                                                             Batumi
                                                         </a>
                                                     </li>
-                                                    <li class="header_modal_list_item header_modal_list_airport">
+                                                    <li class="header_modal_list_item header_modal_list_airport" style="background-image: url('assets/images/icons/airport_fill.svg');">
                                                         <a href="#">
                                                             Batumi International Airport
                                                         </a>
@@ -1211,31 +1236,31 @@
                                             A - Z
                                         </div>
                                         <ul class="header_modal_list_item_wrapper header_modal_list_places">
-                                            <li class="header_modal_list_item">
+                                            <li class="header_modal_list_item" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Abasha
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Akhalkalaki
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Akhaltsikhe
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Akhmeta
                                                     </a>
                                             </li>
         
-                                            <li class="header_modal_list_item header_modal_list_place">
+                                            <li class="header_modal_list_item header_modal_list_place" style="background-image: url('assets/images/icons/geo_fill.svg');">
                                                     <a href="#">
                                                         Ambrolauri
                                                     </a>
@@ -1944,7 +1969,7 @@
         
         </header>
         <main>
-            <section class="hero" class="#hero">
+                <section class="hero" class="#hero">
                 <div class="container">
                     <div class="hero__wrapper">
                         <div class="hero__top">
