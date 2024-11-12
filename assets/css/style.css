@@ -5824,8 +5824,29 @@ p.explore__info-bottom {
 }
 
 .chat__message.get .chat__message_main {
-    background: var(--colors-white);
     color: var(--colors-brand-black);
+}
+
+.chat__message.get .chat__message_textarea {
+    background: var(--colors-white);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.chat__message.get.start .chat__message_main_title {
+    font-weight: 500;
+    font-size: 13px;
+    color: rgba(106, 110, 118, 0.5);
+    margin-bottom: 4px;
+}
+
+.chat__message.get.start .chat__message_main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
 .chat__message.give {
@@ -8013,6 +8034,11 @@ p.explore__info-bottom {
     margin-right: 40px;
 }
 
+.header_dashboard .language {
+    top: 140px;
+    right: -140px;
+}
+
 .container_dashboard {
     max-width: none;
     width: 100%;
@@ -8024,6 +8050,10 @@ p.explore__info-bottom {
     display: flex;
     margin-top: 64px;
     background: var(--colors-white);
+}
+
+.dashboard__main_content {
+    max-width: 1608px;
 }
 
 .sidebar {
@@ -8202,7 +8232,7 @@ p.explore__info-bottom {
 }
 
 .dashboard__main_breadcrumbs {
-    max-width: 161px;
+    max-width: 210px;
     min-width: 161px;
     display: -ms-flexbox;
     display: flex;
@@ -8582,6 +8612,409 @@ h1.dashboard__main_title {
     display: none;
 }
 
+.dashboard__nav_mobile_wrapper {
+    display: none;
+}
+
+.dashboard__main_title_wrapper {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dashboard__main_title_wrapper .dashboard__main_title {
+    margin-right: 16px;
+}
+
+.dashboard__main_title_wrapper .status {
+    border-radius: 5px;
+    padding: 8px;
+    width: 90px;
+    height: 36px;
+    background: rgba(32, 152, 102, 0.12);
+    font-size: 14px;
+    text-align: center;
+}
+
+.dashboard__main_title_wrapper .status.active {
+    color: var(--colors-green);
+}
+
+.dashboard__main_financial-edit {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dashboard__main_financial-edit .dashboard__main_add_btn {
+    margin-left: 16px;
+    border-radius: 5px;
+    padding: 16px;
+    width: auto;
+    height: 36px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--colors-white);
+}
+
+.dashboard__main_financial-edit .dashboard__main_add_btn img {
+    margin-right: 16px;
+}
+
+.dashboard__main_financial-edit .black {
+    background: var(--colors-brand-black);
+}
+
+.dashboard__main_financial-edit .black:hover {
+    background: #333437;
+}
+
+.dashboard__photos {
+    margin-top: 48px;
+}
+
+.dashboard__photos_title {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__photos_title span {
+    font-weight: 400;
+    color: var(--colors-dark-grey);
+}
+
+.dashboard__gallery {
+    max-width: 1600px;
+    margin-top: 16px;
+}
+
+.dashboard__gallery .modal_container {
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.dashboard__general_info {
+    margin-top: 48px;
+}
+
+.dashboard__general_info_title {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__general_table {
+    margin-top: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__general_table tr th {
+    border: none;
+    background: var(--colors-bright-grey);
+}
+
+.dashboard__general_table tr th,
+.dashboard__general_table tr td {
+    border: 1px solid var(--colors-grey);
+    padding: 16px;
+    width: 25%;
+}
+
+.dashboard__car_footer {
+    margin-top: 48px;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto;
+}
+
+.dashboard__car_footer_item {
+    max-width: 360px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 24px;
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+}
+
+.dashboard__car_footer_top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.dashboard__car_footer_top_title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__car_footer_top_text {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__car_footer_cities {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    overflow-x: auto;
+    width: 100%;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+.dashboard__car_footer_cities_item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.dashboard__car_footer_cities_item p {
+    text-wrap-mode: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+    margin-right: 4px;
+}
+
+.dashboard__car_footer_cities_item span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.dashboard__car_footer_cities_item.green {
+    background: rgba(32, 152, 102, 0.1);
+}
+
+.dashboard__car_footer_cities_item.green span {
+    color: var(--colors-green);
+}
+
+.dashboard__car_footer_cities_item.orange {
+    background: rgba(235, 133, 60, 0.12);
+}
+
+.dashboard__car_footer_cities_item.orange span {
+    color: #eb853c;
+}
+
+.dashboard__car_footer_cities_item.blue {
+    background: rgba(45, 160, 224, 0.1);
+}
+
+.dashboard__car_footer_cities_item.blue span {
+    font-weight: 400;
+    color: var(--colors-dark-grey);
+}
+
+.dashboard__car_footer_cities_item.blue span b {
+    color: #2da0e0;
+}
+
+.header_dashboard .dashboard__photo {
+    display: none;
+}
+
+.model_td {
+    max-width: 204px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dashboard__messages {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    height: 490px;
+}
+
+.dashboard__messages_header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.dashboard__messages_header_title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__messages_header_filter {
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dashboard__messages_header_filter img {
+    margin-right: 8px;
+}
+
+.dashboard__messages_header_filter:hover {
+    background: none;
+}
+
+.dashboard__messages_chats {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dashboard__messages_chats_nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 355px;
+    width: 100%;
+}
+
+.dashboard__messages_chats_item_wrapper {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--colors-grey);
+    background: var(--colors-white);
+}
+
+.dashboard__messages_chats_item_wrapper:hover {
+    background: var(--colors-bright-grey);
+}
+
+.dashboard__messages_chats_item_wrapper.active {
+    background: var(--colors-bright-grey);
+}
+
+.dashboard__messages_chats_item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dashboard__messages_chats_photo {
+    margin-right: 16px;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.dashboard__messages_chats_name-date {
+    text-align: left;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 46px;
+}
+
+.dashboard__messages_chats_name {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--colors-brand-red);
+}
+
+.dashboard__messages_chats_date {
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+}
+
+.dashboard__messages_chat {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    width: 100%;
+}
+
+.dashboard__messages_chats_wrapper {
+    height: 490px;
+}
+
+.dashboard__messages_chat .chat__message.get .chat__message_textarea {
+    width: 306px;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--colors-brand-black);
+}
+
+.dashboard__messages_chat .chat__content_bottom {
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.dashboard__messages_chat .chat__content_mic_btn {
+    width: 100%;
+}
+
+.dashboard__messages_chat .chat__message.give {
+    width: 323px;
+    line-height: 129%;
+}
+
+.dashboard__messages_chat .chat__content_mic_btn input {
+    width: 100%;
+}
+
+.dashboard__main.message {
+    max-height: 762px;
+    height: 100%;
+}
+
+.dashboard__messages_chats {
+    height: 100%;
+    border: 1px solid var(--colors-grey);
+}
+
+.dashboard__messages_chat {
+    height: 490px;
+}
+
+@media (max-width: 1441px) {
+    .dashboard__main {
+        max-width: 82%;
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .dashboard__main_content {
+        width: auto;
+        max-width: none;
+    }
+}
+
 @media (max-width: 1280px) {
     .iksweb.dashboard_table th {
         padding-left: 0;
@@ -8776,6 +9209,38 @@ h1.dashboard__main_title {
     .iksweb.dashboard_table {
         overflow-x: auto;
     }
+
+    .dashboard__general_info {
+        overflow-x: auto;
+    }
+
+    .dashboard__general_table tr th, .dashboard__general_table tr td {
+        min-width: 290px;
+        width: auto;
+    }
+
+    .dashboard__gallery a {
+        width: 264px;
+    }
+
+    .dashboard__main {
+        width: 100%;
+        max-width: 840px;
+    }
+
+    .dashboard__main_top {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .dashboard__main_content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .dashboard__main .chat__main {
+        height: auto;
+    }
 }
 
 @media (max-width: 959px) {
@@ -8803,6 +9268,103 @@ h1.dashboard__main_title {
 
     .dashboard__main_content {
         padding-right: 32px;
+    }
+
+    .dashboard__main {
+        width: 94%;
+        padding-left: 32px;
+    }
+
+    .dashboard__general_table tr th, .dashboard__general_table tr td {
+        font-size: 13px;
+    }
+
+    .dashboard__main_title {
+        margin-bottom: 0;
+    }
+
+    .dashboard__main_heading-btn {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .dashboard__main_title_wrapper {
+        margin-right: auto;
+    }
+
+    .dashboard__main_financial-edit {
+        margin-right: auto;
+    }
+
+    .dashboard__main_financial-edit .dashboard__main_add_btn.black {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .dashboard__main_title_wrapper {
+        margin-bottom: 24px;
+    }
+
+    .dashboard__main_title_wrapper .status {
+        border-radius: 100%;
+        border-radius: 100px;
+        padding: 8px;
+        width: 90px;
+    }
+
+    .dashboard__general_table tr th, .dashboard__general_table tr td {
+        min-width: 180px;
+    }
+
+    .dashboard__main_seacrh_wrapper {
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .dashboard__main .chat__message_img img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .dashboard__messages_chat .chat__message.get .chat__message_textarea {
+        width: 244px;
+    }
+
+    .dashboard__messages_chat .chat__message.give {
+        width: 113px;
+    }
+
+    .dashboard__messages_chat .chat__content_bottom {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard_select {
+        width: 110px;
+        margin-right: auto;
+    }
+
+    .dashboard__main.message {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .dashboard__main.message .dashboard__main_content {
+        padding-right: 0;
+    }
+
+    .dashboard__messages_chats_nav {
+        max-width: 210px;
+    }
+
+    .dashboard__messages_chats_item_wrapper {
+        padding: 4px;
+    }
+
+    .dashboard__messages_chat .chat__message.get .chat__message_textarea {
+        width: 200px;
     }
 }
 
@@ -8890,6 +9452,10 @@ h1.dashboard__main_title {
         margin-right: auto;
     }
 
+    .dashboard__main_add_btn img {
+        margin-right: 10px;
+    }
+
     .dashboard__main_seacrh_wrapper {
         -ms-flex-direction: column;
         flex-direction: column;
@@ -8901,5 +9467,153 @@ h1.dashboard__main_title {
 
     .dashboard__main_content {
         padding-right: 0;
+    }
+
+    .dashboard__nav_mobile_wrapper {
+        overflow: auto;
+        padding-bottom: 24px;
+        transition: all 0.3s ease;
+        margin-top: 60px;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        display: block;
+        background: var(--colors-brand-black);
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        margin-left: -16px;
+    }
+
+    .dashboard__nav_mobile_wrapper nav {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .dashboard__nav_mobile_wrapper.active {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    .dashboard__nav_mobile_wrapper ul {
+        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 16px;
+    }
+
+    .dashboard__nav_mobile_wrapper ul li {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-left: 4px;
+    }
+
+    .dashboard__nav_mobile_wrapper ul li.active {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+        padding-left: 8px;
+        width: auto;
+        background: var(--colors-white);
+    }
+
+    .dashboard__nav_mobile_wrapper ul li.active a p {
+        color: var(--colors-brand-black);
+    }
+
+    .dashboard__nav_mobile_wrapper ul li a:hover {
+        -webkit-transform: 0;
+        transform: 0;
+    }
+
+    .dashboard__nav_mobile_wrapper ul li a img {
+        margin-right: 20px;
+    }
+
+    .dashboard__nav_mobile_wrapper ul li a p {
+        color: var(--colors-white);
+        display: block;
+    }
+
+    .dashboard__main_title_wrapper .dashboard__main_title {
+        margin-bottom: 0;
+    }
+
+    .dashboard__main {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .dashboard__main_add_btn {
+        min-width: 171px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .dashboard__car_footer {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .dashboard__car_footer_item {
+        margin-bottom: 16px;
+    }
+
+    .header_dashboard .dashboard__photo {
+        display: block;
+    }
+
+    .dashboard__messages {
+        margin-top: 32px;
+    }
+
+    .dashboard__messages_header_filter {
+        display: none;
+    }
+
+    .dashboard__messages_chat.chat__content {
+        display: none;
+    }
+
+    .dashboard__messages_chats_item_wrapper.active {
+        background: var(--colors-white);
+    }
+
+    .dashboard__messages_chats_nav {
+        max-width: none;
+    }
+
+    .dashboard__messages_chats {
+        border: none;
+    }
+
+    .dashboard__messages_chats_item_wrapper {
+        padding: 16px 0;
+    }
+
+    .dashboard__messages_chats_name {
+        color: var(--colors-brand-black);
+    }
+}
+
+@media (max-width: 389px) {
+    .dashboard__main_financial-edit {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .dashboard__main_financial-edit .dashboard__main_add_btn {
+        margin-left: 0;
+        min-width: 280px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .dashboard__main_financial-edit .dashboard__main_add_btn {
+        margin-bottom: 8px;
     }
 }
