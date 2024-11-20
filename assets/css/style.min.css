@@ -8017,12 +8017,30 @@ td.dates_td {
 .bookings_main .dashboard__main_cars th:first-child, .bookings_main .dashboard__main_cars td:first-child {
   padding-left: 32px !important;
 }
+.bookings_main .dashboard__main_seacrh_wrapper.bookings {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.bookings_main .dashboard_pages {
+  padding-left: 32px;
+  padding-right: 32px;
+}
 
 .booking_car_order {
   padding-left: 32px;
   padding-right: 32px;
 }
 
+.order_history {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 1720px) {
+  .booking_table td.dates_td {
+    width: 24% !important;
+  }
+}
 @media (max-width: 1441px) {
   .dashboard__main {
     max-width: 82%;
@@ -8096,8 +8114,23 @@ td.dates_td {
     padding-right: 0;
     padding-right: 32px;
   }
+  .booking_table .first th.last {
+    width: 80px !important;
+  }
+  .booking_table td.price_td {
+    padding-right: 16px;
+  }
   .iksweb.dashboard_table td {
     width: 0;
+  }
+  .booking_table_item .status {
+    padding-right: 24px !important;
+  }
+  .booking_table_not_first .booking_table_item td {
+    width: 12% !important;
+  }
+  .booking_table_not_first .booking_table_item .dates_td {
+    width: 25% !important;
   }
 }
 @media (max-width: 1199px) {
@@ -8210,6 +8243,20 @@ td.dates_td {
   .dashboard__main .chat__main {
     height: auto;
   }
+  .bookings_main {
+    width: 100%;
+    max-width: none;
+  }
+  .bookings_main .cars {
+    padding-left: 10px !important;
+  }
+  .bookings_main .dashboard__main_title {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .bookings_main .booking_table .first th.last {
+    width: 55% !important;
+  }
 }
 @media (max-width: 959px) {
   .dashboard__main_content {
@@ -8283,6 +8330,23 @@ td.dates_td {
   .dashboard__messages_chat .chat__content_bottom {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .booking_car_item {
+    width: 1032px;
+    padding-right: 80px;
+  }
+  .dashboard__main .dashboard__main_title {
+    margin-right: auto;
+  }
+  .bookings_main {
+    width: 100%;
+    padding-left: 0;
+  }
+  .bookings_main .dashboard__main_title {
+    padding-left: 16px;
+  }
+  .bookings_main .dashboard__main_seacrh_wrapper.bookings {
+    padding-left: 16px;
   }
 }
 @media (max-width: 767px) {
