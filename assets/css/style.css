@@ -533,6 +533,7 @@ h1 {
     text-transform: uppercase;
     color: var(--colors-white);
     line-height: 117%;
+    margin: 0;
 }
 
 h2 {
@@ -4174,7 +4175,6 @@ form label {
     background: #fff;
     min-height: 320px;
     height: 100%;
-    min-width: 400px;
 }
 
 .advantages__item.slick-slide {
@@ -4695,8 +4695,19 @@ p.explore__info-bottom {
     display: none;
 }
 
+.explore__info {
+    margin-right: 24px;
+}
+
 .explore__info .btn_mobile {
     display: none;
+}
+
+@media (max-width: 1599px) {
+    .explore__wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -4970,6 +4981,7 @@ p.explore__info-bottom {
 .faq__right {
     max-width: 928px;
     width: 100%;
+    margin-top: 24px;
 }
 
 .faq__sort {
@@ -5360,6 +5372,16 @@ p.explore__info-bottom {
 .footer__left .form__input-wrapper,
 .footer__call.mobile .form__input-wrapper {
     position: relative;
+}
+
+.footer__left .form__input .form__input-wrapper:before,
+.footer__call.mobile .form__input .form__input-wrapper:before {
+    display: none;
+}
+
+.footer__left .form__input .form__input-wrapper:after,
+.footer__call.mobile .form__input .form__input-wrapper:after {
+    display: none;
 }
 
 .footer__left .form__input:nth-child(1) input,
@@ -6013,6 +6035,10 @@ p.explore__info-bottom {
 
 .chat__pic p.mobile {
     display: none;
+}
+
+.chat.chat_btn {
+    height: 72px;
 }
 
 .chat.chat_btn:hover {
@@ -8018,6 +8044,10 @@ p.explore__info-bottom {
     display: none;
 }
 
+.dashboard__main_breadcrumbs {
+    display: none !important;
+}
+
 .header_dashboard {
     border-bottom: 1px solid var(--colors-grey);
 }
@@ -8312,7 +8342,7 @@ h1.dashboard__main_title {
 }
 
 .dashboard__main_seacrh_wrapper {
-    margin-top: 48px;
+    margin-top: 32px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -8362,6 +8392,18 @@ h1.dashboard__main_title {
 
 .dashboard__main_seacrh_wrapper .dashboard_search label {
     left: 16px;
+}
+
+.header_modal_search {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.header_modal_search img {
+    margin-left: 4px;
 }
 
 .dashboard_select .filter__sort_popular_tags_mobile_price {
@@ -8998,6 +9040,325 @@ h1.dashboard__main_title {
 
 .dashboard__messages_chat {
     height: 490px;
+}
+
+.booking_table .first th.sort_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.booking_table td.number {
+    padding-left: 0;
+    padding-right: 0 !important;
+}
+
+.booking_table th {
+    padding-left: 0 !important;
+}
+
+.booking_table th.number {
+    padding-left: 0;
+}
+
+.booking_table td {
+    padding-left: 0 !important;
+}
+
+.booking_table .first th.sort_wrapper {
+    padding-right: 32px;
+}
+
+.booking_table .status.active.new div {
+    background: var(--colors-green);
+    font-weight: 700;
+    color: var(--colors-white);
+}
+
+.booking_table td.model_td {
+    line-height: 0.8;
+}
+
+.booking_table td.model_td p {
+    margin-bottom: 0;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.booking_table .dates_td {
+    font-size: 14px;
+    color: var(--colors-dark-grey) !important;
+}
+
+.booking_table .dates_td p {
+    margin-right: 4px;
+    display: inline;
+    color: var(--colors-dark-grey);
+}
+
+.booking_table .dates_td p:last-child {
+    margin-left: 4px;
+}
+
+.booking_table .dates_td b {
+    font-size: 14px;
+    color: var(--colors-brand-black);
+}
+
+.booking_table th.last {
+    width: 8%;
+}
+
+.price_td {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 8%;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--colors-dark-grey);
+}
+
+.price_td .bold {
+    font-weight: 700;
+    color: var(--colors-brand-black);
+    margin-right: 4px;
+}
+
+td.dates_td {
+    width: 20% !important;
+}
+
+td.price_td {
+    display: -ms-flexbox;
+    display: flex;
+    width: auto !important;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 4.3;
+}
+
+td.price_td p {
+    margin-right: 8px;
+}
+
+.booking_table .first th.sort_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.booking_car_order {
+    padding: 32px 0;
+}
+
+.booking_car_order_info_top {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.booking_car_order_info_top_order {
+    margin-right: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.booking_car_order_info_top_order p {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--colors-dark-grey);
+    margin-right: 12px;
+}
+
+.booking_car_order_info_top_order p span {
+    font-weight: 700;
+    color: var(--colors-brand-black);
+}
+
+.booking_car_order_info_top_buttons {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.booking_car_order_info_confirm {
+    margin-right: 11px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 160px;
+    height: 40px;
+    background: var(--colors-brand-red);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--colors-white);
+}
+
+.booking_car_order_info_decline {
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 160px;
+    height: 40px;
+    background: rgba(203, 204, 205, 0.4);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--colors-brand-red);
+}
+
+.booking_car_order_info_decline:hover {
+    color: var(--colors-brand-red);
+}
+
+.booking_car_order_info_table {
+    margin-top: 32px;
+}
+
+.booking_car_order_info_table_wrapper {
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.booking_car_order_info_table_wrapper td {
+    height: 52px;
+}
+
+.booking_car_order_info_table_wrapper td, .booking_car_order_info_table_wrapper th {
+    padding: 16px 0 !important;
+}
+
+.booking_car_order_info_table_wrapper td {
+    font-size: 16px !important;
+}
+
+.booking_car_order_info_table_wrapper td.title_td {
+    font-size: 13px !important;
+}
+
+.booking_car_order_bottom {
+    margin-top: 32px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.booking_car_order_client {
+    border-radius: 8px;
+    padding: 16px;
+    background: var(--colors-white);
+}
+
+.booking_car_order_client_host {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.booking_car_order_client_host_img {
+    margin-right: 16px;
+}
+
+.booking_car_order_client_host_img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.booking_car_order_client_host_main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.booking_car_order_client_host_client {
+    font-size: 13px;
+    color: var(--colors-dark-grey);
+}
+
+.booking_car_order_client_host_name_wrapper {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.booking_car_order_client_host_name {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+    margin-right: 8px;
+}
+
+.booking_car_order_client_host_lang {
+    font-size: 16px;
+    color: var(--colors-brand-red);
+}
+
+.booking_car_order_client_btn {
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 100%;
+    height: 40px;
+    background: var(--colors-brand-black);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--colors-white);
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.booking_car_order_creation_date {
+    font-size: 13px;
+    color: var(--colors-brand-black);
+}
+
+.booking_car_order_creation_date span {
+    color: var(--colors-dark-grey);
+}
+
+.booking_car_item.active {
+    background: var(--colors-bright-grey);
+}
+
+.booking_car_item tr.first {
+    background: var(--colors-white);
+}
+
+.booking_car_item tr.first:hover {
+    background: var(--colors-white);
+}
+
+.booking_car_item.active tr.first:hover {
+    background: var(--colors-white);
+}
+
+.booking_car_item.active tr.first {
+    background: var(--colors-white);
+}
+
+.booking_table_item {
+    cursor: pointer;
+}
+
+.booking_table_not_first td {
+    width: 20.5% !important;
+}
+
+.booking_table_not_first td.price_td {
+    margin-left: auto;
+    width: 100%;
+    min-width: 100%;
 }
 
 @media (max-width: 1441px) {
