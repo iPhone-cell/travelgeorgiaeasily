@@ -7030,6 +7030,9 @@ h1.dashboard__main_title {
   text-transform: uppercase;
   color: var(--colors-brand-black);
 }
+.header_modal_search button {
+  background: none;
+}
 .header_modal_search img {
   margin-left: 4px;
 }
@@ -7712,9 +7715,23 @@ td.price_td p {
   line-height: 100%;
   text-align: center;
   color: var(--colors-brand-red);
+  margin-right: 11px;
 }
 .booking_car_order_info_decline:hover {
   color: var(--colors-brand-red);
+}
+
+.booking_car_order_info_change {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: var(--colors-white);
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 160px;
+  height: 40px;
+  background: var(--colors-brand-black);
 }
 
 .booking_car_order_info_table {
@@ -7938,6 +7955,7 @@ td.dates_td {
 .order_history__search_wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .order_history__search {
@@ -7975,6 +7993,61 @@ td.dates_td {
 .order_history__search_calendar {
   margin-left: 16px;
   cursor: pointer;
+  background: none;
+}
+.order_history__search_calendar:hover {
+  background: none;
+}
+
+.bookings_calendar {
+  position: fixed;
+  top: 40%;
+  transform: translateY(20px);
+  right: 5%;
+  z-index: 9999999;
+  max-width: 740px;
+  box-shadow: 0 10px 50px 0 rgba(106, 110, 118, 0.1);
+  background: var(--colors-white);
+  border-radius: 10px;
+  margin-top: 0;
+  padding-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: auto;
+}
+.bookings_calendar .calendar_month_item {
+  padding: 0 16px;
+}
+.bookings_calendar .calendar {
+  display: flex;
+}
+
+.bookings_main .dashboard__main_cars {
+  margin-top: 16px;
+}
+
+@media (max-width: 575px) {
+  .bookings_calendar .calendar {
+    flex-direction: column;
+  }
+}
+#bookingsCalendar {
+  display: none;
+}
+#bookingsCalendar.active {
+  display: block;
+}
+
+#bookingsCalendarMobile {
+  display: none;
+  right: 0;
+  bottom: 0;
+}
+#bookingsCalendarMobile.active {
+  display: block;
+  right: 0;
+  bottom: 0;
 }
 
 .iksweb.dashboard_table .status.in_progress div {
@@ -8034,6 +8107,41 @@ td.dates_td {
 .order_history {
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.booking_car_wrapper.none {
+  display: none;
+}
+
+.bookings_hide_disabled {
+  display: none;
+}
+
+span {
+  transition: all 0.3s ease;
+}
+
+.header_modal_search.none span {
+  opacity: 0.2;
+}
+.header_modal_search.none .bookings_hide_disabled {
+  display: block;
+  opacity: 1;
+}
+.header_modal_search.none .bookings_hide {
+  display: none;
+}
+
+.bookings_hide_wrapper {
+  display: flex;
+}
+
+.new_order {
+  display: none;
+}
+
+.order_history.mobile {
+  display: none;
 }
 
 @media (max-width: 1720px) {
@@ -8370,6 +8478,11 @@ td.dates_td {
   .dashboard__messages_chat .chat__message.get .chat__message_textarea {
     width: 200px;
   }
+  .booking_car_wrapper {
+    min-width: 1032px;
+    width: 100%;
+    overflow: auto;
+  }
 }
 @media (max-width: 575px) {
   .header_dashboard .header__login.login {
@@ -8543,6 +8656,179 @@ td.dates_td {
   .dashboard__messages_chats_name {
     color: var(--colors-brand-black);
   }
+  .bookings_main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bookings_main .iksweb.dashboard_table .first {
+    display: none;
+  }
+  .bookings_main .iksweb.dashboard_table th.number {
+    display: none;
+  }
+  .bookings_main .booking_table .status {
+    display: none;
+  }
+  .bookings_main .dates_td {
+    display: none;
+  }
+  .bookings_main .price_td {
+    display: none;
+  }
+  .bookings_main .booking_car_order_info_top {
+    flex-direction: column-reverse;
+  }
+  .bookings_main .booking_car_order_info_top_order {
+    margin-top: 16px;
+  }
+  .bookings_main .booking_car_order {
+    padding: 16px;
+  }
+  .bookings_main .booking_car_order_info_change {
+    width: 44px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    padding: 12px;
+  }
+  .bookings_main .booking_car_order_info_change span {
+    display: none;
+  }
+  .bookings_main .booking_car_order_info_top_order {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  .bookings_main .booking_car_order_info_table_wrapper td {
+    font-size: 14px !important;
+  }
+  .bookings_main .booking_car_order_info_table_wrapper td:last-child {
+    text-align: right;
+    color: var(--colors-dark-grey);
+  }
+  .bookings_main .status_td_mobile {
+    width: 100%;
+  }
+  .bookings_main .status_td_mobile td {
+    width: 50%;
+  }
+  .bookings_main .status_td_mobile .green {
+    color: var(--colors-green) !important;
+  }
+  .bookings_main .status_td_mobile .warning {
+    color: var(--colors-yellow) !important;
+  }
+  .bookings_main .status_td_mobile .cancelled {
+    color: var(--colors-brand-red) !important;
+  }
+  .bookings_main .dashboard__main_cars td:first-child {
+    padding-left: 0 !important;
+  }
+  .bookings_main .dashboard__main_heading-btn {
+    margin-top: 16px;
+  }
+  .bookings_main h1.dashboard__main_title {
+    margin-bottom: 0;
+  }
+  .bookings_main .dashboard__main_seacrh_wrapper {
+    margin-top: 16px;
+  }
+  .bookings_main .new_orders {
+    display: none;
+  }
+  .bookings_main .new_order {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colors-green);
+    padding: 10px 16px;
+  }
+  .bookings_main .new_order:hover {
+    background: var(--colors-green);
+  }
+  .bookings_main .new_order p {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: var(--colors-white);
+  }
+  .bookings_main .new_order img {
+    transform: rotate(180deg);
+  }
+  .booking_car_wrapper {
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+  }
+  .booking_car_item {
+    min-width: none;
+    width: 100%;
+    padding-right: 0;
+  }
+  .booking_car_order_bottom {
+    display: block;
+  }
+  .booking_car_order_creation_date {
+    margin-top: 16px;
+  }
+  .bookings_main .dashboard_pages {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .bookings_main .dashboard_pages .dots {
+    display: none;
+  }
+  .bookings_main .dashboard_pages .cars__results-pagination_nav {
+    margin-bottom: 0;
+  }
+  .order_history {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .order_history__search_wrapper {
+    flex-direction: row-reverse;
+  }
+  .order_history__search_wrapper {
+    margin-bottom: 16px;
+  }
+  .order_history {
+    display: none;
+  }
+  .order_history.mobile {
+    display: flex;
+  }
+  .order_history__search input {
+    width: 304px;
+  }
+  .order_history__search label {
+    background: url("../images/icons/search.svg") center no-repeat !important;
+    border-right: none;
+  }
+  .order_history__search input {
+    border: 1px solid var(--colors-dark-grey);
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 304px;
+    height: 40px;
+    padding-left: 44px;
+  }
+  .booking_car_item.waiting .booking_table {
+    border-left: 3px solid var(--colors-yellow) !important;
+  }
+  .booking_car_item.green .booking_table {
+    border-left: 3px solid var(--colors-green);
+  }
+  .booking_car_item.cancelled .booking_table {
+    border-left: 3px solid var(--colors-brand-red);
+  }
+  #bookingsCalendarMobile {
+    display: none;
+  }
+  #bookingsCalendarMobile.active {
+    display: block;
+  }
 }
 @media (max-width: 389px) {
   .dashboard__main_financial-edit {
@@ -8556,5 +8842,10 @@ td.dates_td {
   }
   .dashboard__main_financial-edit .dashboard__main_add_btn {
     margin-bottom: 8px;
+  }
+}
+@media (min-width: 575px) {
+  .status_td_mobile {
+    display: none;
   }
 }

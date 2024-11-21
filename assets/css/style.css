@@ -9352,13 +9352,249 @@ td.price_td p {
 }
 
 .booking_table_not_first td {
-    width: 20.5% !important;
+    width: 19.98% !important;
 }
 
 .booking_table_not_first td.price_td {
     margin-left: auto;
     width: 100%;
     min-width: 100%;
+}
+
+td.dates_td {
+    width: 22%;
+}
+
+.booking_car_order {
+    display: none;
+}
+
+.booking_table.active .booking_table_item {
+    background: var(--colors-bright-grey);
+}
+
+.booking_table.active + .booking_car_order {
+    background: var(--colors-bright-grey);
+}
+
+.order_history {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.status.waiting {
+    font-weight: 500 !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--colors-yellow) !important;
+}
+
+.order_history__sort_wrapper {
+    margin-bottom: 16px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.order_history__sort .select {
+    margin-right: 16px;
+}
+
+.order_history__sort .select::before {
+    content: "";
+    background: url("..//images/dashboard/bookings/sort.svg");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.order_history__sort .select::after {
+    right: 12px;
+    width: 14px;
+    height: 16px;
+}
+
+.order_history__sort select {
+    border: none;
+    width: 152px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0px 16px;
+    background: var(--colors-bright-grey);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: var(--colors-dark-grey);
+    padding-left: 44px;
+}
+
+.order_history__btn {
+    background: none;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+}
+
+.order_history__btn:hover {
+    background: none;
+}
+
+.order_history__btn img {
+    margin-right: 8px;
+}
+
+.order_history__btn span {
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+}
+
+.order_history__search_wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.order_history__search {
+    margin-bottom: 0;
+}
+
+.order_history__search .dashboard_search {
+    margin-bottom: 0;
+}
+
+.order_history__search label {
+    height: 100%;
+    left: 0;
+    border-right: 1px solid var(--colors-grey);
+    border-radius: 100px 0 0 100px;
+    width: 48px;
+    background: url("../images/dashboard/bookings/search_fill.svg") no-repeat center !important;
+}
+
+.order_history__search input {
+    border: 1px solid var(--colors-grey);
+    border-radius: 100px;
+    padding: 0px 40px 0px 52px;
+    width: 375px;
+    height: 40px;
+    background: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: var(--colors-dark-grey);
+}
+
+.order_history__search input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+}
+
+.order_history__search input:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+}
+
+.order_history__search input::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+}
+
+.order_history__search input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+}
+
+.order_history__search_calendar {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.iksweb.dashboard_table .status.in_progress div {
+    width: 104px;
+}
+
+.status.in_progress {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--colors-green) !important;
+}
+
+.status.cancelled {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--colors-brand-red) !important;
+}
+
+.booking_table_not_first .booking_table_item td {
+    width: 16% !important;
+}
+
+.first th {
+    padding-right: 0 !important;
+    width: 0 !important;
+}
+
+.first th.last {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 72% !important;
+}
+
+.bookings_main {
+    padding-left: 0;
+}
+
+.bookings_main .dashboard__main_top {
+    padding-left: 32px;
+}
+
+.bookings_main .dashboard__main_cars th:first-child, .bookings_main .dashboard__main_cars td:first-child {
+    padding-left: 32px !important;
+}
+
+.bookings_main .dashboard__main_seacrh_wrapper.bookings {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.bookings_main .dashboard_pages {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.booking_car_order {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.order_history {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+@media (max-width: 1720px) {
+    .booking_table td.dates_td {
+        width: 24% !important;
+    }
 }
 
 @media (max-width: 1441px) {
@@ -9452,8 +9688,28 @@ td.price_td p {
         padding-right: 32px;
     }
 
+    .booking_table .first th.last {
+        width: 80px !important;
+    }
+
+    .booking_table td.price_td {
+        padding-right: 16px;
+    }
+
     .iksweb.dashboard_table td {
         width: 0;
+    }
+
+    .booking_table_item .status {
+        padding-right: 24px !important;
+    }
+
+    .booking_table_not_first .booking_table_item td {
+        width: 12% !important;
+    }
+
+    .booking_table_not_first .booking_table_item .dates_td {
+        width: 25% !important;
     }
 }
 
@@ -9602,6 +9858,24 @@ td.price_td p {
     .dashboard__main .chat__main {
         height: auto;
     }
+
+    .bookings_main {
+        width: 100%;
+        max-width: none;
+    }
+
+    .bookings_main .cars {
+        padding-left: 10px !important;
+    }
+
+    .bookings_main .dashboard__main_title {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .bookings_main .booking_table .first th.last {
+        width: 55% !important;
+    }
 }
 
 @media (max-width: 959px) {
@@ -9698,6 +9972,28 @@ td.price_td p {
     .dashboard__messages_chat .chat__content_bottom {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .booking_car_item {
+        width: 1032px;
+        padding-right: 80px;
+    }
+
+    .dashboard__main .dashboard__main_title {
+        margin-right: auto;
+    }
+
+    .bookings_main {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .bookings_main .dashboard__main_title {
+        padding-left: 16px;
+    }
+
+    .bookings_main .dashboard__main_seacrh_wrapper.bookings {
+        padding-left: 16px;
     }
 }
 
