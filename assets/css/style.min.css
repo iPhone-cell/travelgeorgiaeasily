@@ -8001,9 +8001,8 @@ td.dates_td {
 
 .bookings_calendar {
   position: fixed;
-  top: 40%;
-  transform: translateY(20px);
-  right: 5%;
+  bottom: 0;
+  right: 32px;
   z-index: 9999999;
   max-width: 740px;
   box-shadow: 0 10px 50px 0 rgba(106, 110, 118, 0.1);
@@ -8021,6 +8020,7 @@ td.dates_td {
 }
 .bookings_calendar .calendar {
   display: flex;
+  overflow: auto;
 }
 
 .bookings_main .dashboard__main_cars {
@@ -8028,8 +8028,24 @@ td.dates_td {
 }
 
 @media (max-width: 575px) {
+  .bookings_calendar {
+    overflow: auto;
+    overflow-y: auto;
+    height: 100%;
+  }
   .bookings_calendar .calendar {
     flex-direction: column;
+    overflow: auto;
+    overflow-y: auto;
+  }
+  .bookings_calendar .header_modal_dates_top {
+    display: none;
+  }
+  .bookings_main .dashboard_pages {
+    padding-right: 0 !important;
+  }
+  .booking_table_not_first .arrow_td_mobile img {
+    margin-left: 0;
   }
 }
 #bookingsCalendar {
@@ -8082,7 +8098,18 @@ td.dates_td {
 }
 
 .bookings_main {
+  padding-top: 32px;
   padding-left: 0;
+}
+.bookings_main .order_history__sort_wrapper {
+  margin-bottom: 0;
+}
+.bookings_main .order_history {
+  margin-bottom: 16px;
+}
+.bookings_main .dashboard__main_heading-btn {
+  padding-left: 32px;
+  margin-top: 0 !important;
 }
 .bookings_main .dashboard__main_top {
   padding-left: 32px;
@@ -8097,6 +8124,9 @@ td.dates_td {
 .bookings_main .dashboard_pages {
   padding-left: 32px;
   padding-right: 32px;
+}
+.bookings_main .dashboard__main_top {
+  padding-left: 0;
 }
 
 .booking_car_order {
@@ -8142,6 +8172,18 @@ span {
 
 .order_history.mobile {
   display: none;
+}
+
+.bookings_calendar .nav_menu_mobile_info {
+  display: block;
+  position: static;
+  margin-bottom: 16px;
+}
+.bookings_calendar .header_modal_button {
+  min-width: 100% !important;
+}
+.bookings_calendar .header_modal_button a {
+  min-width: 100%;
 }
 
 @media (max-width: 1720px) {
@@ -8320,9 +8362,6 @@ span {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .dashboard__main_cars {
-    overflow-x: auto;
-  }
   .iksweb.dashboard_table {
     overflow-x: auto;
   }
@@ -8440,11 +8479,19 @@ span {
     padding-right: 16px;
   }
   .booking_car_item {
-    width: 1032px;
     padding-right: 80px;
+  }
+  .booking_car_item .booking_table {
+    width: 970px;
   }
   .dashboard__main .dashboard__main_title {
     margin-right: auto;
+  }
+  .dashboard__main .booking_car_wrapper {
+    overflow-x: auto;
+  }
+  .booking_car_order {
+    width: 970px;
   }
   .bookings_main {
     width: 100%;
@@ -8455,6 +8502,25 @@ span {
   }
   .bookings_main .dashboard__main_seacrh_wrapper.bookings {
     padding-left: 16px;
+  }
+  .bookings_main .dashboard__main_seacrh_wrapper.bookings {
+    padding-left: 16px;
+  }
+  .bookings_main .order_history {
+    padding-left: 16px;
+  }
+  .bookings_main .dashboard__main_heading-btn {
+    padding-left: 0;
+  }
+  .bookings_main .dashboard_pages {
+    width: 1000px;
+    padding-right: 32px;
+  }
+  .bookings_main .dashboard__main_cars {
+    margin-top: 0;
+  }
+  .bookings_calendar {
+    right: 8px;
   }
 }
 @media (max-width: 767px) {
@@ -8479,9 +8545,11 @@ span {
     width: 200px;
   }
   .booking_car_wrapper {
-    min-width: 1032px;
     width: 100%;
     overflow: auto;
+  }
+  .order_history__sort .select {
+    margin-right: 0;
   }
 }
 @media (max-width: 575px) {
@@ -8829,6 +8897,48 @@ span {
   #bookingsCalendarMobile.active {
     display: block;
   }
+  .bookings_main .booking_car_item .booking_table {
+    width: 100%;
+  }
+  .bookings_main .dashboard_pages {
+    width: 100%;
+  }
+  .bookings_main .dashboard__main_heading-btn {
+    margin-bottom: 16px;
+  }
+  .bookings_main .dashboard__main_seacrh_wrapper.bookings {
+    margin-top: 40px;
+  }
+  .bookings_main .dashboard__main_seacrh_wrapper.bookings span {
+    font-size: 20px;
+  }
+  .bookings_hide_wrapper {
+    align-items: center;
+  }
+  .order_history.mobile {
+    padding-left: 0;
+  }
+  .booking_car_order {
+    width: 100%;
+  }
+  .arrow_td_mobile {
+    padding-right: 16px !important;
+  }
+  .bookings_main .iksweb.dashboard_table .cars_td {
+    padding-right: 0;
+  }
+  .bookings_main .arrow_td_mobile {
+    text-align: right;
+  }
+  .booking_table_not_first .arrow_td_mobile {
+    text-align: right;
+  }
+  .booking_table.active .arrow_td_mobile img {
+    transform: rotate(180deg);
+  }
+  .booking_table.active .new_order img {
+    transform: rotate(0);
+  }
 }
 @media (max-width: 389px) {
   .dashboard__main_financial-edit {
@@ -8846,6 +8956,9 @@ span {
 }
 @media (min-width: 575px) {
   .status_td_mobile {
+    display: none;
+  }
+  .arrow_td_mobile {
     display: none;
   }
 }
