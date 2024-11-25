@@ -9763,6 +9763,260 @@ span {
     min-width: 100%;
 }
 
+.bookings_main .dashboard__main_heading-btn {
+    padding-left: 0;
+}
+
+.bookings_main {
+    padding-left: 32px;
+}
+
+.add_car__progress_bar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.add_car__progress_bar progress {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: -15px;
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2px;
+    border-radius: 9px;
+}
+
+.add_car__progress_bar progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2px;
+    border-radius: 9px;
+}
+
+.add_car__progress_bar progress::-webkit-progress-value {
+    background-color: var(--colors-brand-red);
+    border: 0;
+    height: 2px;
+    border-radius: 9px;
+}
+
+.add_car__progress_bar progress::-moz-progress-bar {
+    background-color: #f3f3f3;
+    border: 0;
+    width: 80%;
+    height: 18px;
+    border-radius: 9px;
+}
+
+.add_car__step {
+    z-index: 2;
+}
+
+.add_car__step.first .add_car__step_number {
+    margin-left: 0;
+}
+
+.add_car__step.last .add_car__step_number {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.add_car__step.current .add_car__step_number {
+    background: #FBE6E5;
+    border: 2px solid var(--colors-brand-red);
+}
+
+.add_car__step.current .add_car__step_label {
+    z-index: 3;
+    color: var(--colors-brand-red);
+}
+
+.add_car__step_number {
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--colors-grey);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--colors-brand-black);
+}
+
+.add_car__step_number p {
+    z-index: 2;
+}
+
+.add_car__step_label {
+    margin-top: 9px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--colors-brand-black);
+}
+
+.add_car__sent {
+    margin-top: 40px;
+}
+
+.add_car__sent_heading {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.add_car__sent_form_wrapper {
+    margin-top: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.add_car__sent_form {
+    max-width: 1221px;
+    width: 100%;
+    margin-right: 32px;
+}
+
+.add_car__sent_form_item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.add_car__sent_form_item .modal__equipment_form_item_name label:before {
+    top: -10px;
+}
+
+.add_car__sent_form_item.checkbox {
+    margin-bottom: 8px;
+}
+
+.add_car__sent_form_item.checkbox p {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--colors-brand-black);
+}
+
+.add_car__sent_form_item:last-child {
+    margin-bottom: 0;
+}
+
+.add_car__sent_form_item p {
+    margin-right: 32px;
+    max-width: 150px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+}
+
+.add_car__sent_form_item p span {
+    color: var(--colors-brand-red);
+}
+
+.add_car__sent_form_item.disabled select {
+    background: var(--colors-bright-grey);
+}
+
+.add_car__sent_form_select {
+    width: 100%;
+}
+
+.add_car__sent_form_select select {
+    max-width: 1032px;
+    width: 100%;
+    font-size: 16px;
+    color: var(--colors-brand-black);
+    height: 48px;
+    padding: 14px 20px;
+    line-height: 1;
+}
+
+.add_car__sent_form_sidebar {
+    max-width: 355px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.add_car__sent_form_sidebar_photo {
+    width: 100%;
+}
+
+.add_car__sent_form_sidebar_photo label {
+    width: 355px;
+    height: 200px;
+    font-size: 0;
+}
+
+.add_car__sent_form_sidebar_photo label img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.add_car__sent_form_sidebar_photo label input {
+    opacity: 0;
+}
+
+.add_car__sent_form_sidebar_photo img {
+    width: 100%;
+}
+
+.add_car__sent_form_sidebar_btn {
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 160px;
+    height: 40px;
+    background: var(--colors-brand-red);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    text-align: center;
+    color: var(--colors-white);
+}
+
+.add_car__sent_form_sidebar_btn span {
+    margin-right: 8px;
+}
+
+.add_car__sent_form_sidebar_btn.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 @media (max-width: 1720px) {
     .booking_table td.dates_td {
         width: 24% !important;
@@ -10043,6 +10297,25 @@ span {
 
     .bookings_main .booking_table .first th.last {
         width: 55% !important;
+    }
+
+    .add_car_main .dashboard__main_heading-btn {
+        margin-left: 16px !important;
+    }
+
+    .dashboard__main_cars.add_car_wrapper {
+        overflow: auto;
+    }
+
+    .add_car {
+        min-width: 968px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 32px;
+    }
+
+    .add_car__sent_form_select {
+        width: 466px;
     }
 }
 
