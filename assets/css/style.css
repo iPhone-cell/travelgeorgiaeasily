@@ -850,6 +850,66 @@ form label {
     height: 20px;
 }
 
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
 @media (max-width: 1599px) {
     .container {
         max-width: 1200px;
@@ -9895,9 +9955,12 @@ span {
 }
 
 .add_car__sent_form {
-    max-width: 1221px;
     width: 100%;
     margin-right: 32px;
+}
+
+.add_car__sent_form .modal_container {
+    max-width: none;
 }
 
 .add_car__sent_form_item {
@@ -10017,6 +10080,217 @@ span {
     pointer-events: none;
 }
 
+.add_car__sent_heading.mobile {
+    display: none;
+}
+
+.add_car__steps.mobile {
+    display: none;
+}
+
+.add_car__sent_form.no_sidebar {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.modal__gallery_photo_add {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 42px;
+    border: 1px dashed var(--colors-dark-grey);
+    border-radius: 5px;
+    width: 264px;
+    height: 144px;
+    background: var(--colors-bright-grey);
+}
+
+.modal__gallery_photo_add img {
+    width: 32px;
+    height: 32px;
+}
+
+.modal__gallery_photo_add p {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--colors-dark-grey);
+    margin-top: 8px;
+}
+
+.add_car__steps.mobile {
+    position: fixed;
+    border-top: 1px solid var(--colors-grey);
+}
+
+.add_car__steps {
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 16px 29px 16px;
+    background: var(--colors-white);
+    left: 0;
+    width: 100%;
+}
+
+.add_car__steps_buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.add_car__steps_button {
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 171px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 114%;
+    text-align: center;
+}
+
+.add_car__steps_button.prev {
+    background: rgba(203, 204, 205, 0.4);
+    font-family: var(--font-family);
+    color: var(--colors-brand-red);
+    margin-right: 8px;
+}
+
+.add_car__steps_button.prev img {
+    margin-right: 8px;
+}
+
+.add_car__steps_button.next {
+    background: var(--colors-brand-red);
+    color: var(--colors-white);
+    margin-left: 8px;
+}
+
+.add_car__steps_button.next img {
+    margin-left: 8px;
+}
+
+.add_car__steps.mobile {
+    display: none;
+}
+
+.add_car__sent_gallery .modal__gallery_photo {
+    height: 144px;
+    width: 264px;
+}
+
+.add_car__sent_gallery .modal__gallery_photo > img {
+    height: 100%;
+    width: 100%;
+}
+
+.add_car__sent_gallery .modal__gallery_photo_add img {
+    width: 32px;
+    height: 32px;
+}
+
+.add_car_main {
+    position: relative;
+}
+
+.add_car__steps {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    left: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+}
+
+.add_car__steps .prev {
+    width: 95px;
+    padding: 12px;
+    margin-right: auto;
+}
+
+.add_car__steps .next {
+    width: 160px;
+    margin-left: auto;
+}
+
+.add_car__steps .add_car__steps_buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.add_car__steps_button.disabled {
+    opacity: 0.5;
+}
+
+.add_car__step.complete .add_car__step_number {
+    background: var(--colors-brand-red);
+    color: var(--colors-white);
+    border: none;
+}
+
+#dashboardAddPhoto {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+}
+
+#dashboardAddPhoto .modal__gallery_photo_add {
+    text-align: center;
+}
+
+#dashboardAddPhoto .modal__gallery_photo img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#dashboardAddPhoto .modal__gallery_photo_add {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.add_car__sent_gallery .add_car__sent_form_sidebar_photo label {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    width: 264px;
+    height: 144px;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.add_car__sent_gallery .add_car__sent_form_sidebar_photo {
+    width: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.add_car__sent_gallery .modal_container.dashboard__gallery_wrapper {
+    margin-left: 0;
+}
+
+.add_car_main {
+    overflow-x: scroll;
+}
+
 @media (max-width: 1720px) {
     .booking_table td.dates_td {
         width: 24% !important;
@@ -10035,6 +10309,18 @@ span {
     .dashboard__main_content {
         width: auto;
         max-width: none;
+    }
+
+    .add_car__sent_form.no_sidebar {
+        margin-right: 0;
+    }
+
+    .add_car__sent_form_wrapper {
+        overflow: scroll;
+    }
+
+    .add_car__sent_form_wrapper .add_car__sent_gallery {
+        min-width: 1128px;
     }
 }
 
@@ -10303,19 +10589,35 @@ span {
         margin-left: 16px !important;
     }
 
-    .dashboard__main_cars.add_car_wrapper {
-        overflow: auto;
-    }
-
     .add_car {
-        min-width: 968px;
         margin-left: 32px;
         margin-right: 32px;
         margin-top: 32px;
+        overflow-x: auto;
     }
 
     .add_car__sent_form_select {
         width: 466px;
+    }
+
+    .add_car__sent_form_sidebar {
+        max-width: 301px;
+    }
+
+    .add_car__sent_form_sidebar_photo img {
+        width: 301px;
+    }
+
+    .add_car__sent_form_sidebar_photo label {
+        width: 100%;
+    }
+
+    .add_car__sent_form_item.checkbox {
+        margin-bottom: 24px;
+    }
+
+    .add_car__sent_form_item.checkbox:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -10471,6 +10773,15 @@ span {
 
     .bookings_calendar {
         right: 8px;
+    }
+
+    .add_car__progress_bar {
+        min-width: 1032px;
+        margin-right: 32px;
+    }
+
+    .add_car__sent_gallery .modal__gallery {
+        overflow-y: hidden;
     }
 }
 
@@ -11028,6 +11339,222 @@ span {
         -webkit-transform: rotate(0);
         transform: rotate(0);
     }
+
+    .add_car__step_label {
+        display: none;
+    }
+
+    .add_car__step_number p {
+        display: none;
+    }
+
+    .add_car__step .add_car__step_number {
+        width: 16px;
+        height: 16px;
+    }
+
+    .add_car {
+        margin-top: 16px;
+    }
+
+    .add_car__progress_bar progress {
+        margin-top: 0;
+    }
+
+    .add_car__progress_bar {
+        margin-right: 0;
+    }
+
+    .add_car__sent_form_wrapper {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .add_car__sent_form_sidebar {
+        max-width: none;
+        width: 100%;
+    }
+
+    .add_car__sent_form_sidebar_photo input {
+        width: 0;
+    }
+
+    .add_car__sent_form_sidebar_photo img {
+        width: 100%;
+    }
+
+    .add_car__sent_heading {
+        display: none;
+    }
+
+    .add_car__sent.heading_mobile .add_car__sent_heading {
+        display: block;
+    }
+
+    .add_car__sent.heading_mobile .add_car__sent_heading {
+        font-size: 20px;
+    }
+
+    .add_car__sent_form.no_sidebar {
+        margin-top: 0;
+    }
+
+    .add_car__sent_heading.mobile {
+        display: block;
+        font-size: 18px;
+    }
+
+    .add_car__sent_form_sidebar_btn {
+        display: none;
+    }
+
+    .add_car__sent_form_sidebar {
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+
+    .add_car__sent_form_sidebar_photo {
+        margin-bottom: 48px;
+    }
+
+    .add_car__sent_form_sidebar_photo label {
+        height: 160px;
+    }
+
+    .add_car__sent_form {
+        margin-top: 24px;
+    }
+
+    .add_car__sent_form_item {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .add_car__sent_form_select {
+        width: 390px;
+    }
+
+    .add_car__sent_form_item {
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+
+    .add_car__sent_form_select {
+        margin-top: 8px;
+    }
+
+    .add_car__sent_form_select {
+        width: 358px !important;
+    }
+
+    .add_car__sent_form_select .select {
+        width: 358px !important;
+        max-width: none;
+        min-width: none;
+    }
+
+    .add_car__sent_form_select select {
+        width: 358px !important;
+    }
+
+    .add_car {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .add_car__sent_form_item.checkbox {
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+
+    .add_car__sent_form_item.checkbox {
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .add_car__sent_form_item.checkbox p {
+        font-size: 15px;
+    }
+
+    .add_car__sent_form_item.checkbox .modal__equipment_form_item_name {
+        width: 20px;
+        margin-right: 16px;
+    }
+
+    .add_car__sent_form_item .modal__equipment_form_item_name label:before {
+        width: 20px;
+        height: 20px;
+        top: -8px;
+    }
+
+    .add_car__sent_form_checkbox {
+        width: 20px;
+        margin-right: 16px;
+    }
+
+    .add_car__sent_form {
+        margin-bottom: 47px;
+    }
+
+    .add_car__steps.mobile {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .add_car__progress_bar {
+        min-width: auto;
+    }
+
+    .add_car__sent_gallery .dashboard__gallery_wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .add_car__sent_form_wrapper .add_car__sent_gallery {
+        min-width: auto;
+    }
+
+    .add_car__sent_form_wrapper .add_car__sent_gallery .dashboard__gallery_wrapper {
+        padding-right: 0;
+    }
+
+    .add_car__sent_form_wrapper .add_car__sent_gallery .modal__gallery_photo {
+        width: auto;
+        width: 100%;
+        margin-bottom: 4px;
+        margin-right: 0;
+    }
+
+    .add_car__sent_form_wrapper .add_car__sent_gallery .modal__gallery_photo:last-child {
+        margin-bottom: 0;
+    }
+
+    .add_car__sent_form_sidebar_photo {
+        margin-bottom: 0;
+    }
+
+    .add_car__steps {
+        position: fixed;
+        border-top: 1px solid var(--colors-grey);
+        background: var(--colors-white);
+        bottom: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .add_car__steps .add_car__steps_buttons .prev {
+        width: 171px;
+    }
+
+    .add_car__steps .add_car__steps_buttons .next {
+        width: 171px;
+    }
 }
 
 @media (max-width: 389px) {
@@ -11047,6 +11574,71 @@ span {
 
     .dashboard__main_financial-edit .dashboard__main_add_btn {
         margin-bottom: 8px;
+    }
+
+    .add_car__sent_form_select {
+        width: auto;
+        width: 343px !important;
+    }
+
+    .add_car__sent_form_select .select {
+        width: 343px !important;
+    }
+
+    .add_car__sent_form_select .select select {
+        width: 343px !important;
+    }
+
+    .add_car__steps.mobile {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .add_car__steps_buttons {
+        width: 100%;
+    }
+
+    .add_car__steps_button {
+        width: auto;
+        width: 50%;
+    }
+
+    .add_car__steps {
+        position: fixed;
+        border-top: 1px solid var(--colors-grey);
+        background: var(--colors-white);
+        bottom: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .add_car__steps .add_car__steps_buttons {
+        width: 100%;
+    }
+
+    .add_car__steps .add_car__steps_buttons .prev {
+        width: 50%;
+        margin-right: 8px;
+    }
+
+    .add_car__steps .add_car__steps_buttons .next {
+        width: 50%;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 374px) {
+    .add_car__sent_form_select {
+        width: auto;
+        width: 288px !important;
+    }
+
+    .add_car__sent_form_select .select {
+        width: 288px !important;
+    }
+
+    .add_car__sent_form_select .select select {
+        width: 288px !important;
     }
 }
 
