@@ -883,7 +883,7 @@ form label {
     height: 20px;
     width: 20px;
     left: 2px;
-    bottom: 2.5px;
+    bottom: 2.2px;
     background-color: white;
     transition: 0.4s;
 }
@@ -10298,18 +10298,17 @@ span {
 .add_car__sent_service_column {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-height: 1300px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+}
+
+.add_car__sent_service_column_item {
+    width: 50%;
+    margin-right: 32px;
+    margin-bottom: 80px;
 }
 
 .add_car__sent_service_item {
     border: 1px solid var(--colors-grey);
     border-radius: 5px;
-    width: 50%;
-    margin-right: 32px;
     margin-bottom: 32px;
 }
 
@@ -10333,15 +10332,11 @@ span {
 
 .add_car__sent_service_content {
     padding: 24px;
-    opacity: 0;
-}
-
-.add_car__sent_service_content.active {
-    opacity: 1;
+    display: none;
 }
 
 .add_car__sent_service_content1 {
-    opacity: 1;
+    display: block;
 }
 
 .add_car__sent_service_content_input {
