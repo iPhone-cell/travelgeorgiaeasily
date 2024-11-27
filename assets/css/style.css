@@ -854,8 +854,8 @@ form label {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 47px;
+    height: 24px;
 }
 
 /* Hide default HTML checkbox */
@@ -873,32 +873,36 @@ form label {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--colors-dark-grey);
     transition: 0.4s;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2.5px;
     background-color: white;
     transition: 0.4s;
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--colors-brand-red);
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--colors-brand-red);
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+input:disabled + .slider {
+    opacity: 0.5;
 }
 
 /* Rounded sliders */
@@ -10289,6 +10293,210 @@ span {
 
 .add_car_main {
     overflow-x: scroll;
+}
+
+.add_car__sent_service_column {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: 1300px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.add_car__sent_service_item {
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+    width: 50%;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+.add_car__sent_service_item:last-child {
+    margin-right: 0;
+}
+
+.add_car__sent_service_title {
+    padding: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--colors-brand-black);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--colors-grey);
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.add_car__sent_service_content {
+    padding: 24px;
+    opacity: 0;
+}
+
+.add_car__sent_service_content.active {
+    opacity: 1;
+}
+
+.add_car__sent_service_content1 {
+    opacity: 1;
+}
+
+.add_car__sent_service_content_input {
+    text-align: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.add_car__sent_service_content_input input {
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+    padding: 16px;
+    width: 100%;
+    height: 56px;
+}
+
+.add_car__sent_service_content_input input ::-webkit-input-placeholder {
+    font-size: 16px;
+    color: var(--colors-dark-grey);
+}
+
+.add_car__sent_service_content_input input :-ms-input-placeholder {
+    font-size: 16px;
+    color: var(--colors-dark-grey);
+}
+
+.add_car__sent_service_content_input input ::-ms-input-placeholder {
+    font-size: 16px;
+    color: var(--colors-dark-grey);
+}
+
+.add_car__sent_service_content_input input ::placeholder {
+    font-size: 16px;
+    color: var(--colors-dark-grey);
+}
+
+.add_car__sent_service_content_input label {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--colors-brand-black);
+    opacity: 0.5;
+}
+
+.add_car__sent_service_content_input.complete {
+    border: 1px solid var(--colors-brand-black);
+    border-radius: 5px;
+    position: relative;
+}
+
+.add_car__sent_service_content_input.complete label {
+    opacity: 1;
+}
+
+.add_car__sent_service_content_input.complete .label_top {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    text-align: center;
+    width: auto;
+    background: #fff;
+    font-size: 11px;
+    max-width: 88px;
+    width: 100%;
+}
+
+.add_car__sent_service_content_list {
+    margin-top: 32px;
+}
+
+.add_car__sent_service_content_list_checkbox .checkbox__input:disabled + .checkbox__label {
+    opacity: 0.5;
+}
+
+.add_car__sent_service_content_list_item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.add_car__sent_service_content_list_item:last-child {
+    margin-bottom: 0;
+}
+
+.add_car__sent_service_content_list_label {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 276px;
+}
+
+.add_car__sent_service_content_list_title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colors-brand-black);
+}
+
+.add_car__sent_service_content_list_info {
+    margin-left: auto;
+    font-size: 16px;
+    color: var(--colors-brand-black);
+    width: 132px;
+}
+
+.add_car__sent_service_content_list_info.green {
+    color: var(--colors-green);
+}
+
+.add_car__sent_service_content_list_info span {
+    margin-right: 4px;
+}
+
+.add_car__sent_service_content_btns .modal_login_reg__form_radio_item {
+    transition: 0s;
+    border-bottom: 1px solid var(--colors-grey);
+    opacity: 1;
+}
+
+.add_car__sent_service_content_btns .modal_login_reg__form_radio_item.active {
+    border-bottom: 2px solid var(--colors-brand-red);
+}
+
+.add_car__sent_service_content_item {
+    margin-bottom: 32px;
+}
+
+.add_car__sent_service_content_item:last-child {
+    margin-bottom: 0;
+}
+
+.add_car__sent_service_content_item p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--colors-brand-black);
+    margin-bottom: 16px;
+}
+
+.add_car__sent_service_item.additional .add_car__sent_service_content_list {
+    margin-top: 0;
+}
+
+.add_car__sent_service_item.additional .add_car__sent_service_content_list_title {
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.add_car__sent_service_item.additional .add_car__sent_service_content_list_label {
+    text-align: right;
 }
 
 @media (max-width: 1720px) {

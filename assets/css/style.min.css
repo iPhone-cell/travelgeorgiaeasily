@@ -860,7 +860,7 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--colors-dark-grey);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -871,7 +871,7 @@ form label {
   height: 20px;
   width: 20px;
   left: 2px;
-  bottom: 2.5px;
+  bottom: 2.2px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -889,6 +889,10 @@ input:checked + .slider:before {
   -webkit-transform: translateX(22px);
   -ms-transform: translateX(22px);
   transform: translateX(22px);
+}
+
+input:disabled + .slider {
+  opacity: 0.5;
 }
 
 /* Rounded sliders */
@@ -8645,16 +8649,17 @@ span {
 
 .add_car__sent_service_column {
   display: flex;
-  flex-direction: column;
-  max-height: 1128px;
-  flex-wrap: wrap;
+}
+
+.add_car__sent_service_column_item {
+  width: 50%;
+  margin-right: 32px;
+  margin-bottom: 80px;
 }
 
 .add_car__sent_service_item {
   border: 1px solid var(--colors-grey);
   border-radius: 5px;
-  width: 50%;
-  margin-right: 32px;
   margin-bottom: 32px;
 }
 .add_car__sent_service_item:last-child {
@@ -8674,11 +8679,17 @@ span {
 
 .add_car__sent_service_content {
   padding: 24px;
+  display: none;
+}
+
+.add_car__sent_service_content1 {
+  display: block;
 }
 
 .add_car__sent_service_content_input {
   text-align: center;
   position: relative;
+  margin-bottom: 12px;
 }
 .add_car__sent_service_content_input input {
   border: 1px solid var(--colors-grey);
@@ -8700,15 +8711,39 @@ span {
   color: var(--colors-brand-black);
   opacity: 0.5;
 }
+.add_car__sent_service_content_input.complete {
+  border: 1px solid var(--colors-brand-black);
+  border-radius: 5px;
+  position: relative;
+}
+.add_car__sent_service_content_input.complete label {
+  opacity: 1;
+}
+.add_car__sent_service_content_input.complete .label_top {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  text-align: center;
+  width: auto;
+  background: #fff;
+  font-size: 11px;
+  max-width: 88px;
+  width: 100%;
+}
 
 .add_car__sent_service_content_list {
   margin-top: 32px;
+}
+
+.add_car__sent_service_content_list_checkbox .checkbox__input:disabled + .checkbox__label {
+  opacity: 0.5;
 }
 
 .add_car__sent_service_content_list_item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
+  align-items: center;
 }
 .add_car__sent_service_content_list_item:last-child {
   margin-bottom: 0;
@@ -8751,11 +8786,25 @@ span {
 .add_car__sent_service_content_item {
   margin-bottom: 32px;
 }
+.add_car__sent_service_content_item:last-child {
+  margin-bottom: 0;
+}
 .add_car__sent_service_content_item p {
   font-weight: 500;
   font-size: 20px;
   color: var(--colors-brand-black);
   margin-bottom: 16px;
+}
+
+.add_car__sent_service_item.additional .add_car__sent_service_content_list {
+  margin-top: 0;
+}
+.add_car__sent_service_item.additional .add_car__sent_service_content_list_title {
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.add_car__sent_service_item.additional .add_car__sent_service_content_list_label {
+  text-align: right;
 }
 
 @media (max-width: 1720px) {
