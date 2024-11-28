@@ -663,6 +663,18 @@ select {
     background: #101214;
 }
 
+.fz_15 {
+    font-size: 15px;
+}
+
+.pb_24 {
+    padding-bottom: 24px;
+}
+
+.p_none {
+    padding: 0 !important;
+}
+
 .z-index_2 {
     z-index: 99999;
 }
@@ -9906,7 +9918,7 @@ span {
 .add_car__step_number {
     margin-left: auto;
     margin-right: auto;
-    background: #fff;
+    background: var(--colors-white);
     z-index: 2;
     width: 32px;
     height: 32px;
@@ -10306,6 +10318,10 @@ span {
     margin-bottom: 80px;
 }
 
+.add_car__sent_service_column_item:last-child {
+    margin-right: 0;
+}
+
 .add_car__sent_service_item {
     border: 1px solid var(--colors-grey);
     border-radius: 5px;
@@ -10333,6 +10349,10 @@ span {
 .add_car__sent_service_content {
     padding: 24px;
     display: none;
+}
+
+.add_car__sent_service_content.no_switch {
+    display: block;
 }
 
 .add_car__sent_service_content1 {
@@ -10394,13 +10414,14 @@ span {
     opacity: 1;
 }
 
-.add_car__sent_service_content_input.complete .label_top {
+.label_top {
+    transition: all 0.3s ease;
     position: absolute;
     top: 0;
     left: 16px;
     text-align: center;
     width: auto;
-    background: #fff;
+    background: var(--colors-white);
     font-size: 11px;
     max-width: 88px;
     width: 100%;
@@ -10492,6 +10513,161 @@ span {
 
 .add_car__sent_service_item.additional .add_car__sent_service_content_list_label {
     text-align: right;
+}
+
+.add_car__sent_service_content_input .select {
+    position: relative;
+}
+
+.add_car__sent_service_content_input .select.active select {
+    border: 1px solid var(--colors-brand-black);
+}
+
+.add_car__sent_service_content_input select {
+    transition: all 0.3s ease;
+    width: 100%;
+    padding-left: 32px;
+}
+
+.add_car__sent_service_content_input .label_top {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    opacity: 0;
+}
+
+.add_car__sent_service_content_input .label_top.active {
+    opacity: 1;
+}
+
+.checkbox__item.grey .checkbox__input:checked + .checkbox__label:before {
+    background-color: rgba(106, 110, 118, 0.35);
+}
+
+.add_car__sent_service_content_top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--colors-grey);
+}
+
+.add_car__sent_service_content_top p {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+}
+
+.no_switch_content {
+    display: block;
+}
+
+.add_car__sent_service_content_checkbox_wrapper {
+    display: none;
+}
+
+.add_car__sent_service_content.no_switch {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.add_car__sent_service_content.no_switch .add_car__sent_service_content_item {
+    padding-top: 24px;
+    margin-bottom: 0;
+    padding-left: 24px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    border-bottom: 1px solid var(--colors-grey);
+}
+
+.add_car__sent_service_content.no_switch .add_car__sent_service_content_item:last-child {
+    border-bottom: none;
+}
+
+.add_car__sent_service_content.no_switch .add_car__sent_service_content_item p {
+    font-size: 15px;
+}
+
+.add_car__sent_service_content.no_switch .add_car__sent_service_content_item p.fz_15 {
+    text-transform: uppercase;
+}
+
+.add_car__sent_service_content.no_switch .price p {
+    opacity: 0.6;
+    color: var(--colors-dark-grey);
+}
+
+.add_car__sent_service_content.no_switch .price .price_div {
+    display: none;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: var(--colors-bright-grey);
+}
+
+.add_car__sent_service_content.no_switch .price .price_div.green {
+    color: var(--colors-green);
+    background: rgba(32, 152, 102, 0.1);
+}
+
+.add_car__sent_service_content.no_switch .price .price_div.line_through {
+    text-decoration: line-through;
+}
+
+.add_car__sent_service_content.no_switch .price.active .price_div {
+    display: block;
+}
+
+.add_car__sent_service_content.no_switch .price.active p {
+    display: none;
+}
+
+.add_car__sent_service_content.no_switch .price.active.none .price_div {
+    display: none;
+}
+
+.add_car__sent_service_content.no_switch .price.active.none p {
+    display: block;
+}
+
+.add_car__sent_service_content.no_switch .add_car__sent_service_content_top {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.add_car__sent_service_title.p_none {
+    border-bottom: none;
+    text-transform: uppercase;
+}
+
+.add_car__sent_service_title.pb_24 {
+    padding-bottom: 12px !important;
+}
+
+.add_car__sent_service_content_item_flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.add_car__sent_service_content_item_flex:last-child {
+    margin-bottom: 0;
+}
+
+.add_car__sent_service_content_checkbox.add_car__sent_service_content_item_flex label {
+    margin-bottom: 0;
+}
+
+.add_car__sent_service_content_item_flex {
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 @media (max-width: 1720px) {
@@ -10983,8 +11159,39 @@ span {
         margin-right: 32px;
     }
 
+    .add_car__progress_bar.no_scroll {
+        min-width: auto;
+        margin-right: 0;
+    }
+
     .add_car__sent_gallery .modal__gallery {
         overflow-y: hidden;
+    }
+
+    .add_car__sent_service_column {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .add_car__sent_service_column_item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .add_car__sent_service_item {
+        margin-bottom: 0;
+    }
+
+    .add_car {
+        margin-right: 0;
+    }
+
+    .delivery .add_car__sent_service_column_item {
+        margin-bottom: 32px;
+    }
+
+    .delivery .add_car__sent_service_column_item:last-child {
+        padding-bottom: 64px;
     }
 }
 
@@ -11757,6 +11964,84 @@ span {
 
     .add_car__steps .add_car__steps_buttons .next {
         width: 171px;
+    }
+
+    .delivery .add_car__sent_service_column_item:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_item {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .add_car__sent_service_item {
+        border: none;
+    }
+
+    .add_car__sent_service_title {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .add_car__sent_service_content.no_switch_content {
+        padding: 0;
+        margin-top: 16px;
+    }
+
+    .add_car__sent_service_content.no_switch {
+        padding-top: 16px;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_top {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_item {
+        padding-top: 12px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_item .checkbox__label:before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_item .checkbox__label {
+        font-size: 15px;
+        padding-left: 36px;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_item {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .add_car__sent_service_title.pb_24 {
+        padding-bottom: 0 !important;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_checkbox_wrapper {
+        padding-top: 16px;
+    }
+
+    .add_car__sent_service_content_input select {
+        height: 48px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .add_car__sent_service_content_input .label_top {
+        left: 4px;
+    }
+
+    .add_car__sent_service_content.no_switch .add_car__sent_service_content_item:last-child {
+        padding-bottom: 0;
     }
 }
 
