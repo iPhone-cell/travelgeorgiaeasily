@@ -926,6 +926,15 @@ input:disabled + .slider {
     border-radius: 50%;
 }
 
+.error {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.error :focus {
+    outline: none;
+}
+
 @media (max-width: 1599px) {
     .container {
         max-width: 1200px;
@@ -10096,6 +10105,10 @@ span {
     pointer-events: none;
 }
 
+.add_car__sent_form_sidebar_btn:hover {
+    background: var(--colors-brand-red);
+}
+
 .add_car__sent_heading.mobile {
     display: none;
 }
@@ -10422,7 +10435,7 @@ span {
     text-align: center;
     width: auto;
     background: var(--colors-white);
-    font-size: 11px;
+    font-size: 11px !important;
     max-width: 88px;
     width: 100%;
 }
