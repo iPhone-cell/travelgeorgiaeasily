@@ -166,7 +166,7 @@
                     <div class="dashboard__nav_mobile_wrapper">
                         <nav class="dashboard__nav dashboard__nav_mobile">
                             <ul>
-                                <li>
+                                <li class="active">
                                     <a href="#">
                                         <img src="assets/images/icons/dashboard_nav_icon.svg" alt="">
                                         <p>Calendar</p>
@@ -178,7 +178,7 @@
                                         <p>Bookings</p>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="#">
                                         <img src="assets/images/icons/dashboard_nav_icon.svg" alt="">
                                         <p>Add a car</p>
@@ -330,7 +330,7 @@
         
                 <nav class="dashboard__nav">
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="#">
                                 <img src="assets/images/icons/dashboard_nav_icon.svg" alt="">
                                 <p>Calendar</p>
@@ -342,7 +342,7 @@
                                 <p>Bookings</p>
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#">
                                 <img src="assets/images/icons/dashboard_nav_icon.svg" alt="">
                                 <p>Add a car</p>
@@ -397,7 +397,7 @@
                     </ul>
                 </nav>
             </aside>
-            <main class="main dashboard__main bookings_main add_car_main">
+            <main class="main dashboard__main bookings_main add_car_main calendar_main">
                 <div class="dashboard__main_content">
                     <div class="dashboard__main_top">
                         <div class="dashboard__main_breadcrumbs">
@@ -415,384 +415,762 @@
                         </div>
                         <div class="dashboard__main_heading-btn">
                             <h1 class="dashboard__main_title title">
-                                Add a new car
+                                Calendar
                             </h1>
                         </div>
                     </div>
                     <div class="dashboard__main_cars add_car_wrapper delivery">
-                        <div class="add_car">
-                            <div class="add_car__progress_bar no_scroll">
-                                <progress  max="100" value="100"></progress>
-                                <div class="add_car__step first complete">
-                                    <div class="add_car__step_number">
-                                        <p>1</p>
+                        <div class="dashboard_calendar">
+                            <div class="dashboard_calendar__header">
+                                <div class="dashboard_calendar__header_left">
+                                    <button class="dashboard_calendar__header_tag">
+                                        Today
+                                    </button>
+                                    <div class="dashboard_calendar__header_arrows">
+                                        <button class="arrow_left">
+                                            <img src="assets/images/dashboard/calendar/arrow_left.svg" alt="">
+                                        </button>
+                                        <button class="arrow_right">
+                                            <img src="assets/images/dashboard/calendar/arrow_right.svg" alt="">
+                                        </button>
                                     </div>
-                                    <div class="add_car__step_label">
-                                        Basic info
-                                    </div>
-                                </div>
-                                <div class="add_car__step complete">
-                                    <div class="add_car__step_number">
-                                        <p>2</p>
-                                    </div>
-                                    <div class="add_car__step_label">
-                                        Photo
-                                    </div>
-                                </div>
-                                <div class="add_car__step complete">
-                                    <div class="add_car__step_number">
-                                        <p>3</p>
-                                    </div>
-                                    <div class="add_car__step_label">
-                                        Service
+                                    <div class="dashboard_calendar__header_month">
+                                        December 2024
                                     </div>
                                 </div>
-                                <div class="add_car__step complete">
-                                    <div class="add_car__step_number">
-                                        <p>4</p>
+                                <div class="dashboard_calendar__header_right">
+                                    <div class="dashboard_calendar__header_options">
+                                        <button>
+                                            <img src="assets/images/dashboard/calendar/search.svg" alt="">
+                                        </button>
+                                        <button>
+                                            <img src="assets/images/dashboard/calendar/calendar_book.svg" alt="">
+                                        </button>
+                                        <button>
+                                            <img src="assets/images/dashboard/calendar/settings.svg" alt="">
+                                        </button>
+                                        <button>
+                                            <img src="assets/images/dashboard/calendar/question.svg" alt="">
+                                        </button>
                                     </div>
-                                    <div class="add_car__step_label">
-                                        Delivery
-                                    </div>
-                                </div>
-                                <div class="add_car__step last current">
-                                    <div class="add_car__step_number">
-                                        <p>5</p>
-                                    </div>
-                                    <div class="add_car__step_label">
-                                        Prices
-                                    </div>
+                                    <button class="dashboard_calendar__header_months">
+                                        <img src="assets/images/dashboard/calendar/calendar.svg" alt="">
+                                       <span>1 Dec 2024... 10 Jun 2025</span>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="add_car__sent heading_mobile">
-                                <div class="add_car__sent_heading">
-                                    Transport Rental Prices
-                                </div>
-                                <form class="add_car__sent_form_wrapper">
-                                    <div class="add_car__sent_form no_sidebar">
-                                        <div class="add_car__sent_service_wrapper">
-                                            <div class="add_car__sent_service">
-                                                <div class="add_car__sent_service_main no_grid">
-                                                    <div class="add_car__sent_service_column">
-                                                        <div class="add_car__sent_service_column_item full">
-                                                            <div class="add_car__sent_service_item add_car__sent_service_item1">
-                                                                <div class="add_car__sent_service_title add_car__sent_service_title1">
-                                                                    <div class="add_car__sent_service_title_label">
-                                                                        Daily
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_title_toggle">
-                                                                        <label class="switch">
-                                                                            <input type="checkbox" checked>
-                                                                            <span class="slider round"></span>
-                                                                          </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="add_car__sent_service_content add_car__sent_service_content1 add_car__sent_service_table_wrapper">
-                                                                    <table class="iksweb add_car__sent_service_table">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <th>Tariffs</th>
-                                                                                <th>1...7</th>
-                                                                                <th>8...14</th>
-                                                                                <th>15+</th>
-                                                                                <th class="last">Actions</th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="add_car__sent_form_item checkbox">
-                                                                                        <div class="add_car__sent_form_checkbox">
-                                                                                            <div class="modal__equipment_form_item_name">
-                                                                                                <input type="checkbox" id="summer" checked>
-                                                                                                <label for="summer"></label>
-                                                                                                <div class="checkbox_label">
-                                                                                                    <p class="checkbox_label_title">
-                                                                                                        Summer
-                                                                                                    </p>
-                                                                                                    <p>
-                                                                                                        <span>1 Jun - 31 August</span>
-                                                                                                    </p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>70$/day</td>
-                                                                                <td>50$/day</td>
-                                                                                <td>50$/day</td>
-                                                                                <td class="last">
-                                                                                    <button class="edit">
-                                                                                        <img src="assets/images/dashboard/edit_icon.svg" alt="">
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="add_car__sent_form_item_tr grey">
-                                                                                <td class="">
-                                                                                    <div class="add_car__sent_form_item checkbox">
-                                                                                        <div class="add_car__sent_form_checkbox checkbox__item">
-                                                                                            <div class="modal__equipment_form_item_name  ">
-                                                                                                <input type="checkbox" id="winter" checked>
-                                                                                                <label for="winter"></label>
-                                                                                                <div class="checkbox_label">
-                                                                                                    <p class="checkbox_label_title">
-                                                                                                        Winter
-                                                                                                    </p>
-                                                                                                    <p>
-                                                                                                        <span>1 Oct - 31 May</span>
-                                                                                                    </p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>70$/day</td>
-                                                                                <td>50$/day</td>
-                                                                                <td>45$/day</td>
-                                                                                <td class="last">
-                                                                                    <button class="edit">
-                                                                                        <img src="assets/images/dashboard/edit_icon.svg" alt="">
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="add_car__sent_form_item checkbox">
-                                                                                        <div class="add_car__sent_form_checkbox">
-                                                                                            <div class="modal__equipment_form_item_name">
-                                                                                                <input type="checkbox" id="spring">
-                                                                                                <label for="spring"></label>
-                                                                                                <div class="checkbox_label">
-                                                                                                    <p class="checkbox_label_title">
-                                                                                                        Spring
-                                                                                                    </p>
-                                                                                                    <p>
-                                                                                                        <span>1 Oct - 31 May</span>
-                                                                                                    </p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>50$/day</td>
-                                                                                <td>50$/day</td>
-                                                                                <td>45$/day</td>
-                                                                                <td class="last">
-                                                                                    <button class="edit">
-                                                                                        <img src="assets/images/dashboard/edit_icon.svg" alt="">
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr class="add_car__sent_form_item_tr grey">
-                                                                                <td>
-                                                                                    <div class="add_car__sent_form_item checkbox">
-                                                                                        <div class="add_car__sent_form_checkbox checkbox__item grey">
-                                                                                            <div class="modal__equipment_form_item_name">
-                                                                                                <input type="checkbox" id="autumn" checked>
-                                                                                                <label for="autumn">
-                                                                                                </label>
-                                                                                                <div class="checkbox_label">
-                                                                                                    <p class="checkbox_label_title">
-                                                                                                        Autumn
-                                                                                                    </p>
-                                                                                                    <p>
-                                                                                                        <span>1 Oct - 31 May</span>
-                                                                                                    </p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>70$/day</td>
-                                                                                <td>50$/day</td>
-                                                                                <td>45$/day</td>
-                                                                                <td class="last">
-                                                                                    <button class="edit">
-                                                                                        <img src="assets/images/dashboard/edit_icon.svg" alt="">
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-        
-                                                        </div>
-        
-                                                    </div>
-                                                    <div class="add_car__sent_service_column">
-                                                        <div class="add_car__sent_service_column_item">
-                                                            <div class="add_car__sent_service_item add_car__sent_service_item2">
-                                                                <div class="add_car__sent_service_title add_car__sent_service_title2">
-                                                                    <div class="add_car__sent_service_title_label">
-                                                                        Deposit
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_title_toggle">
-                                                                        <label class="switch">
-                                                                            <input type="checkbox">
-                                                                            <span class="slider round"></span>
-                                                                          </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="add_car__sent_service_content add_car__sent_service_content2">
-                                                                    <div class="add_car__sent_service_content_input">
-                                                                        <input type="text" placeholder="No deposit" id="noDeposit">
-                                                                        <label for="noDeposit">0$</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="add_car__sent_service_item add_car__sent_service_item3 additional">
-                                                                <div class="add_car__sent_service_title add_car__sent_service_title3">
-                                                                    <div class="add_car__sent_service_title_label">
-                                                                        Kilometer limit
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_title_toggle">
-                                                                        <label class="switch">
-                                                                            <input type="checkbox">
-                                                                            <span class="slider round"></span>
-                                                                          </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="add_car__sent_service_content add_car__sent_service_content3">
-                                                                    <div class="add_car__sent_service_content_input add_car__sent_service_content_input1">
-                                                                            <input id="dayMileageLimit" placeholder="Day mileage limit">
-        
-                                                                            </input>
-                                                                            <label for="dayMileageLimit" class="price">km/day</label>
-                                                                            <label for="dayMileageLimit" class="label_top">Day mileage limit</label>
-                                                                    </div>
-        
-                                                                    <div class="add_car__sent_service_content_input add_car__sent_service_content_input2">
-                                                                        <input id="ExtraKmCharge" placeholder="Extra km charge">
-        
-                                                                        </input>
-                                                                        <label for="ExtraKmCharge" class="price">$/1 km</label>
-                                                                        <label for="ExtraKmCharge" class="label_top">Extra km charge</label>
-                                                                    </div>
-        
-                                                                    <div class="add_car__sent_service_content_input add_car__sent_service_content_input3">
-                                                                        <input id="UnlimitedMileageCharge" placeholder="Unlimited mileage charge">
-        
-                                                                        </input>
-                                                                        <label for="UnlimitedMileageCharge" class="price">$/day</label>
-                                                                        <label for="UnlimitedMileageCharge" class="label_top">Unlimited mileage charge</label>
-                                                                    </div>
-        
-                                                                    <div class="add_car__sent_service_content_input add_car__sent_service_content_input4">
-                                                                        <input id="NoMileageLimitFrom" placeholder="No mileage limit from">
-        
-                                                                        </input>
-                                                                        <label for="NoMileageLimitFrom" class="price">$</label>
-                                                                        <label for="NoMileageLimitFrom" class="label_top">No mileage limit from</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="add_car__sent_service_column_item">
-                                                            <div class="add_car__sent_service_item add_car__sent_service_item4">
-                                                                <div class="add_car__sent_service_title add_car__sent_service_title4">
-                                                                    <div class="add_car__sent_service_title_label">
-                                                                        With a driver
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_title_toggle">
-                                                                        <label class="switch">
-                                                                            <input type="checkbox">
-                                                                            <span class="slider round"></span>
-                                                                          </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="add_car__sent_service_content add_car__sent_service_content4">
-                                                                    <div class="add_car__sent_service_content_btns">
-                                                                        <div class="modal_login_reg__form_radio">
-                                                                            <div class="modal_login_reg__form_radio_item active" id="travelerLog">
-                                                                                <div class="modal_login_reg__form_radio_item_flex" >
-                                                                                    <div class="modal_login_reg__form_radio_title">
-                                                                                        Daily
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="modal_login_reg__form_radio_item" id="companyLog">
-                                                                                <div class="modal_login_reg__form_radio_item_flex">
-                                                                                    <div class="modal_login_reg__form_radio_title">
-                                                                                        Hourly
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_content_input add_car__sent_service_content_input5">
-                                                                        <input id="price" placeholder="Price">
-        
-                                                                        </input>
-                                                                        <label for="price" class="price">$</label>
-                                                                        <label for="price" class="label_top">Price</label>
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_content_item">
-                                                                        <p>Mileage limit</p>
-                                                                        <div class="add_car__sent_service_content_input add_car__sent_service_content_input6">
-                                                                            <input id="price" placeholder="Day mileage limit">
-        
-                                                                            </input>
-                                                                            <label for="price" class="price">$</label>
-                                                                            <label for="price" class="label_top">Day mileage limit</label>
-                                                                        </div>
-                                                                        <div class="add_car__sent_service_content_input add_car__sent_service_content_input7">
-                                                                            <input id="price" placeholder="Extra km charge">
-        
-                                                                            </input>
-                                                                            <label for="price" class="price">$</label>
-                                                                            <label for="price" class="label_top">Unlimited mileage charge</label>
-                                                                        </div>
-                                                                        <div class="add_car__sent_service_content_input add_car__sent_service_content_input8">
-                                                                            <input id="price" placeholder="Unlimited mileage charge">
-        
-                                                                            </input>
-                                                                            <label for="price" class="price">$</label>
-                                                                            <label for="price" class="label_top">Unlimited mileage charge</label>
-                                                                        </div>
-                                                                        <div class="add_car__sent_service_content_input add_car__sent_service_content_input9">
-                                                                            <input id="price" placeholder="No mileage limit from">
-        
-                                                                            </input>
-                                                                            <label for="price" class="price">$</label>
-                                                                            <label for="price" class="label_top">No mileage limit from</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="add_car__sent_service_content_item">
-                                                                        <p>Extra options</p>
-                                                                        <div class="add_car__sent_service_content_checkbox">
-                                                                            <div class="checkbox__item">
-                                                                                <input type ="checkbox" id="weddings" class="checkbox__input">
-                                                                                <label for="weddings" class="checkbox__label">Weddings</label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <p class="weddings_desc">
-                                                                            Providing a car for weddings, birthdays and other celebrations.
-                                                                        </p>
-                                                                        <img src="assets/images/dashboard/add_car/photo.jpg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-        
-                                                </div>
-                                                <div class="add_car__steps">
-                                                    <div class="add_car__steps_buttons">
-                                                        <a href="#" class="add_car__steps_button prev">
-                                                            <img src="assets/images/dashboard/add_car/arrow_prev.svg" alt="">
-                                                            <span>Back</span>
-                                                        </a>
-                                                        <button href="#" type="submit" class="add_car__steps_button next">
-                                                            <span>Next step</span>
-                                                            <img src="assets/images/dashboard/add_car/arrow_next.svg" alt="">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <div class="dashboard_calendar__main">
+                                <div class="dashboard_calendar__main_top">
+                                    <div class="dashboard_calendar__main_sort">
+                                        <button>
+                                            <img src="assets/images/dashboard/calendar/sort.svg" alt="">
+                                            <span>Sort</span>
+                                        </button>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Su
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Mo
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Tu
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            We
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            4
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Th
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            5
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Fr
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            6
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Sa
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            7
                                         </div>
                                     </div>
         
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Su
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            8
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Mo
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            9
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Tu
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            10
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            We
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            11
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Th
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            12
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Fr
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            13
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Sa
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            14
+                                        </div>
+                                    </div>
         
-                                </form>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Su
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            15
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Mo
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            16
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Tu
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            17
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            We
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            18
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Th
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            19
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Fr
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            20
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Sa
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            21
+                                        </div>
+                                    </div>
+        
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Su
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            22
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Mo
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            23
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Tu
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            24
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            We
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            25
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Th
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            26
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Fr
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            27
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Sa
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            28
+                                        </div>
+                                    </div>
+        
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Su
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            29
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Mo
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            30
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_day">
+                                        <div class="dashboard_calendar__main_day_week">
+                                            Tu
+                                        </div>
+                                        <div class="dashboard_calendar__main_day_number">
+                                            31
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Mercedes-Benz AMG AMG</p>
+                                            <span>CI777TY</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user1 blue">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            9:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            20:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user2 green">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            9:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/2.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time">
+                                            20:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user3 grey">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            9:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time green">
+                                            20:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/2.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Ford Mustang</p>
+                                            <span>FO555RD</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user4 purple">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            11:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            19:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user5 orange">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            10:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/3.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time">
+                                            15:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/3.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Toyota Camry</p>
+                                            <span>LX777LX</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user6 yellow">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            9:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            20:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user7 blue">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            15:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time">
+                                            20:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/4.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Dodge Charger 2016</p>
+                                            <span>FO666RD</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user8 grey">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            9:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            23:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user9
+                                    orange">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            10:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/3.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time">
+                                            23:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/5.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Toyota Prius</p>
+                                            <span>CI744TY</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user10 one_hour grey">
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user11 one_hour
+                                    blue">
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user12
+                                    green">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            9:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/2.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            23:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Mercedes-Benz AMG AMG</p>
+                                            <span>CI777TY</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user13 purple">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            15:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo1.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            10:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user14 orange">
+                                        <div class="dashboard_calendar__main_user_time start">
+                                            10:00 AM
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo2.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_user_time end">
+                                            15:00 PM
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user15 ine_hour
+                                    grey">
+                                        <div class="dashboard_calendar__main_user_photo">
+                                            <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard_calendar__main_row">
+                                    <div class="dashboard_calendar__main_car">
+                                        <div class="dashboard_calendar__main_car_photo">
+                                            <img src="assets/images/dashboard/calendar/cars/2.png" alt="">
+                                        </div>
+                                        <div class="dashboard_calendar__main_car_info">
+                                            <p>Ford Mustang</p>
+                                            <span>FO555RD</span>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
