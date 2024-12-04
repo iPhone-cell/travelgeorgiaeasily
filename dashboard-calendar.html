@@ -453,10 +453,131 @@
                                             <img src="assets/images/dashboard/calendar/question.svg" alt="">
                                         </button>
                                     </div>
-                                    <button class="dashboard_calendar__header_months">
+                                    <button class="dashboard_calendar__header_months" id="bookingsCalendarBtn">
                                         <img src="assets/images/dashboard/calendar/calendar.svg" alt="">
                                        <span>1 Dec 2024... 10 Jun 2025</span>
                                     </button>
+                                    <div class="header_modal_content nav_menu_return_content bookings_calendar dashboard_calendar_calendar" id="bookingsCalendar">
+                                        <div class="calendar">
+                                            <div class="calendar_month_item">
+                                                <div class="month">
+                                                    <ul>
+                                                      <li>October <span>2024</span></li>
+                                                    </ul>
+                                                  </div>
+        
+                                                  <ul class="weekdays">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                  </ul>
+        
+                                                  <ul class="days">
+                                                    <li class="none"></li>
+                                                    <li class="disabled"><span >1</span></li>
+                                                    <li class="disabled"><span>2</span></li>
+                                                    <li class="disabled"><span>4</span></li>
+                                                    <li class="disabled"><span>5</span></li>
+                                                    <li class="disabled"><span>6</span></li>
+                                                    <li class="disabled"><span>7</span></li>
+                                                    <li class="disabled"><span>8</span></li>
+                                                    <li class="disabled"><span>9</span></li>
+                                                    <li class="disabled"><span>10</span></li>
+                                                    <li class="disabled"><span>11</span></li>
+                                                    <li class="disabled"><span>12</span></li>
+                                                    <li class="disabled"><span>13</span></li>
+                                                    <li class="disabled"><span>14</span></li>
+                                                    <li class="disabled"><span>15</span></li>
+                                                    <li class="disabled"><span>16</span></li>
+                                                    <li class="disabled"><span>17</span></li>
+                                                    <li class="disabled"><span>18</span></li>
+                                                    <li class="disabled"><span>19</span></li>
+                                                    <li class="disabled"><span>20</span></li>
+                                                    <li class="disabled"><span>21</span></li>
+                                                    <li class="disabled"><span>22</span></li>
+                                                    <li class="disabled"><span>23</span></li>
+        
+                                                    <li class="active"><span>24</span></li>
+        
+                                                    <li><span>25</span></li>
+                                                    <li><span>26</span></li>
+                                                    <li><span>27</span></li>
+                                                    <li><span>28</span></li>
+                                                    <li><span>29</span></li>
+                                                    <li><span>30</span></li>
+                                                    <li><span>31</span></li>
+                                                  </ul>
+                                            </div>
+        
+                                            <div class="calendar_month_item">
+                                                <div class="month">
+                                                    <ul>
+                                                      <li>November <span>2024</span></li>
+                                                    </ul>
+                                                  </div>
+        
+                                                  <ul class="weekdays">
+                                                    <li>Mo</li>
+                                                    <li>Tu</li>
+                                                    <li>We</li>
+                                                    <li>Th</li>
+                                                    <li>Fr</li>
+                                                    <li>Sa</li>
+                                                    <li>Su</li>
+                                                  </ul>
+        
+                                                  <ul class="days">
+                                                    <li class="none"></li>
+                                                    <li class="none"></li>
+                                                    <li class="none"></li>
+                                                    <li class="none"></li>
+                                                    <li><span >1</span></li>
+                                                    <li><span>2</span></li>
+                                                    <li><span>4</span></li>
+                                                    <li><span>5</span></li>
+                                                    <li><span>6</span></li>
+                                                    <li><span>7</span></li>
+                                                    <li><span>8</span></li>
+                                                    <li><span>9</span></li>
+                                                    <li><span>10</span></li>
+                                                    <li><span>11</span></li>
+                                                    <li><span>12</span></li>
+                                                    <li><span>13</span></li>
+                                                    <li><span>14</span></li>
+                                                    <li><span>15</span></li>
+                                                    <li><span>16</span></li>
+                                                    <li><span>17</span></li>
+                                                    <li><span>18</span></li>
+                                                    <li><span>19</span></li>
+                                                    <li><span>20</span></li>
+                                                    <li><span>21</span></li>
+                                                    <li><span>22</span></li>
+                                                    <li><span>23</span></li>
+        
+                                                    <li><span>24</span></li>
+        
+                                                    <li><span>25</span></li>
+                                                    <li><span>26</span></li>
+                                                    <li><span>27</span></li>
+                                                    <li><span>28</span></li>
+                                                    <li><span>29</span></li>
+                                                    <li><span>30</span></li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_menu_mobile_info">
+                                            You can specify the <a href="#">exact place</a> and time of pick-up and return of the car when placing your order.
+                                        </div>
+                                        <div class="header_modal_button">
+                                            <a href="#" id="BookingDatesButton">
+                                                Pick the same place
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dashboard_calendar__main">
@@ -762,7 +883,7 @@
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
         
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user1 blue">
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user1 blue">
                                         <div class="dashboard_calendar__main_user_time start">
                                             9:00 AM
                                         </div>
@@ -772,29 +893,29 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             20:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user2 green">
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user2 green">
                                         <div class="dashboard_calendar__main_user_time start">
                                             9:00 AM
                                         </div>
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/2.png" alt="">
                                         </div>
-                                        <div class="dashboard_calendar__main_user_time">
+                                        <div class="dashboard_calendar__main_user_time end">
                                             20:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user3 grey">
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user3 grey">
                                         <div class="dashboard_calendar__main_user_time start">
                                             9:00 AM
                                         </div>
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
                                         </div>
-                                        <div class="dashboard_calendar__main_user_time green">
+                                        <div class="dashboard_calendar__main_user_time end">
                                             20:00 PM
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
                                     <div class="dashboard_calendar__main_car">
@@ -838,7 +959,7 @@
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
         
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user4 purple">
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user4 purple">
                                         <div class="dashboard_calendar__main_user_time start">
                                             11:00 AM
                                         </div>
@@ -848,18 +969,18 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             19:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user5 orange">
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user5 orange">
                                         <div class="dashboard_calendar__main_user_time start">
                                             10:00 AM
                                         </div>
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/3.png" alt="">
                                         </div>
-                                        <div class="dashboard_calendar__main_user_time">
+                                        <div class="dashboard_calendar__main_user_time end">
                                             15:00 PM
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
                                     <div class="dashboard_calendar__main_car">
@@ -903,7 +1024,7 @@
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
         
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user6 yellow">
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user6 yellow">
                                         <div class="dashboard_calendar__main_user_time start">
                                             9:00 AM
                                         </div>
@@ -913,18 +1034,18 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             20:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user7 blue">
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user7 blue">
                                         <div class="dashboard_calendar__main_user_time start">
                                             15:00 AM
                                         </div>
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/1.png" alt="">
                                         </div>
-                                        <div class="dashboard_calendar__main_user_time">
+                                        <div class="dashboard_calendar__main_user_time end">
                                             20:00 PM
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
                                     <div class="dashboard_calendar__main_car">
@@ -968,7 +1089,7 @@
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
         
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user8 grey">
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user8 grey">
                                         <div class="dashboard_calendar__main_user_time start">
                                             9:00 AM
                                         </div>
@@ -978,8 +1099,8 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             23:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user9
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user9
                                     orange">
                                         <div class="dashboard_calendar__main_user_time start">
                                             10:00 AM
@@ -987,10 +1108,10 @@
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/3.png" alt="">
                                         </div>
-                                        <div class="dashboard_calendar__main_user_time">
+                                        <div class="dashboard_calendar__main_user_time end">
                                             23:00 PM
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
                                     <div class="dashboard_calendar__main_car">
@@ -1034,18 +1155,18 @@
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
         
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user10 one_hour grey">
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user10 one_hour grey">
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user11 one_hour
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user11 one_hour
                                     blue">
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/1.png" alt="">
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user12
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user12
                                     green">
                                         <div class="dashboard_calendar__main_user_time start">
                                             9:00 AM
@@ -1056,7 +1177,7 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             23:00 PM
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
                                     <div class="dashboard_calendar__main_car">
@@ -1100,7 +1221,7 @@
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
         
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user13 purple">
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user13 purple">
                                         <div class="dashboard_calendar__main_user_time start">
                                             15:00 AM
                                         </div>
@@ -1110,8 +1231,8 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             10:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user14 orange">
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user14 orange">
                                         <div class="dashboard_calendar__main_user_time start">
                                             10:00 AM
                                         </div>
@@ -1121,13 +1242,13 @@
                                         <div class="dashboard_calendar__main_user_time end">
                                             15:00 PM
                                         </div>
-                                    </div>
-                                    <div class="dashboard_calendar__main_user dashboard_calendar__main_user15 ine_hour
+                                    </a>
+                                    <a href="" class="dashboard_calendar__main_user dashboard_calendar__main_user15 one_hour
                                     grey">
                                         <div class="dashboard_calendar__main_user_photo">
                                             <img src="assets/images/dashboard/calendar/users/no_photo.png" alt="">
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
                                     <div class="dashboard_calendar__main_car">
