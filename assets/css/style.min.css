@@ -515,10 +515,6 @@ body.hidden_body {
 }
 
 /* width */
-::-webkit-scrollbar {
-  display: none;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -931,6 +927,10 @@ input:disabled + .slider {
 }
 .edit img {
   margin: 4px;
+}
+
+.modal__equipment_form_item_name input:checked + label:before {
+  border: none;
 }
 
 @media (max-width: 1599px) {
@@ -8294,6 +8294,7 @@ span {
   position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 0;
 }
 .add_car__progress_bar progress {
   position: absolute;
@@ -8780,6 +8781,10 @@ span {
   opacity: 0.5;
 }
 
+.additional .add_car__sent_service_content_list_checkbox {
+  width: 100%;
+}
+
 .add_car__sent_service_content_list_item {
   display: flex;
   justify-content: space-between;
@@ -9187,11 +9192,33 @@ p.weddings_desc {
   margin-right: 12px;
 }
 
+.dashboard_calendar {
+  overflow: scroll;
+}
+.dashboard_calendar::-webkit-scrollbar {
+  height: 4px;
+}
+.dashboard_calendar::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 5px;
+  width: 400px;
+}
+
 .dashboard_calendar__main {
-  overflow-x: scroll;
+  min-width: 2032px;
   width: 100%;
-  min-width: 2304px;
   margin-top: 32px;
+  padding-bottom: 64px;
+  position: relative;
+}
+.dashboard_calendar__main:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: var(--colors-grey);
+  position: absolute;
+  bottom: 32px;
 }
 
 .dashboard_calendar__main_top {
@@ -9294,24 +9321,43 @@ p.weddings_desc {
   height: 52px;
   width: 52px;
   margin: 6px 0;
+  transition: all 0.3s ease;
 }
 .dashboard_calendar__main_user.blue {
   background: #a3d5ff;
 }
+.dashboard_calendar__main_user.blue:hover {
+  background: #7ac2ff;
+}
 .dashboard_calendar__main_user.green {
   background: #c8e6c9;
+}
+.dashboard_calendar__main_user.green:hover {
+  background: #a4d6a5;
 }
 .dashboard_calendar__main_user.grey {
   background: var(--colors-bright-grey);
 }
+.dashboard_calendar__main_user.grey:hover {
+  background: none;
+}
 .dashboard_calendar__main_user.purple {
   background: #d7c4f6;
+}
+.dashboard_calendar__main_user.purple:hover {
+  background: #c0a2f1;
 }
 .dashboard_calendar__main_user.orange {
   background: #ffd7c2;
 }
+.dashboard_calendar__main_user.orange:hover {
+  background: #ffbc99;
+}
 .dashboard_calendar__main_user.yellow {
   background: #fff9c4;
+}
+.dashboard_calendar__main_user.yellow:hover {
+  background: #fff599;
 }
 .dashboard_calendar__main_user.dashboard_calendar__main_user1 {
   width: 185px;
@@ -9372,7 +9418,8 @@ p.weddings_desc {
 }
 
 .dashboard_calendar__main_user.one_hour {
-  padding: 14px;
+  align-items: center;
+  justify-content: center;
 }
 
 .dashboard_calendar__main_user_time {
@@ -9392,6 +9439,10 @@ p.weddings_desc {
 .dashboard_calendar__main_user_photo img {
   width: 100%;
   object-fit: cover;
+}
+
+.dashboard_calendar_calendar {
+  transform: translateY(-25%);
 }
 
 @media (max-width: 1720px) {
@@ -9498,6 +9549,9 @@ p.weddings_desc {
   }
   .booking_table_not_first .booking_table_item .dates_td {
     width: 25% !important;
+  }
+  .add_car__sent_service_content_list_checkbox label {
+    margin-bottom: 1rem !important;
   }
 }
 @media (max-width: 1199px) {
@@ -9770,6 +9824,9 @@ p.weddings_desc {
     min-width: 1032px;
     margin-right: 32px;
   }
+  .add_car__progress_bar.full {
+    min-width: auto;
+  }
   .add_car__progress_bar.no_scroll {
     min-width: auto;
     margin-right: 0;
@@ -9827,6 +9884,33 @@ p.weddings_desc {
   .dashboard_calendar__header_months {
     margin-left: auto;
   }
+  .add_car__sent_service_column_item {
+    margin-bottom: 0;
+  }
+  .add_car__sent_service_column_item:last-child {
+    margin-bottom: 100px;
+  }
+  .add_car__sent_service_column_item:last-child {
+    margin-bottom: 0;
+  }
+  .add_car__sent_service_item.border_none {
+    border: none;
+  }
+  .add_car__sent_service_table_wrapper .last .edit {
+    margin-right: auto;
+  }
+  .delivery .add_car__sent_service_column_item {
+    margin-bottom: 0;
+  }
+  .add_car__sent_service_item.parking {
+    margin-top: 0;
+  }
+  .add_car__sent_service_item.parking .add_car__sent_service_content {
+    margin-top: 0;
+  }
+  .add_car__sent_service_item.delivery {
+    margin-top: 0;
+  }
 }
 @media (max-width: 767px) {
   .dashboard_select {
@@ -9855,6 +9939,27 @@ p.weddings_desc {
   }
   .order_history__sort .select {
     margin-right: 0;
+  }
+  .dashboard_calendar::-webkit-scrollbar {
+    height: 4px;
+  }
+  .dashboard_calendar::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px;
+    width: 100px;
+  }
+  .dashboard_calendar__main {
+    padding-bottom: 48px;
+    position: relative;
+  }
+  .dashboard_calendar__main:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: var(--colors-grey);
+    position: absolute;
+    bottom: 10px;
   }
 }
 @media (max-width: 575px) {
@@ -10282,6 +10387,9 @@ p.weddings_desc {
   .add_car__sent.heading_mobile .add_car__sent_heading {
     display: block;
   }
+  .add_car__sent_heading.mobile {
+    margin-top: 60px;
+  }
   .add_car__sent.heading_mobile .add_car__sent_heading {
     font-size: 20px;
   }
@@ -10411,15 +10519,10 @@ p.weddings_desc {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .add_car__sent_service_item {
-    border: none;
-  }
   .add_car__sent_service_title {
     border-bottom: none;
-    padding: 0;
   }
   .add_car__sent_service_content.no_switch_content {
-    padding: 0;
     margin-top: 16px;
   }
   .add_car__sent_service_content.no_switch {
@@ -10570,6 +10673,35 @@ p.weddings_desc {
     width: 46px;
     padding: 0;
   }
+  .add_car__sent_service_title {
+    padding: 20px 16px;
+  }
+  .add_car__sent_service_content {
+    padding: 20px 16px;
+  }
+  .add_car__sent_service_content_list_title {
+    font-size: 15px;
+  }
+  .add_car__sent_service_content_list_info {
+    font-size: 15px;
+  }
+  .add_car__sent_service_content_list_checkbox {
+    height: 20px;
+  }
+  .add_car__sent_service_content_list_checkbox .checkbox__label {
+    height: 20px;
+  }
+  .add_car__sent_service_content_list_checkbox .checkbox__label:before {
+    height: 20px;
+    width: 20px;
+  }
+  .checkbox_right .checkbox__label {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .dashboard_calendar_calendar {
+    transform: translateY(0);
+  }
 }
 @media (max-width: 389px) {
   .dashboard__main_financial-edit {
@@ -10623,6 +10755,12 @@ p.weddings_desc {
     width: 50%;
     margin-left: 8px;
   }
+  .dashboard_calendar__header_month {
+    font-size: 20px;
+  }
+  .add_car__sent_heading.mobile {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 374px) {
   .add_car__sent_form_select {
@@ -10637,6 +10775,27 @@ p.weddings_desc {
   }
   .dashboard_calendar__header_month {
     font-size: 16px;
+  }
+  .add_car__sent_service_content_list_checkbox {
+    height: auto;
+  }
+  .add_car__sent_service_item.additional .add_car__sent_service_content_list_title {
+    font-size: 12px;
+  }
+  .add_car__sent_service_item.additional .add_car__sent_service_content_list {
+    padding-left: 0;
+  }
+  .add_car__sent_service_content {
+    padding: 12px;
+  }
+  .add_car__sent_service_content_list_checkbox {
+    padding-top: 10px;
+  }
+  .dashboard_calendar {
+    padding-right: 0;
+  }
+  .add_car__sent_heading.mobile {
+    margin-top: 10px;
   }
 }
 @media (min-width: 575px) {

@@ -507,10 +507,6 @@ body.hidden_body {
 }
 
 /* width */
-::-webkit-scrollbar {
-    display: none;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -943,6 +939,10 @@ input:disabled + .slider {
 
 .edit img {
     margin: 4px;
+}
+
+.modal__equipment_form_item_name input:checked + label:before {
+    border: none;
 }
 
 @media (max-width: 1599px) {
@@ -9872,6 +9872,7 @@ span {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    z-index: 0;
 }
 
 .add_car__progress_bar progress {
@@ -10458,6 +10459,10 @@ span {
     opacity: 0.5;
 }
 
+.additional .add_car__sent_service_content_list_checkbox {
+    width: 100%;
+}
+
 .add_car__sent_service_content_list_item {
     display: -ms-flexbox;
     display: flex;
@@ -10863,6 +10868,383 @@ p.weddings_desc {
     margin-top: 16px;
 }
 
+.main.calendar_main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main.calendar_main .dashboard__main_top {
+    padding-left: 32px;
+}
+
+.dashboard_calendar {
+    margin-top: 48px;
+}
+
+.dashboard_calendar__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.dashboard_calendar__header_left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dashboard_calendar__header_tag {
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    background: var(--colors-bright-grey);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--colors-dark-grey);
+    margin-right: 16px;
+}
+
+.dashboard_calendar__header_arrows {
+    margin-right: 16px;
+}
+
+.dashboard_calendar__header_arrows button {
+    background: none;
+    padding: 8px 11px;
+}
+
+.dashboard_calendar__header_month {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--colors-brand-black);
+}
+
+.dashboard_calendar__header_right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dashboard_calendar__header_options button {
+    margin-right: 8px;
+    background: none;
+}
+
+.dashboard_calendar__header_months {
+    margin-left: 32px;
+    border: 1px solid var(--colors-dark-grey);
+    border-radius: 5px;
+    padding: 12px 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+    padding: 12px 16px;
+    background: none;
+}
+
+.dashboard_calendar__header_months img {
+    margin-right: 12px;
+}
+
+.dashboard_calendar__main {
+    overflow: scroll;
+    width: 100%;
+    min-width: 2304px;
+    margin-top: 32px;
+}
+
+.dashboard_calendar__main::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(26, 24, 47, 0.15);
+    border-radius: 5px;
+    height: 100px;
+}
+
+.dashboard_calendar__main::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px;
+}
+
+.dashboard_calendar__main_top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    border: 1px solid var(--colors-grey);
+}
+
+.dashboard_calendar__main_top > div {
+    width: 64px;
+    border: 1px solid var(--colors-grey);
+    border-bottom: 0;
+    padding: 12px 0px 12px 0px;
+    border-right: 0;
+}
+
+.dashboard_calendar__main_top > div:first-child {
+    width: 316px;
+    border: none;
+    padding-left: 32px;
+}
+
+.dashboard_calendar__main_sort {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.dashboard_calendar__main_sort button {
+    background: none;
+    font-size: 16px;
+    text-align: center;
+    color: var(--colors-brand-black);
+}
+
+.dashboard_calendar__main_sort button img {
+    margin-right: 8px;
+}
+
+.dashboard_calendar__main_day {
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 13px;
+    color: var(--colors-dark-grey);
+}
+
+.dashboard_calendar__main_day_week {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--colors-brand-black);
+}
+
+.dashboard_calendar__main_row {
+    border: 1px solid var(--colors-grey);
+    padding-left: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.dashboard_calendar__main_car {
+    border-right: 1px solid var(--colors-grey);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.dashboard_calendar__main_car img {
+    margin-right: 16px;
+}
+
+.dashboard_calendar__main_car_info {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard_calendar__main_car_info p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--colors-brand-black);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard_calendar__main_car_info span {
+    font-size: 12px;
+    color: var(--colors-dark-grey);
+}
+
+.dashboard_calendar__main_window {
+    border-right: 1px solid var(--colors-grey);
+    width: 64px;
+    height: 64px;
+}
+
+.dashboard_calendar__main_user {
+    padding: 8px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    border-radius: 5px;
+    height: 52px;
+    width: 52px;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+}
+
+.dashboard_calendar__main_user.blue {
+    background: #a3d5ff;
+}
+
+.dashboard_calendar__main_user.blue:hover {
+    background: #7ac2ff;
+}
+
+.dashboard_calendar__main_user.green {
+    background: #c8e6c9;
+}
+
+.dashboard_calendar__main_user.green:hover {
+    background: #a4d6a5;
+}
+
+.dashboard_calendar__main_user.grey {
+    background: var(--colors-bright-grey);
+}
+
+.dashboard_calendar__main_user.grey:hover {
+    background: none;
+}
+
+.dashboard_calendar__main_user.purple {
+    background: #d7c4f6;
+}
+
+.dashboard_calendar__main_user.purple:hover {
+    background: #c0a2f1;
+}
+
+.dashboard_calendar__main_user.orange {
+    background: #ffd7c2;
+}
+
+.dashboard_calendar__main_user.orange:hover {
+    background: #ffbc99;
+}
+
+.dashboard_calendar__main_user.yellow {
+    background: #fff9c4;
+}
+
+.dashboard_calendar__main_user.yellow:hover {
+    background: #fff599;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user1 {
+    width: 185px;
+    left: 320px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user2 {
+    left: 520px;
+    width: 191px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user3 {
+    left: 832px;
+    width: 448px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user4 {
+    left: 395px;
+    width: 424px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user5 {
+    left: 901px;
+    width: 220px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user6 {
+    left: 384px;
+    width: 309px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user7 {
+    left: 992px;
+    width: 282px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user8 {
+    left: 384px;
+    width: 255px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user9 {
+    left: 646px;
+    width: 314px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user10 {
+    left: 646px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user11 {
+    left: 774px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user12 {
+    left: 832px;
+    width: 191px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user13 {
+    left: 420px;
+    width: 161px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user14 {
+    left: 581px;
+    width: 220px;
+}
+
+.dashboard_calendar__main_user.dashboard_calendar__main_user15 {
+    left: 1094px;
+}
+
+.dashboard_calendar__main_user.one_hour {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.dashboard_calendar__main_user_time {
+    font-size: 12px;
+    color: var(--colors-brand-black);
+}
+
+.dashboard_calendar__main_user_time.end {
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dashboard_calendar__main_user_photo {
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    max-width: 37px;
+}
+
+.dashboard_calendar__main_user_photo img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.dashboard_calendar_calendar {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
 @media (max-width: 1720px) {
     .booking_table td.dates_td {
         width: 24% !important;
@@ -10994,6 +11376,10 @@ p.weddings_desc {
 
     .booking_table_not_first .booking_table_item .dates_td {
         width: 25% !important;
+    }
+
+    .add_car__sent_service_content_list_checkbox label {
+        margin-bottom: 1rem !important;
     }
 }
 
@@ -11406,6 +11792,35 @@ p.weddings_desc {
 
     .add_car__sent_service_column_item.full .add_car__sent_service_content.add_car__sent_service_content1 table td {
         width: 30%;
+    }
+
+    .dashboard_calendar__header {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .dashboard_calendar__header_month {
+        margin-left: auto;
+    }
+
+    .dashboard_calendar__header {
+        padding-right: 0;
+    }
+
+    .dashboard_calendar__header_right {
+        margin-top: 32px;
+    }
+
+    .dashboard_calendar__header_months {
+        margin-left: auto;
+    }
+
+    .add_car__sent_service_column_item {
+        margin-bottom: 0;
+    }
+
+    .add_car__sent_service_column_item:last-child {
+        margin-bottom: 100px;
     }
 }
 
@@ -12190,17 +12605,11 @@ p.weddings_desc {
         padding-right: 16px;
     }
 
-    .add_car__sent_service_item {
-        border: none;
-    }
-
     .add_car__sent_service_title {
         border-bottom: none;
-        padding: 0;
     }
 
     .add_car__sent_service_content.no_switch_content {
-        padding: 0;
         margin-top: 16px;
     }
 
@@ -12264,6 +12673,170 @@ p.weddings_desc {
 
     .add_car__sent_service_content.add_car__sent_service_content1 table td .checkbox_label {
         min-width: 200px;
+    }
+
+    .dashboard_calendar__header_months {
+        padding: 12px 16px;
+    }
+
+    .dashboard_calendar__header_months span {
+        display: none;
+    }
+
+    .dashboard_calendar__header_months img {
+        margin-right: 0;
+    }
+
+    .dashboard_calendar__header {
+        padding-left: 16px;
+    }
+
+    .calendar_main .dashboard__main_title {
+        padding-left: 0;
+    }
+
+    .dashboard_calendar {
+        padding-right: 16px;
+    }
+
+    .dashboard_calendar__main_sort span {
+        display: none;
+    }
+
+    .dashboard_calendar__main_top > div:first-child {
+        width: 67px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .dashboard_calendar__main_car {
+        padding-left: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0;
+        width: 68px;
+    }
+
+    .dashboard_calendar__main_car img {
+        width: 60px;
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+
+    .dashboard_calendar__main_car_info p {
+        display: none;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user1 {
+        left: 68px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user2 {
+        left: 268px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user3 {
+        left: 580px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user4 {
+        left: 143px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user5 {
+        left: 649px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user6 {
+        left: 132px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user7 {
+        left: 740px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user8 {
+        left: 132px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user9 {
+        left: 394px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user10 {
+        left: 394px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user11 {
+        left: 522px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user12 {
+        left: 580px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user13 {
+        left: 168px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user14 {
+        left: 329px;
+    }
+
+    .dashboard_calendar__main_user.dashboard_calendar__main_user15 {
+        left: 842px;
+    }
+
+    .dashboard_calendar__main {
+        min-width: 2052px;
+    }
+
+    .dashboard_calendar button:hover {
+        background: none;
+    }
+
+    .dashboard_calendar__header_months {
+        height: 40px;
+        width: 46px;
+        padding: 0;
+    }
+
+    .add_car__sent_service_title {
+        padding: 20px 16px;
+    }
+
+    .add_car__sent_service_content {
+        padding: 20px 16px;
+    }
+
+    .add_car__sent_service_content_list_title {
+        font-size: 15px;
+    }
+
+    .add_car__sent_service_content_list_info {
+        font-size: 15px;
+    }
+
+    .add_car__sent_service_content_list_checkbox {
+        height: 20px;
+    }
+
+    .add_car__sent_service_content_list_checkbox .checkbox__label {
+        height: 20px;
+    }
+
+    .add_car__sent_service_content_list_checkbox .checkbox__label:before {
+        height: 20px;
+        width: 20px;
+    }
+
+    .checkbox_right .checkbox__label {
+        padding-left: 0;
+        padding-right: 20px;
     }
 }
 
@@ -12349,6 +12922,30 @@ p.weddings_desc {
 
     .add_car__sent_form_select .select select {
         width: 288px !important;
+    }
+
+    .dashboard_calendar__header_month {
+        font-size: 16px;
+    }
+
+    .add_car__sent_service_content_list_checkbox {
+        height: auto;
+    }
+
+    .add_car__sent_service_item.additional .add_car__sent_service_content_list_title {
+        font-size: 12px;
+    }
+
+    .add_car__sent_service_item.additional .add_car__sent_service_content_list {
+        padding-left: 0;
+    }
+
+    .add_car__sent_service_content {
+        padding: 12px;
+    }
+
+    .add_car__sent_service_content_list_checkbox {
+        padding-top: 10px;
     }
 }
 
