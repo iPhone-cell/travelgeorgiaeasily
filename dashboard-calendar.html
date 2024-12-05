@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -440,18 +442,30 @@
                                 </div>
                                 <div class="dashboard_calendar__header_right">
                                     <div class="dashboard_calendar__header_options">
-                                        <button>
-                                            <img src="assets/images/dashboard/calendar/search.svg" alt="">
-                                        </button>
-                                        <button>
-                                            <img src="assets/images/dashboard/calendar/calendar_book.svg" alt="">
-                                        </button>
-                                        <button>
-                                            <img src="assets/images/dashboard/calendar/settings.svg" alt="">
-                                        </button>
-                                        <button>
-                                            <img src="assets/images/dashboard/calendar/question.svg" alt="">
-                                        </button>
+                                        <div id="CalendarSearch" class="button">
+                                            <button>
+                                                <img src="assets/images/dashboard/calendar/search.svg" alt="">
+                                            </button>
+                                            <div class="calendarsearchinput" id="CalendarSearchInput">
+                                                <input type="search" placeholder="Search" id="CalendarSearchInputElement">
+                                                <label for="CalendarSearchInputElement" style="background: url('assets/images/icons/search.svg') right / contain no-repeat;"></label>
+                                            </div>
+                                        </div>
+                                        <div class="button">
+                                            <button>
+                                                <img src="assets/images/dashboard/calendar/calendar_book.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="button">
+                                            <button>
+                                                <img src="assets/images/dashboard/calendar/settings.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="button">
+                                            <button>
+                                                <img src="assets/images/dashboard/calendar/question.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                     <button class="dashboard_calendar__header_months" id="bookingsCalendarBtn">
                                         <img src="assets/images/dashboard/calendar/calendar.svg" alt="">
@@ -569,12 +583,9 @@
                                                   </ul>
                                             </div>
                                         </div>
-                                        <div class="nav_menu_mobile_info">
-                                            You can specify the <a href="#">exact place</a> and time of pick-up and return of the car when placing your order.
-                                        </div>
                                         <div class="header_modal_button">
                                             <a href="#" id="BookingDatesButton">
-                                                Pick the same place
+                                                Select these dates
                                             </a>
                                         </div>
                                     </div>
@@ -842,7 +853,7 @@
                                     </div>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/1.png" alt="">
                                         </div>
@@ -850,7 +861,7 @@
                                             <p>Mercedes-Benz AMG AMG</p>
                                             <span>CI777TY</span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
@@ -918,7 +929,7 @@
                                     </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/2.png" alt="">
                                         </div>
@@ -926,7 +937,7 @@
                                             <p>Ford Mustang</p>
                                             <span>FO555RD</span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
@@ -983,7 +994,7 @@
                                     </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/3.png" alt="">
                                         </div>
@@ -991,7 +1002,7 @@
                                             <p>Toyota Camry</p>
                                             <span>LX777LX</span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
@@ -1048,7 +1059,7 @@
                                     </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/4.png" alt="">
                                         </div>
@@ -1056,7 +1067,7 @@
                                             <p>Dodge Charger 2016</p>
                                             <span>FO666RD</span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
@@ -1114,7 +1125,7 @@
                                     </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/5.png" alt="">
                                         </div>
@@ -1122,7 +1133,7 @@
                                             <p>Toyota Prius</p>
                                             <span>CI744TY</span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
@@ -1180,7 +1191,7 @@
                                     </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/1.png" alt="">
                                         </div>
@@ -1188,7 +1199,7 @@
                                             <p>Mercedes-Benz AMG AMG</p>
                                             <span>CI777TY</span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
                                     <div class="dashboard_calendar__main_window"></div>
@@ -1251,7 +1262,7 @@
                                     </a>
                                 </div>
                                 <div class="dashboard_calendar__main_row">
-                                    <div class="dashboard_calendar__main_car">
+                                    <a href="" class="dashboard_calendar__main_car">
                                         <div class="dashboard_calendar__main_car_photo">
                                             <img src="assets/images/dashboard/calendar/cars/2.png" alt="">
                                         </div>
@@ -1259,38 +1270,44 @@
                                             <p>Ford Mustang</p>
                                             <span>FO555RD</span>
                                         </div>
+                                    </a>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+                                    <div class="dashboard_calendar__main_window"></div>
+        
+                                    <div class="calendar_range">
+                                        <div class="time">
+                                            15:00
+                                        </div>
                                     </div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
-                                    <div class="dashboard_calendar__main_window"></div>
                                 </div>
                             </div>
                         </div>
@@ -2717,7 +2734,6 @@
 
     <!-- Input Mask -->
     <script src="https://unpkg.com/imask"></script>
-
 
     <script src="assets/js/app.js"></script>
 </body>
