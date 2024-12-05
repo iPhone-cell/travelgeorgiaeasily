@@ -945,6 +945,34 @@ input:disabled + .slider {
     border: none;
 }
 
+.input {
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+    padding: 12px 12px 12px 20px;
+    width: 100%;
+    height: 48px;
+}
+
+.input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: var(--colors-brand-black);
+}
+
+.input:-ms-input-placeholder {
+    font-size: 16px;
+    color: var(--colors-brand-black);
+}
+
+.input::-ms-input-placeholder {
+    font-size: 16px;
+    color: var(--colors-brand-black);
+}
+
+.input::placeholder {
+    font-size: 16px;
+    color: var(--colors-brand-black);
+}
+
 @media (max-width: 1599px) {
     .container {
         max-width: 1200px;
@@ -10909,13 +10937,26 @@ p.weddings_desc {
     margin-right: 16px;
 }
 
+.dashboard_calendar__header_tag:hover {
+    border: 1px solid var(--colors-dark-grey);
+    border-radius: 5px;
+    background: none;
+    color: var(--colors-brand-black);
+}
+
 .dashboard_calendar__header_arrows {
     margin-right: 16px;
 }
 
 .dashboard_calendar__header_arrows button {
     background: none;
-    padding: 8px 11px;
+    width: 32px;
+    height: 32px;
+}
+
+.dashboard_calendar__header_arrows button:hover {
+    border-radius: 100px;
+    background: var(--colors-bright-grey);
 }
 
 .dashboard_calendar__header_month {
@@ -10931,9 +10972,60 @@ p.weddings_desc {
     align-items: center;
 }
 
-.dashboard_calendar__header_options button {
-    margin-right: 8px;
+.dashboard_calendar__header_options {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dashboard_calendar__header_options .button button {
     background: none;
+    height: 40px;
+}
+
+.dashboard_calendar__header_options .button button:hover {
+    border-radius: 100px;
+    background: var(--colors-bright-grey);
+}
+
+.dashboard_calendar__header_options .button button.none {
+    display: none;
+}
+
+.calendarsearchinput input {
+    border-radius: 100px;
+    padding: 8px 12px 8px 16px;
+    border: 0;
+    outline: none;
+    width: 320px;
+    height: 32px;
+    background: var(--colors-bright-grey);
+}
+
+.calendarsearchinput input::-webkit-input-placeholder {
+    font-size: 13px;
+    color: var(--colors-dark-grey);
+}
+
+.calendarsearchinput input:-ms-input-placeholder {
+    font-size: 13px;
+    color: var(--colors-dark-grey);
+}
+
+.calendarsearchinput input::-ms-input-placeholder {
+    font-size: 13px;
+    color: var(--colors-dark-grey);
+}
+
+.calendarsearchinput input::placeholder {
+    font-size: 13px;
+    color: var(--colors-dark-grey);
+}
+
+.calendarsearchinput label {
+    width: 16px;
+    height: 16px;
+    -webkit-transform: translateX(-30px) translateY(50%);
+    transform: translateX(-30px) translateY(50%);
 }
 
 .dashboard_calendar__header_months {
@@ -10952,23 +11044,40 @@ p.weddings_desc {
     margin-right: 12px;
 }
 
-.dashboard_calendar__main {
+.dashboard_calendar__header_months:hover {
+    background: var(--colors-bright-grey);
+}
+
+.dashboard_calendar {
     overflow: scroll;
-    width: 100%;
-    min-width: 2304px;
-    margin-top: 32px;
 }
 
-.dashboard_calendar__main::-webkit-scrollbar {
-    width: 5px;
-    background-color: rgba(26, 24, 47, 0.15);
-    border-radius: 5px;
-    height: 100px;
+.dashboard_calendar::-webkit-scrollbar {
+    height: 4px;
 }
 
-.dashboard_calendar__main::-webkit-scrollbar-thumb {
+.dashboard_calendar::-webkit-scrollbar-thumb {
     background: red;
     border-radius: 5px;
+    width: 400px;
+}
+
+.dashboard_calendar__main {
+    min-width: 2032px;
+    width: 100%;
+    margin-top: 32px;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+.dashboard_calendar__main:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: var(--colors-grey);
+    position: absolute;
+    bottom: 32px;
 }
 
 .dashboard_calendar__main_top {
@@ -10988,7 +11097,7 @@ p.weddings_desc {
 }
 
 .dashboard_calendar__main_top > div:first-child {
-    width: 316px;
+    width: 361px;
     border: none;
     padding-left: 32px;
 }
@@ -11243,6 +11352,14 @@ p.weddings_desc {
 .dashboard_calendar_calendar {
     -webkit-transform: translateY(-25%);
     transform: translateY(-25%);
+}
+
+.calendarsearchinput {
+    display: none;
+}
+
+.calendarsearchinput.active {
+    display: inline-block;
 }
 
 @media (max-width: 1720px) {
@@ -11738,6 +11855,10 @@ p.weddings_desc {
         margin-right: 32px;
     }
 
+    .add_car__progress_bar.full {
+        min-width: auto;
+    }
+
     .add_car__progress_bar.no_scroll {
         min-width: auto;
         margin-right: 0;
@@ -11822,6 +11943,34 @@ p.weddings_desc {
     .add_car__sent_service_column_item:last-child {
         margin-bottom: 100px;
     }
+
+    .add_car__sent_service_column_item:last-child {
+        margin-bottom: 0;
+    }
+
+    .add_car__sent_service_item.border_none {
+        border: none;
+    }
+
+    .add_car__sent_service_table_wrapper .last .edit {
+        margin-right: auto;
+    }
+
+    .delivery .add_car__sent_service_column_item {
+        margin-bottom: 0;
+    }
+
+    .add_car__sent_service_item.parking {
+        margin-top: 0;
+    }
+
+    .add_car__sent_service_item.parking .add_car__sent_service_content {
+        margin-top: 0;
+    }
+
+    .add_car__sent_service_item.delivery {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -11858,6 +12007,31 @@ p.weddings_desc {
 
     .order_history__sort .select {
         margin-right: 0;
+    }
+
+    .dashboard_calendar::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .dashboard_calendar::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    .dashboard_calendar__main {
+        padding-bottom: 48px;
+        position: relative;
+    }
+
+    .dashboard_calendar__main:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background: var(--colors-grey);
+        position: absolute;
+        bottom: 10px;
     }
 }
 
@@ -12430,6 +12604,10 @@ p.weddings_desc {
         display: block;
     }
 
+    .add_car__sent_heading.mobile {
+        margin-top: 60px;
+    }
+
     .add_car__sent.heading_mobile .add_car__sent_heading {
         font-size: 20px;
     }
@@ -12838,6 +13016,11 @@ p.weddings_desc {
         padding-left: 0;
         padding-right: 20px;
     }
+
+    .dashboard_calendar_calendar {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 389px) {
@@ -12908,6 +13091,14 @@ p.weddings_desc {
         width: 50%;
         margin-left: 8px;
     }
+
+    .dashboard_calendar__header_month {
+        font-size: 20px;
+    }
+
+    .add_car__sent_heading.mobile {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 374px) {
@@ -12946,6 +13137,14 @@ p.weddings_desc {
 
     .add_car__sent_service_content_list_checkbox {
         padding-top: 10px;
+    }
+
+    .dashboard_calendar {
+        padding-right: 0;
+    }
+
+    .add_car__sent_heading.mobile {
+        margin-top: 10px;
     }
 }
 

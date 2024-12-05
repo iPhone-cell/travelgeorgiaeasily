@@ -933,6 +933,18 @@ input:disabled + .slider {
   border: none;
 }
 
+.input {
+  border: 1px solid var(--colors-grey);
+  border-radius: 5px;
+  padding: 12px 12px 12px 20px;
+  width: 100%;
+  height: 48px;
+}
+.input::placeholder {
+  font-size: 16px;
+  color: var(--colors-brand-black);
+}
+
 @media (max-width: 1599px) {
   .container {
     max-width: 1200px;
@@ -1687,6 +1699,10 @@ input:disabled + .slider {
   text-align: center;
   color: var(--colors-brand-black);
 }
+.calendar .days li:hover {
+  background: var(--colors-brand-red);
+  color: var(--colors-white);
+}
 .calendar .days li.active {
   background: var(--colors-brand-red);
   color: var(--colors-white);
@@ -1694,6 +1710,10 @@ input:disabled + .slider {
 .calendar .days li.disabled {
   opacity: 0.1;
   cursor: none;
+}
+.calendar .days li.disabled:hover {
+  background: none;
+  color: none;
 }
 .calendar .days li.none {
   background: none;
@@ -9152,13 +9172,24 @@ p.weddings_desc {
   color: var(--colors-dark-grey);
   margin-right: 16px;
 }
+.dashboard_calendar__header_tag:hover {
+  border: 1px solid var(--colors-dark-grey);
+  border-radius: 5px;
+  background: none;
+  color: var(--colors-brand-black);
+}
 
 .dashboard_calendar__header_arrows {
   margin-right: 16px;
 }
 .dashboard_calendar__header_arrows button {
   background: none;
-  padding: 8px 11px;
+  width: 32px;
+  height: 32px;
+}
+.dashboard_calendar__header_arrows button:hover {
+  border-radius: 100px;
+  background: var(--colors-bright-grey);
 }
 
 .dashboard_calendar__header_month {
@@ -9172,9 +9203,38 @@ p.weddings_desc {
   align-items: center;
 }
 
-.dashboard_calendar__header_options button {
-  margin-right: 8px;
+.dashboard_calendar__header_options {
+  display: flex;
+}
+.dashboard_calendar__header_options .button button {
   background: none;
+  height: 40px;
+}
+.dashboard_calendar__header_options .button button:hover {
+  border-radius: 100px;
+  background: var(--colors-bright-grey);
+}
+.dashboard_calendar__header_options .button button.none {
+  display: none;
+}
+
+.calendarsearchinput input {
+  border-radius: 100px;
+  padding: 8px 12px 8px 16px;
+  border: 0;
+  outline: none;
+  width: 320px;
+  height: 32px;
+  background: var(--colors-bright-grey);
+}
+.calendarsearchinput input::placeholder {
+  font-size: 13px;
+  color: var(--colors-dark-grey);
+}
+.calendarsearchinput label {
+  width: 16px;
+  height: 16px;
+  transform: translateX(-30px) translateY(50%);
 }
 
 .dashboard_calendar__header_months {
@@ -9190,6 +9250,9 @@ p.weddings_desc {
 }
 .dashboard_calendar__header_months img {
   margin-right: 12px;
+}
+.dashboard_calendar__header_months:hover {
+  background: var(--colors-bright-grey);
 }
 
 .dashboard_calendar {
@@ -9234,7 +9297,7 @@ p.weddings_desc {
   border-right: 0;
 }
 .dashboard_calendar__main_top > div:first-child {
-  width: 316px;
+  width: 361px;
   border: none;
   padding-left: 32px;
 }
@@ -9443,6 +9506,35 @@ p.weddings_desc {
 
 .dashboard_calendar_calendar {
   transform: translateY(-25%);
+}
+
+.calendarsearchinput {
+  display: none;
+}
+.calendarsearchinput.active {
+  display: inline-block;
+}
+
+.calendar_range {
+  border-right: 1px solid var(--colors-grey);
+  width: 64px;
+  height: 64px;
+  background: rgba(227, 54, 38, 0.12);
+  position: absolute;
+  left: 512px;
+  text-align: right;
+}
+
+.time {
+  font-size: 12px;
+  padding-left: 4px;
+  color: var(--colors-brand-black);
+  border-left: 1px solid var(--colors-brand-red);
+  height: 64px;
+  margin-left: auto;
+  justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media (max-width: 1720px) {
