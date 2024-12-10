@@ -1912,6 +1912,11 @@ input:disabled + .slider {
     color: var(--colors-brand-black);
 }
 
+.calendar .days li:hover {
+    background: var(--colors-brand-red);
+    color: var(--colors-white);
+}
+
 .calendar .days li.active {
     background: var(--colors-brand-red);
     color: var(--colors-white);
@@ -1920,6 +1925,11 @@ input:disabled + .slider {
 .calendar .days li.disabled {
     opacity: 0.1;
     cursor: none;
+}
+
+.calendar .days li.disabled:hover {
+    background: none;
+    color: none;
 }
 
 .calendar .days li.none {
@@ -11360,6 +11370,191 @@ p.weddings_desc {
 
 .calendarsearchinput.active {
     display: inline-block;
+}
+
+.calendar_range {
+    border-right: 1px solid var(--colors-grey);
+    width: 64px;
+    height: 64px;
+    position: relative;
+    text-align: right;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+}
+
+.calendar_range:hover {
+    background: rgba(227, 54, 38, 0.12);
+}
+
+.calendar_time {
+    width: 2px;
+    height: 100%;
+}
+
+.calendar_time.active {
+    display: block;
+}
+
+.calendar_time.end {
+    position: absolute;
+}
+
+.calendar_time_wrapper {
+    background: rgb(227, 54, 38);
+    display: none;
+}
+
+.calendar_time_wrapper.active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.calendar_time_wrapper_buttons {
+    position: fixed;
+    display: none;
+    background: none;
+    left: 50%;
+    bottom: 20%;
+    margin-top: -20px;
+    z-index: 999;
+    display: none;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.calendar_time_wrapper_buttons button {
+    width: 48%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.calendar_time_wrapper_buttons.active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#calendarTimeButtonChoose svg {
+    fill: green;
+}
+
+.time {
+    font-size: 12px;
+    padding-left: 4px;
+    color: var(--colors-brand-black);
+    border-left: 1px solid var(--colors-brand-red);
+    height: 64px;
+    margin-left: auto;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.time#time0 {
+    left: 0;
+}
+
+.time#time1 {
+    left: 4.2%;
+}
+
+.time#time2 {
+    left: 8.4%;
+}
+
+.time#time3 {
+    left: 12.6%;
+}
+
+.time#time4 {
+    left: 16.8%;
+}
+
+.time#time5 {
+    left: 21%;
+}
+
+.time#time6 {
+    left: 25.2%;
+}
+
+.time#time7 {
+    left: 29.4%;
+}
+
+.time#time8 {
+    left: 33.6%;
+}
+
+.time#time9 {
+    left: 37.8%;
+}
+
+.time#time10 {
+    left: 42%;
+}
+
+.time#time11 {
+    left: 46.2%;
+}
+
+.time#time12 {
+    left: 50.4%;
+}
+
+.time#time13 {
+    left: 54.6%;
+}
+
+.time#time14 {
+    left: 58.8%;
+}
+
+.time#time15 {
+    left: 63%;
+}
+
+.time#time16 {
+    left: 67.2%;
+}
+
+.time#time17 {
+    left: 71.4%;
+}
+
+.time#time18 {
+    left: 75.6%;
+}
+
+.time#time19 {
+    left: 79.8%;
+}
+
+.time#time20 {
+    left: 84%;
+}
+
+.time#time21 {
+    left: 88.2%;
+}
+
+.time#time22 {
+    left: 92.4%;
+}
+
+.time#time23 {
+    left: 96.6%;
+}
+
+.time.active {
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
 }
 
 @media (max-width: 1720px) {
