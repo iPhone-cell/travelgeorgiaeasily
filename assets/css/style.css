@@ -11107,14 +11107,15 @@ p.weddings_desc {
 }
 
 .dashboard_calendar__main_top > div:first-child {
-    width: 361px;
+    width: 362px;
     border: none;
     padding-left: 32px;
 }
 
 .dashboard_calendar__main_sort {
     padding-left: 32px;
-    padding-right: 32px;
+    padding-right: 16px;
+    width: 271px;
 }
 
 .dashboard_calendar__main_sort button {
@@ -11557,6 +11558,115 @@ p.weddings_desc {
     opacity: 1;
 }
 
+.dashboard__main_settings {
+    margin-top: 48px;
+}
+
+.dashboard__settings_navbar ul {
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid var(--colors-grey);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dashboard__settings_navbar ul li {
+    transition: all 0.3s ease;
+    margin-right: 32px;
+}
+
+.dashboard__settings_navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.dashboard__settings_navbar ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--colors-dark-grey);
+}
+
+.dashboard__settings_navbar ul li a:hover {
+    color: var(--colors-brand-black);
+}
+
+.dashboard__settings_navbar ul li.active {
+    position: relative;
+}
+
+.dashboard__settings_navbar ul li.active:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: var(--colors-brand-red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -8px;
+}
+
+.dashboard__settings_navbar ul li.active a {
+    color: var(--colors-brand-black);
+}
+
+.settings_form__basic {
+    margin-top: 48px;
+}
+
+.settings_form__basic_title {
+    font-size: 20px;
+}
+
+.settings_form_row {
+    margin-top: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.settings_form_row .settings_form__input {
+    max-width: 792px;
+    width: 100%;
+    position: relative;
+    margin-right: 12px;
+}
+
+.settings_form_row .settings_form__input:last-child {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.settings_form_row .settings_form__input input {
+    width: 100%;
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+    padding: 16px;
+    height: 56px;
+}
+
+.settings_form_row .settings_form__input input:focus + label {
+    display: none;
+}
+
+.settings_form_row .settings_form__input label {
+    font-size: 16px;
+    color: var(--colors-dark-grey);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.settings_form_row .settings_form__input label span {
+    color: var(--colors-brand-red);
+}
+
+.settings_form_add {
+    margin-top: 24px;
+}
+
 @media (max-width: 1720px) {
     .booking_table td.dates_td {
         width: 24% !important;
@@ -11888,6 +11998,14 @@ p.weddings_desc {
 
     .add_car__sent_form_item.checkbox:last-child {
         margin-bottom: 0;
+    }
+
+    .calendarsearchinput.active input {
+        width: 140px;
+    }
+
+    .calendarsearchinput.active label {
+        display: none;
     }
 }
 
