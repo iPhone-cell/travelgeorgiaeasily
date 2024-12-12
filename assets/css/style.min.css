@@ -957,6 +957,13 @@ textarea::placeholder {
   font-size: 16px;
   color: var(--colors-dark-grey);
 }
+textarea.not-empty {
+  border: 1px solid var(--colors-brand-black);
+}
+
+.select .label_top {
+  top: 0;
+}
 
 @media (max-width: 1599px) {
   .container {
@@ -6908,7 +6915,17 @@ p.explore__info-bottom {
   max-width: 248px;
   height: 100vh;
   padding: 16px 0;
-  border-right: 1px solid var(--colors-grey);
+}
+.sidebar:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: var(--colors-grey);
+  position: absolute;
+  left: 248px;
+  top: 0;
+  margin-left: auto;
 }
 
 .dashboard__host {
@@ -8805,6 +8822,9 @@ span {
   max-width: 88px;
   width: 100%;
 }
+.label_top.long {
+  max-width: 127px;
+}
 
 .add_car__sent_service_content_list {
   margin-top: 32px;
@@ -9815,6 +9835,8 @@ p.weddings_desc {
 .settings_form_checkboxes .settings_form_checkbox_checkbox label:before {
   width: 20px;
   height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .settings_form_profile {
@@ -9837,7 +9859,8 @@ p.weddings_desc {
   top: 0;
 }
 .settings_form_profile img {
-  width: 128px;
+  max-width: 128px;
+  width: 100%;
   height: 128px;
   object-fit: cover;
   border-radius: 100%;
@@ -9887,7 +9910,7 @@ p.weddings_desc {
 .settings_form__btn {
   border-top: 1px solid var(--colors-grey);
   padding: 16px 16px 29px 16px;
-  width: 1672px;
+  width: 100%;
   height: 85px;
   background: var(--colors-white);
   display: flex;
@@ -9895,7 +9918,6 @@ p.weddings_desc {
   position: fixed;
   bottom: 0;
   right: 0;
-  max-width: 1672px;
 }
 .settings_form__btn button {
   border-radius: 4px;
@@ -9908,6 +9930,62 @@ p.weddings_desc {
   text-align: center;
   line-height: 114%;
   color: var(--colors-white);
+}
+
+.settings_form_row .settings_form__input .label_top {
+  top: 0;
+  opacity: 0;
+}
+.settings_form_row .settings_form__input .label_top.active {
+  opacity: 1;
+}
+
+.settings_form__input .label_top.active {
+  opacity: 1;
+}
+
+.settings_form__input input.not-empty {
+  border: 1px solid var(--colors-brand-black);
+}
+.settings_form__input input.not-empty + .label_top {
+  opacity: 1;
+}
+
+.settings_form__input .select.active select {
+  border: 1px solid var(--colors-brand-black);
+}
+
+.settings_form_row_select .label_top {
+  opacity: 0;
+  top: -5px;
+}
+.settings_form_row_select .label_top.active {
+  opacity: 1;
+}
+.settings_form_row_select.active select {
+  border: 1px solid var(--colors-brand-black);
+}
+
+.settings_form_row_select.active.label_top.active {
+  opacity: 1;
+}
+
+#messengerID .label_top {
+  display: block;
+}
+
+.settings_form__input .close {
+  left: 0;
+  right: 16px;
+  text-align: right;
+  display: none;
+  pointer-events: all !important;
+  cursor: pointer !important;
+  width: 16px;
+  margin-left: auto;
+}
+.settings_form__input .close.active {
+  display: block !important;
 }
 
 @media (max-width: 1720px) {
@@ -10173,6 +10251,24 @@ p.weddings_desc {
   .calendarsearchinput.active label {
     display: none;
   }
+  .sidebar::after {
+    left: 56px;
+  }
+  .dashboard__settings_navbar {
+    overflow: auto;
+  }
+  .dashboard__settings_navbar ul {
+    min-width: 904px;
+  }
+  .dashboard__settings_navbar ul li {
+    text-align: center;
+  }
+  .settings_form_checkboxes .settings_form_checkbox_checkbox:last-child {
+    margin-right: 0;
+  }
+  .settings_form_inputs {
+    max-width: 584px;
+  }
 }
 @media (max-width: 959px) {
   .dashboard__main_content {
@@ -10382,6 +10478,18 @@ p.weddings_desc {
   .add_car__sent_service_item.delivery {
     margin-top: 0;
   }
+  .settings_form_checkboxes {
+    flex-wrap: wrap;
+  }
+  .settings_form_checkbox_checkbox {
+    margin-bottom: 12px;
+  }
+  .settings_form_checkbox_checkbox:last-child {
+    margin-bottom: 0;
+  }
+  .settings_form_inputs {
+    max-width: 400px;
+  }
 }
 @media (max-width: 767px) {
   .dashboard_select {
@@ -10431,6 +10539,53 @@ p.weddings_desc {
     background: var(--colors-grey);
     position: absolute;
     bottom: 10px;
+  }
+  .settings_form_checkboxes {
+    flex-direction: column;
+  }
+  .settings_form__basic .settings_form_row .settings_form__input {
+    margin-bottom: 16px;
+  }
+  .settings_form__basic .settings_form_row.alone {
+    margin: 0;
+  }
+  .settings_form__basic .settings_form_row {
+    margin: 0;
+  }
+  .settings_form__basic .settings_form_row .settings_form_row_select {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .settings_form__basic .settings_form_row {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .settings_form__basic .settings_form_add {
+    margin-top: 8px;
+  }
+  .settings_form__basic.list .settings_form_row {
+    align-items: flex-start;
+  }
+  .settings_form_profile {
+    margin-right: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .settings_form_profile p {
+    width: 100%;
+  }
+  .settings_form_profile:after {
+    display: none;
+  }
+  .settings_form_row .settings_form__input {
+    margin-right: 0;
+  }
+  .settings_form_row .settings_form__input:last-child {
+    margin-left: 0;
+  }
+  .settings_form__basic .settings_form_row {
+    margin-top: 0;
   }
 }
 @media (max-width: 575px) {
@@ -11173,6 +11328,31 @@ p.weddings_desc {
   .dashboard_calendar_calendar {
     transform: translateY(0);
   }
+  .dashboard__main.settings .dashboard__main_heading-btn {
+    margin-top: 8px;
+  }
+  .dashboard__main.settings .dashboard__main_title {
+    margin-bottom: 0;
+  }
+  .dashboard__main.settings .dashboard__main_settings {
+    margin-top: 16px;
+  }
+  .settings_form__basic .settings_form_row.alone {
+    margin-top: 16px;
+  }
+  .settings_form__basic .settings_form_row.alone .settings_form_row_select {
+    margin-bottom: 0;
+  }
+  .settings_form__basic_title {
+    margin-bottom: 16px;
+  }
+  .settings_form_row.alone.separate {
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  .settings_form__basic.company .settings_form_row .settings_form__input {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 389px) {
   .dashboard__main_financial-edit {
@@ -11267,6 +11447,9 @@ p.weddings_desc {
   }
   .add_car__sent_heading.mobile {
     margin-top: 10px;
+  }
+  .settings_form__basic_title {
+    font-size: 18px;
   }
 }
 @media (min-width: 575px) {
