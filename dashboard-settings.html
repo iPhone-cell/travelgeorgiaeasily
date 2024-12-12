@@ -462,28 +462,32 @@
                             </ul>
                         </nav>
                         <form action="#" class="dashboard__settings_form settings_form">
-                            <div class="settings_form__basic">
+                            <div class="settings_form__basic" id="basicInfo">
                                 <h2 class="settings_form__basic_title">
                                     Basic Information
                                 </h2>
-                                <div class="settings_form_row">
-                                    <div class="settings_form__input">
+                                <div class="settings_form_row" >
+                                    <div class="settings_form__input settings_form__input1">
                                         <input type="text" required id="companyName">
                                         <label for="companyName">Company name <span>*</span></label>
+                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
                                     </div>
-                                    <div class="settings_form__input">
+                                    <div class="settings_form__input settings_form__input2">
                                         <input type="text" placeholder="" required id="address">
                                         <label for="address">Address <span>*</span></label>
+                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
                                     </div>
                                 </div>
                                 <div class="settings_form_row">
-                                    <div class="settings_form__input">
+                                    <div class="settings_form__input settings_form__input3">
                                         <input type="tel" required>
                                         <label for="primaryPhoneNumber">Primary Phone Number <span>*</span></label>
+                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
                                     </div>
-                                    <div class="settings_form__input">
+                                    <div class="settings_form__input settings_form__input4">
                                          <input type="email" required id="email">
                                         <label for="email">Email <span>*</span></label>
+                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
                                     </div>
                                 </div>
                                 <div class="settings_form_add">
@@ -497,7 +501,16 @@
                                 </h2>
                                 <div class="settings_form_row alone">
                                     <div class="settings_form__input alone">
-                                        <input type="text" placeholder="Tbilisi">
+                                        <div class="settings_form_row_select settings_form_select1">
+                                            <div class="select">
+                                                <select  id="parkingAddress" required>
+                                                    <option>Tbilisi</option>
+                                                    <option>Batumi</option>
+                                                    <option>Kutaisi</option>
+                                                </select>
+                                                <label for="parkingAddress" class="label_top">Address <span>*</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="settings_form_add long">
@@ -505,17 +518,18 @@
                                     <span>Add company address</span>
                                 </div>
                             </div>
-                            <div class="settings_form__basic">
+                            <div class="settings_form__basic company">
                                 <h2 class="settings_form__basic_title">
                                     Company description
                                 </h2>
                                 <div class="settings_form_row alone">
-                                    <div class="settings_form__input alone">
-                                        <textarea placeholder="Describe your company (1-4 sentences recommended)"></textarea>
+                                    <div class="settings_form__input alone textarea">
+                                        <textarea placeholder="Describe your company (1-4 sentences recommended)" id="describeYourCompany"></textarea>
+                                        <label for="describeYourCompany" class="label_top long">Describe your company <span>*</span></label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="settings_form__basic">
+                            <div class="settings_form__basic list">
                                 <h2 class="settings_form__basic_title">
                                     Available payment methods
                                 </h2>
@@ -560,42 +574,50 @@
                                             <p><img src="assets/images/dashboard/settings/add_photo_icon.svg" alt=""><span>Add photo</span></p>
                                         </label>
                                     </div>
-                                    <div class="settings_form_inputs">
+                                    <div class="settings_form_inputs" id="settingsContactInfo">
                                         <div class="settings_form_row">
-                                            <div class="settings_form__input">
+                                            <div class="settings_form__input settings_contact_info_input1">
                                                 <input type="text" required id="FirstName ">
                                                 <label for="FirstName">First Name <span>*</span></label>
+                                                <label for="FirstName" class="label_top long">First name <span>*</span></label>
                                             </div>
-                                            <div class="settings_form__input">
+                                            <div class="settings_form__input settings_contact_info_input2">
                                                 <input type="text" required id="LastName ">
                                                 <label for="LastName">Last Name <span>*</span></label>
+                                                <label for="LastName" class="label_top long">Last name <span>*</span></label>
                                             </div>
                                         </div>
-                                        <div class="settings_form_row alone">
-                                            <div class="settings_form_row_select">
+                                        <div class="settings_form_row settings_form_row2 select alone separate">
+                                            <div class="settings_form_row_select settings_form_select2">
                                                 <div class="select">
-                                                    <select  id="Language">
+                                                    <select  id="Language" required>
                                                         <option>Language</option>
                                                         <option>Georgian</option>
                                                         <option>English</option>
                                                         <option>Russian</option>
                                                     </select>
+                                                    <label for="Language" class="label_top">Language <span>*</span></label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="settings_form_row">
-                                            <div class="settings_form_row_select">
+                                            <div class="settings_form_row_select settings_form_select3">
                                                 <div class="select">
-                                                    <select  id="Messenger">
+                                                    <select  id="Messenger" required>
                                                         <option>Messenger</option>
                                                         <option>Telegram</option>
                                                         <option>WhatsApp</option>
                                                         <option>Viber</option>
                                                     </select>
+                                                    <label for="Messenger" class="label_top">Messenger <span>*</span></label>
                                                 </div>
                                             </div>
-                                            <div class="settings_form__input">
-                                                <input type="text" placeholder="Messenger ID">
+                                            <div class="settings_form__input" id="messengerID">
+                                                <input type="text" placeholder="MessengerID" required>
+                                                <label class="close">
+                                                    <img src="assets/images/dashboard/settings/input_close.svg" alt="Close">
+                                                </label>
+                                                <label for="MessengerID" class="label_top">Messenger ID <span>*</span></label>
                                            </div>
                                         </div>
                                         <div class="settings_form_add short">
