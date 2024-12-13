@@ -9562,8 +9562,18 @@ p.weddings_desc {
   background: rgba(227, 54, 38, 0.12);
 }
 
+.calendar_range.active {
+  background: var(--colors-brand-red);
+  border-radius: 5px;
+}
+
+.calendar_range .time.set {
+  background: var(--colors-brand-red);
+  border-radius: 5px;
+  opacity: 1;
+}
+
 .calendar_time {
-  width: 2px;
   height: 100%;
 }
 .calendar_time.active {
