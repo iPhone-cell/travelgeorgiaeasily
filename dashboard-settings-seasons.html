@@ -424,7 +424,7 @@
                     <div class="dashboard__main_settings">
                         <nav class="dashboard__settings_navbar">
                             <ul>
-                                <li class="active">
+                                <li>
                                     <a href="">
                                         General info
                                     </a>
@@ -434,7 +434,7 @@
                                         Deliveries
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="">
                                         Seasons & durations
                                     </a>
@@ -462,169 +462,439 @@
                             </ul>
                         </nav>
                         <form action="#" class="dashboard__settings_form settings_form">
-                            <div class="settings_form__basic" id="basicInfo">
+                            <div class="settings_form__basic seasons">
                                 <h2 class="settings_form__basic_title">
-                                    Basic Information
+                                    Seasons
                                 </h2>
-                                <div class="settings_form_row" >
+                                <div class="settings_form_row complete align_items_center">
                                     <div class="settings_form__input settings_form__input1">
-                                        <input type="text" required id="companyName">
-                                        <label for="companyName">Company name <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                        <input type="text" required id="seasonSpring" value="Spring">
+                                        <label for="seasonSpring"></label>
+                                        <label for="seasonSpring" class="label_top">Season name</label>
                                     </div>
-                                    <div class="settings_form__input settings_form__input2">
-                                        <input type="text" placeholder="" required id="address">
-                                        <label for="address">Address <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                    <div class="settings_form__input">
+                                        <label for="seasonSpringFrom" class="label_top">From</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Mar</option>
+                                                    <option>Apr</option>
+                                                    <option>May</option>
+                                                </select>
+                                            </div>
+                                            <div class="select">
+                                                <select >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonSpringTo" class="label_top">To</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Mar</option>
+                                                    <option>Apr</option>
+                                                    <option>May</option>
+                                                </select>
+        
+                                            </div>
+                                            <div class="select">
+                                                <select >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="delete">
+                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
+                                    </button>
                                 </div>
-                                <div class="settings_form_row">
+                                <div class="settings_form_row complete align_items_center">
+                                    <div class="settings_form__input settings_form__input2">
+                                        <input type="text" required id="seasonSummer" value="Summer">
+                                        <label for="seasonSummer"></label>
+                                        <label for="seasonSummer" class="label_top">Season name</label>
+                                    </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonSummerFrom" class="label_top">From</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Jun</option>
+                                                    <option>Jul</option>
+                                                    <option>Aug</option>
+                                                </select>
+                                            </div>
+                                            <div class="select">
+                                                <select >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonSummerFrom" class="label_top">To</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Jan</option>
+                                                    <option>Feb</option>
+                                                    <option>Mar</option>
+                                                </select>
+        
+                                            </div>
+                                            <div class="select">
+                                                <select>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="delete">
+                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="settings_form_row complete align_items_center">
                                     <div class="settings_form__input settings_form__input3">
-                                        <input type="tel" required>
-                                        <label for="primaryPhoneNumber">Primary Phone Number <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                        <input type="text" required id="seasonAutumn" value="Autumn">
+                                        <label for="seasonAutumn"></label>
+                                        <label for="seasonAutumn" class="label_top">Season name</label>
                                     </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonAutumnFrom" class="label_top">From</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Sep</option>
+                                                    <option>Oct</option>
+                                                    <option>Nov</option>
+                                                </select>
+                                            </div>
+                                            <div class="select">
+                                                <select >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonAutumnFrom" class="label_top">To</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Sep</option>
+                                                    <option>Oct</option>
+                                                    <option>Nov</option>
+                                                </select>
+        
+                                            </div>
+                                            <div class="select">
+                                                <select>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="delete">
+                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="settings_form_row complete align_items_center">
                                     <div class="settings_form__input settings_form__input4">
-                                         <input type="email" required id="email">
-                                        <label for="email">Email <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                        <input type="text" required id="seasonWinter" value="Winter">
+                                        <label for="seasonWinter"></label>
+                                        <label for="seasonWinter" class="label_top">Season name</label>
                                     </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonWinterFrom" class="label_top">From</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Dec</option>
+                                                    <option>Feb</option>
+                                                    <option>Mar</option>
+                                                </select>
+                                            </div>
+                                            <div class="select">
+                                                <select >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    <div class="settings_form__input">
+                                        <label for="seasonWinterFrom" class="label_top">To</label>
+                                        <div class="add_car__sent_form_select flex">
+                                            <div class="select">
+                                                <select >
+                                                    <option>Sep</option>
+                                                    <option>Oct</option>
+                                                    <option>Nov</option>
+                                                </select>
+        
+                                            </div>
+                                            <div class="select">
+                                                <select>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="delete">
+                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
+                                    </button>
                                 </div>
                                 <div class="settings_form_add">
                                     <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add phone number</span>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic">
-                                <h2 class="settings_form__basic_title">
-                                    Parking address
-                                </h2>
-                                <div class="settings_form_row alone">
-                                    <div class="settings_form__input alone">
-                                        <div class="settings_form_row_select settings_form_select1">
-                                            <div class="select">
-                                                <select  id="parkingAddress" required>
-                                                    <option>Tbilisi</option>
-                                                    <option>Batumi</option>
-                                                    <option>Kutaisi</option>
-                                                </select>
-                                                <label for="parkingAddress" class="label_top">Address <span>*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="settings_form_add long">
-                                    <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add company address</span>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic company">
-                                <h2 class="settings_form__basic_title">
-                                    Company description
-                                </h2>
-                                <div class="settings_form_row alone">
-                                    <div class="settings_form__input alone textarea">
-                                        <textarea placeholder="Describe your company (1-4 sentences recommended)" id="describeYourCompany"></textarea>
-                                        <label for="describeYourCompany" class="label_top long">Describe your company <span>*</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic list">
-                                <h2 class="settings_form__basic_title">
-                                    Available payment methods
-                                </h2>
-                                <div class="settings_form_row">
-                                    <div class="settings_form_checkboxes checkbox">
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForRent">
-                                                <label for="CashForRent">Cash for rent</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForDeposit">
-                                                <label for="CashForDeposit">Cash for deposit</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForRent2">
-                                                <label for="CashForRent2">Cards for rent</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForDeposit2">
-                                                <label for="CashForDeposit2">cards for deposit</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic">
-                                <h2 class="settings_form__basic_title">
-                                    Contact person
-                                </h2>
-                                <div class="settings_form_row">
-                                    <div class="settings_form_profile add_car__sent_form_sidebar_photo">
-                                        <label>
-                                            <input type="file" accept=".jpg, .png" name="addPhoto" id="formImage">
-                                            <img src="assets/images/dashboard/no_photo.svg" alt="" id="formPreview">
-                                            <p><img src="assets/images/dashboard/settings/add_photo_icon.svg" alt=""><span>Add photo</span></p>
-                                        </label>
-                                    </div>
-                                    <div class="settings_form_inputs" id="settingsContactInfo">
-                                        <div class="settings_form_row">
-                                            <div class="settings_form__input settings_contact_info_input1">
-                                                <input type="text" required id="FirstName ">
-                                                <label for="FirstName">First Name <span>*</span></label>
-                                                <label for="FirstName" class="label_top long">First name <span>*</span></label>
-                                            </div>
-                                            <div class="settings_form__input settings_contact_info_input2">
-                                                <input type="text" required id="LastName ">
-                                                <label for="LastName">Last Name <span>*</span></label>
-                                                <label for="LastName" class="label_top long">Last name <span>*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_row settings_form_row2 select alone separate">
-                                            <div class="settings_form_row_select settings_form_select2">
-                                                <div class="select">
-                                                    <select  id="Language" required>
-                                                        <option>Language</option>
-                                                        <option>Georgian</option>
-                                                        <option>English</option>
-                                                        <option>Russian</option>
-                                                    </select>
-                                                    <label for="Language" class="label_top">Language <span>*</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_row">
-                                            <div class="settings_form_row_select settings_form_select3">
-                                                <div class="select">
-                                                    <select  id="Messenger" required>
-                                                        <option>Messenger</option>
-                                                        <option>Telegram</option>
-                                                        <option>WhatsApp</option>
-                                                        <option>Viber</option>
-                                                    </select>
-                                                    <label for="Messenger" class="label_top">Messenger <span>*</span></label>
-                                                </div>
-                                            </div>
-                                            <div class="settings_form__input" id="messengerID">
-                                                <input type="text" placeholder="MessengerID" required>
-                                                <label class="close">
-                                                    <img src="assets/images/dashboard/settings/input_close.svg" alt="Close">
-                                                </label>
-                                                <label for="MessengerID" class="label_top">Messenger ID <span>*</span></label>
-                                           </div>
-                                        </div>
-                                        <div class="settings_form_add short">
-                                            <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                            <span>Add messenger</span>
-                                        </div>
-                                    </div>
+                                    <span>Add season</span>
                                 </div>
                             </div>
                             <div class="settings_form__btn">

@@ -424,12 +424,12 @@
                     <div class="dashboard__main_settings">
                         <nav class="dashboard__settings_navbar">
                             <ul>
-                                <li class="active">
+                                <li>
                                     <a href="">
                                         General info
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="">
                                         Deliveries
                                     </a>
@@ -462,167 +462,969 @@
                             </ul>
                         </nav>
                         <form action="#" class="dashboard__settings_form settings_form">
-                            <div class="settings_form__basic" id="basicInfo">
-                                <h2 class="settings_form__basic_title">
-                                    Basic Information
-                                </h2>
-                                <div class="settings_form_row" >
-                                    <div class="settings_form__input settings_form__input1">
-                                        <input type="text" required id="companyName">
-                                        <label for="companyName">Company name <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                            <div class="settings_form__basic radio_btns">
+                                <div class="settings_form__offices radio_btns simple">
+                                    <div class="radio">
+                                        <input type="radio" class="radio__input"  id="radioTbilisi" name="office" checked>
+                                        <label for="radioTbilisi" class="radio__label">Tbilisi</label>
                                     </div>
-                                    <div class="settings_form__input settings_form__input2">
-                                        <input type="text" placeholder="" required id="address">
-                                        <label for="address">Address <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                    <div class="radio">
+                                        <input type="radio" class="radio__input"  id="radioKutaisi" name="office">
+                                        <label for="radioKutaisi" class="radio__label">Kutaisi</label>
                                     </div>
-                                </div>
-                                <div class="settings_form_row">
-                                    <div class="settings_form__input settings_form__input3">
-                                        <input type="tel" required>
-                                        <label for="primaryPhoneNumber">Primary Phone Number <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
-                                    </div>
-                                    <div class="settings_form__input settings_form__input4">
-                                         <input type="email" required id="email">
-                                        <label for="email">Email <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
-                                    </div>
-                                </div>
-                                <div class="settings_form_add">
-                                    <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add phone number</span>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic">
-                                <h2 class="settings_form__basic_title">
-                                    Parking address
-                                </h2>
-                                <div class="settings_form_row alone">
-                                    <div class="settings_form__input alone">
-                                        <div class="settings_form_row_select settings_form_select1">
-                                            <div class="select">
-                                                <select  id="parkingAddress" required>
-                                                    <option>Tbilisi</option>
-                                                    <option>Batumi</option>
-                                                    <option>Kutaisi</option>
-                                                </select>
-                                                <label for="parkingAddress" class="label_top">Address <span>*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="settings_form_add long">
-                                    <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add company address</span>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic company">
-                                <h2 class="settings_form__basic_title">
-                                    Company description
-                                </h2>
-                                <div class="settings_form_row alone">
-                                    <div class="settings_form__input alone textarea">
-                                        <textarea placeholder="Describe your company (1-4 sentences recommended)" id="describeYourCompany"></textarea>
-                                        <label for="describeYourCompany" class="label_top long">Describe your company <span>*</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="settings_form__basic list">
-                                <h2 class="settings_form__basic_title">
-                                    Available payment methods
-                                </h2>
-                                <div class="settings_form_row">
-                                    <div class="settings_form_checkboxes checkbox">
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForRent">
-                                                <label for="CashForRent">Cash for rent</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForDeposit">
-                                                <label for="CashForDeposit">Cash for deposit</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForRent2">
-                                                <label for="CashForRent2">Cards for rent</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_checkbox_checkbox">
-                                            <div class="modal__equipment_form_item_name">
-                                                <input type="checkbox" id="CashForDeposit2">
-                                                <label for="CashForDeposit2">cards for deposit</label>
-                                            </div>
-                                        </div>
+                                    <div class="radio">
+                                        <input type="radio" class="radio__input"  id="radioBatumi" name="office">
+                                        <label for="radioBatumi" class="radio__label">Batumi</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="settings_form__basic">
                                 <h2 class="settings_form__basic_title">
-                                    Contact person
+                                    Delivery Places: from Tbilisi
                                 </h2>
-                                <div class="settings_form_row">
-                                    <div class="settings_form_profile add_car__sent_form_sidebar_photo">
-                                        <label>
-                                            <input type="file" accept=".jpg, .png" name="addPhoto" id="formImage">
-                                            <img src="assets/images/dashboard/no_photo.svg" alt="" id="formPreview">
-                                            <p><img src="assets/images/dashboard/settings/add_photo_icon.svg" alt=""><span>Add photo</span></p>
-                                        </label>
+                                <div class="settings_form__table">
+                                    <div class="settings_form__table_header">
+                                        <p class="place_title">
+                                            Delivery place
+                                        </p>
+                                        <p class="price_title">
+                                            Price
+                                        </p>
+                                        <p class="time_title">
+                                            Min, hours
+                                        </p>
                                     </div>
-                                    <div class="settings_form_inputs" id="settingsContactInfo">
-                                        <div class="settings_form_row">
-                                            <div class="settings_form__input settings_contact_info_input1">
-                                                <input type="text" required id="FirstName ">
-                                                <label for="FirstName">First Name <span>*</span></label>
-                                                <label for="FirstName" class="label_top long">First name <span>*</span></label>
+                                    <div class="settings_form__table_item_wrapper">
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="placeTbilisi" checked>
+                                                                <label for="placeTbilisi">Tbilisi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
                                             </div>
-                                            <div class="settings_form__input settings_contact_info_input2">
-                                                <input type="text" required id="LastName ">
-                                                <label for="LastName">Last Name <span>*</span></label>
-                                                <label for="LastName" class="label_top long">Last name <span>*</span></label>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="placeKutaisi" checked>
+                                                                <label for="placeKutaisi">Kutaisi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="settings_form_row settings_form_row2 select alone separate">
-                                            <div class="settings_form_row_select settings_form_select2">
-                                                <div class="select">
-                                                    <select  id="Language" required>
-                                                        <option>Language</option>
-                                                        <option>Georgian</option>
-                                                        <option>English</option>
-                                                        <option>Russian</option>
-                                                    </select>
-                                                    <label for="Language" class="label_top">Language <span>*</span></label>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="placeBatumi" checked>
+                                                                <label for="placeBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="placeTbilisiInternationalAirport" checked>
+                                                                <label for="placeTbilisiInternationalAirport">Tbilisi International Airport</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price">
+                                                    <input type="text" value="0$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="placeBatumiInternationalAirport" checked>
+                                                                <label for="placeBatumiInternationalAirport">Batumi International Airport</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name">
+                                                                <input type="checkbox" id="placeKutaisiInternationalAirport">
+                                                                <label for="placeKutaisiInternationalAirport">Kutaisi International Airport</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price">
+                                                    <input type="text" value="0$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="settings_form_row">
-                                            <div class="settings_form_row_select settings_form_select3">
-                                                <div class="select">
-                                                    <select  id="Messenger" required>
-                                                        <option>Messenger</option>
-                                                        <option>Telegram</option>
-                                                        <option>WhatsApp</option>
-                                                        <option>Viber</option>
-                                                    </select>
-                                                    <label for="Messenger" class="label_top">Messenger <span>*</span></label>
+                                    </div>
+        
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion one">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Adjara</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="adjaraFixPrice" checked class="fix">
+                                                                <label for="adjaraFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
                                                 </div>
                                             </div>
-                                            <div class="settings_form__input" id="messengerID">
-                                                <input type="text" placeholder="MessengerID" required>
-                                                <label class="close">
-                                                    <img src="assets/images/dashboard/settings/input_close.svg" alt="Close">
-                                                </label>
-                                                <label for="MessengerID" class="label_top">Messenger ID <span>*</span></label>
-                                           </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjaraBatumi" checked >
+                                                                <label for="adjaraBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjaraKobuleti" checked >
+                                                                <label for="adjaraKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjaraKhelvachauri" checked >
+                                                                <label for="adjaraKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjaraShuakhevi" checked >
+                                                                <label for="adjaraShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="settings_form_add short">
-                                            <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                            <span>Add messenger</span>
+                                    </div>
+        
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Guria</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="guriaFixPrice" checked class="fix">
+                                                                <label for="guriaFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="guriaBatumi"checked>
+                                                                <label for="guriaBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="guriaKobuleti" checked >
+                                                                <label for="guriaKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="guriaKhelvachauri" checked >
+                                                                <label for="guriaKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="guriaShuakhevi" checked >
+                                                                <label for="guriaShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Imereti</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="imeretiFixPrice" checked class="fix">
+                                                                <label for="imeretiFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="imeretiBatumi" checked >
+                                                                <label for="imeretiBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="imeretiKobuleti" checked >
+                                                                <label for="imeretiKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="imeretiKhelvachauri" checked >
+                                                                <label for="imeretiKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="imeretiShuakhevi" checked >
+                                                                <label for="imeretiShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Kakheti</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="kakhetiFixPrice" checked class="fix">
+                                                                <label for="kakhetiFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kakhetiBatumi" checked >
+                                                                <label for="kakhetiBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kakhetiKobuleti" checked >
+                                                                <label for="kakhetiKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kakhetiKhelvachauri" checked >
+                                                                <label for="kakhetiKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kakhetiShuakhevi" checked >
+                                                                <label for="kakhetiShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Kvemo kartli</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="kvemoKartliFixPrice" checked class="fix">
+                                                                <label for="kvemoKartliFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kvemoKartliBatumi" checked >
+                                                                <label for="kvemoKartliBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kvemoKartliKobuleti" checked >
+                                                                <label for="kvemoKartliKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kvemoKartliKhelvachauri" checked >
+                                                                <label for="kvemoKartliKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="kvemoKartliShuakhevi" checked >
+                                                                <label for="kvemoKartliShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Samegrelo zemo-Svaneti</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="SamegreloZemoSvanetiFixPrice" checked class="fix">
+                                                                <label for="SamegreloZemoSvanetiFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="SamegreloZemoSvanetiBatumi" checked >
+                                                                <label for="SamegreloZemoSvanetiBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="SamegreloZemoSvanetiKobuleti" checked >
+                                                                <label for="SamegreloZemoSvanetiKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="SamegreloZemoSvanetiKhelvachauri" checked >
+                                                                <label for="SamegreloZemoSvanetiKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="SamegreloZemoSvanetiShuakhevi" checked >
+                                                                <label for="SamegreloZemoSvanetiShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="settings_form__table_item_wrapper settings_form__table_item_wrapper_accordion">
+                                        <div class="settings_form__table_item_title">
+                                            <img src="/assets/images/dashboard/settings/arrow.svg" alt="">
+                                            <span>Shida kartli</span>
+                                        </div>
+                                        <div class="settings_form__table_item">
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name fix">
+                                                                <input type="checkbox" id="shidaKartliFixPrice" checked class="fix">
+                                                                <label for="shidaKartliFixPrice">Fix price</label>
+                                                                <img src="assets/images/icons/question.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price green">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="shidaKartliBatumi" checked >
+                                                                <label for="shidaKartliBatumi">Batumi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="shidaKartliKobuleti" checked >
+                                                                <label for="shidaKartliKobuleti">Kobuleti</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="shidaKartliKhelvachauri" checked >
+                                                                <label for="shidaKartliKhelvachauri">Khelvachauri</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="shidaKartliShuakhevi" checked >
+                                                                <label for="shidaKartliShuakhevi">Shuakhevi</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                            <div class="settings_form__table_row">
+                                                <div class="settings_form__table_place">
+                                                    <div class="add_car__sent_form_item checkbox">
+                                                        <div class="add_car__sent_form_checkbox">
+                                                            <div class="modal__equipment_form_item_name grey">
+                                                                <input type="checkbox" id="adjarKhulo" checked >
+                                                                <label for="adjarKhulo">Khulo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="settings_form__table_price crossed">
+                                                    <input type="text" value="50$">
+                                                </div>
+                                                <div class="settings_form__table_time">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
