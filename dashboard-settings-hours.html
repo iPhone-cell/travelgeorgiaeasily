@@ -434,12 +434,12 @@
                                         Deliveries
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="">
                                         Seasons & durations
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="">
                                         Working hours
                                     </a>
@@ -462,343 +462,120 @@
                             </ul>
                         </nav>
                         <form action="#" class="dashboard__settings_form settings_form">
-                            <div class="settings_form__basic seasons">
-                                <h2 class="settings_form__basic_title">
-                                    Seasons
-                                </h2>
-                                <div class="settings_form_row complete align_items_center">
-                                    <div class="settings_form__input settings_form__input1">
-                                        <input type="text" required id="seasonSpring" value="Spring">
-                                        <label for="seasonSpring"></label>
-                                        <label for="seasonSpring" class="label_top">Season name</label>
-                                    </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonSpringFrom" class="label_top">From</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
-                                                    <option>Mar</option>
-                                                    <option>Apr</option>
-                                                    <option>May</option>
-                                                </select>
-                                            </div>
-                                            <div class="select">
-                                                <select >
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
-                                                </select>
+                            <div class="settings_form_items">
+                                <div class="settings_form__basic working_hours first">
+                                    <h2 class="settings_form__basic_title">
+                                        Working days
+                                    </h2>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Monday" class="checkbox__input" checked>
+                                            <label for="Monday" class="checkbox__label">Monday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonSpringTo" class="label_top">To</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
-                                                    <option>Mar</option>
-                                                    <option>Apr</option>
-                                                    <option>May</option>
-                                                </select>
-        
-                                            </div>
-                                            <div class="select">
-                                                <select >
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
-                                                </select>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Tuesday" class="checkbox__input" checked>
+                                            <label for="Tuesday" class="checkbox__label">Tuesday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="delete">
-                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
-                                    </button>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Wednesday" class="checkbox__input" checked>
+                                            <label for="Wednesday" class="checkbox__label">Wednesday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Thursday" class="checkbox__input" checked>
+                                            <label for="Thursday" class="checkbox__label">Thursday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Friday" class="checkbox__input" checked>
+                                            <label for="Friday" class="checkbox__label">Friday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Saturday" class="checkbox__input" checked>
+                                            <label for="Saturday" class="checkbox__label">Saturday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="working_days_wrapper">
+                                        <div class="checkbox__item">
+                                            <input type ="checkbox" id="Sunday" class="checkbox__input">
+                                            <label for="Sunday" class="checkbox__label">Sunday</label>
+                                        </div>
+                                        <div class="header_modal_price_touchbar range_slider">
+                                            <input class="range" type="range" min="0" max="2000" value="20000">
+                                            <div class="slider_thumb">
+                                                <div class="progress"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="settings_form_row complete align_items_center">
-                                    <div class="settings_form__input settings_form__input2">
-                                        <input type="text" required id="seasonSummer" value="Summer">
-                                        <label for="seasonSummer"></label>
-                                        <label for="seasonSummer" class="label_top">Season name</label>
-                                    </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonSummerFrom" class="label_top">From</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
-                                                    <option>Jun</option>
-                                                    <option>Jul</option>
-                                                    <option>Aug</option>
-                                                </select>
-                                            </div>
-                                            <div class="select">
-                                                <select >
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
-                                                </select>
-                                            </div>
-                                        </div>
-        
-                                    </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonSummerFrom" class="label_top">To</label>
+                                <div class="settings_form__basic working_hours last">
+                                    <h2 class="settings_form__basic_title">
+                                        Holidays
+                                    </h2>
+                                    <p class="text">
+                                        On these days, it is impossible to issue or return cars, even for an additional fee. For example, New Year, major religious or national holidays, etc.
+                                    </p>
+                                    <div class="settings_form__input holidays">
+                                        <label for="seasonSpringFrom" class="label_top">From</label>
                                         <div class="add_car__sent_form_select flex">
                                             <div class="select">
                                                 <select >
                                                     <option>Jan</option>
                                                     <option>Feb</option>
-                                                    <option>Mar</option>
-                                                </select>
-        
-                                            </div>
-                                            <div class="select">
-                                                <select>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
-                                                </select>
-        
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="delete">
-                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="settings_form_row complete align_items_center">
-                                    <div class="settings_form__input settings_form__input3">
-                                        <input type="text" required id="seasonAutumn" value="Autumn">
-                                        <label for="seasonAutumn"></label>
-                                        <label for="seasonAutumn" class="label_top">Season name</label>
-                                    </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonAutumnFrom" class="label_top">From</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
+                                                    <option selected>Mar</option>
+                                                    <option>Apr</option>
+                                                    <option>May</option>
+                                                    <option>Jun</option>
+                                                    <option>Jul</option>
+                                                    <option>Aug</option>
                                                     <option>Sep</option>
                                                     <option>Oct</option>
                                                     <option>Nov</option>
-                                                </select>
-                                            </div>
-                                            <div class="select">
-                                                <select >
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
-                                                </select>
-                                            </div>
-                                        </div>
-        
-                                    </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonAutumnFrom" class="label_top">To</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
-                                                    <option>Sep</option>
-                                                    <option>Oct</option>
-                                                    <option>Nov</option>
-                                                </select>
-        
-                                            </div>
-                                            <div class="select">
-                                                <select>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
-                                                </select>
-        
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="delete">
-                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="settings_form_row complete align_items_center">
-                                    <div class="settings_form__input settings_form__input4">
-                                        <input type="text" required id="seasonWinter" value="Winter">
-                                        <label for="seasonWinter"></label>
-                                        <label for="seasonWinter" class="label_top">Season name</label>
-                                    </div>
-                                    <div class="settings_form__input">
-                                        <label for="seasonWinterFrom" class="label_top">From</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
                                                     <option>Dec</option>
-                                                    <option>Feb</option>
-                                                    <option>Mar</option>
                                                 </select>
                                             </div>
                                             <div class="select">
@@ -836,173 +613,53 @@
                                                     <option>31</option>
                                                 </select>
                                             </div>
+                                            <div class="select">
+                                                <select >
+                                                    <option>2024</option>
+                                                    <option>2025</option>
+                                                    <option>2026</option>
+                                                    <option>2027</option>
+                                                    <option>2028</option>
+                                                </select>
+                                            </div>
+                                            <button class="delete">
+                                                <img src="assets/images/dashboard/settings/basket_no_bg.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="settings_form_add small">
+                                            <img src="assets/images/dashboard/settings/add_form.svg" alt="">
+                                            <span>Add date</span>
                                         </div>
         
+                                    </div>
+                                    <div class="checkbox__item">
+                                        <input type ="checkbox" id="outOfHoursService" class="checkbox__input" checked>
+                                        <label for="outOfHoursService" class="checkbox__label fz16">Out of hours service</label>
                                     </div>
                                     <div class="settings_form__input">
-                                        <label for="seasonWinterFrom" class="label_top">To</label>
-                                        <div class="add_car__sent_form_select flex">
-                                            <div class="select">
-                                                <select >
-                                                    <option>Sep</option>
-                                                    <option>Oct</option>
-                                                    <option>Nov</option>
-                                                </select>
-        
+                                        <label for="seasonSpringFrom" class="label_top">From</label>
+                                        <div class="add_car__sent_form_select flex surcharge">
+                                            <p>Surcharge</p>
+                                            <div class="select surcharge_input">
+                                                <input type="text" value="120">
                                             </div>
                                             <div class="select">
-                                                <select>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                    <option>13</option>
-                                                    <option>14</option>
-                                                    <option>15</option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>20</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                    <option>25</option>
-                                                    <option>26</option>
-                                                    <option>27</option>
-                                                    <option>28</option>
-                                                    <option>29</option>
-                                                    <option>30</option>
-                                                    <option>31</option>
+                                                <select >
+                                                    <option>$USD</option>
+                                                    <option>₾GEL</option>
+                                                    <option>₽RUB</option>
                                                 </select>
-        
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="delete">
-                                        <img src="assets/images/dashboard/settings/basket.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="settings_form_add">
-                                    <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add season</span>
                                 </div>
                             </div>
-                            <div class="header_modal_price settings_form__basic_range">
-                                <div class="header_modal_brand_input">
-                                    <div class="header_modal_price_title filter_title">
-                                        Days
-                                    </div>
-                                    <div class="header_modal_price_main">
-                                        <div class="range_wrapper">
-                                            <div class="header_modal_price_touchbar range_slider" style="width:234px">
-                                                <p>
-                                                    <b><span>1</span>..<span>4</span></b>
-                                                    days
-                                                </p>
-                                                <div class="range_item_border_wrapper">
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                </div>
-                                                <div class="range_item">
-                                                <input class="range" type="range" min="1" max="4" value="4" >
-        
-                                                <div class="slider_thumb">
-                                                    <div class="progress"></div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="header_modal_price_touchbar range_slider" style="width:587px">
-                                                <p>
-                                                    <b><span>5</span>..<span>14</span></b>
-                                                    days
-                                                </p>
-                                                <div class="range_item_border_wrapper">
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                </div>
-                                                <div class="range_item">
-                                                    <input class="range" type="range" min="1" max="9" value="9">
-        
-                                                    <div class="slider_thumb">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="header_modal_price_touchbar range_slider" style="width:702px">
-                                                <p>
-                                                    <b><span>15</span>..<span>30</span></b>
-                                                    days
-                                                </p>
-                                                <div class="range_item_border_wrapper">
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                    <div class="range_item_border"></div>
-                                                </div>
-        
-                                                <div class="range_item">
-                                                    <input class="range" type="range" min="0" max="15" value="15">
-        
-                                                    <div class="slider_thumb">
-                                                        <div class="progress"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="header_modal_price_touchbar range_slider last">
-                                                <p>
-                                                    <span>31+</span>
-                                                </p>
-                                                <div class="range_item_border_wrapper">
-                                                    <div class="range_item_border"></div>
-                                                </div>
-                                                <input class="range" type="range" min="0" max="1" value="1" >
-        
-                                                <div class="slider_thumb">
-                                                    <div class="progress"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="settings_form__basic_range_btns">
-                                        <div class="settings_form_add">
-                                            <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                            <span>Add days</span>
-                                        </div>
-                                        <div class="settings_form_add no_background">
-                                            <img src="assets/images/dashboard/settings/basket_no_bg.svg" alt="">
-                                            <span>Delete</span>
-                                        </div>
+                            <div class="settings_form__basic timereq">
+                                <p>Time required to prepare the vehicle between bookings</p>
+                                <div class="header_modal_price_touchbar range_slider">
+                                    <input class="range" type="range" min="0" max="2000" value="20000">
+                                    <div class="slider_thumb">
+                                        <div class="progress"></div>
                                     </div>
                                 </div>
                             </div>
