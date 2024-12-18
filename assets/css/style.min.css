@@ -726,7 +726,7 @@ select {
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: url("../images/icons/press.svg") no-repeat left;
+  background: url("../images/icons/press.svg") no-repeat left/cover;
   cursor: grab;
   width: 10px;
   height: 36px;
@@ -1029,6 +1029,10 @@ textarea.not-empty {
 
 .align_items_center {
   align-items: center;
+}
+
+.range_slider input {
+  overflow-y: hidden;
 }
 
 @media (max-width: 1599px) {
@@ -9819,6 +9823,10 @@ p.weddings_desc {
 .settings_form__basic {
   margin-top: 48px;
 }
+.settings_form__basic h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
 
 .settings_form__basic_title {
   font-size: 20px;
@@ -10201,6 +10209,368 @@ p.weddings_desc {
 .settings_form_row.complete .settings_form__input .label_top {
   opacity: 1;
   z-index: 999999;
+}
+
+.settings_form__basic_range .range_wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.settings_form__basic_range .range_wrapper p {
+  width: 50px;
+  margin-left: auto;
+  font-size: 13px;
+  line-height: 123%;
+  color: var(--colors-dark-grey);
+  text-align: right;
+  transform: translateX(-8px);
+}
+.settings_form__basic_range .range_wrapper p b {
+  color: var(--colors-brand-black);
+  font-weight: 700;
+}
+.settings_form__basic_range .range_slider {
+  width: 100%;
+}
+.settings_form__basic_range .range_slider input {
+  pointer-events: none;
+}
+.settings_form__basic_range .range_slider.last {
+  width: auto;
+}
+.settings_form__basic_range .range_slider.last .range {
+  background: var(--colors-brand-red);
+}
+.settings_form__basic_range .range_slider.last .range::-webkit-slider-thumb {
+  background: none;
+}
+.settings_form__basic_range .range_slider.last p {
+  margin-bottom: 16px;
+}
+.settings_form__basic_range .range_slider.last .range_item_border {
+  width: 100%;
+  margin-bottom: 6px;
+}
+.settings_form__basic_range .range_slider .range_item_border_wrapper {
+  display: flex;
+  width: 100%;
+}
+.settings_form__basic_range .range_slider .range_item_border {
+  background: #1C1E21;
+  height: 2px;
+  width: 52px;
+  margin-right: 2px;
+}
+.settings_form__basic_range .range_slider .range_item {
+  padding-top: 6px;
+}
+
+.settings_form__basic_range_btns {
+  display: flex;
+}
+.settings_form__basic_range_btns .settings_form_add {
+  margin-right: 16px;
+}
+.settings_form__basic_range_btns .settings_form_add:last-child {
+  margin-right: 0;
+}
+.settings_form__basic_range_btns .settings_form_add.no_background {
+  background: none;
+  color: var(--colors-dark-grey);
+  transition: all 0.3s ease;
+}
+.settings_form__basic_range_btns .settings_form_add.no_background:hover {
+  background: rgba(203, 204, 205, 0.4);
+  color: var(--colors-brand-black);
+}
+
+.working_days_wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.working_days_wrapper .checkbox__label {
+  color: var(--colors-dark-grey);
+}
+.working_days_wrapper .range_slider {
+  width: 100%;
+}
+
+.settings_form_items {
+  display: flex;
+  position: relative;
+}
+.settings_form_items:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: var(--colors-grey);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.settings_form__basic.last {
+  margin-left: auto;
+  max-width: 456px;
+  width: 100%;
+}
+
+.settings_form__basic .text {
+  margin-top: 24px;
+  max-width: 360px;
+  font-size: 13px;
+  line-height: 123%;
+  color: var(--colors-dark-grey);
+}
+.settings_form__basic .settings_form__input {
+  margin-top: 24px;
+  margin-bottom: 33px;
+}
+.settings_form__basic .settings_form__input .select select {
+  width: 140px;
+}
+.settings_form__basic .settings_form__input .select:nth-child(2) select {
+  border-radius: 0;
+}
+.settings_form__basic .settings_form__input .select:nth-child(3) select {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+.settings_form__basic .settings_form__input .settings_form_add.small {
+  width: 114px;
+}
+.settings_form__basic .fz16 {
+  font-size: 16px;
+}
+
+.surcharge {
+  align-items: center;
+}
+.surcharge p {
+  font-size: 16px;
+  margin-right: 16px;
+}
+.surcharge .select input {
+  border: none;
+  border: 1px solid var(--colors-dark-grey);
+  border-radius: 5px 0 0 5px;
+  width: 183px;
+  text-align: center;
+  height: 56px;
+}
+.surcharge .select.surcharge_input {
+  border: none;
+}
+.surcharge .select.surcharge_input:after {
+  display: none;
+}
+
+.add_car__sent_form_select.surcharge .select {
+  width: 100%;
+}
+.add_car__sent_form_select.surcharge .select select {
+  width: 100%;
+}
+
+.settings_form__basic.working_hours.first {
+  width: 100%;
+  margin-right: 100px;
+}
+.settings_form__basic.working_hours.first .working_days_wrapper {
+  height: 28px;
+  margin-top: 24px;
+}
+
+.working_days_wrapper .checkbox__item {
+  width: 168px;
+  padding-left: 0;
+  margin-right: 24px;
+}
+
+.settings_form__input.holidays .select {
+  width: 140px;
+}
+
+.settings_form__basic.timereq {
+  max-width: 456px;
+}
+.settings_form__basic.timereq .range_slider {
+  margin-top: 24px;
+}
+
+.settings_form_item {
+  padding-bottom: 48px;
+  position: relative;
+}
+.settings_form_item:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: var(--colors-grey);
+  position: absolute;
+  bottom: 0;
+}
+
+.settings_form__additional_item {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+}
+.settings_form__additional_item .settings_form__additional_label .add_car__sent_service_content {
+  padding: 0;
+}
+.settings_form__additional_item:first-child {
+  margin-top: 24px;
+}
+.settings_form__additional_item .item_wrapper {
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 120px;
+}
+.settings_form__additional_item .free.green {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--colors-green);
+  width: 100%;
+}
+.settings_form__additional_item .add_car__sent_service_title {
+  display: flex;
+  padding: 0;
+  border-bottom: none;
+}
+.settings_form__additional_item .add_car__sent_service_title:last-child {
+  margin-bottom: 0;
+}
+.settings_form__additional_item .add_car__sent_service_title_label {
+  font-size: 15px;
+}
+.settings_form__additional_item .add_car__sent_service_content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 456px;
+  width: 100%;
+}
+.settings_form__additional_item .add_car__sent_service_content .add_car__sent_service_content_input {
+  margin-right: 8px;
+}
+.settings_form__additional_item .add_car__sent_service_content .add_car__sent_service_content_input:last-child {
+  margin-left: 8px;
+}
+.settings_form__additional_item .add_car__sent_service_content .add_car__sent_service_content_input input {
+  max-width: 456px;
+  width: 100%;
+}
+
+.settings_form__additional_label .add_car__sent_service_content {
+  max-width: 100%;
+  justify-content: flex-end;
+}
+.settings_form__additional_label .add_car__sent_service_content .add_car__sent_service_content_input {
+  width: 456px;
+}
+.settings_form__additional_label .add_car__sent_service_content input {
+  width: 456px;
+}
+
+.advertising {
+  background: url("../../assets/images/dashboard/settings/adv_bg.jpg") no-repeat center/cover;
+  width: 100%;
+  border-radius: 5px;
+  height: 280px;
+}
+
+.advertising__info {
+  margin-right: auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 360px;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--colors-white);
+}
+.advertising__info a {
+  color: var(--colors-white);
+}
+
+.advertising__label {
+  font-size: 10px;
+  margin-bottom: 32px;
+}
+
+.advertising__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.advertising__title a {
+  text-decoration: underline;
+}
+
+.advertising__text {
+  margin-top: 16px;
+}
+
+.advertising__btn {
+  display: block;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 160px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: var(--colors-white);
+  background: var(--colors-brand-red);
+  margin-top: 32px;
+}
+
+.settings_form__password {
+  max-width: 552px;
+}
+.settings_form__password input {
+  border: none;
+}
+
+.password__input {
+  margin-bottom: 16px;
+  padding-top: 10px;
+}
+.password__input input {
+  width: 100%;
+}
+
+.password_submit {
+  margin-top: 48px;
+}
+.password_submit button {
+  border-radius: 5px;
+  padding: 18px 24px;
+  width: 562px;
+  height: 56px;
+  background: var(--colors-brand-red);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colors-white);
+}
+.password_submit a {
+  font-size: 16px;
+  text-decoration: underline;
+  text-align: right;
+  color: var(--colors-brand-black);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
 }
 
 @media (max-width: 1720px) {
