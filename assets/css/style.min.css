@@ -1136,6 +1136,16 @@ textarea.not-empty {
   background-color: #666;
 }
 
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
 @media (max-width: 1599px) {
   .container {
     max-width: 1200px;
@@ -10729,9 +10739,237 @@ p.weddings_desc {
   color: var(--colors-brand-black);
 }
 
+.add_car__sent_service_content_input .label {
+  left: 0;
+  right: 0;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.additional_input.active .price {
+  opacity: 1;
+}
+.additional_input.active input {
+  border: 1px solid var(--colors-brand-black);
+}
+
+.additional_input input {
+  border: 1px solid var(--colors-brand-black);
+}
+.additional_input .label {
+  opacity: 1;
+}
+
+.additional_input.disabled {
+  pointer-events: none;
+}
+.additional_input.disabled input {
+  border: 1px solid var(--colors-grey);
+}
+.additional_input.disabled .label {
+  color: var(--colors-dark-grey);
+}
+
+.settings_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings_service {
+  max-width: 552px;
+  font-size: 13px;
+  line-height: 123%;
+  color: var(--colors-dark-grey);
+}
+.settings_service:after {
+  display: none;
+}
+
+.settings_service__btn {
+  margin-top: 38px;
+}
+.settings_service__btn a {
+  border: 1px solid var(--colors-brand-black);
+  border-radius: 5px;
+  padding: 14px 24px;
+  width: 149px;
+  height: 48px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colors-brand-black);
+}
+
+.password_text {
+  font-size: 13px;
+  line-height: 123%;
+  color: var(--colors-dark-grey);
+  margin-bottom: 24px;
+}
+
+.password_recovery_icon {
+  margin-bottom: 24px;
+}
+
+.go_back a {
+  border-radius: 5px;
+  padding: 16px 20px;
+  width: 360px;
+  height: 54px;
+  background: var(--colors-brand-black);
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colors-white);
+  display: block;
+}
+
+.settings_form_item.none {
+  display: none;
+}
+
+.settings_form_item.border_none:after {
+  display: none;
+}
+
+#passwordInstruction {
+  max-width: 360px;
+  margin-top: 48px;
+}
+
+.settings_form_item.select_item {
+  max-width: 456px;
+}
+.settings_form_item.select_item:after {
+  display: none;
+}
+.settings_form_item.select_item .select select {
+  max-width: 456px;
+}
+
+.settings_form_item_title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 456px;
+  align-items: center;
+  width: 100%;
+}
+
+.settings_form_item_title {
+  display: flex;
+  align-items: center;
+}
+
+.settings_form_item_title_icon {
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.settings_form_item_title_text {
+  font-size: 16px;
+  color: var(--colors-brand-black);
+}
+
+.settings_form_item_toggle_wrapper {
+  display: flex;
+}
+
+.settings_form_item_toggle_title {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--colors-brand-black);
+}
+
+.add_car__sent_service_title_toggle {
+  margin-left: 24px;
+}
+
+.terms_item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.terms_item .select {
+  max-width: 1044px;
+  width: 100%;
+}
+.terms_item .select select {
+  max-width: 1044px;
+  width: 100%;
+}
+.terms_item button {
+  background: none;
+}
+
+.terms_item_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings_form_item_title_wrapper.no_select {
+  width: 100%;
+  max-width: none;
+  margin-right: 48px;
+}
+
+.settings_form_item_title_text.disabled {
+  color: var(--colors-dark-grey);
+}
+
+.terms_item.dragElem {
+  opacity: 0.4;
+}
+
+.terms_item.over {
+  border-top: 1px solid var(--colors-brand-red);
+}
+
+.settings_form__input.alone .select {
+  max-width: none;
+}
+.settings_form__input.alone .select select {
+  max-width: none;
+  width: 100%;
+}
+
+.seasons .settings_form__input {
+  width: 32%;
+}
+.seasons .add_car__sent_form_select {
+  width: 100%;
+}
+.seasons .add_car__sent_form_select .select {
+  width: 100%;
+}
+.seasons .add_car__sent_form_select .select select {
+  width: 100%;
+}
+
+@media (max-width: 1899px) {
+  .seasons .settings_form_row.complete {
+    max-width: 1200px;
+  }
+  .seasons .header_modal_price_main {
+    max-width: 1200px;
+  }
+}
 @media (max-width: 1720px) {
   .booking_table td.dates_td {
     width: 24% !important;
+  }
+}
+@media (max-width: 1499px) {
+  .seasons .settings_form_row.complete {
+    max-width: 1100px;
+  }
+  .seasons .header_modal_price_main {
+    max-width: 1100px;
   }
 }
 @media (max-width: 1441px) {
@@ -12097,6 +12335,9 @@ p.weddings_desc {
   .settings_form__table_row .checkbox label:before {
     transform: none;
     top: 2px;
+  }
+  .settings_form_profile.add_car__sent_form_sidebar_photo {
+    margin-bottom: 48px;
   }
 }
 @media (max-width: 389px) {
