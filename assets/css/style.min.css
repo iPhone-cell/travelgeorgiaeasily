@@ -1228,6 +1228,13 @@ textarea.not-empty {
   color: var(--colors-white);
 }
 
+.burger.white {
+  background: var(--colors-white);
+}
+.burger.white .burger_line {
+  background: var(--colors-brand-black);
+}
+
 .header_small {
   height: auto;
 }
@@ -10163,6 +10170,7 @@ p.weddings_desc {
 }
 
 .settings_form__btn {
+  z-index: 99;
   border-top: 1px solid var(--colors-grey);
   padding: 16px 16px 29px 16px;
   width: 100%;
@@ -10313,6 +10321,9 @@ p.weddings_desc {
   color: var(--colors-black);
 }
 
+.settings_form__table_item_wrapper .settings_form__table_price {
+  width: 72px;
+}
 .settings_form__table_item_wrapper .settings_form__table_price.disabled input {
   color: var(--colors-grey);
 }
@@ -10322,11 +10333,15 @@ p.weddings_desc {
 .settings_form__table_item_wrapper .settings_form__table_price {
   position: relative;
 }
+.settings_form__table_item_wrapper .settings_form__table_price input {
+  text-align: center;
+  padding-left: 8px;
+}
 .settings_form__table_item_wrapper .settings_form__table_price label {
   position: absolute;
-  left: 75px;
   top: 50%;
-  transform: translateY(-50%);
+  right: 30%;
+  transform: translateY(-50%) translateX(50%);
   font-size: 16px;
   line-height: 125%;
   color: var(--colors-brand-black);
@@ -10355,8 +10370,42 @@ p.weddings_desc {
 .settings_form__table_item_wrapper .settings_form__table_price.green input {
   color: var(--colors-green);
 }
+.settings_form__table_item_wrapper .settings_form__table_price.green label {
+  color: var(--colors-green);
+}
+
+.settings_form__table_row.crossed .settings_form__table_price input {
+  color: var(--colors-grey);
+  pointer-events: none;
+  text-decoration: line-through;
+}
+.settings_form__table_row.crossed .settings_form__table_price label {
+  color: var(--colors-grey);
+  pointer-events: none;
+  text-decoration: line-through;
+}
+.settings_form__table_row.crossed .settings_form__table_time input {
+  color: var(--colors-grey);
+  pointer-events: none;
+}
+.settings_form__table_row.crossed .settings_form__table_time label {
+  color: var(--colors-grey);
+  pointer-events: none;
+}
 
 .settings_form__table_row .grey {
+  pointer-events: none;
+}
+.settings_form__table_row.disabled .settings_form__table_price input {
+  color: var(--colors-grey);
+  pointer-events: none;
+}
+.settings_form__table_row.disabled .settings_form__table_price label {
+  color: var(--colors-grey);
+  pointer-events: none;
+}
+.settings_form__table_row.disabled .settings_form__table_time input {
+  color: var(--colors-grey);
   pointer-events: none;
 }
 
@@ -10759,8 +10808,8 @@ p.weddings_desc {
   margin-top: 16px;
 }
 
-.seasons .add_car__sent_form_select .select select {
-  width: 250px;
+.seasons .add_car__sent_form_select .select:nth-child(2) select {
+  border-radius: 0 5px 5px 0;
 }
 
 .select.no_after:after {
@@ -11030,6 +11079,53 @@ p.weddings_desc {
   width: 100%;
 }
 
+.settings_form__basic.seasons.mobile {
+  display: none;
+}
+.settings_form__basic.seasons.mobile .settings_form_season.one .settings_form_season_content {
+  display: block;
+}
+.settings_form__basic.seasons.mobile .settings_form_season_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 16px 0;
+  color: var(--colors-brand-black);
+  opacity: 0.6;
+}
+.settings_form__basic.seasons.mobile .settings_form_season_title img {
+  transform: rotate(180deg);
+}
+.settings_form__basic.seasons.mobile .settings_form_season_title.active {
+  opacity: 1;
+}
+.settings_form__basic.seasons.mobile .settings_form_season_title.active img {
+  transform: rotate(0deg);
+}
+.settings_form__basic.seasons.mobile .settings_form_season_content {
+  margin-top: 16px;
+  display: none;
+}
+.settings_form__basic.seasons.mobile .settings_form__input {
+  width: 100%;
+}
+.settings_form__basic.seasons.mobile .delete {
+  margin-top: 18px;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+}
+.settings_form__basic.seasons.mobile .delete p {
+  margin-left: 12px;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--colors-dark-grey);
+}
+.settings_form__basic.seasons.mobile .add_car__sent_form_select {
+  margin-bottom: 18px;
+}
+
 @media (max-width: 1899px) {
   .seasons .settings_form_row.complete {
     max-width: 1200px;
@@ -11042,6 +11138,19 @@ p.weddings_desc {
   .booking_table td.dates_td {
     width: 24% !important;
   }
+  .settings_form__additional_item .add_car__sent_service_content .add_car__sent_service_content_input {
+    max-width: 316px;
+  }
+  .settings_form__additional_label .add_car__sent_service_content {
+    justify-content: flex-start;
+  }
+  .terms_item_wrapper1 .settings_form_item_title_wrapper {
+    margin-right: 16px;
+    width: 712px;
+  }
+  .dashboard__main.settings.terms button {
+    margin-left: 16px;
+  }
 }
 @media (max-width: 1499px) {
   .seasons .settings_form_row.complete {
@@ -11049,6 +11158,15 @@ p.weddings_desc {
   }
   .seasons .header_modal_price_main {
     max-width: 1100px;
+  }
+  .settings_form__basic.working_hours .range_diapasone {
+    width: 380px;
+  }
+  .settings_form__additional_item .item_wrapper {
+    max-width: 339px;
+  }
+  .terms_item_wrapper1 .settings_form_item_title_wrapper {
+    width: 792px;
   }
 }
 @media (max-width: 1441px) {
@@ -11071,6 +11189,34 @@ p.weddings_desc {
   }
   .add_car__sent_form_wrapper .add_car__sent_gallery {
     min-width: 1128px;
+  }
+  .settings_form__basic.working_hours.first {
+    max-width: 496px;
+    margin-right: 24px;
+  }
+  .settings_form__basic.working_hours.last {
+    max-width: 390px;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input .select select {
+    width: 117px;
+  }
+  .settings_form__basic.working_hours.last .surcharge input {
+    width: 150px;
+  }
+  .settings_form__additional_item .item_wrapper {
+    max-width: 192px;
+  }
+  .dashboard__main.settings.password .settings_form_item {
+    width: 49%;
+  }
+  .password_submit {
+    width: 100%;
+  }
+  .password_submit button {
+    width: 100%;
+  }
+  .terms_item_wrapper1 .settings_form_item_title_wrapper {
+    width: 900px;
   }
 }
 @media (max-width: 1280px) {
@@ -11153,6 +11299,12 @@ p.weddings_desc {
   }
   .add_car__sent_service_content_list_checkbox label {
     margin-bottom: 1rem !important;
+  }
+  .settings_form__additional_item .item_wrapper {
+    margin-right: 40px;
+  }
+  .terms_item_wrapper1 .settings_form_item_title_wrapper {
+    width: 850px;
   }
 }
 @media (max-width: 1199px) {
@@ -11326,6 +11478,53 @@ p.weddings_desc {
   }
   .settings_form_inputs {
     max-width: 584px;
+  }
+  .settings_form_items.hours {
+    flex-direction: column;
+  }
+  .settings_form__basic.working_hours.first {
+    width: 100%;
+    max-width: none;
+    width: auto;
+  }
+  .settings_form__basic.working_hours.first .range_diapasone {
+    width: auto;
+    max-width: none;
+    width: 100%;
+  }
+  .settings_form__basic.working_hours.first .working_days_wrapper .checkbox__item {
+    width: 172px;
+  }
+  .settings_form__basic.working_hours.last {
+    margin-left: 0;
+    width: 100%;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .select {
+    width: 242px;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .select select {
+    width: 242px;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .delete {
+    padding-left: 24px;
+  }
+  .surcharge_input {
+    width: 141px;
+  }
+  .surcharge_input input {
+    width: 141px !important;
+  }
+  .settings_form__additional_item .add_car__sent_service_content .add_car__sent_service_content_input {
+    max-width: 254px;
+  }
+  .settings_form__additional_item .item_wrapper {
+    max-width: 264px;
+  }
+  .settings_form__additional_label .add_car__sent_service_content {
+    justify-content: flex-end;
+  }
+  .terms_item_wrapper1 .settings_form_item_title_wrapper {
+    width: 800px;
   }
 }
 @media (max-width: 959px) {
@@ -11554,6 +11753,28 @@ p.weddings_desc {
   .seasons .header_modal_price_main {
     max-width: 1200px;
   }
+  .seasons .add_car__sent_form_select .select .label_top {
+    width: 30px;
+    top: -7px;
+  }
+  .settings_form__basic.seasons {
+    display: none;
+  }
+  .settings_form__basic.seasons.mobile {
+    display: block;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .select select {
+    width: 200px;
+  }
+  .settings_form__additional_item .add_car__sent_service_content .add_car__sent_service_content_input {
+    max-width: 200px;
+  }
+  .settings_form__additional_item .item_wrapper {
+    max-width: 194px;
+  }
+  .terms_item .select {
+    max-width: 273px;
+  }
 }
 @media (max-width: 767px) {
   .dashboard_select {
@@ -11650,6 +11871,96 @@ p.weddings_desc {
   }
   .settings_form__basic .settings_form_row {
     margin-top: 0;
+  }
+  .dashboard__main.seasons {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .range_wrapper {
+    margin-right: 16px;
+  }
+  .settings_form__basic_range .range_slider.last {
+    width: 9%;
+  }
+  .settings_form__basic_range .range_slider.last p {
+    padding-right: 8px;
+  }
+  .working_days_wrapper {
+    flex-direction: column;
+    align-items: baseline;
+    padding-bottom: 68px;
+  }
+  .working_days_wrapper .range_diapasone {
+    margin-top: 24px;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .select {
+    width: 110px;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .select select {
+    width: 110px;
+  }
+  .settings_form__basic.working_hours.last .add_car__sent_form_select.flex {
+    margin-bottom: 24px;
+  }
+  .add_car__sent_form_select.flex.surcharge .surcharge_input {
+    width: 135px !important;
+  }
+  .add_car__sent_form_select.flex.surcharge .surcharge_input input {
+    width: 135px !important;
+  }
+  .add_car__sent_form_select.flex.surcharge .surcharge_input .select.no_after {
+    width: 135px !important;
+  }
+  .dashboard__settings_form.settings_form.additionals {
+    display: none;
+  }
+  .dashboard__settings_form.settings_form.additionals.mobile {
+    display: block;
+  }
+  .additional_input.mobile {
+    display: none;
+  }
+  .settings_form__additional_item .item_wrapper {
+    max-width: none;
+  }
+  .settings_form__additional_item .add_car__sent_service_title {
+    flex-direction: column;
+  }
+  .settings_form__additional_item .add_car__sent_service_title1 {
+    flex-direction: row;
+  }
+  .settings_form__additional_label .item_wrapper {
+    margin-left: 40px;
+  }
+  .settings_form__additional_label .add_car__sent_service_title1 {
+    margin-left: -40px;
+  }
+  .settings_form__additional_label .add_car__sent_service_title .free {
+    margin-left: 16px;
+  }
+  .settings_form__additional_label .add_car__sent_service_content {
+    justify-content: flex-start;
+    margin-top: 16px;
+    pointer-events: all;
+  }
+  .dashboard__main.settings.password .settings_flex {
+    flex-direction: column;
+  }
+  .dashboard__main.settings.password .settings_form_item {
+    width: 456px;
+    padding-bottom: 0;
+  }
+  .terms .terms_item_wrapper {
+    flex-direction: column;
+  }
+  .terms .settings_form_item.terms_item button {
+    position: absolute;
+    top: 17%;
+    right: 0;
+  }
+  .terms .terms_item .select {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media (max-width: 575px) {
@@ -12424,6 +12735,43 @@ p.weddings_desc {
   .settings_form_profile.add_car__sent_form_sidebar_photo {
     margin-bottom: 48px;
   }
+  .seasons.mobile .add_car__sent_form_select {
+    width: 100% !important;
+  }
+  .seasons.mobile .add_car__sent_form_select select {
+    width: auto !important;
+    width: 100% !important;
+  }
+  .settings_form__input.holidays .add_car__sent_form_select .select select {
+    width: 110px !important;
+  }
+  .select.surcharge_input {
+    width: 117px !important;
+  }
+  .add_car__sent_form_select.flex.surcharge .select.no_after {
+    width: 117px !important;
+  }
+  .add_car__sent_form_select.flex.surcharge .select.no_after select {
+    width: 117px !important;
+  }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .delete {
+    padding-left: 16px;
+  }
+  .dashboard__main.settings.password .settings_form_item {
+    width: 100%;
+  }
+  .dashboard__main.settings.password .password_submit {
+    margin-top: 24px;
+  }
+  .dashboard__main.settings.password .go_back a {
+    width: auto;
+  }
+  .terms .terms_item_wrapper1 .settings_form_item_title_wrapper {
+    width: 320px;
+  }
+  .terms .settings_form_item_title_wrapper.no_select {
+    margin-right: 0;
+  }
 }
 @media (max-width: 389px) {
   .dashboard__main_financial-edit {
@@ -12489,6 +12837,9 @@ p.weddings_desc {
   .settings_form__table_row .modal__equipment_form_item_name label {
     font-size: 14px;
   }
+  .settings_form__basic.working_hours.last .settings_form__input.holidays .delete {
+    padding-left: 4px;
+  }
 }
 @media (max-width: 374px) {
   .add_car__sent_form_select {
@@ -12530,6 +12881,9 @@ p.weddings_desc {
   }
   .settings_form__table_row .modal__equipment_form_item_name label {
     font-size: 12px;
+  }
+  .dashboard__main.settings {
+    overflow-x: auto;
   }
 }
 @media (min-width: 575px) {
@@ -12869,6 +13223,86 @@ p.host_info__reviews_main_item_text {
   margin-top: 8px;
 }
 
+@media (max-width: 1599px) {
+  .host_info__prifile {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 1279px) {
+  .header.header_small {
+    height: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .host_info__right {
+    max-width: 496px;
+  }
+}
+@media (max-width: 992px) {
+  .host_info__right {
+    max-width: 400px;
+  }
+  .host_info__prifile {
+    margin-right: 40px;
+  }
+  .host_info__right_location_item_office {
+    width: 120px;
+  }
+  .host_info__right.reviews {
+    max-width: 500px;
+  }
+}
+@media (max-width: 787px) {
+  .host_info_prifile_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .host_info__prifile {
+    margin-right: 0;
+  }
+  .host_info__right {
+    margin-top: 32px;
+  }
+  .host_info {
+    padding-top: 80px;
+  }
+  .host_info__right_additional {
+    margin-left: 16px;
+  }
+  .host_info__right_location_item {
+    flex-direction: column;
+    align-items: first baseline;
+  }
+  .host_info__right.reviews {
+    background: none;
+  }
+}
+@media (max-width: 576px) {
+  .host_info__reviews_title {
+    font-size: 12px;
+  }
+  .host_info__reviews_buttons .select select {
+    font-size: 12px;
+  }
+  .host_info__reviews_button a {
+    font-size: 12px;
+    height: 24px;
+    width: 120px;
+    padding: 4px;
+  }
+}
+@media (max-width: 400px) {
+  .host_info__reviews_title {
+    display: none;
+  }
+  .host_info__reviews_buttons {
+    display: none;
+  }
+  .host_info__right.reviews .host_info__right_additional {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
 .main_about {
   background: #000;
 }
@@ -13040,4 +13474,38 @@ p.host_info__reviews_main_item_text {
   line-height: 125%;
   letter-spacing: 0.01em;
   color: #bcbcbc;
+}
+
+@media (max-width: 992px) {
+  .about_features__item {
+    height: auto;
+  }
+  .about_hero__text {
+    font-size: 48px;
+  }
+  .about_hero__img {
+    height: 366px;
+  }
+  .legal_information_text {
+    font-size: 24px;
+  }
+  .about_features__title {
+    font-size: 48px;
+  }
+  .about_features__main {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_features__item {
+    border-right: 0;
+  }
+  .about_hero__text_top {
+    top: 96px;
+  }
+  .about_hero__text_bottom {
+    bottom: 48px;
+  }
+  .dashboard__main_breadcrumbs {
+    margin-bottom: 48px;
+  }
 }
