@@ -7214,6 +7214,27 @@ p.explore__info-bottom {
   background: var(--colors-white);
 }
 
+.dashboard__nav .red_circle:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background: #e22e1d;
+  position: absolute;
+  margin-left: 4px;
+}
+
+.dashboard__nav svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 18px;
+}
+
+.dashboard__nav .active svg {
+  fill: white;
+}
+
 .dashboard__main_content {
   max-width: 1608px;
 }
@@ -7534,6 +7555,13 @@ h1.dashboard__main_title {
 .iksweb.dashboard_table .status.paused div {
   background: rgba(227, 54, 38, 0.12);
   color: var(--colors-brand-red);
+}
+.iksweb.dashboard_table .completed div {
+  display: flex;
+  align-items: center;
+}
+.iksweb.dashboard_table .completed div img {
+  margin-left: 8px;
 }
 .iksweb.dashboard_table tr {
   transition: all 0.3s ease;
@@ -11584,6 +11612,12 @@ p.weddings_desc {
   .terms_item_wrapper1 .settings_form_item_title_wrapper {
     width: 800px;
   }
+  .dashboard__nav svg {
+    margin-right: 0;
+  }
+  .dashboard_nav_label {
+    display: none;
+  }
 }
 @media (max-width: 959px) {
   .dashboard__main_content {
@@ -12247,86 +12281,86 @@ p.weddings_desc {
   .dashboard__messages_chats_name {
     color: var(--colors-brand-black);
   }
-  .bookings_main {
+  .bookings_main, .user_return {
     padding-left: 0;
     padding-right: 0;
   }
-  .bookings_main .iksweb.dashboard_table .first {
+  .bookings_main .iksweb.dashboard_table .first, .user_return .iksweb.dashboard_table .first {
     display: none;
   }
-  .bookings_main .iksweb.dashboard_table th.number {
+  .bookings_main .iksweb.dashboard_table th.number, .user_return .iksweb.dashboard_table th.number {
     display: none;
   }
-  .bookings_main .booking_table .status {
+  .bookings_main .booking_table .status, .user_return .booking_table .status {
     display: none;
   }
-  .bookings_main .dates_td {
+  .bookings_main .dates_td, .user_return .dates_td {
     display: none;
   }
-  .bookings_main .price_td {
+  .bookings_main .price_td, .user_return .price_td {
     display: none;
   }
-  .bookings_main .booking_car_order_info_top {
+  .bookings_main .booking_car_order_info_top, .user_return .booking_car_order_info_top {
     flex-direction: column-reverse;
   }
-  .bookings_main .booking_car_order_info_top_order {
+  .bookings_main .booking_car_order_info_top_order, .user_return .booking_car_order_info_top_order {
     margin-top: 16px;
   }
-  .bookings_main .booking_car_order {
+  .bookings_main .booking_car_order, .user_return .booking_car_order {
     padding: 16px;
   }
-  .bookings_main .booking_car_order_info_change {
+  .bookings_main .booking_car_order_info_change, .user_return .booking_car_order_info_change {
     width: 44px;
     height: 40px;
     padding: 0;
     display: flex;
     padding: 12px;
   }
-  .bookings_main .booking_car_order_info_change span {
+  .bookings_main .booking_car_order_info_change span, .user_return .booking_car_order_info_change span {
     display: none;
   }
-  .bookings_main .booking_car_order_info_top_order {
+  .bookings_main .booking_car_order_info_top_order, .user_return .booking_car_order_info_top_order {
     justify-content: space-between;
     margin-right: 0;
   }
-  .bookings_main .booking_car_order_info_table_wrapper td {
+  .bookings_main .booking_car_order_info_table_wrapper td, .user_return .booking_car_order_info_table_wrapper td {
     font-size: 14px !important;
   }
-  .bookings_main .booking_car_order_info_table_wrapper td:last-child {
+  .bookings_main .booking_car_order_info_table_wrapper td:last-child, .user_return .booking_car_order_info_table_wrapper td:last-child {
     text-align: right;
     color: var(--colors-dark-grey);
   }
-  .bookings_main .status_td_mobile {
+  .bookings_main .status_td_mobile, .user_return .status_td_mobile {
     width: 100%;
   }
-  .bookings_main .status_td_mobile td {
+  .bookings_main .status_td_mobile td, .user_return .status_td_mobile td {
     width: 50%;
   }
-  .bookings_main .status_td_mobile .green {
+  .bookings_main .status_td_mobile .green, .user_return .status_td_mobile .green {
     color: var(--colors-green) !important;
   }
-  .bookings_main .status_td_mobile .warning {
+  .bookings_main .status_td_mobile .warning, .user_return .status_td_mobile .warning {
     color: var(--colors-yellow) !important;
   }
-  .bookings_main .status_td_mobile .cancelled {
+  .bookings_main .status_td_mobile .cancelled, .user_return .status_td_mobile .cancelled {
     color: var(--colors-brand-red) !important;
   }
-  .bookings_main .dashboard__main_cars td:first-child {
+  .bookings_main .dashboard__main_cars td:first-child, .user_return .dashboard__main_cars td:first-child {
     padding-left: 0 !important;
   }
-  .bookings_main .dashboard__main_heading-btn {
+  .bookings_main .dashboard__main_heading-btn, .user_return .dashboard__main_heading-btn {
     margin-top: 16px;
   }
-  .bookings_main h1.dashboard__main_title {
+  .bookings_main h1.dashboard__main_title, .user_return h1.dashboard__main_title {
     margin-bottom: 0;
   }
-  .bookings_main .dashboard__main_seacrh_wrapper {
+  .bookings_main .dashboard__main_seacrh_wrapper, .user_return .dashboard__main_seacrh_wrapper {
     margin-top: 16px;
   }
-  .bookings_main .new_orders {
+  .bookings_main .new_orders, .user_return .new_orders {
     display: none;
   }
-  .bookings_main .new_order {
+  .bookings_main .new_order, .user_return .new_order {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -12334,10 +12368,10 @@ p.weddings_desc {
     background: var(--colors-green);
     padding: 10px 16px;
   }
-  .bookings_main .new_order:hover {
+  .bookings_main .new_order:hover, .user_return .new_order:hover {
     background: var(--colors-green);
   }
-  .bookings_main .new_order p {
+  .bookings_main .new_order p, .user_return .new_order p {
     font-style: italic;
     font-weight: 900;
     font-size: 15px;
@@ -12345,8 +12379,11 @@ p.weddings_desc {
     text-transform: uppercase;
     color: var(--colors-white);
   }
-  .bookings_main .new_order img {
+  .bookings_main .new_order img, .user_return .new_order img {
     transform: rotate(180deg);
+  }
+  .user_return .new_order {
+    display: none;
   }
   .booking_car_wrapper {
     min-width: 0;
@@ -13956,5 +13993,223 @@ p.host_info__reviews_main_item_text {
     justify-content: flex-end;
     margin-left: auto;
     margin-top: 16px;
+  }
+}
+.dashboard_nav_label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: #727374;
+  margin-left: -6px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.user_cards {
+  display: flex;
+  margin-top: 16px;
+}
+
+.user_cards__item {
+  margin-right: 32px;
+  background: var(--colors-bright-grey);
+  border-radius: 10px;
+  padding: 16px;
+  max-width: 258px;
+  width: 100%;
+  max-height: 100px;
+}
+.user_cards__item:last-child {
+  margin-right: 0;
+}
+
+.user_cards__item_top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user_cards__item_top_icon {
+  margin-right: 16px;
+}
+
+.user_cards__item_top_label {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+}
+
+.user_achieves {
+  margin-top: 64px;
+}
+
+.user_title {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.user_achieves__row {
+  display: flex;
+}
+
+.user_achieves__item {
+  margin-right: 32px;
+  width: 258px;
+}
+.user_achieves__item:last-child {
+  margin-right: 0;
+}
+
+.user_achieves__item_top {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.user_achieves__item_top img {
+  margin-right: 16px;
+}
+.user_achieves__item_top span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+}
+
+.user_achieves__item_bottom {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #727374;
+}
+
+.user_achieves__achieve {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.user_achieves__achieve_img {
+  margin-right: 16px;
+}
+
+.user_achieves__achieve_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.user_achieves__achieve_date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #727374;
+}
+
+.user_history {
+  margin-top: 64px;
+}
+
+.user_history__row {
+  display: flex;
+}
+
+.user_history__item {
+  margin-right: 32px;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 378px;
+  width: 100%;
+  height: 100%;
+  max-height: 104px;
+  background: #f3f3f3;
+}
+.user_history__item:last-child {
+  margin-right: 0;
+}
+
+.user_history__item_top {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 8px;
+  line-height: 117%;
+}
+
+.user_history__item_bottom {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 125%;
+  color: #727374;
+}
+
+.user_return {
+  margin-top: 64px;
+}
+
+@media (max-width: 1999px) {
+  .user_main {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 959px) {
+  .user_history__item {
+    min-width: 218px;
+  }
+  .user_achieves__row {
+    overflow: auto;
+  }
+  .user_achieves__item {
+    min-width: 258px;
+  }
+  .user_achieves, .user_history, .user_title {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .user_history__row {
+    overflow: auto;
+  }
+}
+@media (max-width: 575px) {
+  .user_cards {
+    display: none;
+  }
+  .user_achieves {
+    margin-top: 48px;
+  }
+  .user_achieves__item {
+    min-width: 200px;
+    margin-right: 0;
+  }
+  .user_history__row {
+    flex-direction: column;
+  }
+  .user_history__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .user_history__item:last-child {
+    margin-bottom: 0;
+  }
+  .user_return .iksweb.dashboard_table .first {
+    display: none;
+  }
+  .user_return .booking_table {
+    width: 100%;
+    overflow: visible;
+  }
+  .user_title {
+    margin-left: 0;
+  }
+  .bookings_main .dashboard__main_cars.user_return {
+    margin-top: 64px;
+  }
+  .bookings_main .dashboard__main_cars.user_return .user_title {
+    margin-left: 16px;
   }
 }
