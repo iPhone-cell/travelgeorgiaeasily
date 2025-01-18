@@ -7235,6 +7235,14 @@ p.explore__info-bottom {
   fill: white;
 }
 
+.dashboard__nav_mobile_wrapper li svg {
+  fill: #fff;
+  margin-right: 18px;
+}
+.dashboard__nav_mobile_wrapper li.active svg {
+  fill: #000;
+}
+
 .dashboard__main_content {
   max-width: 1608px;
 }
@@ -12451,6 +12459,9 @@ p.weddings_desc {
   .booking_car_item.cancelled .booking_table {
     border-left: 3px solid var(--colors-brand-red);
   }
+  .booking_car_item.grey_line .booking_table {
+    border-left: 3px solid var(--colors-dark-grey);
+  }
   #bookingsCalendarMobile {
     display: none;
   }
@@ -14149,11 +14160,43 @@ p.host_info__reviews_main_item_text {
   margin-top: 64px;
 }
 
+.user_cars {
+  margin-bottom: 16px;
+  padding-top: 0;
+}
+.user_cars .results__item {
+  border: 1px solid var(--colors-dark-grey);
+  border-radius: 5px;
+}
+
+.user_profile_settings_row {
+  justify-content: flex-start;
+}
+
+.user_settings_navbar {
+  overflow: hidden;
+}
+
+.user_profile_password {
+  max-width: 552px;
+  width: 100%;
+}
+
 @media (max-width: 1999px) {
   .user_main {
     max-width: none;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (max-width: 1279px) {
+  .settings_form_inputs {
+    width: 64%;
+  }
+}
+@media (max-width: 1199px) {
+  .settings_form_inputs {
+    width: 100%;
   }
 }
 @media (max-width: 959px) {
@@ -14165,10 +14208,6 @@ p.host_info__reviews_main_item_text {
   }
   .user_achieves__item {
     min-width: 258px;
-  }
-  .user_achieves, .user_history, .user_title {
-    margin-left: 16px;
-    margin-right: 16px;
   }
   .user_history__row {
     overflow: auto;
@@ -14211,5 +14250,14 @@ p.host_info__reviews_main_item_text {
   }
   .bookings_main .dashboard__main_cars.user_return .user_title {
     margin-left: 16px;
+  }
+  .user_main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .user_cars {
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
 }
