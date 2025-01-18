@@ -224,12 +224,12 @@
                                         <p>General info</p>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#">
                                         <svg>
                                             <use xlink:href="#userBookings"></use>
                                         </svg>
-                                        <p class="red_circle">Bookings</p>
+                                        <p>Bookings</p>
                                     </a>
                                 </li>
                                 <li>
@@ -237,14 +237,14 @@
                                         <svg>
                                             <use xlink:href="#userFavorites"></use>
                                         </svg>
-                                        <p class="red_circle">Favorites</p>
+                                        <p>Favorites</p>
                                     </a>
                                 </li>
                             </ul>
                         </nav>
                         <nav class="dashboard__nav">
                             <ul>
-                                <li class="active">
+                                <li>
                                     <a href="#">
                                         <svg>
                                             <use xlink:href="#userProfile"></use>
@@ -383,12 +383,12 @@
                             </a>
                         </li>
                         <p class="dashboard_nav_label">General</p>
-                        <li>
+                        <li class="active">
                             <a href="#">
                                 <svg>
                                     <use xlink:href="#userBookings"></use>
                                 </svg>
-                                <p class="red_circle">Bookings</p>
+                                <p>Bookings</p>
                             </a>
                         </li>
                         <li>
@@ -396,7 +396,7 @@
                                 <svg>
                                     <use xlink:href="#userFavorites"></use>
                                 </svg>
-                                <p class="red_circle">Favorites</p>
+                                <p>Favorites</p>
                             </a>
                         </li>
                     </ul>
@@ -405,7 +405,7 @@
                 <nav class="dashboard__nav">
                     <ul>
                         <p class="dashboard_nav_label">Personal info</p>
-                        <li class="active">
+                        <li>
                             <a href="#">
                                 <svg>
                                     <use xlink:href="#userProfile"></use>
@@ -441,105 +441,714 @@
                 <div class="dashboard__main_content">
                     <div class="dashboard__main_cars user_return">
                         <div class="user_history__user_return user_title">
-                            Profile
+                            Today to return
+                        </div>
+                        <div class="booking_car_wrapper booking_car_wrapper1">
+                            <div class="booking_car_item one">
+                                <div class="booking_table">
+                                    <button class="new_order">
+                                        <p>
+                                            New order!
+                                        </p>
+                                        <img src="assets/images/dashboard/bookings/arrow.svg" alt="">
+                                    </button>
+                                    <div class="booking_car_item one green">
+                                        <table class="iksweb dashboard_table booking_table item">
+                                            <tbody>
+                                                <tr class="first">
+                                                    <th class="sort_wrapper">
+                                                        <p>
+                                                            Order
+                                                        </p>
+                                                        <div>
+                                                            <button class="sort sort_up">
+                                                                <img src="assets/images/icons/bx_up-arrow.svg" alt="">
+                                                            </button>
+                                                            <button class="sort sort_bottom">
+                                                                <img src="assets/images/icons/bxs_down-arrow.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                    </th>
+                                                    <th class="cars">Car</th>
+                                                    <th class="sort_wrapper sort_model">
+                                                        <p>Model</p>
+                                                    </th>
+                                                    <th class="status">Status</th>
+                                                    <th class="dates_th">Dates</th>
+                                                    <th class="last">Total</th>
+                                                </tr>
+                                                <tr class="booking_table_item one">
+                                                    <th class="number">239</th>
+                                                    <td class="cars_td">
+                                                        <img src="assets/images/dashboard/cars/1.png" alt="">
+                                                    </td>
+                                                    <td class="model_td"><p>Mercedes-Benz AMG AMG</p><br>
+                                                        <span class="green">CI777TY</span>
+                                                    </td>
+                                                    <td class="status completed">
+                                                        <div>Completed <img src="assets/images/user_profile/bookings/completed.svg" alt=""></div>
+                                                    </td>
+                                                    <td class="dates_td">
+                                                        <p><b>P:</b> 14.11.2024</p>  | <p> <b>R:</b> 15.11.2024</p>
+                                                    </td>
+                                                    <td class="price_td">
+                                                        <p><span class="bold">120$</span><span>for 2 days</span></p>
+                                                        <img src="assets/images/dashboard/bookings/select_arrow.svg" alt="">
+                                                    </td>
+                                                    <td class="arrow_td_mobile">
+                                                        <img src="assets/images/dashboard/bookings/arrow_td_mobile.svg" alt="">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+        
+                                        <div class="booking_car_order">
+                                            <div class="booking_car_order_info">
+                                                <div class="booking_car_order_info_top">
+                                                    <div class="booking_car_order_info_top_order">
+                                                        <p>Order <span>#242</span></p>
+                                                        <a href="#">
+                                                            <img src="assets/images/dashboard/bookings/order_download.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="booking_car_order_info_top_buttons">
+                                                        <a href="#" class="booking_car_order_info_confirm">
+                                                            Confirm
+                                                        </a>
+                                                        <a href="#" class="booking_car_order_info_decline">
+                                                            Decline
+                                                        </a>
+                                                        <a href="#" class="booking_car_order_info_change">
+                                                            <img src="assets/images/dashboard/bookings/change.svg" alt="">
+                                                            <span>
+                                                                Change auto
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="booking_car_order_info_table">
+                                                    <table class="iksweb booking_car_order_info_table_wrapper">
+                                                        <tbody>
+                                                            <tr class="status_td_mobile">
+                                                                <td class="title_td">Status</td>
+                                                                <td class="green">In progress</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Pick-up</td>
+                                                                <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Return</td>
+                                                                <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Total amount</td>
+                                                                <td>120$</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Total days</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Deposit</td>
+                                                                <td>100$ (Refundable until: 16.11.2024, 15:30 UTC)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Comment</td>
+                                                                <td>—</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+        
+                                                <div class="booking_car_order_bottom">
+                                                    <div class="booking_car_order_client">
+                                                        <div class="booking_car_order_client_host">
+                                                            <div class="booking_car_order_client_host_img">
+                                                                <img src="assets/images/dashboard/bookings/order_host.png" alt="">
+                                                            </div>
+                                                            <div class="booking_car_order_client_host_main">
+                                                                <div class="booking_car_order_client_host_client">
+                                                                    Client
+                                                                </div>
+                                                                <div class="booking_car_order_client_host_name_wrapper">
+                                                                    <div class="booking_car_order_client_host_name">
+                                                                        Antonio margaretti
+                                                                    </div>
+                                                                    <div class="booking_car_order_client_host_lang">
+                                                                        Ge, Ru, En
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="booking_car_order_client_btn">
+                                                            Send message
+                                                        </a>
+                                                    </div>
+        
+                                                    <div class="booking_car_order_creation_date">
+                                                        Creation date: <span>14.11.2024, 11:24</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
                         </div>
                     </div>
-                    <div class="dashboard__main_settings">
-                        <nav class="dashboard__settings_navbar user_settings_navbar">
-                            <ul>
-                                <li class="active">
-                                    <a href="">
-                                        General info
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Password change
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <form action="#" class="dashboard__settings_form settings_form">
-                            <div class="settings_form__basic">
-                                <div class="settings_form_row user_profile_settings_row">
-                                    <div class="settings_form_profile add_car__sent_form_sidebar_photo">
-                                        <label>
-                                            <input type="file" accept=".jpg, .png" name="addPhoto" id="formImage">
-                                            <img src="assets/images/dashboard/no_photo.svg" alt="" id="formPreview">
-                                            <p><img src="assets/images/dashboard/settings/add_photo_icon.svg" alt=""><span>Add photo</span></p>
-                                        </label>
+                    </div>
+                    <div class="dashboard__main_cars user_return">
+                        <div class="user_history__user_return user_title">
+                            Current
+                        </div>
+                        <div class="booking_car_wrapper booking_car_wrapper2">
+                            <div class="booking_car_item one">
+                                <div class="booking_table">
+                                    <button class="new_order">
+                                        <p>
+                                            New order!
+                                        </p>
+                                        <img src="assets/images/dashboard/bookings/arrow.svg" alt="">
+                                    </button>
+                                    <div class="booking_car_item one green">
+                                        <table class="iksweb dashboard_table booking_table item">
+                                            <tbody>
+                                                <tr class="first">
+                                                    <th class="sort_wrapper">
+                                                        <p>
+                                                            Order
+                                                        </p>
+                                                        <div>
+                                                            <button class="sort sort_up">
+                                                                <img src="assets/images/icons/bx_up-arrow.svg" alt="">
+                                                            </button>
+                                                            <button class="sort sort_bottom">
+                                                                <img src="assets/images/icons/bxs_down-arrow.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                    </th>
+                                                    <th class="cars">Car</th>
+                                                    <th class="sort_wrapper sort_model">
+                                                        <p>Model</p>
+                                                    </th>
+                                                    <th class="status">Status</th>
+                                                    <th class="dates_th">Dates</th>
+                                                    <th class="last">Total</th>
+                                                </tr>
+                                                <tr class="booking_table_item one">
+                                                    <th class="number">239</th>
+                                                    <td class="cars_td">
+                                                        <img src="assets/images/dashboard/cars/1.png" alt="">
+                                                    </td>
+                                                    <td class="model_td"><p>Mercedes-Benz AMG AMG</p><br>
+                                                        <span class="green">CI777TY</span>
+                                                    </td>
+                                                    <td class="status completed">
+                                                        <div>Completed <img src="assets/images/user_profile/bookings/completed.svg" alt=""></div>
+                                                    </td>
+                                                    <td class="dates_td">
+                                                        <p><b>P:</b> 14.11.2024</p>  | <p> <b>R:</b> 15.11.2024</p>
+                                                    </td>
+                                                    <td class="price_td">
+                                                        <p><span class="bold">120$</span><span>for 2 days</span></p>
+                                                        <img src="assets/images/dashboard/bookings/select_arrow.svg" alt="">
+                                                    </td>
+                                                    <td class="arrow_td_mobile">
+                                                        <img src="assets/images/dashboard/bookings/arrow_td_mobile.svg" alt="">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+        
+                                        <div class="booking_car_order">
+                                            <div class="booking_car_order_info">
+                                                <div class="booking_car_order_info_top">
+                                                    <div class="booking_car_order_info_top_order">
+                                                        <p>Order <span>#242</span></p>
+                                                        <a href="#">
+                                                            <img src="assets/images/dashboard/bookings/order_download.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="booking_car_order_info_top_buttons">
+                                                        <a href="#" class="booking_car_order_info_confirm">
+                                                            Confirm
+                                                        </a>
+                                                        <a href="#" class="booking_car_order_info_decline">
+                                                            Decline
+                                                        </a>
+                                                        <a href="#" class="booking_car_order_info_change">
+                                                            <img src="assets/images/dashboard/bookings/change.svg" alt="">
+                                                            <span>
+                                                                Change auto
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="booking_car_order_info_table">
+                                                    <table class="iksweb booking_car_order_info_table_wrapper">
+                                                        <tbody>
+                                                            <tr class="status_td_mobile">
+                                                                <td class="title_td">Status</td>
+                                                                <td class="green">In progress</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Pick-up</td>
+                                                                <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Return</td>
+                                                                <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Total amount</td>
+                                                                <td>120$</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Total days</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Deposit</td>
+                                                                <td>100$ (Refundable until: 16.11.2024, 15:30 UTC)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title_td">Comment</td>
+                                                                <td>—</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+        
+                                                <div class="booking_car_order_bottom">
+                                                    <div class="booking_car_order_client">
+                                                        <div class="booking_car_order_client_host">
+                                                            <div class="booking_car_order_client_host_img">
+                                                                <img src="assets/images/dashboard/bookings/order_host.png" alt="">
+                                                            </div>
+                                                            <div class="booking_car_order_client_host_main">
+                                                                <div class="booking_car_order_client_host_client">
+                                                                    Client
+                                                                </div>
+                                                                <div class="booking_car_order_client_host_name_wrapper">
+                                                                    <div class="booking_car_order_client_host_name">
+                                                                        Antonio margaretti
+                                                                    </div>
+                                                                    <div class="booking_car_order_client_host_lang">
+                                                                        Ge, Ru, En
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="booking_car_order_client_btn">
+                                                            Send message
+                                                        </a>
+                                                    </div>
+        
+                                                    <div class="booking_car_order_creation_date">
+                                                        Creation date: <span>14.11.2024, 11:24</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="settings_form_inputs" id="settingsContactInfo">
-                                        <div class="settings_form_row">
-                                            <div class="settings_form__input settings_contact_info_input1">
-                                                <input type="text" required id="FirstName ">
-                                                <label for="FirstName">First Name <span>*</span></label>
-                                                <label for="FirstName" class="label_top long">First name <span>*</span></label>
-                                            </div>
-                                            <div class="settings_form__input settings_contact_info_input2">
-                                                <input type="text" required id="LastName ">
-                                                <label for="LastName">Last Name <span>*</span></label>
-                                                <label for="LastName" class="label_top long">Last name <span>*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_row">
-                                            <div class="settings_form__input settings_contact_info_input3">
-                                                <input type="email" required id="Email">
-                                                <label for="Email">Email <span>*</span></label>
-                                                <label for="Email" class="label_top long">Email <span>*</span></label>
-                                            </div>
-                                            <div class="settings_form__input settings_contact_info_input4">
-                                                <input type="tel" required id="Phone">
-                                                <label for="Phone">Phone <span>*</span></label>
-                                                <label for="Phone" class="label_top long">Phone <span>*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="settings_form_row settings_form_row2 select alone separate">
-                                            <div class="settings_form_row_select settings_form_select2">
-                                                <div class="select">
-                                                    <select  id="Language" required>
-                                                        <option>Language</option>
-                                                        <option>Georgian</option>
-                                                        <option>English</option>
-                                                        <option>Russian</option>
-                                                    </select>
-                                                    <label for="Language" class="label_top">Language <span>*</span></label>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="dashboard__main_cars user_return">
+                        <div class="user_history__user_return user_title">
+                            Ride history
+                        </div>
+                        <div class="booking_car_wrapper booking_car_wrapper3">
+                            <div class="order_history">
+                            </div>
+                            <div class="booking_car_item one grey_line">
+                                <table class="iksweb dashboard_table booking_table item">
+                                    <tbody>
+                                        <tr class="first">
+                                            <th class="sort_wrapper">
+                                                <p>
+                                                    Order
+                                                </p>
+                                                <div>
+                                                    <button class="sort sort_up">
+                                                        <img src="assets/images/icons/bx_up-arrow.svg" alt="">
+                                                    </button>
+                                                    <button class="sort sort_bottom">
+                                                        <img src="assets/images/icons/bxs_down-arrow.svg" alt="">
+                                                    </button>
                                                 </div>
+                                            </th>
+                                            <th class="cars">Car</th>
+                                            <th class="sort_wrapper sort_model">
+                                                <p>Model</p>
+                                            </th>
+                                            <th class="status">Status</th>
+                                            <th class="dates_th">Dates</th>
+                                            <th class="last">Total</th>
+                                        </tr>
+                                        <tr class="booking_table_item one">
+                                            <th class="number">239</th>
+                                            <td class="cars_td">
+                                                <img src="assets/images/dashboard/cars/1.png" alt="">
+                                            </td>
+                                            <td class="model_td"><p>Mercedes-Benz AMG AMG</p><br>
+                                                <span class="green">CI777TY</span>
+                                            </td>
+                                            <td class="status completed">
+                                                <div>Completed <img src="assets/images/user_profile/bookings/completed.svg" alt=""></div>
+                                            </td>
+                                            <td class="dates_td">
+                                                <p><b>P:</b> 14.11.2024</p>  | <p> <b>R:</b> 15.11.2024</p>
+                                            </td>
+                                            <td class="price_td">
+                                                <p><span class="bold">120$</span><span>for 2 days</span></p>
+                                                <img src="assets/images/dashboard/bookings/select_arrow.svg" alt="">
+                                            </td>
+                                            <td class="arrow_td_mobile">
+                                                <img src="assets/images/dashboard/bookings/arrow_td_mobile.svg" alt="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+                                <div class="booking_car_order">
+                                    <div class="booking_car_order_info">
+                                        <div class="booking_car_order_info_top">
+                                            <div class="booking_car_order_info_top_order">
+                                                <p>Order <span>#242</span></p>
+                                                <a href="#">
+                                                    <img src="assets/images/dashboard/bookings/order_download.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="booking_car_order_info_top_buttons">
+                                                <a href="#" class="booking_car_order_info_confirm">
+                                                    Confirm
+                                                </a>
+                                                <a href="#" class="booking_car_order_info_decline">
+                                                    Decline
+                                                </a>
+                                                <a href="#" class="booking_car_order_info_change">
+                                                    <img src="assets/images/dashboard/bookings/change.svg" alt="">
+                                                    <span>
+                                                        Change auto
+                                                    </span>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="settings_form_row">
-                                            <div class="settings_form_row_select settings_form_select3">
-                                                <div class="select">
-                                                    <select  id="Messenger" required>
-                                                        <option>Messenger</option>
-                                                        <option>Telegram</option>
-                                                        <option>WhatsApp</option>
-                                                        <option>Viber</option>
-                                                    </select>
-                                                    <label for="Messenger" class="label_top">Messenger <span>*</span></label>
+        
+                                        <div class="booking_car_order_info_table">
+                                            <table class="iksweb booking_car_order_info_table_wrapper">
+                                                <tbody>
+                                                    <tr class="status_td_mobile">
+                                                        <td class="title_td">Status</td>
+                                                        <td class="green">In progress</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Pick-up</td>
+                                                        <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Return</td>
+                                                        <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Total amount</td>
+                                                        <td>120$</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Total days</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Deposit</td>
+                                                        <td>100$ (Refundable until: 16.11.2024, 15:30 UTC)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Comment</td>
+                                                        <td>—</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="booking_car_order_bottom">
+                                            <div class="booking_car_order_client">
+                                                <div class="booking_car_order_client_host">
+                                                    <div class="booking_car_order_client_host_img">
+                                                        <img src="assets/images/dashboard/bookings/order_host.png" alt="">
+                                                    </div>
+                                                    <div class="booking_car_order_client_host_main">
+                                                        <div class="booking_car_order_client_host_client">
+                                                            Client
+                                                        </div>
+                                                        <div class="booking_car_order_client_host_name_wrapper">
+                                                            <div class="booking_car_order_client_host_name">
+                                                                Antonio margaretti
+                                                            </div>
+                                                            <div class="booking_car_order_client_host_lang">
+                                                                Ge, Ru, En
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <a href="#" class="booking_car_order_client_btn">
+                                                    Send message
+                                                </a>
                                             </div>
-                                            <div class="settings_form__input" id="messengerID">
-                                                <input type="text" placeholder="MessengerID" required>
-                                                <label class="close">
-                                                    <img src="assets/images/dashboard/settings/input_close.svg" alt="Close">
-                                                </label>
-                                                <label for="MessengerID" class="label_top">Messenger ID <span>*</span></label>
-                                           </div>
-                                        </div>
-                                        <div class="settings_form_add short">
-                                            <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                            <span>Add messenger</span>
+        
+                                            <div class="booking_car_order_creation_date">
+                                                Creation date: <span>14.11.2024, 11:24</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="settings_form__btn">
-                                <button type="submit">
-                                    Save
-                                </button>
+                            <div class="booking_car_item grey_line">
+                                <table class="iksweb dashboard_table booking_table booking_table_not_first item one">
+                                    <tbody>
+                                        <tr class="booking_table_item">
+                                            <th class="number">240</th>
+                                            <td class="cars_td">
+                                                <img src="assets/images/dashboard/cars/1.png" alt="">
+                                            </td>
+                                            <td class="model_td"><p>Mercedes-Benz AMG AMG</p><br>
+                                                <span class="green">CI777TY</span>
+                                            </td>
+                                            <td class="status completed">
+                                                <div>Completed <img src="assets/images/user_profile/bookings/completed.svg" alt=""></div>
+                                            </td>
+                                            <td class="dates_td">
+                                                <p><b>P:</b> 14.11.2024</p>  | <p> <b>R:</b> 15.11.2024</p>
+                                            </td>
+                                            <td class="price_td">
+                                                <p><span class="bold">120$</span><span>for 2 days</span></p>
+                                                <img src="assets/images/dashboard/bookings/select_arrow.svg" alt="">
+                                            </td>
+                                            <td class="arrow_td_mobile">
+                                                <img src="assets/images/dashboard/bookings/arrow_td_mobile.svg" alt="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+                                <div class="booking_car_order">
+                                    <div class="booking_car_order_info">
+                                        <div class="booking_car_order_info_top">
+                                            <div class="booking_car_order_info_top_order">
+                                                <p>Order <span>#242</span></p>
+                                                <a href="#">
+                                                    <img src="assets/images/dashboard/bookings/order_download.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="booking_car_order_info_top_buttons">
+                                                <a href="#" class="booking_car_order_info_confirm">
+                                                    Confirm
+                                                </a>
+                                                <a href="#" class="booking_car_order_info_decline">
+                                                    Decline
+                                                </a>
+                                                <a href="#" class="booking_car_order_info_change">
+                                                    <img src="assets/images/dashboard/bookings/change.svg" alt="">
+                                                    <span>
+                                                        Change auto
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="booking_car_order_info_table">
+                                            <table class="iksweb booking_car_order_info_table_wrapper">
+                                                <tbody>
+                                                    <tr class="status_td_mobile">
+                                                        <td class="title_td">Status</td>
+                                                        <td class="green">In progress</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Pick-up</td>
+                                                        <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Return</td>
+                                                        <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Total amount</td>
+                                                        <td>120$</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Total days</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Deposit</td>
+                                                        <td>100$ (Refundable until: 16.11.2024, 15:30 UTC)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Comment</td>
+                                                        <td>—</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="booking_car_order_bottom">
+                                            <div class="booking_car_order_client">
+                                                <div class="booking_car_order_client_host">
+                                                    <div class="booking_car_order_client_host_img">
+                                                        <img src="assets/images/dashboard/bookings/order_host.png" alt="">
+                                                    </div>
+                                                    <div class="booking_car_order_client_host_main">
+                                                        <div class="booking_car_order_client_host_client">
+                                                            Client
+                                                        </div>
+                                                        <div class="booking_car_order_client_host_name_wrapper">
+                                                            <div class="booking_car_order_client_host_name">
+                                                                Antonio margaretti
+                                                            </div>
+                                                            <div class="booking_car_order_client_host_lang">
+                                                                Ge, Ru, En
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="booking_car_order_client_btn">
+                                                    Send message
+                                                </a>
+                                            </div>
+        
+                                            <div class="booking_car_order_creation_date">
+                                                Creation date: <span>14.11.2024, 11:24</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                            <div class="booking_car_item grey_line">
+                                <table class="iksweb dashboard_table booking_table booking_table_not_first item one">
+                                    <tbody>
+                                        <tr class="booking_table_item">
+                                            <th class="number">240</th>
+                                            <td class="cars_td">
+                                                <img src="assets/images/dashboard/cars/1.png" alt="">
+                                            </td>
+                                            <td class="model_td"><p>Mercedes-Benz AMG AMG</p><br>
+                                                <span class="green">CI777TY</span>
+                                            </td>
+                                            <td class="status completed">
+                                                <div>Completed <img src="assets/images/user_profile/bookings/completed.svg" alt=""></div>
+                                            </td>
+                                            <td class="dates_td">
+                                                <p><b>P:</b> 14.11.2024</p>  | <p> <b>R:</b> 15.11.2024</p>
+                                            </td>
+                                            <td class="price_td">
+                                                <p><span class="bold">120$</span><span>for 2 days</span></p>
+                                                <img src="assets/images/dashboard/bookings/select_arrow.svg" alt="">
+                                            </td>
+                                            <td class="arrow_td_mobile">
+                                                <img src="assets/images/dashboard/bookings/arrow_td_mobile.svg" alt="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+                                <div class="booking_car_order">
+                                    <div class="booking_car_order_info">
+                                        <div class="booking_car_order_info_top">
+                                            <div class="booking_car_order_info_top_order">
+                                                <p>Order <span>#242</span></p>
+                                                <a href="#">
+                                                    <img src="assets/images/dashboard/bookings/order_download.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="booking_car_order_info_top_buttons">
+                                                <a href="#" class="booking_car_order_info_confirm">
+                                                    Confirm
+                                                </a>
+                                                <a href="#" class="booking_car_order_info_decline">
+                                                    Decline
+                                                </a>
+                                                <a href="#" class="booking_car_order_info_change">
+                                                    <img src="assets/images/dashboard/bookings/change.svg" alt="">
+                                                    <span>
+                                                        Change auto
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="booking_car_order_info_table">
+                                            <table class="iksweb booking_car_order_info_table_wrapper">
+                                                <tbody>
+                                                    <tr class="status_td_mobile">
+                                                        <td class="title_td">Status</td>
+                                                        <td class="cancelled">Cancelled</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Pick-up</td>
+                                                        <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Return</td>
+                                                        <td>14.11.2024, 15:30   |   Company office, Tbilisi, Giorgi Chkondideli Steet 64</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Total amount</td>
+                                                        <td>120$</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Total days</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Deposit</td>
+                                                        <td>100$ (Refundable until: 16.11.2024, 15:30 UTC)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="title_td">Comment</td>
+                                                        <td>—</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="booking_car_order_bottom">
+                                            <div class="booking_car_order_client">
+                                                <div class="booking_car_order_client_host">
+                                                    <div class="booking_car_order_client_host_img">
+                                                        <img src="assets/images/dashboard/bookings/order_host.png" alt="">
+                                                    </div>
+                                                    <div class="booking_car_order_client_host_main">
+                                                        <div class="booking_car_order_client_host_client">
+                                                            Client
+                                                        </div>
+                                                        <div class="booking_car_order_client_host_name_wrapper">
+                                                            <div class="booking_car_order_client_host_name">
+                                                                Antonio margaretti
+                                                            </div>
+                                                            <div class="booking_car_order_client_host_lang">
+                                                                Ge, Ru, En
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="booking_car_order_client_btn">
+                                                    Send message
+                                                </a>
+                                            </div>
+        
+                                            <div class="booking_car_order_creation_date">
+                                                Creation date: <span>14.11.2024, 11:24</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
