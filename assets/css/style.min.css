@@ -7225,6 +7225,10 @@ p.explore__info-bottom {
   margin-left: 4px;
 }
 
+.dashboard__nav a.red_circle:after {
+  display: none;
+}
+
 .dashboard__nav svg {
   width: 18px;
   height: 18px;
@@ -11447,6 +11451,15 @@ p.weddings_desc {
   }
   .dashboard__nav ul li p {
     display: none;
+  }
+  .dashboard__nav ul li a.red_circle {
+    position: relative;
+  }
+  .dashboard__nav ul li a.red_circle:after {
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: 6px;
   }
   .dashboard__nav ul li.active {
     min-width: auto;
