@@ -1210,6 +1210,10 @@ textarea.not-empty {
   .container {
     max-width: 1200px;
   }
+  .container.fullwidth {
+    max-width: 100%;
+    padding: 0 48px;
+  }
 }
 @media (max-width: 767px) {
   button:hover {
@@ -1238,6 +1242,11 @@ textarea.not-empty {
   }
   .slick-dots .slick-active button {
     opacity: 1;
+  }
+}
+@media (max-width: 575px) {
+  .container.fullwidth {
+    padding: 0 16px;
   }
 }
 .header {
@@ -7146,7 +7155,7 @@ p.explore__info-bottom {
   }
   .modal__payment_card_remember_input {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .modal__payment_pickup_imput_showmap,
@@ -7177,6 +7186,11 @@ p.explore__info-bottom {
   display: block;
 }
 
+@media (max-width: 389px) {
+  .modal__payment_card_remember_input {
+    font-size: 13px;
+  }
+}
 .chat.dashboard_chat {
   display: none;
 }
@@ -14272,5 +14286,166 @@ p.host_info__reviews_main_item_text {
     text-align: center;
     display: flex;
     align-items: center;
+  }
+}
+.payment {
+  margin-top: 132px;
+  font-family: "Roboto";
+  padding: 24px 0 0 0;
+  color: #070707;
+}
+.payment input[type=text],
+.payment input[type=email],
+.payment input[type=password],
+.payment input[type=tel] {
+  border: 1px solid var(--colors-grey);
+  border-radius: 5px;
+  padding: 20px;
+  height: 64px;
+  color: var(--colors-brand-black);
+  font-family: inherit;
+  background: var(--colors-bright-grey);
+}
+.payment input[type=text]:focus,
+.payment input[type=email]:focus,
+.payment input[type=password]:focus,
+.payment input[type=tel]:focus {
+  border: 2px solid var(--colors-brand-black);
+}
+.payment input[type=text]::placeholder,
+.payment input[type=email]::placeholder,
+.payment input[type=password]::placeholder,
+.payment input[type=tel]::placeholder {
+  color: var(--colors-dark-grey);
+}
+.payment .modal__payment_summary_car_img {
+  border: none;
+}
+
+.payment__text {
+  max-width: 716px;
+}
+
+.payment__title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 118%;
+  color: #000;
+}
+
+.payment__info {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: var(--colors-dark-grey);
+}
+
+.payment__content {
+  margin-top: 64px;
+  display: flex;
+}
+
+.payment__main {
+  padding: 32px;
+  background: var(--colors-white);
+  max-width: 774px;
+}
+
+.modal__payment_left {
+  padding: 0;
+}
+
+.payment__summary {
+  max-width: 570px;
+  width: 100%;
+}
+.payment__summary .modal___payment_right.summary {
+  max-width: 570px;
+  width: 100%;
+  border: none;
+}
+.payment__summary .modal__payment_summary_car_info {
+  height: 52px;
+}
+
+.changed {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.payment__btn {
+  margin-top: 24px;
+  border-radius: 5px;
+  padding: 16px 0;
+  width: 160px;
+  height: 48px;
+  background: #000;
+  font-weight: 500;
+  line-height: 114%;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colors-white);
+  display: inline-block;
+}
+
+@media (max-width: 1279px) {
+  .payment__content {
+    flex-direction: column-reverse;
+  }
+  .payment .payment__summary {
+    max-width: none;
+    margin-bottom: 16px;
+  }
+  .payment .modal___payment_right.summary {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .payment .payment__main {
+    max-width: none;
+  }
+  .payment .payment__main .modal__payment {
+    padding-right: 0;
+    min-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .payment {
+    margin-top: 104px;
+    padding-top: 0;
+  }
+  .payment .fullwidth {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .payment .modal__payment_summary_car_text {
+    width: 200px !important;
+  }
+  .payment__text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .payment__summary {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .payment__title {
+    font-size: 24px;
+  }
+  .payment__content {
+    margin-top: 32px;
+  }
+  .changed {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 374px) {
+  .payment .modal__payment_summary_car_text {
+    width: auto !important;
   }
 }

@@ -8615,6 +8615,10 @@ p.explore__info-bottom {
     margin-left: 4px;
 }
 
+.dashboard__nav a.red_circle:after {
+    display: none;
+}
+
 .dashboard__nav svg {
     width: 18px;
     height: 18px;
@@ -13697,6 +13701,17 @@ p.weddings_desc {
         display: none;
     }
 
+    .dashboard__nav ul li a.red_circle {
+        position: relative;
+    }
+
+    .dashboard__nav ul li a.red_circle:after {
+        display: block;
+        position: absolute;
+        right: -2px;
+        top: 6px;
+    }
+
     .dashboard__nav ul li.active {
         min-width: auto;
     }
@@ -17225,4 +17240,126 @@ p.host_info__reviews_main_item_text {
         -ms-flex-align: center;
         align-items: center;
     }
+}
+
+.payment {
+    margin-top: 132px;
+    font-family: "Roboto";
+    padding: 24px 0 0 0;
+    color: #070707;
+}
+
+.payment input[type=text],
+.payment input[type=email],
+.payment input[type=password],
+.payment input[type=tel] {
+    border: 1px solid var(--colors-grey);
+    border-radius: 5px;
+    padding: 20px;
+    height: 64px;
+    color: var(--colors-brand-black);
+    font-family: inherit;
+    background: var(--colors-bright-grey);
+}
+
+.payment input[type=text]:focus,
+.payment input[type=email]:focus,
+.payment input[type=password]:focus,
+.payment input[type=tel]:focus {
+    border: 2px solid var(--colors-brand-black);
+}
+
+.payment input[type=text]::-webkit-input-placeholder, .payment input[type=email]::-webkit-input-placeholder, .payment input[type=password]::-webkit-input-placeholder, .payment input[type=tel]::-webkit-input-placeholder {
+    color: var(--colors-dark-grey);
+}
+
+.payment input[type=text]:-ms-input-placeholder, .payment input[type=email]:-ms-input-placeholder, .payment input[type=password]:-ms-input-placeholder, .payment input[type=tel]:-ms-input-placeholder {
+    color: var(--colors-dark-grey);
+}
+
+.payment input[type=text]::-ms-input-placeholder, .payment input[type=email]::-ms-input-placeholder, .payment input[type=password]::-ms-input-placeholder, .payment input[type=tel]::-ms-input-placeholder {
+    color: var(--colors-dark-grey);
+}
+
+.payment input[type=text]::placeholder,
+.payment input[type=email]::placeholder,
+.payment input[type=password]::placeholder,
+.payment input[type=tel]::placeholder {
+    color: var(--colors-dark-grey);
+}
+
+.payment .modal__payment_summary_car_img {
+    border: none;
+}
+
+.payment__text {
+    max-width: 716px;
+}
+
+.payment__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 118%;
+    color: #000;
+}
+
+.payment__info {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: var(--colors-dark-grey);
+}
+
+.payment__content {
+    margin-top: 64px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.payment__main {
+    padding: 32px;
+    background: var(--colors-white);
+    max-width: 774px;
+}
+
+.modal__payment_left {
+    padding: 0;
+}
+
+.payment__summary {
+    max-width: 570px;
+    width: 100%;
+}
+
+.payment__summary .modal___payment_right.summary {
+    max-width: 570px;
+    width: 100%;
+    border: none;
+}
+
+.payment__summary .modal__payment_summary_car_info {
+    height: 52px;
+}
+
+.changed {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.payment__btn {
+    margin-top: 24px;
+    border-radius: 5px;
+    padding: 16px 0;
+    width: 160px;
+    height: 48px;
+    background: #000;
+    font-weight: 500;
+    line-height: 114%;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--colors-white);
+    display: inline-block;
 }
