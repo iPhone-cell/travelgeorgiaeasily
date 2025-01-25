@@ -1292,6 +1292,11 @@ textarea.not-empty {
     .container {
         max-width: 1200px;
     }
+
+    .container.fullwidth {
+        max-width: 100%;
+        padding: 0 48px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1327,6 +1332,12 @@ textarea.not-empty {
 
     .slick-dots .slick-active button {
         opacity: 1;
+    }
+}
+
+@media (max-width: 575px) {
+    .container.fullwidth {
+        padding: 0 16px;
     }
 }
 
@@ -8528,7 +8539,7 @@ p.explore__info-bottom {
 
     .modal__payment_card_remember_input {
         width: 100%;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -8560,6 +8571,12 @@ p.explore__info-bottom {
 .modal__payment_pickup_imput_showmap.active,
 .modal__payment_pickup_imput_showmapdrop.active {
     display: block;
+}
+
+@media (max-width: 389px) {
+    .modal__payment_card_remember_input {
+        font-size: 13px;
+    }
 }
 
 .chat.dashboard_chat {
@@ -17362,4 +17379,77 @@ p.host_info__reviews_main_item_text {
     text-align: center;
     color: var(--colors-white);
     display: inline-block;
+}
+
+@media (max-width: 1279px) {
+    .payment__content {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .payment .payment__summary {
+        max-width: none;
+        margin-bottom: 16px;
+    }
+
+    .payment .modal___payment_right.summary {
+        max-width: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .payment .payment__main {
+        max-width: none;
+    }
+
+    .payment .payment__main .modal__payment {
+        padding-right: 0;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .payment {
+        margin-top: 104px;
+        padding-top: 0;
+    }
+
+    .payment .fullwidth {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .payment .modal__payment_summary_car_text {
+        width: 200px !important;
+    }
+
+    .payment__text {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .payment__summary {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .payment__title {
+        font-size: 24px;
+    }
+
+    .payment__content {
+        margin-top: 32px;
+    }
+
+    .changed {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 374px) {
+    .payment .modal__payment_summary_car_text {
+        width: auto !important;
+    }
 }
