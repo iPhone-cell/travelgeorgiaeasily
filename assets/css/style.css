@@ -17157,6 +17157,146 @@ p.host_info__reviews_main_item_text {
     width: 100%;
 }
 
+.user_payment {
+    margin-top: 16px;
+}
+
+.user_payment__title {
+    margin-bottom: 56px;
+}
+
+.user_payment__table_header {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.user_payment__table_header_title {
+    display: -ms-flexbox;
+    display: flex;
+    width: 25%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.user_payment__table_header_title:nth-child(3) {
+    margin-left: auto;
+}
+
+.user_payment__table_header_title:last-child {
+    width: 120px;
+    margin-left: auto;
+}
+
+.user_payment__table_header_title .buttons {
+    margin-top: -5px;
+}
+
+.user_payment__table_header_title .buttons button {
+    display: block;
+    background: none;
+    height: 8px;
+}
+
+.user_payment__table_row {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0em;
+    color: #000;
+    padding: 12px 0;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.user_payment__table_row .green {
+    color: #29a33d;
+}
+
+.user_payment__table_row .red {
+    color: #d44444;
+}
+
+.user_payment__table_row_text {
+    width: 25%;
+}
+
+.user_payment__table_row_text:nth-child(3) {
+    margin-left: auto;
+}
+
+.user_payment__table_row_text:last-child {
+    width: 120px;
+    margin-left: auto;
+}
+
+.user_payment__table.mobile {
+    display: none;
+}
+
+.user__support .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.user__support .contact_information__item {
+    background: #f3f3f3;
+    border-top: 0;
+    padding-bottom: 32px;
+}
+
+.user__support .dashboard__messages_header_title {
+    background: var(--colors-brand-black);
+    width: 100%;
+    padding: 16px 0;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--colors-white);
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 16px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.user__support .dashboard__messages_header_title img {
+    margin-right: 16px;
+}
+
+.user__support .dashboard__messages_header {
+    padding: 0;
+}
+
+.user__support .dashboard__messages_chats {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    z-index: 1;
+    padding-top: 8px;
+}
+
+.user__support .chat__main {
+    max-height: 380px;
+}
+
+.user__support .chat__message {
+    width: 400px;
+}
+
+.user__support .chat__message.get .chat__message_textarea {
+    width: 400px !important;
+}
+
+.user_support_chat {
+    display: none;
+}
+
 @media (max-width: 1999px) {
     .user_main {
         max-width: none;
@@ -17192,6 +17332,10 @@ p.host_info__reviews_main_item_text {
 
     .user_history__row {
         overflow: auto;
+    }
+
+    .dashboard__main_content.payment_main {
+        padding-right: 0;
     }
 }
 
@@ -17256,6 +17400,100 @@ p.host_info__reviews_main_item_text {
         display: flex;
         -ms-flex-align: center;
         align-items: center;
+    }
+
+    .user_payment__table {
+        display: none;
+    }
+
+    .user_payment__table.mobile {
+        display: block;
+    }
+
+    .user_payment__table_mobile_title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 114%;
+        letter-spacing: 0em;
+        color: #727374;
+    }
+
+    .user_payment__table_mobile_title span {
+        margin-right: 4px;
+    }
+
+    .user_payment__table_mobile_title span:last-child {
+        margin-left: 4px;
+        margin-right: 0;
+    }
+
+    .user_payment__table_mobile_title .bold {
+        font-weight: 500;
+        color: #000;
+    }
+
+    .user_payment__table.mobile .faq__qa {
+        padding: 16px 0;
+    }
+
+    .user_payment__table.mobile .faq__qa-top {
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .user_payment__table.mobile .faq__qa-top.active img {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .user_payment__table.mobile .faq__qa-text {
+        padding-top: 0;
+    }
+
+    .user_payment__table_mobile_info {
+        margin-top: 16px;
+    }
+
+    .user_payment__table_mobile_info_title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0em;
+        color: #000;
+    }
+
+    .user_payment__table_mobile_info_text {
+        font-size: 14px;
+        line-height: 114%;
+        letter-spacing: 0em;
+        color: #000;
+        margin-top: 4px;
+    }
+
+    .user_payment__table_mobile_info_text.green {
+        color: #29a33d;
+    }
+
+    .user_payment__title {
+        margin-bottom: 16px;
+    }
+
+    .user_payment {
+        margin-bottom: 16px;
+    }
+
+    .user__support .dashboard__messages {
+        display: none;
+    }
+
+    .user_support_chat {
+        display: block;
+    }
+
+    .chat.user_support_chat.activechat .chat__content {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 

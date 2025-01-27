@@ -14279,9 +14279,15 @@ p.host_info__reviews_main_item_text {
   display: none;
 }
 
+.user__support .user__support.user_title {
+  margin-top: 16px;
+}
 .user__support .container {
   padding-left: 0;
   padding-right: 0;
+}
+.user__support .contact_information {
+  margin-top: 56px;
 }
 .user__support .contact_information__item {
   background: #f3f3f3;
@@ -14326,6 +14332,10 @@ p.host_info__reviews_main_item_text {
   display: none;
 }
 
+.user__support .dashboard__messages {
+  margin-bottom: 100px;
+}
+
 @media (max-width: 1999px) {
   .user_main {
     max-width: none;
@@ -14341,6 +14351,9 @@ p.host_info__reviews_main_item_text {
 @media (max-width: 1199px) {
   .settings_form_inputs {
     width: 100%;
+  }
+  .user__support .dashboard__messages {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 959px) {
@@ -14358,6 +14371,20 @@ p.host_info__reviews_main_item_text {
   }
   .dashboard__main_content.payment_main {
     padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .user__support .contact_information {
+    margin-top: 16px;
+  }
+  .user__support .contact_information__item {
+    margin-bottom: 16px;
+  }
+  .user__support .contact_information__item:last-child {
+    margin-bottom: 0;
+  }
+  .dashboard__messages {
+    margin-top: 32px;
   }
 }
 @media (max-width: 575px) {
@@ -14469,6 +14496,9 @@ p.host_info__reviews_main_item_text {
   .user_payment {
     margin-bottom: 16px;
   }
+  .user__support {
+    margin-bottom: 60px;
+  }
   .user__support .dashboard__messages {
     display: none;
   }
@@ -14478,6 +14508,12 @@ p.host_info__reviews_main_item_text {
   .chat.user_support_chat.activechat .chat__content {
     opacity: 1;
     transform: translateY(0);
+  }
+  .user__support {
+    margin-bottom: 16px;
+  }
+  .user__support .contact_information {
+    margin-bottom: 80px;
   }
 }
 .payment {
