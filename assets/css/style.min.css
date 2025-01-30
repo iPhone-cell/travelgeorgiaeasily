@@ -13093,6 +13093,11 @@ p.weddings_desc {
 .host_info {
   padding-top: 120px;
 }
+.host_info .host_info__favorite {
+  margin-left: auto;
+  height: 48px;
+  background: var(--colors-bright-grey);
+}
 
 .host_info__prifile {
   border-radius: 5px;
@@ -13419,6 +13424,12 @@ p.host_info__reviews_main_item_text {
   margin-top: 8px;
 }
 
+.host_info__favorite {
+  background: var(--colors-white);
+  padding: 12px;
+  border-radius: 5px;
+}
+
 @media (max-width: 1599px) {
   .host_info__prifile {
     margin-right: 80px;
@@ -13427,6 +13438,9 @@ p.host_info__reviews_main_item_text {
 @media (max-width: 1279px) {
   .header.header_small {
     height: auto;
+  }
+  .host_info__favorite:hover {
+    background: #e9e9e9;
   }
 }
 @media (max-width: 1199px) {
@@ -13446,6 +13460,27 @@ p.host_info__reviews_main_item_text {
   }
   .host_info__right.reviews {
     max-width: 500px;
+  }
+}
+@media (max-width: 959px) {
+  .host_info__favorite {
+    background: none;
+    padding: 0;
+  }
+  .host_info__favorite img {
+    width: 20px;
+    height: 20px;
+  }
+  .host_info__favorite:hover {
+    background: none;
+  }
+  .host_info {
+    padding-top: 120px;
+  }
+  .host_info .host_info__favorite {
+    margin-left: auto;
+    height: 48px;
+    width: 48px;
   }
 }
 @media (max-width: 787px) {
@@ -13497,6 +13532,14 @@ p.host_info__reviews_main_item_text {
   .host_info__right.reviews .host_info__right_additional {
     margin-top: 0;
     margin-left: 0;
+  }
+}
+@media (max-width: 374px) {
+  .host_info__prifile {
+    padding: 8px;
+  }
+  .host_info .host_info__favorite {
+    background: none;
   }
 }
 .main_about {
@@ -14336,6 +14379,54 @@ p.host_info__reviews_main_item_text {
   margin-bottom: 100px;
 }
 
+.user_hosts .host_info__profile {
+  background: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.user_hosts .user_cards__item {
+  padding: 32px;
+  max-height: none;
+}
+.user_hosts .host_info__profile_top {
+  display: flex;
+}
+.user_hosts .host_info__profile_top .host_info__profile_img {
+  margin-right: 16px;
+}
+.user_hosts .host_info__prifile_info_name {
+  font-size: 20px;
+}
+.user_hosts .user_cards__item {
+  max-width: none;
+  width: 48.75%;
+  margin-bottom: 32px;
+  margin-right: 0;
+}
+.user_hosts .host_info__profile_info_reviews {
+  display: flex;
+  align-items: center;
+}
+.user_hosts .host_info__profile_info_reviews span {
+  margin-left: 8px;
+  font-size: 14px;
+}
+.user_hosts .user_cards__item.user_cards__host {
+  border-radius: 0;
+}
+.user_hosts .user_cards_host {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.user_main_title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
 @media (max-width: 1999px) {
   .user_main {
     max-width: none;
@@ -14372,6 +14463,31 @@ p.host_info__reviews_main_item_text {
   .dashboard__main_content.payment_main {
     padding-right: 0;
   }
+  .user_hosts {
+    padding-right: 0;
+  }
+  .user_hosts .user_cards__host {
+    padding: 16px;
+  }
+  .user_hosts .host_info__prifile_info_label {
+    font-size: 13px;
+  }
+  .user_hosts .host_info__prifile_info_name {
+    font-size: 15px;
+  }
+  .user_hosts .host_info__profile_info_reviews span {
+    font-size: 13px;
+  }
+  .user_hosts .host_info__profile_img {
+    height: 64px;
+  }
+  .user_hosts .host_info__profile_img img {
+    width: 64px;
+    height: 64px;
+  }
+  .user_hosts .user_cards__host {
+    margin-bottom: 16px;
+  }
 }
 @media (max-width: 767px) {
   .user__support .contact_information {
@@ -14385,6 +14501,18 @@ p.host_info__reviews_main_item_text {
   }
   .dashboard__messages {
     margin-top: 32px;
+  }
+  .user_hosts .user_cards_host {
+    margin-bottom: 64px;
+  }
+  .user_hosts .user_cards_host .user_cards__item {
+    border-radius: 10px;
+  }
+  .user_hosts .user_cards__item {
+    width: 100%;
+  }
+  .user_hosts .user_cards__item:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 575px) {
@@ -14514,6 +14642,18 @@ p.host_info__reviews_main_item_text {
   }
   .user__support .contact_information {
     margin-bottom: 80px;
+  }
+  .user_main_title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .user_main .user_cards.user_cards_host {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 374px) {
+  .user_main .user_cards_host .user_cards__item {
+    padding: 8px;
   }
 }
 .payment {
