@@ -8915,6 +8915,7 @@ h1.dashboard__main_title {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
+    height: 48px;
     text-transform: uppercase;
     letter-spacing: 0.01em;
     color: var(--colors-white);
@@ -8936,6 +8937,10 @@ h1.dashboard__main_title {
     background: #CC3122;
 }
 
+.dashboard__main_seacrh_wrapper .dashboard_search {
+    margin-bottom: 0;
+}
+
 .dashboard__main_seacrh_wrapper {
     margin-top: 32px;
     display: -ms-flexbox;
@@ -8944,6 +8949,7 @@ h1.dashboard__main_title {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 44px;
 }
 
 .dashboard__main_seacrh_wrapper .dashboard_search {
@@ -9069,7 +9075,9 @@ h1.dashboard__main_title {
     height: 100%;
     text-align: left;
     padding-left: 0;
-    padding-right: 8px;
+    max-width: 115px;
+    font-size: 14px;
+    color: #000;
 }
 
 .dashboard_select select {
@@ -9082,11 +9090,61 @@ h1.dashboard__main_title {
 }
 
 .dashboard_select:after {
-    background: url("../images/icons/arrow_select_red.svg") no-repeat right;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    display: none;
+}
+
+.filters__select {
+    position: relative;
+}
+
+.filters__select_main {
+    cursor: pointer;
+    font-size: 13px;
+    color: #444;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.filters__select_main span {
+    margin-right: 4px;
+}
+
+.filters__select_menu {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 5px 30px -5px rgba(20, 20, 20, 0.1);
+    border-radius: 8px;
+    width: 115px;
+}
+
+.filters__select_menu_item {
+    color: #000;
+    padding: 16px;
+    border-bottom: 1px solid #d1d1d1;
+    cursor: pointer;
+    color: #727374;
+    transition: all 0.3s ease;
+}
+
+.filters__select_menu_item:hover {
+    color: #000;
+}
+
+.filters__select_menu_item:last-child {
+    border-bottom: 0;
+}
+
+.filters__select_menu_item.active {
+    color: #000;
+    pointer-events: none;
 }
 
 .iksweb.dashboard_table {
@@ -9225,6 +9283,15 @@ h1.dashboard__main_title {
     position: relative;
 }
 
+.iksweb.dashboard_table .table_actions_wrapper .table_actions button svg {
+    fill: #727374;
+    transition: all 0.3s ease;
+}
+
+.iksweb.dashboard_table .table_actions_wrapper .table_actions button:hover svg {
+    fill: #000;
+}
+
 .iksweb.dashboard_table .table_edit_wrapper {
     opacity: 0;
     pointer-events: none;
@@ -9251,6 +9318,11 @@ h1.dashboard__main_title {
     align-items: center;
 }
 
+.iksweb.dashboard_table .table_edit_wrapper button svg {
+    fill: #727374;
+    transition: all 0.3s ease;
+}
+
 .iksweb.dashboard_table .table_edit_wrapper button span {
     margin-left: 8px;
 }
@@ -9261,12 +9333,21 @@ h1.dashboard__main_title {
 
 .iksweb.dashboard_table .table_edit_wrapper button:hover {
     background: var(--colors-bright-grey);
+    color: #000;
+}
+
+.iksweb.dashboard_table .table_edit_wrapper button:hover svg {
+    fill: #000;
 }
 
 .iksweb.dashboard_table .table_edit_wrapper.active {
     opacity: 1;
     pointer-events: all;
     z-index: 1;
+}
+
+.iksweb.dashboard_table .table_edit_wrapper.table_edit.edit {
+    padding-left: 0;
 }
 
 .iksweb.dashboard_table .table_actions {
@@ -9276,6 +9357,11 @@ h1.dashboard__main_title {
     -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 176px;
+}
+
+.iksweb.dashboard_table .table_actions svg {
+    width: 32px;
+    height: 32px;
 }
 
 .iksweb.dashboard_table .sort_wrapper.sort_model {
@@ -9291,6 +9377,98 @@ h1.dashboard__main_title {
 .iksweb.dashboard_table .first {
     border-top: none !important;
     border: none !important;
+}
+
+.remove_car_wrapper.overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.remove_car {
+    border-radius: 10px;
+    padding: 64px 24px 24px 24px;
+    max-width: 500px;
+    box-shadow: 0 10px 50px 0 rgba(114, 115, 116, 0.2);
+    background: var(--colors-white);
+    text-align: center;
+    position: relative;
+}
+
+.remove_car .modal_transaction_btns button {
+    border-radius: 5px;
+    padding: 16px 20px;
+    width: 218px;
+    height: 48px;
+    background: #f3f3f3;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+.remove_car .modal_transaction_btns button.black {
+    background: #000;
+    color: var(--colors-white);
+}
+
+.remove_car__close {
+    background: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.remove_car__close:hover {
+    background: none;
+}
+
+.remove_car__main p {
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #727374;
+    margin-top: 24px;
+}
+
+.remove_car__main p .bold {
+    font-weight: 500;
+    color: #000;
+}
+
+.remove_car__main p .green {
+    font-weight: 500;
+    color: var(--colors-green);
+}
+
+.remove_car__top p {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.remove_car__btns {
+    margin-top: 24px;
+}
+
+.remove_car__btns a {
+    border-radius: 5px;
+    padding: 16px 20px;
+    width: 218px;
+    height: 48px;
+    background: #f3f3f3;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.remove_car__btns .black {
+    background: #000;
 }
 
 .dashboard_pages {
@@ -10268,6 +10446,11 @@ td.dates_td {
     border-radius: 5px;
 }
 
+.dashboard__main_cars .table_actions button svg {
+    padding-top: 8px;
+    padding-left: 2px;
+}
+
 @media (max-width: 575px) {
     .bookings_calendar {
         overflow: auto;
@@ -10925,6 +11108,7 @@ span {
 
 .add_car__sent_gallery .modal__gallery_photo {
     width: 258px;
+    min-width: 258px;
 }
 
 .modal__gallery_photo .img_check {
@@ -14219,11 +14403,6 @@ p.weddings_desc {
         min-width: 180px;
     }
 
-    .dashboard__main_seacrh_wrapper {
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-
     .dashboard__main .chat__message_img img {
         width: 32px;
         height: 32px;
@@ -14474,6 +14653,11 @@ p.weddings_desc {
 
     .terms_item .select {
         max-width: 273px;
+    }
+
+    .dashboard__main_top.one_row .dashboard__main_heading-btn {
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
 
