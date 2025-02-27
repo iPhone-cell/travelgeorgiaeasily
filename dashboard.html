@@ -337,6 +337,18 @@
 
     </svg>
 
+    <!-- Modal Info Car  -->
+
+    <!-- Close -->
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="infoCarClose" width="18" height="24"  viewBox="0 0 18 24">
+
+            <path xmlns="http://www.w3.org/2000/svg" d="M16.059 7.05898C16.6449 6.47305 16.6449 5.52148 16.059 4.93555C15.473 4.34961 14.5215 4.34961 13.9355 4.93555L8.99961 9.87617L4.05898 4.94023C3.47305 4.3543 2.52148 4.3543 1.93555 4.94023C1.34961 5.52617 1.34961 6.47773 1.93555 7.06367L6.87617 11.9996L1.94023 16.9402C1.3543 17.5262 1.3543 18.4777 1.94023 19.0637C2.52617 19.6496 3.47773 19.6496 4.06367 19.0637L8.99961 14.123L13.9402 19.059C14.5262 19.6449 15.4777 19.6449 16.0637 19.059C16.6496 18.473 16.6496 17.5215 16.0637 16.9355L11.123 11.9996L16.059 7.05898Z" />
+
+        </symbol>
+
+    </svg>
+
     <div class="wrapper">
 
         <header id="header" class="header header_dashboard">
@@ -807,7 +819,7 @@
                                     </td>
                                     <td class="table_actions_wrapper">
                                         <div class="table_actions">
-                                            <button>
+                                            <button class="table_edit_info">
                                                 <svg>
                                                     <use xlink:href="#actionsI"></use>
                                                 </svg>
@@ -901,7 +913,7 @@
                                     </td>
                                     <td class="table_actions_wrapper">
                                         <div class="table_actions">
-                                            <button>
+                                            <button class="table_edit_info">
                                                 <svg>
                                                     <use xlink:href="#actionsI"></use>
                                                 </svg>
@@ -995,7 +1007,7 @@
                                     </td>
                                     <td class="table_actions_wrapper">
                                         <div class="table_actions">
-                                            <button>
+                                            <button class="table_edit_info">
                                                 <svg>
                                                     <use xlink:href="#actionsI"></use>
                                                 </svg>
@@ -1089,7 +1101,7 @@
                                     </td>
                                     <td class="table_actions_wrapper">
                                         <div class="table_actions">
-                                            <button>
+                                            <button class="table_edit_info">
                                                 <svg>
                                                     <use xlink:href="#actionsI"></use>
                                                 </svg>
@@ -1183,7 +1195,7 @@
                                     </td>
                                     <td class="table_actions_wrapper">
                                         <div class="table_actions">
-                                            <button>
+                                            <button class="table_edit_info">
                                                 <svg>
                                                     <use xlink:href="#actionsI"></use>
                                                 </svg>
@@ -1279,7 +1291,7 @@
                                     </td>
                                     <td class="table_actions_wrapper">
                                         <div class="table_actions">
-                                            <button>
+                                            <button class="table_edit_info">
                                                 <svg>
                                                     <use xlink:href="#actionsI"></use>
                                                 </svg>
@@ -1410,6 +1422,263 @@
                         </div>
         
                      </div>
+                </div>
+        
+                <!-- Modal Info Car -->
+                <div class="modal__wrapper" style="display: none;"  id="infoCar">
+                    <div class="car_details">
+                        <div class="car_details__head">
+                            <div class="car_details__top">
+                                <div class="car_details__title">
+                                    Mercedes-Benz AMG GT 63 S
+                                </div>
+                                <button class="car_details__close">
+                                    <svg>
+                                        <use xlink:href="#infoCarClose"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="car_details__main">
+                                <div class="car_details__pic">
+                                    <img src="assets/images/dashboard/cars/info_car_pic.png" alt="">
+                                </div>
+                                <div class="car_details__info">
+                                    <div class="car_details__info_top">
+                                        Tbilsi  /  automatic, 3.0L
+                                    </div>
+                                    <div class="car_details__info_bottom green">
+                                        NN740NN
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car_details__stats">
+                                <div class="car_details__item">
+                                    <div class="car_details__label">
+                                        Rented
+                                    </div>
+                                    <div class="car_details__count">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="car_details__item">
+                                    <div class="car_details__label">
+                                        Received income
+                                    </div>
+                                    <div class="car_details__count">
+                                        $1270
+                                    </div>
+                                </div>
+                                <div class="car_details__item">
+                                    <div class="car_details__label">
+                                        Fines
+                                    </div>
+                                    <div class="car_details__count">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="car_details__item">
+                                    <div class="car_details__label">
+                                        Mileage
+                                    </div>
+                                    <div class="car_details__count">
+                                        110.562 km
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car_details__orders">
+                            <div class="car_details__cars">
+                                <div class="car_details__cars_title">
+                                    Orders
+                                </div>
+                                <div class="car_details__table">
+                                    <div class="car_details__table_header">
+                                        <div class="car_details__table_header__item">
+                                            <a href="">
+                                                <img src="assets/images/dashboard/cars/sort.svg" alt="">
+                                            </a>
+                                            <span>Order</span>
+                                        </div>
+                                        <div class="car_details__table_header__item">
+                                            <a href="">
+                                                <img src="assets/images/dashboard/cars/sort.svg" alt="">
+                                            </a>
+                                            <span>Dates</span>
+                                        </div>
+                                        <div class="car_details__table_header__item">
+                                            <span>Amount</span>
+                                        </div>
+                                        <div class="car_details__table_header__item">
+                                            <span>Client</span>
+                                        </div>
+                                        <div class="car_details__table_header__item">
+                                            <span>Actions</span>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="car_details__table_main">
+                                        <div class="car_details__table_main__row">
+                                            <div class="car_details__table_main__number">
+                                                32
+                                            </div>
+                                            <div class="car_details__table_main__dates">
+                                                <p><span>P:</span> 14.11.2025</p>
+                                                <p><span>R:</span> 15.11.2025</p>
+                                            </div>
+                                            <div class="car_details__table_main__amount">
+                                                120$
+                                            </div>
+                                            <div class="car_details__table_main__client">
+                                                Gio Devadze
+                                            </div>
+                                            <div class="car_details__table_main__actions">
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_1.svg" alt="">
+                                                </button>
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_2.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="car_details__table_main__row">
+                                            <div class="car_details__table_main__number">
+                                                45
+                                            </div>
+                                            <div class="car_details__table_main__dates">
+                                                <p><span>P:</span> 14.11.2025</p>
+                                                <p><span>R:</span> 15.11.2025</p>
+                                            </div>
+                                            <div class="car_details__table_main__amount">
+                                                120$
+                                            </div>
+                                            <div class="car_details__table_main__client">
+                                                Gio Devadze
+                                            </div>
+                                            <div class="car_details__table_main__actions">
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_1.svg" alt="">
+                                                </button>
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_2.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="car_details__table_main__row">
+                                            <div class="car_details__table_main__number">
+                                                48
+                                            </div>
+                                            <div class="car_details__table_main__dates">
+                                                <p><span>P:</span> 14.11.2025</p>
+                                                <p><span>R:</span> 15.11.2025</p>
+                                            </div>
+                                            <div class="car_details__table_main__amount">
+                                                120$
+                                            </div>
+                                            <div class="car_details__table_main__client">
+                                                Gio Devadze
+                                            </div>
+                                            <div class="car_details__table_main__actions">
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_1.svg" alt="">
+                                                </button>
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_2.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="car_details__table_main__row">
+                                            <div class="car_details__table_main__number">
+                                                72
+                                            </div>
+                                            <div class="car_details__table_main__dates">
+                                                <p><span>P:</span> 14.11.2025</p>
+                                                <p><span>R:</span> 15.11.2025</p>
+                                            </div>
+                                            <div class="car_details__table_main__amount">
+                                                120$
+                                            </div>
+                                            <div class="car_details__table_main__client">
+                                                Gio Devadze
+                                            </div>
+                                            <div class="car_details__table_main__actions">
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_1.svg" alt="">
+                                                </button>
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_2.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="car_details__table_main__row">
+                                            <div class="car_details__table_main__number">
+                                                90
+                                            </div>
+                                            <div class="car_details__table_main__dates">
+                                                <p><span>P:</span> 14.11.2025</p>
+                                                <p><span>R:</span> 15.11.2025</p>
+                                            </div>
+                                            <div class="car_details__table_main__amount">
+                                                120$
+                                            </div>
+                                            <div class="car_details__table_main__client">
+                                                Gio Devadze
+                                            </div>
+                                            <div class="car_details__table_main__actions">
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_1.svg" alt="">
+                                                </button>
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_2.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="car_details__table_main__row">
+                                            <div class="car_details__table_main__number">
+                                                100
+                                            </div>
+                                            <div class="car_details__table_main__dates">
+                                                <p><span>P:</span> 14.11.2025</p>
+                                                <p><span>R:</span> 15.11.2025</p>
+                                            </div>
+                                            <div class="car_details__table_main__amount">
+                                                120$
+                                            </div>
+                                            <div class="car_details__table_main__client">
+                                                Gio Devadze
+                                            </div>
+                                            <div class="car_details__table_main__actions">
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_1.svg" alt="">
+                                                </button>
+                                                <button>
+                                                    <img src="assets/images/dashboard/cars/action_2.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="dashboard_pages">
+                                        <p class="dashboard_pages_info">
+                                            Showing 6 of 12 vehicles
+                                        </p>
+                                        <div class="cars__results-pagination dashboard_pagination">
+                                            <div class="cars__results-pagination_nav">
+                                                <a href="#" class="disabled prev">
+                                                    <img src="assets/images/icons/arrow-left.svg" alt="previous">
+                                                </a>
+                                                <a href="#" class="active">1</a>
+                                                <a href="#" class="next_page">2</a>
+                                                <a href="#" class="next">
+                                                    <img src="assets/images/icons/arrow-right.svg" alt="next">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         
         

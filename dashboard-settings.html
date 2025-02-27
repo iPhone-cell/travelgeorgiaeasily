@@ -337,6 +337,18 @@
 
     </svg>
 
+    <!-- Modal Info Car  -->
+
+    <!-- Close -->
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="infoCarClose" width="18" height="24"  viewBox="0 0 18 24">
+
+            <path xmlns="http://www.w3.org/2000/svg" d="M16.059 7.05898C16.6449 6.47305 16.6449 5.52148 16.059 4.93555C15.473 4.34961 14.5215 4.34961 13.9355 4.93555L8.99961 9.87617L4.05898 4.94023C3.47305 4.3543 2.52148 4.3543 1.93555 4.94023C1.34961 5.52617 1.34961 6.47773 1.93555 7.06367L6.87617 11.9996L1.94023 16.9402C1.3543 17.5262 1.3543 18.4777 1.94023 19.0637C2.52617 19.6496 3.47773 19.6496 4.06367 19.0637L8.99961 14.123L13.9402 19.059C14.5262 19.6449 15.4777 19.6449 16.0637 19.059C16.6496 18.473 16.6496 17.5215 16.0637 16.9355L11.123 11.9996L16.059 7.05898Z" />
+
+        </symbol>
+
+    </svg>
+
     <div class="wrapper">
 
         <header id="header" class="header header_dashboard">
@@ -732,35 +744,47 @@
                         <form action="#" class="dashboard__settings_form settings_form">
                             <div class="settings_form__basic" id="basicInfo">
                                 <h2 class="settings_form__basic_title">
-                                    Basic Information
+                                    Company info
                                 </h2>
-                                <div class="settings_form_row" >
-                                    <div class="settings_form__input settings_form__input1">
-                                        <input type="text" required id="companyName">
-                                        <label for="companyName">Company name <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                <div class="settings_form__company_info_wrapper">
+                                    <div class="settings_form__add_photo">
+                                        <div class="settings_form__add_photo_wrapper">
+                                            <img src="assets/images/dashboard/settings/photo_area.svg" alt="">
+                                        </div>
+                                        <div class="settings_form__add_photo_bottom">
+                                            <img src="assets/images/dashboard/settings/add_photo.svg" alt="">
+                                            <span>Add photo</span>
+                                        </div>
                                     </div>
-                                    <div class="settings_form__input settings_form__input2">
-                                        <input type="text" placeholder="" required id="address">
-                                        <label for="address">Address <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                    <div class="settings_form__inputs">
+                                        <div class="settings_form_row">
+                                            <div class="settings_form__input settings_form__input1">
+                                                <input type="text" required id="companyName">
+                                                <label for="companyName">Company name <span>*</span></label>
+                                                <label for="companyName" class="label_top">Company name <span>*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="settings_form_row">
+                                            <div class="settings_form__input settings_form__input2">
+                                                 <input type="email" required id="email">
+                                                <label for="email">Email <span>*</span></label>
+                                                <label for="email" class="label_top">Email <span>*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="settings_form_row settings_form_row_two_columns">
+                                            <div class="settings_form__input settings_form__input3">
+                                                <input type="tel" required id="primaryPhoneNumber">
+                                                <label for="primaryPhoneNumber">Phone Number <span>*</span></label>
+                                                <label for="primaryPhoneNumber" class="label_top">Phone number <span>*</span></label>
+                                            </div>
+                                            <div class="settings_form__input settings_form__input4">
+                                                <input type="tel" required id="secondPhoneNumber">
+                                                <label for="secondPhoneNumber">Second Phone Number <span>*</span></label>
+                                                <label for="secondPhoneNumber" class="label_top">Second Phone Number <span>*</span></label>
+                                            </div>
+                                        </div>
+        
                                     </div>
-                                </div>
-                                <div class="settings_form_row">
-                                    <div class="settings_form__input settings_form__input3">
-                                        <input type="tel" required>
-                                        <label for="primaryPhoneNumber">Primary Phone Number <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
-                                    </div>
-                                    <div class="settings_form__input settings_form__input4">
-                                         <input type="email" required id="email">
-                                        <label for="email">Email <span>*</span></label>
-                                        <label for="companyName" class="label_top">Company name <span>*</span></label>
-                                    </div>
-                                </div>
-                                <div class="settings_form_add">
-                                    <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add phone number</span>
                                 </div>
                             </div>
                             <div class="settings_form__basic">
