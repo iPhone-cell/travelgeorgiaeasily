@@ -349,6 +349,30 @@
 
     </svg>
 
+
+    <!-- Dashboard Settings  -->
+
+    <!-- Add Photo -->
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="addPhoto" width="21" height="16"  viewBox="0 0 21 16">
+
+            <path xmlns="http://www.w3.org/2000/svg" d="M5 15C2.51562 15 0.5 12.9844 0.5 10.5C0.5 8.5375 1.75625 6.86875 3.50625 6.25313C3.50312 6.16875 3.5 6.08437 3.5 6C3.5 3.2375 5.7375 1 8.5 1C10.3531 1 11.9688 2.00625 12.8344 3.50625C13.3094 3.1875 13.8844 3 14.5 3C16.1562 3 17.5 4.34375 17.5 6C17.5 6.38125 17.4281 6.74375 17.3 7.08125C19.125 7.45 20.5 9.06563 20.5 11C20.5 13.2094 18.7094 15 16.5 15H5ZM7.46875 8.21875C7.175 8.5125 7.175 8.9875 7.46875 9.27812C7.7625 9.56875 8.2375 9.57187 8.52812 9.27812L9.74687 8.05937L9.75 12.25C9.75 12.6656 10.0844 13 10.5 13C10.9156 13 11.25 12.6656 11.25 12.25V8.05937L12.4688 9.27812C12.7625 9.57187 13.2375 9.57187 13.5281 9.27812C13.8187 8.98438 13.8219 8.50938 13.5281 8.21875L11.0281 5.71875C10.7344 5.425 10.2594 5.425 9.96875 5.71875L7.46875 8.21875Z"/>
+
+        </symbol>
+
+    </svg>
+
+    <!-- Custom Profile -->
+     <!-- Pencil -->
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="pencil" width="12" height="12"  viewBox="0 0 12 12">
+
+            <path xmlns="http://www.w3.org/2000/svg" d="M8.50062 0.451172L7.36624 1.58555L10.4131 4.63242L11.5475 3.49805C12.1334 2.91211 12.1334 1.96289 11.5475 1.37695L10.6241 0.451172C10.0381 -0.134766 9.0889 -0.134766 8.50296 0.451172H8.50062ZM6.83656 2.11523L1.37328 7.58086C1.12953 7.82461 0.9514 8.12695 0.852963 8.45742L0.0232751 11.277C-0.0353187 11.4762 0.0185876 11.6895 0.1639 11.8348C0.309213 11.9801 0.522494 12.034 0.719369 11.9777L3.5389 11.148C3.86937 11.0496 4.17171 10.8715 4.41546 10.6277L9.88343 5.16211L6.83656 2.11523Z"/>
+
+        </symbol>
+
+    </svg>
+
     <div class="wrapper">
 
         <header id="header" class="header header_dashboard">
@@ -419,7 +443,7 @@
                             </a>
                         </div>
                             <div class="dashboard__photo">
-                                <img src="assets/images/hosts/dashboard.png" alt="">
+                                <img src="assets/images/dashboard/settings/photo_area.svg" alt="">
                                 <div class="profile_hover">
                                     <img src="assets/images/icons/profile_link.svg" alt="">
                                     <div class="my_profile_btn">
@@ -592,7 +616,7 @@
             <aside class="dashboard__sidebar sidebar">
                 <a href="#" class="dashboard__host">
                     <div class="dashboard__photo">
-                        <img src="assets/images/hosts/dashboard.png" alt="">
+                        <img src="assets/images/dashboard/settings/photo_area.svg" alt="">
                         <div class="profile_hover">
                             <img src="assets/images/icons/profile_link.svg" alt="">
                             <div class="my_profile_btn">
@@ -747,15 +771,21 @@
                                     Company info
                                 </h2>
                                 <div class="settings_form__company_info_wrapper">
-                                    <div class="settings_form__add_photo">
-                                        <div class="settings_form__add_photo_wrapper">
-                                            <img src="assets/images/dashboard/settings/photo_area.svg" alt="">
-                                        </div>
-                                        <div class="settings_form__add_photo_bottom">
-                                            <img src="assets/images/dashboard/settings/add_photo.svg" alt="">
-                                            <span>Add photo</span>
-                                        </div>
+                                    <div class="settings_form__add_photo" id="dashboardAddPhoto">
+                                        <label>
+                                            <input type="file" accept=".jpg, .png" name="addPhoto" id="formImage">
+                                            <div class="settings_form__add_photo_wrapper">
+                                                <img src="assets/images/dashboard/settings/photo_area.svg" alt="" id="formPreview">
+                                            </div>
+                                            <div class="settings_form__add_photo_bottom">
+                                                <svg>
+                                                    <use xlink:href="#addPhoto"></use>
+                                                </svg>
+                                                <span>Add photo</span>
+                                            </div>
+                                        </label>
                                     </div>
+        
                                     <div class="settings_form__inputs">
                                         <div class="settings_form_row">
                                             <div class="settings_form__input settings_form__input1">
@@ -791,14 +821,20 @@
                                 <h2 class="settings_form__basic_title">
                                     Parking address
                                 </h2>
+                                <div class="custom_address">
+                                    <span>
+                                        Address 1
+                                    </span>
+                                    <svg>
+                                        <use xlink:href="#pencil"></use>
+                                    </svg>
+                                </div>
                                 <div class="settings_form_row alone">
                                     <div class="settings_form__input alone">
-                                        <div class="settings_form_row_select settings_form_select1">
+                                        <div class="settings_form_row_select settings_form_select1 disabled">
                                             <div class="select">
                                                 <select  id="parkingAddress" required>
-                                                    <option>Tbilisi</option>
-                                                    <option>Batumi</option>
-                                                    <option>Kutaisi</option>
+                                                    <option>Select region</option>
                                                 </select>
                                                 <label for="parkingAddress" class="label_top">Address <span>*</span></label>
                                             </div>
@@ -807,12 +843,12 @@
                                 </div>
                                 <div class="settings_form_add long">
                                     <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                    <span>Add company address</span>
+                                    <span>Add a new Address</span>
                                 </div>
                             </div>
                             <div class="settings_form__basic company">
                                 <h2 class="settings_form__basic_title">
-                                    Company description
+                                    Description
                                 </h2>
                                 <div class="settings_form_row alone">
                                     <div class="settings_form__input alone textarea">
@@ -821,7 +857,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="settings_form__basic list">
+                            <!-- <div class="settings_form__basic list">
                                 <h2 class="settings_form__basic_title">
                                     Available payment methods
                                 </h2>
@@ -853,19 +889,20 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="settings_form__basic">
                                 <h2 class="settings_form__basic_title">
                                     Contact person
                                 </h2>
+                                <div class="custom_address custom_person">
+                                    <span>
+                                        Contact person
+                                    </span>
+                                    <svg>
+                                        <use xlink:href="#pencil"></use>
+                                    </svg>
+                                </div>
                                 <div class="settings_form_row">
-                                    <div class="settings_form_profile add_car__sent_form_sidebar_photo">
-                                        <label>
-                                            <input type="file" accept=".jpg, .png" name="addPhoto" id="formImage">
-                                            <img src="assets/images/dashboard/no_photo.svg" alt="" id="formPreview">
-                                            <p><img src="assets/images/dashboard/settings/add_photo_icon.svg" alt=""><span>Add photo</span></p>
-                                        </label>
-                                    </div>
                                     <div class="settings_form_inputs" id="settingsContactInfo">
                                         <div class="settings_form_row">
                                             <div class="settings_form__input settings_contact_info_input1">
@@ -874,16 +911,28 @@
                                                 <label for="FirstName" class="label_top long">First name <span>*</span></label>
                                             </div>
                                             <div class="settings_form__input settings_contact_info_input2">
-                                                <input type="text" required id="LastName ">
-                                                <label for="LastName">Last Name <span>*</span></label>
-                                                <label for="LastName" class="label_top long">Last name <span>*</span></label>
+                                                <input type="text" id="LastName ">
+                                                <label for="LastName">Last Name</label>
+                                                <label for="LastName" class="label_top long">Last name</label>
+                                            </div>
+                                        </div>
+                                        <div class="settings_form_row">
+                                            <div class="settings_form__input settings_contact_info_input3">
+                                                <input type="text" required id="contactPersonPhone">
+                                                <label for="contactPersonPhone">Phone <span>*</span></label>
+                                                <label for="contactPersonPhone" class="label_top long">Phone <span>*</span></label>
+                                            </div>
+                                            <div class="settings_form__input settings_contact_info_input4">
+                                                <input type="text" id="contactPersonEmail">
+                                                <label for="contactPersonEmail">Email <span>*</span></label>
+                                                <label for="contactPersonEmail" class="label_top long">Email <span>*</span></label>
                                             </div>
                                         </div>
                                         <div class="settings_form_row settings_form_row2 select alone separate">
                                             <div class="settings_form_row_select settings_form_select2">
                                                 <div class="select">
                                                     <select  id="Language" required>
-                                                        <option>Language</option>
+                                                        <option>Select Language</option>
                                                         <option>Georgian</option>
                                                         <option>English</option>
                                                         <option>Russian</option>
@@ -912,9 +961,9 @@
                                                 <label for="MessengerID" class="label_top">Messenger ID <span>*</span></label>
                                            </div>
                                         </div>
-                                        <div class="settings_form_add short">
+                                        <div class="settings_form_add long new_contact">
                                             <img src="assets/images/dashboard/settings/add_form.svg" alt="">
-                                            <span>Add messenger</span>
+                                            <span>Add new contact person</span>
                                         </div>
                                     </div>
                                 </div>
