@@ -638,14 +638,14 @@ select {
 .select:after {
     content: "";
     display: block;
-    background: url("../images/icons/modal_select_arrow.svg") no-repeat center;
+    background: url("../images/icons/arrow_small.svg") no-repeat center;
     width: 24px;
     height: 24px;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 20px;
+    right: 16px;
     pointer-events: none;
 }
 
@@ -992,6 +992,11 @@ textarea {
     width: 100%;
     max-width: 1608px;
     height: 128px;
+    border: 1px solid #727374;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #727374;
 }
 
 textarea::-webkit-input-placeholder {
@@ -10676,6 +10681,40 @@ td.dates_td {
     color: var(--colors-white);
 }
 
+.edit_modal .remove_car__top input {
+    margin-top: 24px;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #000;
+    padding: 16px;
+    height: 52px;
+    border: 1px solid #727374;
+    background: var(--colors-white);
+}
+
+.edit_modal .modal_transaction_btns button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.edit_modal .modal_transaction_btns button img {
+    margin-right: 8px;
+}
+
+.edit_modal .modal_transaction_btns button:hover {
+    opacity: 0.8;
+}
+
+.edit_modal .modal_transaction_btns button.red {
+    background: #e22e1d;
+    color: var(--colors-white);
+}
+
 @media (max-width: 575px) {
     .bookings_calendar {
         overflow: auto;
@@ -12700,6 +12739,35 @@ p.weddings_desc {
     max-width: none;
 }
 
+.settings_form__company_info_wrapper .settings_form__inputs .settings_form__input input {
+    border: 1px solid #727374;
+    color: #000;
+}
+
+.settings_form__company_info_wrapper .settings_form__inputs .settings_form__input input::-webkit-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #727374;
+}
+
+.settings_form__company_info_wrapper .settings_form__inputs .settings_form__input input:-ms-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #727374;
+}
+
+.settings_form__company_info_wrapper .settings_form__inputs .settings_form__input input::-ms-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #727374;
+}
+
+.settings_form__company_info_wrapper .settings_form__inputs .settings_form__input input::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #727374;
+}
+
 .settings_form__company_info_wrapper .settings_form__inputs .settings_form_row .settings_form__input:last-child {
     margin-left: 0;
 }
@@ -12714,13 +12782,26 @@ p.weddings_desc {
 
 .settings_form__add_photo {
     border-radius: 10px;
-    padding: 16px;
+    padding: 26px;
     width: 184px;
+    min-width: 184px;
     height: 188px;
     background: #f3f3f3;
     text-align: center;
     cursor: pointer;
     margin-right: 104px;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.settings_form__add_photo input {
+    opacity: 0;
+    font-size: 0;
+}
+
+.settings_form__add_photo label {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .settings_form__add_photo_bottom {
@@ -12741,14 +12822,52 @@ p.weddings_desc {
     font-size: 14px;
     letter-spacing: 0.01em;
     color: #000;
+    color: #e22e1d;
+}
+
+.settings_form__add_photo_bottom svg {
+    height: 16px;
+    width: 21px;
+    margin-right: 8px;
+    fill: #e22e1d;
 }
 
 .settings_form__basic_title {
     font-size: 20px;
 }
 
+.custom_address {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0em;
+    color: #e22e1d;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+    max-width: 155px;
+}
+
+.custom_address span {
+    margin-right: 8px;
+}
+
+.custom_address svg {
+    height: 12px;
+    width: 12px;
+    fill: #727374;
+    transition: all 0.3s ease;
+}
+
+.custom_address:hover svg {
+    fill: #000;
+}
+
+.custom_person {
+    margin-bottom: -8px;
+}
+
 .settings_form_row {
-    margin-top: 24px;
+    margin-top: 16px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -12814,18 +12933,27 @@ p.weddings_desc {
     margin-top: 24px;
     border-radius: 4px;
     padding: 16px;
-    max-width: 198px;
+    max-width: 204px;
     -ms-flex-pack: center;
     justify-content: center;
     height: 48px;
+    line-height: 1;
     background: rgba(203, 204, 205, 0.4);
-    font-size: 14px;
     color: var(--colors-brand-black);
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.settings_form_add:hover {
+    background: #f3f3f3;
 }
 
 .settings_form_add img {
@@ -12938,7 +13066,10 @@ p.weddings_desc {
 }
 
 .settings_form_inputs {
-    max-width: 1352px;
+    width: 100%;
+}
+
+.settings_form_inputs select {
     width: 100%;
 }
 
@@ -12978,6 +13109,16 @@ p.weddings_desc {
 
 .settings_form_row .settings_form__input .label_top.active {
     opacity: 1;
+}
+
+.settings_form_row .settings_form__input input {
+    height: 52px;
+}
+
+.settings_form_row .settings_form__input input {
+    border: 1px solid #727374;
+    padding: 16px;
+    height: 52px;
 }
 
 .settings_form__input .label_top.active {
@@ -13271,6 +13412,21 @@ p.weddings_desc {
 .settings_form_row.complete .settings_form__input .label_top {
     opacity: 1;
     z-index: 999999;
+}
+
+.settings_form_row_select .select select {
+    height: 52px;
+    border: 1px solid #727374;
+    padding-bottom: 16px;
+}
+
+.settings_form_row_select.disabled .select select {
+    background: #f3f3f3;
+    pointer-events: none;
+}
+
+.settings_form_row_select .select.completed select {
+    color: #000;
 }
 
 .settings_form__basic_range .range_wrapper {
@@ -13739,6 +13895,10 @@ p.weddings_desc {
     margin-bottom: 28px;
 }
 
+.settings_form_add.long.new_contact {
+    min-width: 251px;
+}
+
 .add_car__sent_service_content_input input.not-empty + .label {
     display: none;
 }
@@ -14069,6 +14229,34 @@ p.weddings_desc {
 
 .settings_form__basic.seasons.mobile .add_car__sent_form_select {
     margin-bottom: 18px;
+}
+
+.settings_form__input .close.active {
+    margin-top: -3px;
+}
+
+.settings_form__input.complete label {
+    color: #000;
+}
+
+.settings_form__input.no_margin:last-child {
+    margin-left: 0;
+}
+
+.settings_form__input.textarea textarea {
+    color: #000;
+}
+
+.parking {
+    margin-top: 24px;
+}
+
+.parking:first-child {
+    margin-top: 0;
+}
+
+.settings_form_row {
+    font-size: 16px;
 }
 
 @media (max-width: 1899px) {
