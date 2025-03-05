@@ -770,7 +770,7 @@
                                 <div class="settings_form__basic">
                                     <h2>Insurance</h2>
                                 </div>
-                                <div class="settings_form__additional_item">
+                                <div class="settings_form__additional_item h56">
                                     <div class="settings_form__additional_label">
                                         <div class="add_car__sent_service_title add_car__sent_service_title1">
                                             <div class="item_wrapper">
@@ -891,7 +891,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="settings_form_item">
+                            <!-- <div class="settings_form_item">
                                 <div class="settings_form__basic">
                                     <h2>Child seats</h2>
                                 </div>
@@ -994,8 +994,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="settings_form_item">
+                            </div> -->
+                            <div class="settings_form_item after_none">
                                 <div class="settings_form__basic">
                                     <h2>Equipment</h2>
                                 </div>
@@ -1028,6 +1028,10 @@
                                                     <label for="GPSmaxCost" class="price">$</label>
                                                     <label for="GPSmaxCost" class="label_top">Max cost</label>
                                                 </div>
+        
+                                                <button class="delete">
+                                                    <img src="assets/images/dashboard/settings/remove_basket.svg" alt="">
+                                                </button>
                                             </div>
         
         
@@ -1057,7 +1061,7 @@
                                         <div class="add_car__sent_service_title">
                                             <div class="item_wrapper">
                                                 <div class="add_car__sent_service_title_label">
-                                                    Dashcam
+                                                    Tent
                                                 </div>
                                                 <div class="add_car__sent_service_title_toggle setting_toggle9">
                                                     <label class="switch">
@@ -1081,11 +1085,15 @@
                                                     <label for="DashcammaxCost" class="price">$</label>
                                                     <label for="DashcammaxCost" class="label_top">Max cost</label>
                                                 </div>
+        
+                                                <button class="delete">
+                                                    <img src="assets/images/dashboard/settings/remove_basket.svg" alt="">
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="settings_form__additional_item">
+                                <!-- <div class="settings_form__additional_item">
                                     <div class="settings_form__additional_label">
                                         <div class="add_car__sent_service_title">
                                             <div class="item_wrapper">
@@ -1249,7 +1257,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
+                            </div>
+                            <div class="settings_form_add" id="AddEquipmentButton">
+                                <img src="assets/images/dashboard/settings/add_form.svg" alt="">
+                                <span>Add a new equipment</span>
                             </div>
                             <div class="settings_form__btn">
                                 <button type="submit">
@@ -1753,6 +1765,37 @@
                         </form>
                     </div>
                 </div>
+        
+                <!-- Modal -->
+                 <!-- Add a new equipment -->
+                 <div class="modal__wrapper edit_modal adding_equipment" display="none" id="AddEquipment">
+                    <div  class="remove_car modal">
+                        <button  class="remove_car__close">
+                            <img src="assets/images/modal/icons/close.svg" alt="Close">
+                        </button>
+                        <div class="remove_car__main">
+                            <div class="remove_car__top">
+                                <p>
+                                    Adding new equipment
+                                </p>
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Price per day">
+                                <input type="text" placeholder="Max cost">
+                            </div>
+                        </div>
+                        <div class="remove_car__btns">
+                            <div class="modal_transaction_btns">
+                                <button href="#" class="black" id="editAddressRemove">
+                                        Cancel
+                                </button>
+                                <button href="#" id="editAddressSave" class="red">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+        
             </main>
         </div>
         
