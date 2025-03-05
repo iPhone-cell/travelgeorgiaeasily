@@ -11979,6 +11979,108 @@ p.weddings_desc {
   padding-left: 28px !important;
 }
 
+.settings_form__additional_label .add_car__sent_service_content_input input {
+  height: 52px;
+}
+.settings_form__additional_label .add_car__sent_service_content_input {
+  margin-bottom: 0;
+}
+.settings_form__additional_label .add_car__sent_service_title_toggle label {
+  margin-bottom: 0;
+}
+.settings_form__additional_label .add_car__sent_service_content.advertising {
+  margin-top: 24px;
+}
+.settings_form__additional_label .add_car__sent_service_content .delete {
+  margin-left: 16px;
+  padding: 8px 9px;
+}
+.settings_form__additional_label .add_car__sent_service_content.advertising {
+  height: 316px;
+}
+
+.settings_form__additional_item:last-child {
+  margin-bottom: 0;
+}
+
+.settings_form__additional_item.h56 {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.settings_form_item {
+  padding-bottom: 28px;
+}
+
+.settings_form__additional_item {
+  margin-bottom: 16px;
+}
+
+.advertising__label {
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--colors-white);
+  margin-bottom: 48px;
+}
+
+.advertising__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: var(--colors-white);
+}
+.advertising__title a {
+  color: #ebeb47;
+}
+
+.advertising__text {
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: 0em;
+  color: var(--colors-white);
+}
+
+.advertising__btn {
+  margin-top: 48px;
+  border-radius: 5px;
+  padding: 16px 20px;
+  width: 111px;
+  height: 48px;
+  background: #ebeb47;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #000 !important;
+}
+
+.advertising {
+  margin-bottom: 24px;
+}
+
+.dashboard__settings_form.mobile {
+  display: none;
+}
+
+.settings_form_item.after_none:after {
+  display: none;
+}
+
+.dashboard__settings_form.settings_form.additionals .settings_form_add {
+  max-width: 221px;
+  background: #f3f3f3;
+}
+
+.adding_equipment input::placeholder {
+  color: #000 !important;
+}
+
 @media (max-width: 1899px) {
   .seasons .settings_form_row.complete {
     max-width: 1200px;
@@ -12651,6 +12753,9 @@ p.weddings_desc {
   }
   .dashboard__main_cars {
     overflow-x: auto;
+  }
+  .dashboard__settings_form.mobile {
+    display: block;
   }
 }
 @media (max-width: 767px) {
