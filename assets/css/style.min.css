@@ -7490,7 +7490,7 @@ h1.dashboard__main_title {
 
 .dashboard__main_add_btn {
   border-radius: 5px;
-  padding: 8px 16px;
+  padding: 16px 20px;
   background: var(--colors-brand-red);
   font-family: var(--font-family);
   font-weight: 500;
@@ -7526,11 +7526,13 @@ h1.dashboard__main_title {
 .dashboard__main_seacrh_wrapper .dashboard_search {
   max-width: 376px;
   width: 100%;
-  border-radius: 4px;
-  padding-left: 44px;
-  border-radius: 4px;
-  border-radius: 100px;
+  padding-left: 48px;
   background: #f3f3f3;
+  font-weight: 500;
+  font-size: 14px;
+  color: #727374;
+  border-radius: 100px;
+  height: 48px;
 }
 .dashboard__main_seacrh_wrapper .dashboard_search svg {
   fill: #727374;
@@ -7718,7 +7720,6 @@ h1.dashboard__main_title {
   align-items: center;
 }
 .iksweb.dashboard_table .sort_wrapper div {
-  height: 16px;
   margin-top: -16px;
   display: flex;
   flex-direction: column;
@@ -9541,6 +9542,8 @@ span {
 }
 .add_car__sent_gallery .modal_container.dashboard__gallery_wrapper {
   margin-left: 0;
+  flex-wrap: wrap;
+  gap: 3px 0;
 }
 
 .add_car__sent_gallery .modal__gallery_photo {
@@ -11964,6 +11967,18 @@ p.weddings_desc {
   height: 52px;
 }
 
+.dashboard__main_cars .dashboard_table {
+  overflow-x: auto;
+}
+
+.cars__results-pagination_nav {
+  margin-bottom: 0;
+}
+
+.sort_wrapper {
+  padding-left: 28px !important;
+}
+
 @media (max-width: 1899px) {
   .seasons .settings_form_row.complete {
     max-width: 1200px;
@@ -12627,6 +12642,15 @@ p.weddings_desc {
   }
   .dashboard__main_top.one_row .dashboard__main_heading-btn {
     flex-direction: row;
+  }
+  .dashboard__main_heading-btn {
+    align-items: baseline;
+  }
+  .dashboard__main_add_btn {
+    margin-top: 24px;
+  }
+  .dashboard__main_cars {
+    overflow-x: auto;
   }
 }
 @media (max-width: 767px) {
@@ -13806,6 +13830,9 @@ p.weddings_desc {
   }
   .terms .terms_item_wrapper1 .settings_form_item_title_wrapper {
     width: 270px;
+  }
+  .dashboard_pages_info {
+    font-size: 10px;
   }
 }
 @media (min-width: 575px) {
@@ -15153,6 +15180,10 @@ p.host_info__reviews_main_item_text {
   margin-bottom: 32px;
 }
 
+.iksweb.dashboard_table .sort_model button {
+  opacity: 1;
+}
+
 @media (max-width: 1999px) {
   .user_main {
     max-width: none;
@@ -15213,6 +15244,18 @@ p.host_info__reviews_main_item_text {
   }
   .user_hosts .user_cards__host {
     margin-bottom: 16px;
+  }
+  .dashboard__main_top.one_row .dashboard__main_heading-btn {
+    flex-direction: column;
+  }
+  .dashboard_select {
+    margin-top: 24px;
+  }
+  .dashboard__main_seacrh_wrapper {
+    align-items: baseline;
+  }
+  .filters__select_main {
+    justify-content: flex-start;
   }
 }
 @media (max-width: 767px) {

@@ -8915,7 +8915,7 @@ h1.dashboard__main_title {
 
 .dashboard__main_add_btn {
     border-radius: 5px;
-    padding: 8px 16px;
+    padding: 16px 20px;
     background: var(--colors-brand-red);
     font-family: var(--font-family);
     font-weight: 500;
@@ -8960,11 +8960,13 @@ h1.dashboard__main_title {
 .dashboard__main_seacrh_wrapper .dashboard_search {
     max-width: 376px;
     width: 100%;
-    border-radius: 4px;
-    padding-left: 44px;
-    border-radius: 4px;
-    border-radius: 100px;
+    padding-left: 48px;
     background: #f3f3f3;
+    font-weight: 500;
+    font-size: 14px;
+    color: #727374;
+    border-radius: 100px;
+    height: 48px;
 }
 
 .dashboard__main_seacrh_wrapper .dashboard_search svg {
@@ -9234,7 +9236,6 @@ h1.dashboard__main_title {
 }
 
 .iksweb.dashboard_table .sort_wrapper div {
-    height: 16px;
     margin-top: -16px;
     display: -ms-flexbox;
     display: flex;
@@ -10681,6 +10682,11 @@ td.dates_td {
     color: var(--colors-white);
 }
 
+.edit_modal .modal {
+    -webkit-transform: translateY(50%) !important;
+    transform: translateY(50%) !important;
+}
+
 .edit_modal .remove_car__top input {
     margin-top: 24px;
     width: 100%;
@@ -11368,6 +11374,9 @@ span {
 
 .add_car__sent_gallery .modal_container.dashboard__gallery_wrapper {
     margin-left: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 3px 0;
 }
 
 .add_car__sent_gallery .modal__gallery_photo {
@@ -13418,6 +13427,7 @@ p.weddings_desc {
     height: 52px;
     border: 1px solid #727374;
     padding-bottom: 16px;
+    line-height: 1;
 }
 
 .settings_form_row_select.disabled .select select {
@@ -14257,6 +14267,38 @@ p.weddings_desc {
 
 .settings_form_row {
     font-size: 16px;
+}
+
+.select .select__messenger {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.select select {
+    height: 52px;
+}
+
+.select select.active {
+    padding-left: 44px;
+}
+
+.settings_form_row .settings_form_row_select .select select {
+    height: 52px;
+}
+
+.dashboard__main_cars {
+    overflow-x: auto;
+}
+
+.dashboard__main_cars .dashboard_table {
+    overflow-x: auto;
+}
+
+.cars__results-pagination_nav {
+    margin-bottom: 0;
 }
 
 @media (max-width: 1899px) {
@@ -15130,6 +15172,15 @@ p.weddings_desc {
     .dashboard__main_top.one_row .dashboard__main_heading-btn {
         -ms-flex-direction: row;
         flex-direction: row;
+    }
+
+    .dashboard__main_heading-btn {
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+
+    .dashboard__main_add_btn {
+        margin-top: 24px;
     }
 }
 
@@ -18264,6 +18315,10 @@ p.host_info__reviews_main_item_text {
     margin-bottom: 32px;
 }
 
+.iksweb.dashboard_table .sort_model button {
+    opacity: 1;
+}
+
 @media (max-width: 1999px) {
     .user_main {
         max-width: none;
@@ -18340,6 +18395,25 @@ p.host_info__reviews_main_item_text {
 
     .user_hosts .user_cards__host {
         margin-bottom: 16px;
+    }
+
+    .dashboard__main_top.one_row .dashboard__main_heading-btn {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .dashboard_select {
+        margin-top: 24px;
+    }
+
+    .dashboard__main_seacrh_wrapper {
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+
+    .filters__select_main {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 }
 
